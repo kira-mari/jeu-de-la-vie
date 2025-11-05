@@ -1,0 +1,47 @@
+name: Code Coverage
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  coverage:
+    name: Code Coverage Report
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y cmake g++ lcov libsfml-dev
+        
+    - name: Configure CMake with Coverage
+      run: |
+        cmake -B build -S . \
+          -DCMAKE_BUILD_TYPE=Debug \
+          -DCMAKE_CXX_FLAGS="--coverage"
+        
+    - name: Build
+      run: cmake --build build
+      
+    - name: Run Tests
+      run: ./build/tests
+      
+    - name: Generate Coverage Report
+      run: |
+        lcov --capture --directory build --output-file coverage.info
+        lcov --remove coverage.info '/usr/*' '*/test_main.cpp' '*/TestsUnitaires.cpp' --output-file coverage.info --ignore-errors unused
+        lcov --list coverage.info
+        
+    - name: Upload Coverage to Codecov
+      uses: codecov/codecov-action@v4
+      with:
+        files: ./coverage.info
+        flags: unittests
+        name: codecov-jeu-de-la-vie
+        fail_ci_if_error: false

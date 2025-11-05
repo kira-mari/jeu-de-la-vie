@@ -1,0 +1,13 @@
+<map id="InterfaceQt::compterCellulesVivantes" name="InterfaceQt::compterCellulesVivantes">
+<area shape="rect" id="Node000001" title="Compte les cellules vivantes." alt="" coords="5,73,194,116"/>
+<area shape="rect" id="Node000002" href="$classCellule.html#a70d2731234961e330fe0a31486d1dec7" title="Vérifie si la cellule est vivante." alt="" coords="261,5,392,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,70,241,41,263,34,265,39,243,47,160,75"/>
+<area shape="rect" id="Node000003" href="$classGrille.html#aab75610fe73ae48bd035a048c55832f0" title="Obtient une cellule à une position donnée." alt="" coords="258,56,396,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="194,81,242,76,242,81,194,87"/>
+<area shape="rect" id="Node000005" href="$classGrille.html#a1ab5c8e0ea0d1dc21549c38d0f0f5cf9" title="Obtient le nombre de colonnes." alt="" coords="242,107,412,133"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="194,103,226,106,226,111,194,108"/>
+<area shape="rect" id="Node000006" href="$classGrille.html#a96b5f98d212a0ee9e2f71d73ebe5bb91" title="Obtient le nombre de lignes." alt="" coords="250,157,404,184"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="160,114,243,143,265,150,263,155,241,148,159,119"/>
+<area shape="rect" id="Node000004" href="$classGrille.html#aa4c9ce36bb4f2c59a83aeb39d73fc285" title="Vérifie si une position est valide dans la grille." alt="" coords="460,56,619,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="396,67,444,67,444,72,396,72"/>
+</map>

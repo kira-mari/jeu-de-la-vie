@@ -1,0 +1,27 @@
+<map id="InterfaceQt::compterCellulesVivantes" name="InterfaceQt::compterCellulesVivantes">
+<area shape="rect" id="Node000001" title="Compte les cellules vivantes." alt="" coords="880,122,1068,165"/>
+<area shape="rect" id="Node000002" href="$classInterfaceQt.html#a06b809d43dbf3814ab103a8d42de319a" title="Met à jour l&#39;affichage." alt="" coords="666,122,832,165"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="864,146,832,146,832,141,864,141"/>
+<area shape="rect" id="Node000003" href="$classInterfaceQt.html#a0eea8fab1e83d4b90961bd4241fc5689" title="Constructeur de l&#39;interface Qt." alt="" coords="5,145,165,172"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="717,114,673,75,646,58,617,45,558,26,506,14,459,9,415,9,371,16,324,27,214,66,179,83,148,105,101,146,98,142,145,101,177,79,212,61,322,22,370,10,414,4,460,4,507,9,560,21,619,40,649,53,676,71,720,109"/>
+<area shape="rect" id="Node000004" href="$classInterfaceQt.html#a280bb380e08e13ec39b8dca2ae917950" title="Place un motif." alt="" coords="444,156,618,182"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="651,158,619,162,619,156,650,152"/>
+<area shape="rect" id="Node000006" href="$classInterfaceQt.html#af564176618a18f272b92be6bfd9d029d" title="Réinitialise la simulation." alt="" coords="460,206,603,233"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="681,174,619,197,583,208,581,203,617,192,680,169"/>
+<area shape="rect" id="Node000007" href="$classInterfaceQt.html#a1c1b614c51a456e7b5f407724df14f38" title="Avance d&#39;une itération." alt="" coords="464,54,599,81"/>
+<area shape="poly" id="edge8_Node000002_Node000007" title=" " alt="" coords="680,119,617,96,581,84,583,79,619,91,681,114"/>
+<area shape="rect" id="Node000009" href="$classInterfaceQt.html#abe7956e622104a15a5de0b3f8c84921d" title="Recule d&#39;une itération." alt="" coords="448,105,614,132"/>
+<area shape="poly" id="edge11_Node000002_Node000009" title=" " alt="" coords="650,135,614,131,615,125,651,130"/>
+<area shape="rect" id="Node000010" href="$classInterfaceQt.html#abe1c50d3e3b80f6adecb9bf0cb9fca4c" title="Mise à jour automatique (timer)." alt="" coords="221,246,388,273"/>
+<area shape="poly" id="edge14_Node000002_Node000010" title=" " alt="" coords="720,178,675,216,648,234,619,248,561,264,500,272,441,274,388,272,388,267,441,269,499,266,560,259,617,243,646,229,672,212,716,174"/>
+<area shape="rect" id="Node000005" href="$classInterfaceQt.html#a08632443206d676198dfd1f7492e7437" title="Initialise les widgets." alt="" coords="232,137,377,180"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="429,167,377,164,378,159,429,162"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="216,161,165,161,165,156,216,156"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="464,204,377,181,378,176,465,199"/>
+<area shape="poly" id="edge9_Node000007_Node000005" title=" " alt="" coords="464,89,445,96,351,139,349,134,443,91,462,84"/>
+<area shape="rect" id="Node000008" href="$classInterfaceQt.html#a11edcee9206379725a8e97e68a100e80" title="Gestion des événements clavier." alt="" coords="213,76,396,102"/>
+<area shape="poly" id="edge10_Node000007_Node000008" title=" " alt="" coords="448,78,397,83,396,78,448,73"/>
+<area shape="poly" id="edge12_Node000009_Node000005" title=" " alt="" coords="437,138,378,148,377,143,436,132"/>
+<area shape="poly" id="edge13_Node000009_Node000008" title=" " alt="" coords="433,108,396,104,397,98,433,103"/>
+<area shape="poly" id="edge15_Node000010_Node000003" title=" " alt="" coords="259,242,115,175,117,170,261,237"/>
+</map>

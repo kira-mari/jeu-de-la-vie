@@ -1,0 +1,27 @@
+<map id="TestsUnitaires::afficherResultat" name="TestsUnitaires::afficherResultat">
+<area shape="rect" id="Node000001" title="Affiche le résultat d&#39;un test." alt="" coords="828,149,983,192"/>
+<area shape="rect" id="Node000002" href="$classTestsUnitaires.html#a1fea61fb0483bb1f7e0284d828ad347f" title="Teste l&#39;évolution d&#39;une grille après n itérations." alt="" coords="579,48,780,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="860,143,821,118,779,96,731,78,733,73,781,91,824,114,863,138"/>
+<area shape="rect" id="Node000007" href="$classTestsUnitaires.html#a668b40e7c9824be78af8cfd427b4aa58" title="Teste les règles de base." alt="" coords="314,107,531,133"/>
+<area shape="poly" id="edge15_Node000001_Node000007" title=" " alt="" coords="818,148,779,140,651,127,532,122,532,117,652,121,780,135,819,142"/>
+<area shape="rect" id="Node000008" href="$classTestsUnitaires.html#ac0c01e1e24de9cb73d81593c96fa34bb" title="Teste la grille torique." alt="" coords="590,149,769,192"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="812,173,769,173,769,168,812,168"/>
+<area shape="rect" id="Node000009" href="$classTestsUnitaires.html#a7783880416ef4c0f160e1d8242f0d392" title="Teste les cellules obstacles." alt="" coords="320,209,525,236"/>
+<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="818,199,780,207,648,221,526,226,526,220,647,215,779,201,817,194"/>
+<area shape="rect" id="Node000010" href="$classTestsUnitaires.html#aca78b84c54b4526bab6c6325e1b05e20" title="Teste le planeur." alt="" coords="584,267,775,293"/>
+<area shape="poly" id="edge13_Node000001_Node000010" title=" " alt="" coords="863,203,824,228,781,250,733,269,731,264,779,246,821,223,860,199"/>
+<area shape="rect" id="Node000003" href="$classTestsUnitaires.html#acd912aefe999f1178f6c72f41bece368" title="Teste le motif stable (bloc)." alt="" coords="336,5,509,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="580,48,507,35,507,30,581,42"/>
+<area shape="rect" id="Node000006" href="$classTestsUnitaires.html#ad353b61378429174dd396ee458261aa2" title="Teste le motif oscillateur (clignotant)." alt="" coords="320,56,525,83"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="564,68,526,69,526,63,563,62"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="604,81,485,109,484,103,603,76"/>
+<area shape="rect" id="Node000004" href="$classTestsUnitaires.html#a17aa4e9d0afbd2614193d2638f4b78c7" title="Exécute tous les tests." alt="" coords="103,124,266,167"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="331,40,315,46,284,64,255,85,209,126,205,122,252,81,281,60,313,42,329,35"/>
+<area shape="rect" id="Node000005" href="$test__main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Programme principal pour exécuter les tests unitaires." alt="" coords="5,132,55,159"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="87,148,55,148,55,143,87,143"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="342,89,315,97,237,126,235,121,313,92,340,84"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="299,136,267,139,266,134,298,131"/>
+<area shape="poly" id="edge10_Node000008_Node000004" title=" " alt="" coords="575,168,266,152,267,147,575,163"/>
+<area shape="poly" id="edge12_Node000009_Node000004" title=" " alt="" coords="360,207,313,192,247,170,249,165,315,187,362,202"/>
+<area shape="poly" id="edge14_Node000010_Node000004" title=" " alt="" coords="569,289,509,288,444,282,377,270,313,250,280,234,250,212,203,169,207,165,253,208,283,229,315,246,378,265,444,277,509,283,569,284"/>
+</map>

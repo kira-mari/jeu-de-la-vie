@@ -1,0 +1,829 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Jeu de la Vie de Conway: Référence de la classe JeuDeLaVie</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Jeu de la Vie de Conway<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Implémentation C++17 avec architecture POO complète</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('classJeuDeLaVie.html','','classJeuDeLaVie-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Référence de la classe JeuDeLaVie</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Classe principale orchestrant le jeu de la vie.  
+ <a href="#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="JeuDeLaVie_8hpp_source.html">JeuDeLaVie.hpp</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Graphe de collaboration de JeuDeLaVie:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classJeuDeLaVie__coll__graph.svg" width="160" height="486"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:aee75b0a492ab7e72a1ad59b6abd2f5eb" id="r_aee75b0a492ab7e72a1ad59b6abd2f5eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee75b0a492ab7e72a1ad59b6abd2f5eb">JeuDeLaVie</a> (std::unique_ptr&lt; <a class="el" href="classGrille.html">Grille</a> &gt; grilleInitiale, int nbIterations=100, bool torique=false, bool parallele=false)</td></tr>
+<tr class="memdesc:aee75b0a492ab7e72a1ad59b6abd2f5eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur du jeu.  <br /></td></tr>
+<tr class="memitem:af3e2bbbe85d122db859c6049adad142a" id="r_af3e2bbbe85d122db859c6049adad142a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af3e2bbbe85d122db859c6049adad142a">executerIteration</a> ()</td></tr>
+<tr class="memdesc:af3e2bbbe85d122db859c6049adad142a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exécute une itération du jeu.  <br /></td></tr>
+<tr class="memitem:a444c078a494f06290049293c37b8eeb2" id="r_a444c078a494f06290049293c37b8eeb2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a444c078a494f06290049293c37b8eeb2">revenirEnArriere</a> ()</td></tr>
+<tr class="memdesc:a444c078a494f06290049293c37b8eeb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Revient à l'itération précédente.  <br /></td></tr>
+<tr class="memitem:a3f6dc54b2b1ebef7111e7aa5a2622be3" id="r_a3f6dc54b2b1ebef7111e7aa5a2622be3"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classGrille.html">Grille</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f6dc54b2b1ebef7111e7aa5a2622be3">obtenirGrille</a> () const</td></tr>
+<tr class="memdesc:a3f6dc54b2b1ebef7111e7aa5a2622be3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtient la grille actuelle.  <br /></td></tr>
+<tr class="memitem:a64c17035b0448747418084db872c72c8" id="r_a64c17035b0448747418084db872c72c8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64c17035b0448747418084db872c72c8">obtenirIteration</a> () const</td></tr>
+<tr class="memdesc:a64c17035b0448747418084db872c72c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtient le numéro d'itération actuel.  <br /></td></tr>
+<tr class="memitem:a43410dc565325825c5fdf11fa6c6c5a7" id="r_a43410dc565325825c5fdf11fa6c6c5a7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a43410dc565325825c5fdf11fa6c6c5a7">estModeTorique</a> () const</td></tr>
+<tr class="memdesc:a43410dc565325825c5fdf11fa6c6c5a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vérifie si le mode torique est actif.  <br /></td></tr>
+<tr class="memitem:ad6a15c16668bb872c335543ea616e93f" id="r_ad6a15c16668bb872c335543ea616e93f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6a15c16668bb872c335543ea616e93f">estModeParallele</a> () const</td></tr>
+<tr class="memdesc:ad6a15c16668bb872c335543ea616e93f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vérifie si le mode parallèle est actif.  <br /></td></tr>
+<tr class="memitem:a1523dd14f4fbf923cd5f424156598c85" id="r_a1523dd14f4fbf923cd5f424156598c85"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1523dd14f4fbf923cd5f424156598c85">obtenirIterationMax</a> () const</td></tr>
+<tr class="memdesc:a1523dd14f4fbf923cd5f424156598c85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtient le nombre maximum d'itérations.  <br /></td></tr>
+<tr class="memitem:a1888b97a0febcf98ac6d57bee34847a6" id="r_a1888b97a0febcf98ac6d57bee34847a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1888b97a0febcf98ac6d57bee34847a6">definirIterationMax</a> (int max)</td></tr>
+<tr class="memdesc:a1888b97a0febcf98ac6d57bee34847a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Définit le nombre maximum d'itérations.  <br /></td></tr>
+<tr class="memitem:a0c9dbfff7118bd6fe99b3fa99889fe96" id="r_a0c9dbfff7118bd6fe99b3fa99889fe96"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c9dbfff7118bd6fe99b3fa99889fe96">estTermine</a> () const</td></tr>
+<tr class="memdesc:a0c9dbfff7118bd6fe99b3fa99889fe96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vérifie si le jeu est terminé  <br /></td></tr>
+<tr class="memitem:a49cbdbe7c196dfc3864d5f5cc4afe15f" id="r_a49cbdbe7c196dfc3864d5f5cc4afe15f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49cbdbe7c196dfc3864d5f5cc4afe15f">reinitialiser</a> (std::unique_ptr&lt; <a class="el" href="classGrille.html">Grille</a> &gt; nouvelleGrille)</td></tr>
+<tr class="memdesc:a49cbdbe7c196dfc3864d5f5cc4afe15f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Réinitialise le jeu avec une nouvelle grille.  <br /></td></tr>
+<tr class="memitem:ac699c345951d0e8e022f859339e68fda" id="r_ac699c345951d0e8e022f859339e68fda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac699c345951d0e8e022f859339e68fda">definirModeTorique</a> (bool actif)</td></tr>
+<tr class="memdesc:ac699c345951d0e8e022f859339e68fda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Active ou désactive le mode torique.  <br /></td></tr>
+<tr class="memitem:a63f27d62e27687c8c0879ae52eabadd6" id="r_a63f27d62e27687c8c0879ae52eabadd6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a63f27d62e27687c8c0879ae52eabadd6">definirModeParallele</a> (bool actif)</td></tr>
+<tr class="memdesc:a63f27d62e27687c8c0879ae52eabadd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Active ou désactive le mode parallèle.  <br /></td></tr>
+<tr class="memitem:a8bf2b5c24e44c400922032a0f697850b" id="r_a8bf2b5c24e44c400922032a0f697850b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8bf2b5c24e44c400922032a0f697850b">placerMotif</a> (const std::string &amp;motif, int ligne, int colonne)</td></tr>
+<tr class="memdesc:a8bf2b5c24e44c400922032a0f697850b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Place un motif sur la grille.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Attributs privés</h2></td></tr>
+<tr class="memitem:a7fb6c019d970d67e486292addb65d375" id="r_a7fb6c019d970d67e486292addb65d375"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classGrille.html">Grille</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7fb6c019d970d67e486292addb65d375">grille</a></td></tr>
+<tr class="memitem:a80f1d469acfcd78bcbe21a4be8525fa9" id="r_a80f1d469acfcd78bcbe21a4be8525fa9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a80f1d469acfcd78bcbe21a4be8525fa9">iteration</a></td></tr>
+<tr class="memitem:aab221c1b8906c94796806c90b653b04d" id="r_aab221c1b8906c94796806c90b653b04d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab221c1b8906c94796806c90b653b04d">iterationMax</a></td></tr>
+<tr class="memitem:a1bcc9aaf58ab3c354f3edc34cd5c7b81" id="r_a1bcc9aaf58ab3c354f3edc34cd5c7b81"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1bcc9aaf58ab3c354f3edc34cd5c7b81">modeTorique</a></td></tr>
+<tr class="memitem:a3b0e21b094a091999dfe1cff1189f774" id="r_a3b0e21b094a091999dfe1cff1189f774"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b0e21b094a091999dfe1cff1189f774">modeParallele</a></td></tr>
+<tr class="memitem:af00f247b3dde88acbc51da0038f8a191" id="r_af00f247b3dde88acbc51da0038f8a191"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr&lt; <a class="el" href="classGrille.html">Grille</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af00f247b3dde88acbc51da0038f8a191">historique</a></td></tr>
+<tr class="memitem:aa5d9eeb51c030f7d7786c8a880b96430" id="r_aa5d9eeb51c030f7d7786c8a880b96430"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5d9eeb51c030f7d7786c8a880b96430">grandeGrille</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Classe principale orchestrant le jeu de la vie. </p>
+<p>Gère l'état du jeu, l'historique et l'exécution des itérations. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="JeuDeLaVie_8hpp_source.html#l00015">15</a> du fichier <a class="el" href="JeuDeLaVie_8hpp_source.html">JeuDeLaVie.hpp</a>.</p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a id="aee75b0a492ab7e72a1ad59b6abd2f5eb" name="aee75b0a492ab7e72a1ad59b6abd2f5eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee75b0a492ab7e72a1ad59b6abd2f5eb">&#9670;&#160;</a></span>JeuDeLaVie()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">JeuDeLaVie::JeuDeLaVie </td>
+          <td>(</td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classGrille.html">Grille</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>grilleInitiale</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>nbIterations</em></span><span class="paramdefsep"> = </span><span class="paramdefval">100</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>torique</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>parallele</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructeur du jeu. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">grilleInitiale</td><td>La grille de départ </td></tr>
+    <tr><td class="paramname">nbIterations</td><td>Le nombre maximum d'itérations </td></tr>
+    <tr><td class="paramname">torique</td><td>Active le mode torique si true </td></tr>
+    <tr><td class="paramname">parallele</td><td>Active la parallélisation si true </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>Si la grille initiale est nulle </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="JeuDeLaVie_8cpp_source.html#l00005">5</a> du fichier <a class="el" href="JeuDeLaVie_8cpp_source.html">JeuDeLaVie.cpp</a>.</p>
+
+<p class="reference">Références <a class="el" href="JeuDeLaVie_8hpp_source.html#l00023">grandeGrille</a>, <a class="el" href="JeuDeLaVie_8hpp_source.html#l00017">grille</a>, <a class="el" href="JeuDeLaVie_8hpp_source.html#l00022">historique</a>, <a class="el" href="JeuDeLaVie_8hpp_source.html#l00018">iteration</a>, <a class="el" href="JeuDeLaVie_8hpp_source.html#l00019">iterationMax</a>, <a class="el" href="JeuDeLaVie_8hpp_source.html#l00021">modeParallele</a>, <a class="el" href="JeuDeLaVie_8hpp_source.html#l00020">modeTorique</a>, et <a class="el" href="Constantes_8hpp_source.html#l00039">Config::SEUIL_GRANDE_GRILLE</a>.</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentation des fonctions membres</h2>
+<a id="a1888b97a0febcf98ac6d57bee34847a6" name="a1888b97a0febcf98ac6d57bee34847a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1888b97a0febcf98ac6d57bee34847a6">&#9670;&#160;</a></span>definirIterationMax()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void JeuDeLaVie::definirIterationMax </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>max</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définit le nombre maximum d'itérations. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">max</td><td>Le nouveau nombre maximum d'itérations </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="JeuDeLaVie_8hpp_source.html#l00087">87</a> du fichier <a class="el" href="JeuDeLaVie_8hpp_source.html">JeuDeLaVie.hpp</a>.</p>
+
+<p class="reference">Références <a class="el" href="JeuDeLaVie_8hpp_source.html#l00019">iterationMax</a>.</p>
+
+</div>
+</div>
+<a id="a63f27d62e27687c8c0879ae52eabadd6" name="a63f27d62e27687c8c0879ae52eabadd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63f27d62e27687c8c0879ae52eabadd6">&#9670;&#160;</a></span>definirModeParallele()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void JeuDeLaVie::definirModeParallele </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>actif</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Active ou désactive le mode parallèle. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">actif</td><td>true pour activer, false pour désactiver </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="JeuDeLaVie_8cpp_source.html#l00119">119</a> du fichier <a class="el" href="JeuDeLaVie_8cpp_source.html">JeuDeLaVie.cpp</a>.</p>
+
+<p class="reference">Références <a class="el" href="JeuDeLaVie_8hpp_source.html#l00021">modeParallele</a>.</p>
+
+</div>
+</div>
+<a id="ac699c345951d0e8e022f859339e68fda" name="ac699c345951d0e8e022f859339e68fda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac699c345951d0e8e022f859339e68fda">&#9670;&#160;</a></span>definirModeTorique()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void JeuDeLaVie::definirModeTorique </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>actif</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Active ou désactive le mode torique. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">actif</td><td>true pour activer, false pour désactiver </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="JeuDeLaVie_8cpp_source.html#l00109">109</a> du fichier <a class="el" href="JeuDeLaVie_8cpp_source.html">JeuDeLaVie.cpp</a>.</p>
+
+<p class="reference">Références <a class="el" href="JeuDeLaVie_8hpp_source.html#l00017">grille</a>, et <a class="el" href="JeuDeLaVie_8hpp_source.html#l00020">modeTorique</a>.</p>
+
+</div>
+</div>
+<a id="ad6a15c16668bb872c335543ea616e93f" name="ad6a15c16668bb872c335543ea616e93f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6a15c16668bb872c335543ea616e93f">&#9670;&#160;</a></span>estModeParallele()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool JeuDeLaVie::estModeParallele </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vérifie si le mode parallèle est actif. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>true si le mode parallèle est actif, false sinon </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="JeuDeLaVie_8hpp_source.html#l00075">75</a> du fichier <a class="el" href="JeuDeLaVie_8hpp_source.html">JeuDeLaVie.hpp</a>.</p>
+
+<p class="reference">Références <a class="el" href="JeuDeLaVie_8hpp_source.html#l00021">modeParallele</a>.</p>
+
+</div>
+</div>
+<a id="a43410dc565325825c5fdf11fa6c6c5a7" name="a43410dc565325825c5fdf11fa6c6c5a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43410dc565325825c5fdf11fa6c6c5a7">&#9670;&#160;</a></span>estModeTorique()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool JeuDeLaVie::estModeTorique </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vérifie si le mode torique est actif. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>true si le mode torique est actif, false sinon </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="JeuDeLaVie_8hpp_source.html#l00069">69</a> du fichier <a class="el" href="JeuDeLaVie_8hpp_source.html">JeuDeLaVie.hpp</a>.</p>
+
+<p class="reference">Références <a class="el" href="JeuDeLaVie_8hpp_source.html#l00020">modeTorique</a>.</p>
+
+</div>
+</div>
+<a id="a0c9dbfff7118bd6fe99b3fa99889fe96" name="a0c9dbfff7118bd6fe99b3fa99889fe96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c9dbfff7118bd6fe99b3fa99889fe96">&#9670;&#160;</a></span>estTermine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool JeuDeLaVie::estTermine </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Vérifie si le jeu est terminé </p>
+<dl class="section return"><dt>Renvoie</dt><dd>true si le jeu est terminé, false sinon </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="JeuDeLaVie_8cpp_source.html#l00078">78</a> du fichier <a class="el" href="JeuDeLaVie_8cpp_source.html">JeuDeLaVie.cpp</a>.</p>
+
+<p class="reference">Références <a class="el" href="JeuDeLaVie_8hpp_source.html#l00017">grille</a>, <a class="el" href="JeuDeLaVie_8hpp_source.html#l00018">iteration</a>, et <a class="el" href="JeuDeLaVie_8hpp_source.html#l00019">iterationMax</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="JeuDeLaVie_8cpp_source.html#l00036">executerIteration()</a>.</p>
+<div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classJeuDeLaVie_a0c9dbfff7118bd6fe99b3fa99889fe96_icgraph.svg" width="420" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="af3e2bbbe85d122db859c6049adad142a" name="af3e2bbbe85d122db859c6049adad142a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3e2bbbe85d122db859c6049adad142a">&#9670;&#160;</a></span>executerIteration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool JeuDeLaVie::executerIteration </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Exécute une itération du jeu. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>true si le jeu continue, false si terminé (stable ou max atteint) </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="JeuDeLaVie_8cpp_source.html#l00036">36</a> du fichier <a class="el" href="JeuDeLaVie_8cpp_source.html">JeuDeLaVie.cpp</a>.</p>
+
+<p class="reference">Références <a class="el" href="JeuDeLaVie_8cpp_source.html#l00078">estTermine()</a>, <a class="el" href="JeuDeLaVie_8hpp_source.html#l00023">grandeGrille</a>, <a class="el" href="JeuDeLaVie_8hpp_source.html#l00017">grille</a>, <a class="el" href="JeuDeLaVie_8hpp_source.html#l00022">historique</a>, <a class="el" href="JeuDeLaVie_8hpp_source.html#l00018">iteration</a>, <a class="el" href="JeuDeLaVie_8hpp_source.html#l00021">modeParallele</a>, et <a class="el" href="Constantes_8hpp_source.html#l00036">Config::TAILLE_MAX_HISTORIQUE_GRANDE</a>.</p>
+<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe d'appel pour cette fonction :</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classJeuDeLaVie_af3e2bbbe85d122db859c6049adad142a_cgraph.svg" width="420" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a3f6dc54b2b1ebef7111e7aa5a2622be3" name="a3f6dc54b2b1ebef7111e7aa5a2622be3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f6dc54b2b1ebef7111e7aa5a2622be3">&#9670;&#160;</a></span>obtenirGrille()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classGrille.html">Grille</a> &amp; JeuDeLaVie::obtenirGrille </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtient la grille actuelle. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>Une référence constante vers la grille </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="JeuDeLaVie_8hpp_source.html#l00057">57</a> du fichier <a class="el" href="JeuDeLaVie_8hpp_source.html">JeuDeLaVie.hpp</a>.</p>
+
+<p class="reference">Références <a class="el" href="JeuDeLaVie_8hpp_source.html#l00017">grille</a>.</p>
+
+</div>
+</div>
+<a id="a64c17035b0448747418084db872c72c8" name="a64c17035b0448747418084db872c72c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64c17035b0448747418084db872c72c8">&#9670;&#160;</a></span>obtenirIteration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int JeuDeLaVie::obtenirIteration </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtient le numéro d'itération actuel. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>Le numéro d'itération </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="JeuDeLaVie_8hpp_source.html#l00063">63</a> du fichier <a class="el" href="JeuDeLaVie_8hpp_source.html">JeuDeLaVie.hpp</a>.</p>
+
+<p class="reference">Références <a class="el" href="JeuDeLaVie_8hpp_source.html#l00018">iteration</a>.</p>
+
+</div>
+</div>
+<a id="a1523dd14f4fbf923cd5f424156598c85" name="a1523dd14f4fbf923cd5f424156598c85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1523dd14f4fbf923cd5f424156598c85">&#9670;&#160;</a></span>obtenirIterationMax()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int JeuDeLaVie::obtenirIterationMax </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtient le nombre maximum d'itérations. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>Le nombre maximum d'itérations </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="JeuDeLaVie_8hpp_source.html#l00081">81</a> du fichier <a class="el" href="JeuDeLaVie_8hpp_source.html">JeuDeLaVie.hpp</a>.</p>
+
+<p class="reference">Références <a class="el" href="JeuDeLaVie_8hpp_source.html#l00019">iterationMax</a>.</p>
+
+</div>
+</div>
+<a id="a8bf2b5c24e44c400922032a0f697850b" name="a8bf2b5c24e44c400922032a0f697850b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bf2b5c24e44c400922032a0f697850b">&#9670;&#160;</a></span>placerMotif()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool JeuDeLaVie::placerMotif </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>motif</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>ligne</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>colonne</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Place un motif sur la grille. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">motif</td><td>Le nom du motif </td></tr>
+    <tr><td class="paramname">ligne</td><td>La ligne de départ </td></tr>
+    <tr><td class="paramname">colonne</td><td>La colonne de départ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>true si le motif a été placé, false sinon </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="JeuDeLaVie_8cpp_source.html#l00123">123</a> du fichier <a class="el" href="JeuDeLaVie_8cpp_source.html">JeuDeLaVie.cpp</a>.</p>
+
+<p class="reference">Références <a class="el" href="JeuDeLaVie_8hpp_source.html#l00017">grille</a>.</p>
+
+</div>
+</div>
+<a id="a49cbdbe7c196dfc3864d5f5cc4afe15f" name="a49cbdbe7c196dfc3864d5f5cc4afe15f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49cbdbe7c196dfc3864d5f5cc4afe15f">&#9670;&#160;</a></span>reinitialiser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void JeuDeLaVie::reinitialiser </td>
+          <td>(</td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classGrille.html">Grille</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>nouvelleGrille</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Réinitialise le jeu avec une nouvelle grille. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nouvelleGrille</td><td>La nouvelle grille de départ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>Si la nouvelle grille est nulle </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="JeuDeLaVie_8cpp_source.html#l00085">85</a> du fichier <a class="el" href="JeuDeLaVie_8cpp_source.html">JeuDeLaVie.cpp</a>.</p>
+
+<p class="reference">Références <a class="el" href="JeuDeLaVie_8hpp_source.html#l00023">grandeGrille</a>, <a class="el" href="JeuDeLaVie_8hpp_source.html#l00017">grille</a>, <a class="el" href="JeuDeLaVie_8hpp_source.html#l00022">historique</a>, <a class="el" href="JeuDeLaVie_8hpp_source.html#l00018">iteration</a>, <a class="el" href="JeuDeLaVie_8hpp_source.html#l00020">modeTorique</a>, et <a class="el" href="Constantes_8hpp_source.html#l00039">Config::SEUIL_GRANDE_GRILLE</a>.</p>
+
+</div>
+</div>
+<a id="a444c078a494f06290049293c37b8eeb2" name="a444c078a494f06290049293c37b8eeb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a444c078a494f06290049293c37b8eeb2">&#9670;&#160;</a></span>revenirEnArriere()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool JeuDeLaVie::revenirEnArriere </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Revient à l'itération précédente. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>true si possible de revenir en arrière, false sinon </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="JeuDeLaVie_8cpp_source.html#l00059">59</a> du fichier <a class="el" href="JeuDeLaVie_8cpp_source.html">JeuDeLaVie.cpp</a>.</p>
+
+<p class="reference">Références <a class="el" href="JeuDeLaVie_8hpp_source.html#l00017">grille</a>, <a class="el" href="JeuDeLaVie_8hpp_source.html#l00022">historique</a>, et <a class="el" href="JeuDeLaVie_8hpp_source.html#l00018">iteration</a>.</p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Documentation des données membres</h2>
+<a id="aa5d9eeb51c030f7d7786c8a880b96430" name="aa5d9eeb51c030f7d7786c8a880b96430"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5d9eeb51c030f7d7786c8a880b96430">&#9670;&#160;</a></span>grandeGrille</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool JeuDeLaVie::grandeGrille</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="JeuDeLaVie_8hpp_source.html#l00023">23</a> du fichier <a class="el" href="JeuDeLaVie_8hpp_source.html">JeuDeLaVie.hpp</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="JeuDeLaVie_8cpp_source.html#l00036">executerIteration()</a>, <a class="el" href="JeuDeLaVie_8cpp_source.html#l00005">JeuDeLaVie()</a>, et <a class="el" href="JeuDeLaVie_8cpp_source.html#l00085">reinitialiser()</a>.</p>
+
+</div>
+</div>
+<a id="a7fb6c019d970d67e486292addb65d375" name="a7fb6c019d970d67e486292addb65d375"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fb6c019d970d67e486292addb65d375">&#9670;&#160;</a></span>grille</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classGrille.html">Grille</a>&gt; JeuDeLaVie::grille</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="JeuDeLaVie_8hpp_source.html#l00017">17</a> du fichier <a class="el" href="JeuDeLaVie_8hpp_source.html">JeuDeLaVie.hpp</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="JeuDeLaVie_8cpp_source.html#l00109">definirModeTorique()</a>, <a class="el" href="JeuDeLaVie_8cpp_source.html#l00078">estTermine()</a>, <a class="el" href="JeuDeLaVie_8cpp_source.html#l00036">executerIteration()</a>, <a class="el" href="JeuDeLaVie_8cpp_source.html#l00005">JeuDeLaVie()</a>, <a class="el" href="JeuDeLaVie_8hpp_source.html#l00057">obtenirGrille()</a>, <a class="el" href="JeuDeLaVie_8cpp_source.html#l00123">placerMotif()</a>, <a class="el" href="JeuDeLaVie_8cpp_source.html#l00085">reinitialiser()</a>, et <a class="el" href="JeuDeLaVie_8cpp_source.html#l00059">revenirEnArriere()</a>.</p>
+
+</div>
+</div>
+<a id="af00f247b3dde88acbc51da0038f8a191" name="af00f247b3dde88acbc51da0038f8a191"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af00f247b3dde88acbc51da0038f8a191">&#9670;&#160;</a></span>historique</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::unique_ptr&lt;<a class="el" href="classGrille.html">Grille</a>&gt; &gt; JeuDeLaVie::historique</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="JeuDeLaVie_8hpp_source.html#l00022">22</a> du fichier <a class="el" href="JeuDeLaVie_8hpp_source.html">JeuDeLaVie.hpp</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="JeuDeLaVie_8cpp_source.html#l00036">executerIteration()</a>, <a class="el" href="JeuDeLaVie_8cpp_source.html#l00005">JeuDeLaVie()</a>, <a class="el" href="JeuDeLaVie_8cpp_source.html#l00085">reinitialiser()</a>, et <a class="el" href="JeuDeLaVie_8cpp_source.html#l00059">revenirEnArriere()</a>.</p>
+
+</div>
+</div>
+<a id="a80f1d469acfcd78bcbe21a4be8525fa9" name="a80f1d469acfcd78bcbe21a4be8525fa9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80f1d469acfcd78bcbe21a4be8525fa9">&#9670;&#160;</a></span>iteration</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int JeuDeLaVie::iteration</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="JeuDeLaVie_8hpp_source.html#l00018">18</a> du fichier <a class="el" href="JeuDeLaVie_8hpp_source.html">JeuDeLaVie.hpp</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="JeuDeLaVie_8cpp_source.html#l00078">estTermine()</a>, <a class="el" href="JeuDeLaVie_8cpp_source.html#l00036">executerIteration()</a>, <a class="el" href="JeuDeLaVie_8cpp_source.html#l00005">JeuDeLaVie()</a>, <a class="el" href="JeuDeLaVie_8hpp_source.html#l00063">obtenirIteration()</a>, <a class="el" href="JeuDeLaVie_8cpp_source.html#l00085">reinitialiser()</a>, et <a class="el" href="JeuDeLaVie_8cpp_source.html#l00059">revenirEnArriere()</a>.</p>
+
+</div>
+</div>
+<a id="aab221c1b8906c94796806c90b653b04d" name="aab221c1b8906c94796806c90b653b04d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab221c1b8906c94796806c90b653b04d">&#9670;&#160;</a></span>iterationMax</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int JeuDeLaVie::iterationMax</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="JeuDeLaVie_8hpp_source.html#l00019">19</a> du fichier <a class="el" href="JeuDeLaVie_8hpp_source.html">JeuDeLaVie.hpp</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="JeuDeLaVie_8hpp_source.html#l00087">definirIterationMax()</a>, <a class="el" href="JeuDeLaVie_8cpp_source.html#l00078">estTermine()</a>, <a class="el" href="JeuDeLaVie_8cpp_source.html#l00005">JeuDeLaVie()</a>, et <a class="el" href="JeuDeLaVie_8hpp_source.html#l00081">obtenirIterationMax()</a>.</p>
+
+</div>
+</div>
+<a id="a3b0e21b094a091999dfe1cff1189f774" name="a3b0e21b094a091999dfe1cff1189f774"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b0e21b094a091999dfe1cff1189f774">&#9670;&#160;</a></span>modeParallele</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool JeuDeLaVie::modeParallele</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="JeuDeLaVie_8hpp_source.html#l00021">21</a> du fichier <a class="el" href="JeuDeLaVie_8hpp_source.html">JeuDeLaVie.hpp</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="JeuDeLaVie_8cpp_source.html#l00119">definirModeParallele()</a>, <a class="el" href="JeuDeLaVie_8hpp_source.html#l00075">estModeParallele()</a>, <a class="el" href="JeuDeLaVie_8cpp_source.html#l00036">executerIteration()</a>, et <a class="el" href="JeuDeLaVie_8cpp_source.html#l00005">JeuDeLaVie()</a>.</p>
+
+</div>
+</div>
+<a id="a1bcc9aaf58ab3c354f3edc34cd5c7b81" name="a1bcc9aaf58ab3c354f3edc34cd5c7b81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bcc9aaf58ab3c354f3edc34cd5c7b81">&#9670;&#160;</a></span>modeTorique</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool JeuDeLaVie::modeTorique</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="JeuDeLaVie_8hpp_source.html#l00020">20</a> du fichier <a class="el" href="JeuDeLaVie_8hpp_source.html">JeuDeLaVie.hpp</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="JeuDeLaVie_8cpp_source.html#l00109">definirModeTorique()</a>, <a class="el" href="JeuDeLaVie_8hpp_source.html#l00069">estModeTorique()</a>, <a class="el" href="JeuDeLaVie_8cpp_source.html#l00005">JeuDeLaVie()</a>, et <a class="el" href="JeuDeLaVie_8cpp_source.html#l00085">reinitialiser()</a>.</p>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
+<li>include/<a class="el" href="JeuDeLaVie_8hpp_source.html">JeuDeLaVie.hpp</a></li>
+<li>src/<a class="el" href="JeuDeLaVie_8cpp_source.html">JeuDeLaVie.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="classJeuDeLaVie.html">JeuDeLaVie</a></li>
+    <li class="footer">Généré le <span class="timestamp"></span> pour Jeu de la Vie de Conway par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
+  </ul>
+</div>
+</body>
+</html>

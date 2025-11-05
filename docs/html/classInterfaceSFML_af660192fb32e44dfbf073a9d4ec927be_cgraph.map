@@ -1,0 +1,7 @@
+<map id="InterfaceSFML::gererPlacementMotif" name="InterfaceSFML::gererPlacementMotif">
+<area shape="rect" id="Node000001" title="Gère les entrées clavier pour placer des motifs." alt="" coords="5,23,212,65"/>
+<area shape="rect" id="Node000002" href="$classGrille.html#a1ab5c8e0ea0d1dc21549c38d0f0f5cf9" title="Obtient le nombre de colonnes." alt="" coords="260,5,430,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="212,30,244,27,244,32,213,36"/>
+<area shape="rect" id="Node000003" href="$classGrille.html#a96b5f98d212a0ee9e2f71d73ebe5bb91" title="Obtient le nombre de lignes." alt="" coords="268,56,422,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="213,52,253,57,252,62,212,58"/>
+</map>

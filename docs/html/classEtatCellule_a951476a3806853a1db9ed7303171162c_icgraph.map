@@ -1,0 +1,11 @@
+<map id="EtatCellule::versEntier" name="EtatCellule::versEntier">
+<area shape="rect" id="Node000001" title="Obtient la valeur entière de l&#39;état (pour sauvegarder)." alt="" coords="720,13,872,40"/>
+<area shape="rect" id="Node000002" href="$classGestionnaireFichier.html#a7f617aede460be3b06c7dd842d7e2732" title="Sauvegarde une grille dans un fichier." alt="" coords="538,5,672,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="704,29,672,29,672,24,704,24"/>
+<area shape="rect" id="Node000003" href="$classModeConsole.html#a75b55e1983d7ca8dbbb4ebec6a68589d" title="Sauvegarde la grille actuelle dans un fichier." alt="" coords="310,5,490,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="523,29,491,29,491,24,523,24"/>
+<area shape="rect" id="Node000004" href="$classModeConsole.html#a79ad19df6d20c391fbaf9a7b4fb2f350" title="Exécute le mode console." alt="" coords="103,13,262,40"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="294,29,262,29,262,24,294,24"/>
+<area shape="rect" id="Node000005" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Point d&#39;entrée du programme." alt="" coords="5,13,55,40"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="87,29,55,29,55,24,87,24"/>
+</map>

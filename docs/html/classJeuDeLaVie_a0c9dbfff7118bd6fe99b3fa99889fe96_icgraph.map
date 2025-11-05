@@ -1,0 +1,5 @@
+<map id="JeuDeLaVie::estTermine" name="JeuDeLaVie::estTermine">
+<area shape="rect" id="Node000001" title="Vérifie si le jeu est terminé" alt="" coords="251,5,415,32"/>
+<area shape="rect" id="Node000002" href="$classJeuDeLaVie.html#af3e2bbbe85d122db859c6049adad142a" title="Exécute une itération du jeu." alt="" coords="5,5,203,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="235,21,203,21,203,16,235,16"/>
+</map>

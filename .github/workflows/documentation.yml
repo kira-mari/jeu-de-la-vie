@@ -1,0 +1,57 @@
+name: Documentation
+
+on:
+  push:
+    branches: [ main, master ]
+
+permissions:
+  contents: write
+
+jobs:
+  docs:
+    name: Generate Doxygen Documentation
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Install Doxygen
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y doxygen graphviz
+        
+    - name: Create Doxyfile
+      run: |
+        cat > Doxyfile << 'EOF'
+        PROJECT_NAME           = "Jeu de la Vie - Conway"
+        PROJECT_BRIEF          = "Implémentation C++17 avec architecture POO"
+        OUTPUT_DIRECTORY       = docs
+        INPUT                  = include src README.md CONCEPTION.md
+        RECURSIVE              = YES
+        EXTRACT_ALL            = YES
+        EXTRACT_PRIVATE        = YES
+        EXTRACT_STATIC         = YES
+        GENERATE_HTML          = YES
+        GENERATE_LATEX         = NO
+        HTML_OUTPUT            = html
+        USE_MDFILE_AS_MAINPAGE = README.md
+        JAVADOC_AUTOBRIEF      = YES
+        OPTIMIZE_OUTPUT_FOR_C  = NO
+        BUILTIN_STL_SUPPORT    = YES
+        HAVE_DOT               = YES
+        UML_LOOK               = YES
+        CALL_GRAPH             = YES
+        CALLER_GRAPH           = YES
+        EOF
+        
+    - name: Generate Documentation
+      run: doxygen Doxyfile
+      
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./docs/html
+        publish_branch: gh-pages

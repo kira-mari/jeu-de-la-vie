@@ -1,0 +1,9 @@
+<map id="InterfaceSFML::gererPlacementMotif" name="InterfaceSFML::gererPlacementMotif">
+<area shape="rect" id="Node000001" title="Gère les entrées clavier pour placer des motifs." alt="" coords="581,5,788,48"/>
+<area shape="rect" id="Node000002" href="$classInterfaceSFML.html#a20bcd606ad56b9f175bba4a49a4f061a" title="Gère les événements (clavier, souris, fermeture)." alt="" coords="316,13,533,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="565,29,534,29,534,24,565,24"/>
+<area shape="rect" id="Node000003" href="$classInterfaceSFML.html#a518c46fbb99e76a49149d03b900b6cdc" title="Lance la boucle principale de l&#39;interface graphique." alt="" coords="103,13,268,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="300,29,269,29,269,24,300,24"/>
+<area shape="rect" id="Node000004" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Point d&#39;entrée du programme." alt="" coords="5,13,55,40"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="87,29,55,29,55,24,87,24"/>
+</map>

@@ -1,0 +1,15 @@
+<map id="GestionnaireFichier::sauvegarderGrille" name="GestionnaireFichier::sauvegarderGrille">
+<area shape="rect" id="Node000001" title="Sauvegarde une grille dans un fichier." alt="" coords="5,99,139,141"/>
+<area shape="rect" id="Node000002" href="$classGrille.html#aab75610fe73ae48bd035a048c55832f0" title="Obtient une cellule à une position donnée." alt="" coords="203,5,341,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,96,139,68,185,42,200,35,203,40,188,46,142,73,102,100"/>
+<area shape="rect" id="Node000004" href="$classCellule.html#a4eecc7c38f6d8fa642804d9c7472d05e" title="Obtient l&#39;état actuel de la cellule." alt="" coords="206,56,338,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="138,101,201,84,203,90,140,106"/>
+<area shape="rect" id="Node000005" href="$classGrille.html#a1ab5c8e0ea0d1dc21549c38d0f0f5cf9" title="Obtient le nombre de colonnes." alt="" coords="187,107,357,133"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="139,117,171,117,171,123,139,123"/>
+<area shape="rect" id="Node000006" href="$classGrille.html#a96b5f98d212a0ee9e2f71d73ebe5bb91" title="Obtient le nombre de lignes." alt="" coords="195,157,348,184"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="140,134,203,150,201,156,138,139"/>
+<area shape="rect" id="Node000007" href="$classEtatCellule.html#a951476a3806853a1db9ed7303171162c" title="Obtient la valeur entière de l&#39;état (pour sauvegarder)." alt="" coords="196,208,348,235"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="102,140,142,167,188,194,203,200,200,205,185,198,139,172,99,144"/>
+<area shape="rect" id="Node000003" href="$classGrille.html#aa4c9ce36bb4f2c59a83aeb39d73fc285" title="Vérifie si une position est valide dans la grille." alt="" coords="405,5,564,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="341,16,389,16,389,21,341,21"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="EtatCellule" name="EtatCellule">
+<area shape="rect" id="Node000001" title="Classe abstraite représentant l&#39;état d&#39;une cellule." alt="" coords="142,5,246,181"/>
+<area shape="rect" id="Node000002" href="$classCelluleMorte.html" title="Classe représentant une cellule morte." alt="" coords="5,240,107,395"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,193,106,242,101,239,131,190"/>
+<area shape="rect" id="Node000003" href="$classCelluleObstacle.html" title="Classe représentant une cellule obstacle (extension bonus) Les cellules obstacles ne changent jamais ..." alt="" coords="132,229,256,405"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="196,196,196,230,191,230,191,196"/>
+<area shape="rect" id="Node000004" href="$classCelluleVivante.html" title="Classe représentant une cellule vivante." alt="" coords="280,240,382,395"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="256,190,286,239,282,242,251,193"/>
+</map>

@@ -1,0 +1,23 @@
+<map id="InterfaceSFML::afficher" name="InterfaceSFML::afficher">
+<area shape="rect" id="Node000001" title="Met à jour l&#39;affichage." alt="" coords="5,132,163,159"/>
+<area shape="rect" id="Node000002" href="$classInterfaceSFML.html#a6be07281be6cedd2ea9dde170234630c" title="Dessine la grille." alt="" coords="232,107,426,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,135,216,129,216,134,164,140"/>
+<area shape="rect" id="Node000009" href="$classInterfaceSFML.html#a9b5a8e272d8dc3c033e09fde93ac4845" title="Dessine les informations à l&#39;écran." alt="" coords="211,157,447,184"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="164,151,195,154,195,159,163,156"/>
+<area shape="rect" id="Node000003" href="$classCellule.html#a4e34ac281afdba1d793fbd0239022a5e" title="Vérifie si la cellule est un obstacle." alt="" coords="510,5,650,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="356,104,418,74,494,42,514,35,515,40,496,46,421,79,358,109"/>
+<area shape="rect" id="Node000004" href="$classCellule.html#a70d2731234961e330fe0a31486d1dec7" title="Vérifie si la cellule est vivante." alt="" coords="514,107,646,133"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="427,117,499,117,499,123,427,123"/>
+<area shape="rect" id="Node000005" href="$classGrille.html#aab75610fe73ae48bd035a048c55832f0" title="Obtient une cellule à une position donnée." alt="" coords="511,157,649,184"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="399,131,496,151,495,156,398,137"/>
+<area shape="rect" id="Node000007" href="$classGrille.html#a1ab5c8e0ea0d1dc21549c38d0f0f5cf9" title="Obtient le nombre de colonnes." alt="" coords="495,208,665,235"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="422,131,448,143,464,156,473,169,482,182,497,194,506,199,504,204,493,198,478,185,469,172,460,159,446,148,420,136"/>
+<area shape="rect" id="Node000008" href="$classGrille.html#a96b5f98d212a0ee9e2f71d73ebe5bb91" title="Obtient le nombre de lignes." alt="" coords="504,56,657,83"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="398,103,495,84,496,89,399,109"/>
+<area shape="rect" id="Node000006" href="$classGrille.html#aa4c9ce36bb4f2c59a83aeb39d73fc285" title="Vérifie si une position est valide dans la grille." alt="" coords="713,157,873,184"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="650,168,698,168,698,173,650,173"/>
+<area shape="poly" id="edge9_Node000009_Node000004" title=" " alt="" coords="398,154,498,134,499,139,399,159"/>
+<area shape="poly" id="edge10_Node000009_Node000005" title=" " alt="" coords="448,168,495,168,495,173,448,173"/>
+<area shape="poly" id="edge11_Node000009_Node000007" title=" " alt="" coords="399,182,496,202,495,207,398,187"/>
+<area shape="poly" id="edge12_Node000009_Node000008" title=" " alt="" coords="420,154,446,143,460,131,469,119,478,106,493,92,504,87,506,91,497,97,482,109,473,122,464,135,448,148,422,159"/>
+</map>

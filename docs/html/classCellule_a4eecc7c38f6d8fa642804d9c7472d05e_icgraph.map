@@ -1,0 +1,15 @@
+<map id="Cellule::obtenirEtat" name="Cellule::obtenirEtat">
+<area shape="rect" id="Node000001" title="Obtient l&#39;état actuel de la cellule." alt="" coords="812,56,944,83"/>
+<area shape="rect" id="Node000002" href="$classRegleStandard.html#a0c051f441f8b5aeac028872a7347fc35" title="Calcule le nouvel état d&#39;une cellule selon les règles du jeu." alt="" coords="538,5,764,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="799,55,713,35,715,30,800,49"/>
+<area shape="rect" id="Node000003" href="$classRegleTorique.html#aea2f956fa0b75f4a8d9919f4a36e9eee" title="Calcule le nouvel état d&#39;une cellule selon les règles du jeu." alt="" coords="543,56,759,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="796,72,759,72,759,67,796,67"/>
+<area shape="rect" id="Node000004" href="$classGestionnaireFichier.html#a7f617aede460be3b06c7dd842d7e2732" title="Sauvegarde une grille dans un fichier." alt="" coords="584,107,718,149"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="810,90,719,113,718,108,808,84"/>
+<area shape="rect" id="Node000005" href="$classModeConsole.html#a75b55e1983d7ca8dbbb4ebec6a68589d" title="Sauvegarde la grille actuelle dans un fichier." alt="" coords="310,107,490,149"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="569,131,491,131,491,125,569,125"/>
+<area shape="rect" id="Node000006" href="$classModeConsole.html#a79ad19df6d20c391fbaf9a7b4fb2f350" title="Exécute le mode console." alt="" coords="103,115,262,141"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="294,131,262,131,262,125,294,125"/>
+<area shape="rect" id="Node000007" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Point d&#39;entrée du programme." alt="" coords="5,115,55,141"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="87,131,55,131,55,125,87,125"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Grille::obtenirCellule" name="Grille::obtenirCellule">
+<area shape="rect" id="Node000001" title="Obtient une cellule à une position donnée." alt="" coords="5,5,144,32"/>
+<area shape="rect" id="Node000002" href="$classGrille.html#aa4c9ce36bb4f2c59a83aeb39d73fc285" title="Vérifie si une position est valide dans la grille." alt="" coords="192,5,351,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,16,176,16,176,21,144,21"/>
+</map>

@@ -1,0 +1,1009 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Jeu de la Vie de Conway: Référence de la classe Grille</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Jeu de la Vie de Conway<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Implémentation C++17 avec architecture POO complète</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('classGrille.html','','classGrille-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Référence de la classe Grille</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Classe représentant la grille du jeu de la vie.  
+ <a href="#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Grille_8hpp_source.html">Grille.hpp</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Graphe de collaboration de Grille:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGrille__coll__graph.svg" width="154" height="507"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:aa8f57932935f9b316ccdbd0705021d6b" id="r_aa8f57932935f9b316ccdbd0705021d6b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8f57932935f9b316ccdbd0705021d6b">Grille</a> (int lignes, int colonnes, std::shared_ptr&lt; <a class="el" href="classRegleJeu.html">RegleJeu</a> &gt; regleJeu=nullptr)</td></tr>
+<tr class="memdesc:aa8f57932935f9b316ccdbd0705021d6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de la grille.  <br /></td></tr>
+<tr class="memitem:a6420a449d2fb674c1be9000099eb30a9" id="r_a6420a449d2fb674c1be9000099eb30a9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6420a449d2fb674c1be9000099eb30a9">Grille</a> (const <a class="el" href="classGrille.html">Grille</a> &amp;autre)</td></tr>
+<tr class="memdesc:a6420a449d2fb674c1be9000099eb30a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de copie.  <br /></td></tr>
+<tr class="memitem:adfa10ad84dbbc5f12f18568b77707163" id="r_adfa10ad84dbbc5f12f18568b77707163"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGrille.html">Grille</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adfa10ad84dbbc5f12f18568b77707163">operator=</a> (const <a class="el" href="classGrille.html">Grille</a> &amp;autre)</td></tr>
+<tr class="memdesc:adfa10ad84dbbc5f12f18568b77707163"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opérateur d'affectation.  <br /></td></tr>
+<tr class="memitem:ac9f539f33c2652c09f0f9db1adfa758d" id="r_ac9f539f33c2652c09f0f9db1adfa758d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac9f539f33c2652c09f0f9db1adfa758d">~Grille</a> ()</td></tr>
+<tr class="memdesc:ac9f539f33c2652c09f0f9db1adfa758d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructeur.  <br /></td></tr>
+<tr class="memitem:a96b5f98d212a0ee9e2f71d73ebe5bb91" id="r_a96b5f98d212a0ee9e2f71d73ebe5bb91"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a96b5f98d212a0ee9e2f71d73ebe5bb91">obtenirNbLignes</a> () const</td></tr>
+<tr class="memdesc:a96b5f98d212a0ee9e2f71d73ebe5bb91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtient le nombre de lignes.  <br /></td></tr>
+<tr class="memitem:a1ab5c8e0ea0d1dc21549c38d0f0f5cf9" id="r_a1ab5c8e0ea0d1dc21549c38d0f0f5cf9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ab5c8e0ea0d1dc21549c38d0f0f5cf9">obtenirNbColonnes</a> () const</td></tr>
+<tr class="memdesc:a1ab5c8e0ea0d1dc21549c38d0f0f5cf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtient le nombre de colonnes.  <br /></td></tr>
+<tr class="memitem:aab75610fe73ae48bd035a048c55832f0" id="r_aab75610fe73ae48bd035a048c55832f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCellule.html">Cellule</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab75610fe73ae48bd035a048c55832f0">obtenirCellule</a> (int ligne, int colonne)</td></tr>
+<tr class="memdesc:aab75610fe73ae48bd035a048c55832f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtient une cellule à une position donnée.  <br /></td></tr>
+<tr class="memitem:a8c68213debcfb92b66641e18ae3c0e72" id="r_a8c68213debcfb92b66641e18ae3c0e72"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classCellule.html">Cellule</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c68213debcfb92b66641e18ae3c0e72">obtenirCellule</a> (int ligne, int colonne) const</td></tr>
+<tr class="memitem:ab4c852bc2327224eac9da60841f30baa" id="r_ab4c852bc2327224eac9da60841f30baa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4c852bc2327224eac9da60841f30baa">definirEtatCellule</a> (int ligne, int colonne, std::unique_ptr&lt; <a class="el" href="classEtatCellule.html">EtatCellule</a> &gt; etat)</td></tr>
+<tr class="memdesc:ab4c852bc2327224eac9da60841f30baa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Définit l'état d'une cellule.  <br /></td></tr>
+<tr class="memitem:aa4c9ce36bb4f2c59a83aeb39d73fc285" id="r_aa4c9ce36bb4f2c59a83aeb39d73fc285"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa4c9ce36bb4f2c59a83aeb39d73fc285">estPositionValide</a> (int ligne, int colonne) const</td></tr>
+<tr class="memdesc:aa4c9ce36bb4f2c59a83aeb39d73fc285"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vérifie si une position est valide dans la grille.  <br /></td></tr>
+<tr class="memitem:a980652764fefe3f45fcc0516a6e59abb" id="r_a980652764fefe3f45fcc0516a6e59abb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a980652764fefe3f45fcc0516a6e59abb">mettreAJour</a> (bool parallele=false)</td></tr>
+<tr class="memdesc:a980652764fefe3f45fcc0516a6e59abb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Met à jour la grille pour passer à l'itération suivante.  <br /></td></tr>
+<tr class="memitem:a9fd6500d6253f5d10c535efa8f188b90" id="r_a9fd6500d6253f5d10c535efa8f188b90"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9fd6500d6253f5d10c535efa8f188b90">estStable</a> () const</td></tr>
+<tr class="memdesc:a9fd6500d6253f5d10c535efa8f188b90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vérifie si la grille est stable (ne change plus).  <br /></td></tr>
+<tr class="memitem:a3456a1123dbf85daec10839613ec1230" id="r_a3456a1123dbf85daec10839613ec1230"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3456a1123dbf85daec10839613ec1230">operator==</a> (const <a class="el" href="classGrille.html">Grille</a> &amp;autre) const</td></tr>
+<tr class="memdesc:a3456a1123dbf85daec10839613ec1230"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare deux grilles.  <br /></td></tr>
+<tr class="memitem:a339a56cc71734f3217dfb6c214ce0b2d" id="r_a339a56cc71734f3217dfb6c214ce0b2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a339a56cc71734f3217dfb6c214ce0b2d">definirRegle</a> (std::shared_ptr&lt; <a class="el" href="classRegleJeu.html">RegleJeu</a> &gt; nouvelleRegle)</td></tr>
+<tr class="memdesc:a339a56cc71734f3217dfb6c214ce0b2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Définit les règles du jeu.  <br /></td></tr>
+<tr class="memitem:adfa396acb4a6ed658ce916b5dceaa690" id="r_adfa396acb4a6ed658ce916b5dceaa690"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adfa396acb4a6ed658ce916b5dceaa690">placerMotif</a> (const std::string &amp;motif, int ligneDepart, int colonneDepart)</td></tr>
+<tr class="memdesc:adfa396acb4a6ed658ce916b5dceaa690"><td class="mdescLeft">&#160;</td><td class="mdescRight">Place un motif préprogrammé sur la grille (extension bonus).  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Fonctions membres privées</h2></td></tr>
+<tr class="memitem:a7073ca25319522d4602550da3dfb1d22" id="r_a7073ca25319522d4602550da3dfb1d22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7073ca25319522d4602550da3dfb1d22">mettreAJourLignes</a> (int ligneDebut, int ligneFin, <a class="el" href="classGrille.html">Grille</a> &amp;nouvelleGrille)</td></tr>
+<tr class="memdesc:a7073ca25319522d4602550da3dfb1d22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Met à jour un ensemble de lignes (parallélisation optimisée).  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Attributs privés</h2></td></tr>
+<tr class="memitem:a7444a24974b127b4f2b0e098cb48f8d2" id="r_a7444a24974b127b4f2b0e098cb48f8d2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; <a class="el" href="classCellule.html">Cellule</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7444a24974b127b4f2b0e098cb48f8d2">cellules</a></td></tr>
+<tr class="memitem:a6c386d01785a0aa294eb4b1519023617" id="r_a6c386d01785a0aa294eb4b1519023617"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c386d01785a0aa294eb4b1519023617">nbLignes</a></td></tr>
+<tr class="memitem:ae1318e580e7e2c7d8675ae53e518c9fb" id="r_ae1318e580e7e2c7d8675ae53e518c9fb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1318e580e7e2c7d8675ae53e518c9fb">nbColonnes</a></td></tr>
+<tr class="memitem:af97a9a08573a0e214968b974acb7a561" id="r_af97a9a08573a0e214968b974acb7a561"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classRegleJeu.html">RegleJeu</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af97a9a08573a0e214968b974acb7a561">regle</a></td></tr>
+<tr class="memitem:a04733ad57332802099971c25b7008f2b" id="r_a04733ad57332802099971c25b7008f2b"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classGrille.html">Grille</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04733ad57332802099971c25b7008f2b">grilleMemoire</a></td></tr>
+<tr class="memdesc:a04733ad57332802099971c25b7008f2b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classGrille.html" title="Classe représentant la grille du jeu de la vie.">Grille</a> précédente pour vérifier la stabilité  <br /></td></tr>
+<tr class="memitem:a1e5703ce2156b1c7d85072156357f5b7" id="r_a1e5703ce2156b1c7d85072156357f5b7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e5703ce2156b1c7d85072156357f5b7">premiereIteration</a> = true</td></tr>
+<tr class="memdesc:a1e5703ce2156b1c7d85072156357f5b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indique si c'est la première itération.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Classe représentant la grille du jeu de la vie. </p>
+<p>La grille gère une collection de cellules et leur évolution selon les règles. Elle supporte le multithreading pour la parallélisation (extension bonus).</p>
+<dl class="section note"><dt>Note</dt><dd>Le mutex a été supprimé car l'optimisation ne nécessite plus de synchronisation </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="Grille_8hpp_source.html#l00018">18</a> du fichier <a class="el" href="Grille_8hpp_source.html">Grille.hpp</a>.</p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a id="aa8f57932935f9b316ccdbd0705021d6b" name="aa8f57932935f9b316ccdbd0705021d6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8f57932935f9b316ccdbd0705021d6b">&#9670;&#160;</a></span>Grille() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Grille::Grille </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>lignes</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>colonnes</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classRegleJeu.html">RegleJeu</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>regleJeu</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructeur de la grille. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lignes</td><td>Nombre de lignes </td></tr>
+    <tr><td class="paramname">colonnes</td><td>Nombre de colonnes </td></tr>
+    <tr><td class="paramname">regleJeu</td><td>Les règles à appliquer (standard par défaut) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>Si les dimensions sont invalides (≤ 0) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="Grille_8cpp_source.html#l00006">6</a> du fichier <a class="el" href="Grille_8cpp_source.html">Grille.cpp</a>.</p>
+
+<p class="reference">Références <a class="el" href="Grille_8hpp_source.html#l00020">cellules</a>, <a class="el" href="Grille_8hpp_source.html#l00137">grilleMemoire</a>, <a class="el" href="Grille_8hpp_source.html#l00022">nbColonnes</a>, <a class="el" href="Grille_8hpp_source.html#l00021">nbLignes</a>, et <a class="el" href="Grille_8hpp_source.html#l00023">regle</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="Grille_8cpp_source.html#l00032">Grille()</a>, <a class="el" href="Grille_8cpp_source.html#l00100">mettreAJour()</a>, <a class="el" href="Grille_8cpp_source.html#l00158">mettreAJourLignes()</a>, <a class="el" href="Grille_8cpp_source.html#l00048">operator=()</a>, et <a class="el" href="Grille_8cpp_source.html#l00178">operator==()</a>.</p>
+<div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGrille_aa8f57932935f9b316ccdbd0705021d6b_icgraph.svg" width="100%" height="480"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a6420a449d2fb674c1be9000099eb30a9" name="a6420a449d2fb674c1be9000099eb30a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6420a449d2fb674c1be9000099eb30a9">&#9670;&#160;</a></span>Grille() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Grille::Grille </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classGrille.html">Grille</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>autre</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructeur de copie. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">autre</td><td>La grille à copier </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="Grille_8cpp_source.html#l00032">32</a> du fichier <a class="el" href="Grille_8cpp_source.html">Grille.cpp</a>.</p>
+
+<p class="reference">Références <a class="el" href="Grille_8hpp_source.html#l00020">cellules</a>, <a class="el" href="Grille_8cpp_source.html#l00006">Grille()</a>, <a class="el" href="Grille_8hpp_source.html#l00137">grilleMemoire</a>, <a class="el" href="Grille_8hpp_source.html#l00022">nbColonnes</a>, <a class="el" href="Grille_8hpp_source.html#l00021">nbLignes</a>, <a class="el" href="Grille_8hpp_source.html#l00138">premiereIteration</a>, et <a class="el" href="Grille_8hpp_source.html#l00023">regle</a>.</p>
+<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe d'appel pour cette fonction :</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGrille_a6420a449d2fb674c1be9000099eb30a9_cgraph.svg" width="238" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ac9f539f33c2652c09f0f9db1adfa758d" name="ac9f539f33c2652c09f0f9db1adfa758d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9f539f33c2652c09f0f9db1adfa758d">&#9670;&#160;</a></span>~Grille()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Grille::~Grille </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destructeur. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="Grille_8cpp_source.html#l00071">71</a> du fichier <a class="el" href="Grille_8cpp_source.html">Grille.cpp</a>.</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentation des fonctions membres</h2>
+<a id="ab4c852bc2327224eac9da60841f30baa" name="ab4c852bc2327224eac9da60841f30baa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4c852bc2327224eac9da60841f30baa">&#9670;&#160;</a></span>definirEtatCellule()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Grille::definirEtatCellule </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>ligne</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>colonne</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classEtatCellule.html">EtatCellule</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>etat</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définit l'état d'une cellule. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ligne</td><td>La ligne de la cellule </td></tr>
+    <tr><td class="paramname">colonne</td><td>La colonne de la cellule </td></tr>
+    <tr><td class="paramname">etat</td><td>Le nouvel état </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="Grille_8cpp_source.html#l00089">89</a> du fichier <a class="el" href="Grille_8cpp_source.html">Grille.cpp</a>.</p>
+
+<p class="reference">Références <a class="el" href="Grille_8hpp_source.html#l00020">cellules</a>, et <a class="el" href="Grille_8cpp_source.html#l00096">estPositionValide()</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="TestsUnitaires_8cpp_source.html#l00239">TestsUnitaires::creerGrille()</a>, <a class="el" href="Grille_8cpp_source.html#l00100">mettreAJour()</a>, <a class="el" href="Grille_8cpp_source.html#l00201">placerMotif()</a>, et <a class="el" href="TestsUnitaires_8cpp_source.html#l00217">TestsUnitaires::testerObstacles()</a>.</p>
+<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe d'appel pour cette fonction :</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGrille_ab4c852bc2327224eac9da60841f30baa_cgraph.svg" width="376" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGrille_ab4c852bc2327224eac9da60841f30baa_icgraph.svg" width="100%" height="530"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a339a56cc71734f3217dfb6c214ce0b2d" name="a339a56cc71734f3217dfb6c214ce0b2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a339a56cc71734f3217dfb6c214ce0b2d">&#9670;&#160;</a></span>definirRegle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Grille::definirRegle </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classRegleJeu.html">RegleJeu</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>nouvelleRegle</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définit les règles du jeu. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nouvelleRegle</td><td>Les nouvelles règles à appliquer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="Grille_8cpp_source.html#l00194">194</a> du fichier <a class="el" href="Grille_8cpp_source.html">Grille.cpp</a>.</p>
+
+<p class="reference">Références <a class="el" href="Grille_8hpp_source.html#l00023">regle</a>.</p>
+
+</div>
+</div>
+<a id="aa4c9ce36bb4f2c59a83aeb39d73fc285" name="aa4c9ce36bb4f2c59a83aeb39d73fc285"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4c9ce36bb4f2c59a83aeb39d73fc285">&#9670;&#160;</a></span>estPositionValide()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Grille::estPositionValide </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>ligne</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>colonne</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Vérifie si une position est valide dans la grille. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ligne</td><td>La ligne à vérifier </td></tr>
+    <tr><td class="paramname">colonne</td><td>La colonne à vérifier </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>true si la position est valide, false sinon </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="Grille_8cpp_source.html#l00096">96</a> du fichier <a class="el" href="Grille_8cpp_source.html">Grille.cpp</a>.</p>
+
+<p class="reference">Références <a class="el" href="Grille_8hpp_source.html#l00022">nbColonnes</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="RegleJeu_8cpp_source.html#l00042">RegleStandard::compterVoisinsVivants()</a>, <a class="el" href="Grille_8cpp_source.html#l00089">definirEtatCellule()</a>, <a class="el" href="Grille_8cpp_source.html#l00075">obtenirCellule()</a>, <a class="el" href="Grille_8cpp_source.html#l00082">obtenirCellule()</a>, et <a class="el" href="Grille_8cpp_source.html#l00201">placerMotif()</a>.</p>
+<div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGrille_aa4c9ce36bb4f2c59a83aeb39d73fc285_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a9fd6500d6253f5d10c535efa8f188b90" name="a9fd6500d6253f5d10c535efa8f188b90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fd6500d6253f5d10c535efa8f188b90">&#9670;&#160;</a></span>estStable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Grille::estStable </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Vérifie si la grille est stable (ne change plus). </p>
+<dl class="section return"><dt>Renvoie</dt><dd>true si la grille est stable, false sinon </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="Grille_8cpp_source.html#l00171">171</a> du fichier <a class="el" href="Grille_8cpp_source.html">Grille.cpp</a>.</p>
+
+<p class="reference">Références <a class="el" href="Grille_8hpp_source.html#l00137">grilleMemoire</a>, et <a class="el" href="Grille_8hpp_source.html#l00138">premiereIteration</a>.</p>
+
+</div>
+</div>
+<a id="a980652764fefe3f45fcc0516a6e59abb" name="a980652764fefe3f45fcc0516a6e59abb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a980652764fefe3f45fcc0516a6e59abb">&#9670;&#160;</a></span>mettreAJour()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Grille::mettreAJour </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>parallele</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Met à jour la grille pour passer à l'itération suivante. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parallele</td><td>Si true, utilise le multithreading (extension bonus) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::runtime_error</td><td>Si une erreur survient lors de la mise à jour </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="Grille_8cpp_source.html#l00100">100</a> du fichier <a class="el" href="Grille_8cpp_source.html">Grille.cpp</a>.</p>
+
+<p class="reference">Références <a class="el" href="Grille_8hpp_source.html#l00020">cellules</a>, <a class="el" href="Grille_8cpp_source.html#l00089">definirEtatCellule()</a>, <a class="el" href="Grille_8cpp_source.html#l00006">Grille()</a>, <a class="el" href="Grille_8hpp_source.html#l00137">grilleMemoire</a>, <a class="el" href="Grille_8cpp_source.html#l00158">mettreAJourLignes()</a>, <a class="el" href="Grille_8hpp_source.html#l00022">nbColonnes</a>, <a class="el" href="Grille_8hpp_source.html#l00021">nbLignes</a>, <a class="el" href="Grille_8hpp_source.html#l00138">premiereIteration</a>, <a class="el" href="Grille_8hpp_source.html#l00023">regle</a>, et <a class="el" href="Constantes_8hpp_source.html#l00060">Config::TAILLE_MIN_PARALLELE</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="TestsUnitaires_8cpp_source.html#l00049">TestsUnitaires::testerEvolution()</a>, et <a class="el" href="TestsUnitaires_8cpp_source.html#l00065">TestsUnitaires::testerReglesBase()</a>.</p>
+<div id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe d'appel pour cette fonction :</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGrille_a980652764fefe3f45fcc0516a6e59abb_cgraph.svg" width="566" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div id="dynsection-7" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGrille_a980652764fefe3f45fcc0516a6e59abb_icgraph.svg" width="100%" height="404"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a7073ca25319522d4602550da3dfb1d22" name="a7073ca25319522d4602550da3dfb1d22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7073ca25319522d4602550da3dfb1d22">&#9670;&#160;</a></span>mettreAJourLignes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Grille::mettreAJourLignes </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>ligneDebut</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>ligneFin</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classGrille.html">Grille</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>nouvelleGrille</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Met à jour un ensemble de lignes (parallélisation optimisée). </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ligneDebut</td><td>Première ligne à traiter </td></tr>
+    <tr><td class="paramname">ligneFin</td><td>Ligne de fin (exclue) </td></tr>
+    <tr><td class="paramname">nouvelleGrille</td><td>La grille où stocker les nouveaux états </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Cette méthode ne nécessite pas de mutex car chaque thread traite des lignes distinctes </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="Grille_8cpp_source.html#l00158">158</a> du fichier <a class="el" href="Grille_8cpp_source.html">Grille.cpp</a>.</p>
+
+<p class="reference">Références <a class="el" href="Grille_8hpp_source.html#l00020">cellules</a>, <a class="el" href="Grille_8cpp_source.html#l00006">Grille()</a>, <a class="el" href="Grille_8hpp_source.html#l00022">nbColonnes</a>, et <a class="el" href="Grille_8hpp_source.html#l00023">regle</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="Grille_8cpp_source.html#l00100">mettreAJour()</a>.</p>
+<div id="dynsection-8" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe d'appel pour cette fonction :</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGrille_a7073ca25319522d4602550da3dfb1d22_cgraph.svg" width="316" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div id="dynsection-9" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGrille_a7073ca25319522d4602550da3dfb1d22_icgraph.svg" width="100%" height="404"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="aab75610fe73ae48bd035a048c55832f0" name="aab75610fe73ae48bd035a048c55832f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab75610fe73ae48bd035a048c55832f0">&#9670;&#160;</a></span>obtenirCellule() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCellule.html">Cellule</a> &amp; Grille::obtenirCellule </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>ligne</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>colonne</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Obtient une cellule à une position donnée. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ligne</td><td>La ligne de la cellule </td></tr>
+    <tr><td class="paramname">colonne</td><td>La colonne de la cellule </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Une référence vers la cellule </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::out_of_range</td><td>Si la position est invalide </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="Grille_8cpp_source.html#l00075">75</a> du fichier <a class="el" href="Grille_8cpp_source.html">Grille.cpp</a>.</p>
+
+<p class="reference">Références <a class="el" href="Grille_8hpp_source.html#l00020">cellules</a>, et <a class="el" href="Grille_8cpp_source.html#l00096">estPositionValide()</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="ModeConsole_8cpp_source.html#l00048">ModeConsole::afficherGrille()</a>, <a class="el" href="RegleJeu_8cpp_source.html#l00009">RegleStandard::calculerNouvelEtat()</a>, <a class="el" href="RegleJeu_8cpp_source.html#l00072">RegleTorique::calculerNouvelEtat()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00570">InterfaceQt::compterCellulesVivantes()</a>, <a class="el" href="RegleJeu_8cpp_source.html#l00042">RegleStandard::compterVoisinsVivants()</a>, <a class="el" href="RegleJeu_8cpp_source.html#l00103">RegleTorique::compterVoisinsVivants()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00585">InterfaceQt::dessinerGrille()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00315">InterfaceSFML::dessinerGrille()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00347">InterfaceSFML::dessinerInformations()</a>, et <a class="el" href="GestionnaireFichier_8cpp_source.html#l00061">GestionnaireFichier::sauvegarderGrille()</a>.</p>
+<div id="dynsection-10" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe d'appel pour cette fonction :</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGrille_aab75610fe73ae48bd035a048c55832f0_cgraph.svg" width="356" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div id="dynsection-11" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGrille_aab75610fe73ae48bd035a048c55832f0_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a8c68213debcfb92b66641e18ae3c0e72" name="a8c68213debcfb92b66641e18ae3c0e72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c68213debcfb92b66641e18ae3c0e72">&#9670;&#160;</a></span>obtenirCellule() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classCellule.html">Cellule</a> &amp; Grille::obtenirCellule </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>ligne</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>colonne</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="Grille_8cpp_source.html#l00082">82</a> du fichier <a class="el" href="Grille_8cpp_source.html">Grille.cpp</a>.</p>
+
+<p class="reference">Références <a class="el" href="Grille_8hpp_source.html#l00020">cellules</a>, et <a class="el" href="Grille_8cpp_source.html#l00096">estPositionValide()</a>.</p>
+<div id="dynsection-12" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe d'appel pour cette fonction :</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGrille_a8c68213debcfb92b66641e18ae3c0e72_cgraph.svg" width="356" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a1ab5c8e0ea0d1dc21549c38d0f0f5cf9" name="a1ab5c8e0ea0d1dc21549c38d0f0f5cf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ab5c8e0ea0d1dc21549c38d0f0f5cf9">&#9670;&#160;</a></span>obtenirNbColonnes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Grille::obtenirNbColonnes </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtient le nombre de colonnes. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>Le nombre de colonnes </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="Grille_8hpp_source.html#l00063">63</a> du fichier <a class="el" href="Grille_8hpp_source.html">Grille.hpp</a>.</p>
+
+<p class="reference">Références <a class="el" href="Grille_8hpp_source.html#l00022">nbColonnes</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="ModeConsole_8cpp_source.html#l00048">ModeConsole::afficherGrille()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00541">InterfaceQt::calculerTailleCellule()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00062">InterfaceSFML::calculerTailleCellule()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00570">InterfaceQt::compterCellulesVivantes()</a>, <a class="el" href="RegleJeu_8cpp_source.html#l00103">RegleTorique::compterVoisinsVivants()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00585">InterfaceQt::dessinerGrille()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00315">InterfaceSFML::dessinerGrille()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00347">InterfaceSFML::dessinerInformations()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00243">InterfaceSFML::gererPlacementMotif()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00229">InterfaceQt::initialiserLayout()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00016">InterfaceQt::InterfaceQt()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00013">InterfaceSFML::InterfaceSFML()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00500">InterfaceQt::onPlacerMotif()</a>, et <a class="el" href="GestionnaireFichier_8cpp_source.html#l00061">GestionnaireFichier::sauvegarderGrille()</a>.</p>
+<div id="dynsection-13" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGrille_a1ab5c8e0ea0d1dc21549c38d0f0f5cf9_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a96b5f98d212a0ee9e2f71d73ebe5bb91" name="a96b5f98d212a0ee9e2f71d73ebe5bb91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96b5f98d212a0ee9e2f71d73ebe5bb91">&#9670;&#160;</a></span>obtenirNbLignes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Grille::obtenirNbLignes </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtient le nombre de lignes. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>Le nombre de lignes </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="Grille_8hpp_source.html#l00057">57</a> du fichier <a class="el" href="Grille_8hpp_source.html">Grille.hpp</a>.</p>
+
+<p class="reference">Références <a class="el" href="Grille_8hpp_source.html#l00021">nbLignes</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="ModeConsole_8cpp_source.html#l00048">ModeConsole::afficherGrille()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00541">InterfaceQt::calculerTailleCellule()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00062">InterfaceSFML::calculerTailleCellule()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00570">InterfaceQt::compterCellulesVivantes()</a>, <a class="el" href="RegleJeu_8cpp_source.html#l00103">RegleTorique::compterVoisinsVivants()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00585">InterfaceQt::dessinerGrille()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00315">InterfaceSFML::dessinerGrille()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00347">InterfaceSFML::dessinerInformations()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00243">InterfaceSFML::gererPlacementMotif()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00229">InterfaceQt::initialiserLayout()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00016">InterfaceQt::InterfaceQt()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00013">InterfaceSFML::InterfaceSFML()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00500">InterfaceQt::onPlacerMotif()</a>, et <a class="el" href="GestionnaireFichier_8cpp_source.html#l00061">GestionnaireFichier::sauvegarderGrille()</a>.</p>
+<div id="dynsection-14" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGrille_a96b5f98d212a0ee9e2f71d73ebe5bb91_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="adfa10ad84dbbc5f12f18568b77707163" name="adfa10ad84dbbc5f12f18568b77707163"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfa10ad84dbbc5f12f18568b77707163">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classGrille.html">Grille</a> &amp; Grille::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classGrille.html">Grille</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>autre</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Opérateur d'affectation. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">autre</td><td>La grille à copier </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Référence vers cette grille </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="Grille_8cpp_source.html#l00048">48</a> du fichier <a class="el" href="Grille_8cpp_source.html">Grille.cpp</a>.</p>
+
+<p class="reference">Références <a class="el" href="Grille_8hpp_source.html#l00020">cellules</a>, <a class="el" href="Grille_8cpp_source.html#l00006">Grille()</a>, <a class="el" href="Grille_8hpp_source.html#l00137">grilleMemoire</a>, <a class="el" href="Grille_8hpp_source.html#l00022">nbColonnes</a>, <a class="el" href="Grille_8hpp_source.html#l00021">nbLignes</a>, <a class="el" href="Grille_8hpp_source.html#l00138">premiereIteration</a>, et <a class="el" href="Grille_8hpp_source.html#l00023">regle</a>.</p>
+<div id="dynsection-15" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe d'appel pour cette fonction :</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGrille_adfa10ad84dbbc5f12f18568b77707163_cgraph.svg" width="263" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a3456a1123dbf85daec10839613ec1230" name="a3456a1123dbf85daec10839613ec1230"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3456a1123dbf85daec10839613ec1230">&#9670;&#160;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Grille::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classGrille.html">Grille</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>autre</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compare deux grilles. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">autre</td><td>La grille à comparer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>true si les grilles sont identiques, false sinon </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="Grille_8cpp_source.html#l00178">178</a> du fichier <a class="el" href="Grille_8cpp_source.html">Grille.cpp</a>.</p>
+
+<p class="reference">Références <a class="el" href="Grille_8hpp_source.html#l00020">cellules</a>, <a class="el" href="Grille_8cpp_source.html#l00006">Grille()</a>, <a class="el" href="Grille_8hpp_source.html#l00022">nbColonnes</a>, et <a class="el" href="Grille_8hpp_source.html#l00021">nbLignes</a>.</p>
+<div id="dynsection-16" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe d'appel pour cette fonction :</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGrille_a3456a1123dbf85daec10839613ec1230_cgraph.svg" width="271" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="adfa396acb4a6ed658ce916b5dceaa690" name="adfa396acb4a6ed658ce916b5dceaa690"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfa396acb4a6ed658ce916b5dceaa690">&#9670;&#160;</a></span>placerMotif()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Grille::placerMotif </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>motif</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>ligneDepart</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>colonneDepart</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Place un motif préprogrammé sur la grille (extension bonus). </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">motif</td><td>Le nom du motif (planeur, oscillateur, etc.) </td></tr>
+    <tr><td class="paramname">ligneDepart</td><td>La ligne de départ </td></tr>
+    <tr><td class="paramname">colonneDepart</td><td>La colonne de départ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>true si le motif a été placé, false sinon </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>Si le nom du motif est inconnu </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="Grille_8cpp_source.html#l00201">201</a> du fichier <a class="el" href="Grille_8cpp_source.html">Grille.cpp</a>.</p>
+
+<p class="reference">Références <a class="el" href="Grille_8cpp_source.html#l00089">definirEtatCellule()</a>, et <a class="el" href="Grille_8cpp_source.html#l00096">estPositionValide()</a>.</p>
+<div id="dynsection-17" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe d'appel pour cette fonction :</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGrille_adfa396acb4a6ed658ce916b5dceaa690_cgraph.svg" width="548" height="63"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Documentation des données membres</h2>
+<a id="a7444a24974b127b4f2b0e098cb48f8d2" name="a7444a24974b127b4f2b0e098cb48f8d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7444a24974b127b4f2b0e098cb48f8d2">&#9670;&#160;</a></span>cellules</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::vector&lt;<a class="el" href="classCellule.html">Cellule</a>&gt; &gt; Grille::cellules</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="Grille_8hpp_source.html#l00020">20</a> du fichier <a class="el" href="Grille_8hpp_source.html">Grille.hpp</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="Grille_8cpp_source.html#l00089">definirEtatCellule()</a>, <a class="el" href="Grille_8cpp_source.html#l00032">Grille()</a>, <a class="el" href="Grille_8cpp_source.html#l00006">Grille()</a>, <a class="el" href="Grille_8cpp_source.html#l00100">mettreAJour()</a>, <a class="el" href="Grille_8cpp_source.html#l00158">mettreAJourLignes()</a>, <a class="el" href="Grille_8cpp_source.html#l00075">obtenirCellule()</a>, <a class="el" href="Grille_8cpp_source.html#l00082">obtenirCellule()</a>, <a class="el" href="Grille_8cpp_source.html#l00048">operator=()</a>, et <a class="el" href="Grille_8cpp_source.html#l00178">operator==()</a>.</p>
+
+</div>
+</div>
+<a id="a04733ad57332802099971c25b7008f2b" name="a04733ad57332802099971c25b7008f2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04733ad57332802099971c25b7008f2b">&#9670;&#160;</a></span>grilleMemoire</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classGrille.html">Grille</a>&gt; Grille::grilleMemoire</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classGrille.html" title="Classe représentant la grille du jeu de la vie.">Grille</a> précédente pour vérifier la stabilité </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="Grille_8hpp_source.html#l00137">137</a> du fichier <a class="el" href="Grille_8hpp_source.html">Grille.hpp</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="Grille_8cpp_source.html#l00171">estStable()</a>, <a class="el" href="Grille_8cpp_source.html#l00032">Grille()</a>, <a class="el" href="Grille_8cpp_source.html#l00006">Grille()</a>, <a class="el" href="Grille_8cpp_source.html#l00100">mettreAJour()</a>, et <a class="el" href="Grille_8cpp_source.html#l00048">operator=()</a>.</p>
+
+</div>
+</div>
+<a id="ae1318e580e7e2c7d8675ae53e518c9fb" name="ae1318e580e7e2c7d8675ae53e518c9fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1318e580e7e2c7d8675ae53e518c9fb">&#9670;&#160;</a></span>nbColonnes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Grille::nbColonnes</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="Grille_8hpp_source.html#l00022">22</a> du fichier <a class="el" href="Grille_8hpp_source.html">Grille.hpp</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="Grille_8cpp_source.html#l00096">estPositionValide()</a>, <a class="el" href="Grille_8cpp_source.html#l00032">Grille()</a>, <a class="el" href="Grille_8cpp_source.html#l00006">Grille()</a>, <a class="el" href="Grille_8cpp_source.html#l00100">mettreAJour()</a>, <a class="el" href="Grille_8cpp_source.html#l00158">mettreAJourLignes()</a>, <a class="el" href="Grille_8hpp_source.html#l00063">obtenirNbColonnes()</a>, <a class="el" href="Grille_8cpp_source.html#l00048">operator=()</a>, et <a class="el" href="Grille_8cpp_source.html#l00178">operator==()</a>.</p>
+
+</div>
+</div>
+<a id="a6c386d01785a0aa294eb4b1519023617" name="a6c386d01785a0aa294eb4b1519023617"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c386d01785a0aa294eb4b1519023617">&#9670;&#160;</a></span>nbLignes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Grille::nbLignes</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="Grille_8hpp_source.html#l00021">21</a> du fichier <a class="el" href="Grille_8hpp_source.html">Grille.hpp</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="Grille_8cpp_source.html#l00032">Grille()</a>, <a class="el" href="Grille_8cpp_source.html#l00006">Grille()</a>, <a class="el" href="Grille_8cpp_source.html#l00100">mettreAJour()</a>, <a class="el" href="Grille_8hpp_source.html#l00057">obtenirNbLignes()</a>, <a class="el" href="Grille_8cpp_source.html#l00048">operator=()</a>, et <a class="el" href="Grille_8cpp_source.html#l00178">operator==()</a>.</p>
+
+</div>
+</div>
+<a id="a1e5703ce2156b1c7d85072156357f5b7" name="a1e5703ce2156b1c7d85072156357f5b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e5703ce2156b1c7d85072156357f5b7">&#9670;&#160;</a></span>premiereIteration</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Grille::premiereIteration = true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Indique si c'est la première itération. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="Grille_8hpp_source.html#l00138">138</a> du fichier <a class="el" href="Grille_8hpp_source.html">Grille.hpp</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="Grille_8cpp_source.html#l00171">estStable()</a>, <a class="el" href="Grille_8cpp_source.html#l00032">Grille()</a>, <a class="el" href="Grille_8cpp_source.html#l00100">mettreAJour()</a>, et <a class="el" href="Grille_8cpp_source.html#l00048">operator=()</a>.</p>
+
+</div>
+</div>
+<a id="af97a9a08573a0e214968b974acb7a561" name="af97a9a08573a0e214968b974acb7a561"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af97a9a08573a0e214968b974acb7a561">&#9670;&#160;</a></span>regle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="classRegleJeu.html">RegleJeu</a>&gt; Grille::regle</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="Grille_8hpp_source.html#l00023">23</a> du fichier <a class="el" href="Grille_8hpp_source.html">Grille.hpp</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="Grille_8cpp_source.html#l00194">definirRegle()</a>, <a class="el" href="Grille_8cpp_source.html#l00032">Grille()</a>, <a class="el" href="Grille_8cpp_source.html#l00006">Grille()</a>, <a class="el" href="Grille_8cpp_source.html#l00100">mettreAJour()</a>, <a class="el" href="Grille_8cpp_source.html#l00158">mettreAJourLignes()</a>, et <a class="el" href="Grille_8cpp_source.html#l00048">operator=()</a>.</p>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
+<li>include/<a class="el" href="Grille_8hpp_source.html">Grille.hpp</a></li>
+<li>src/<a class="el" href="Grille_8cpp_source.html">Grille.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="classGrille.html">Grille</a></li>
+    <li class="footer">Généré le <span class="timestamp"></span> pour Jeu de la Vie de Conway par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
+  </ul>
+</div>
+</body>
+</html>

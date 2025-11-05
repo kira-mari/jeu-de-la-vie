@@ -1,0 +1,32 @@
+<map id="include/InterfaceSFML.hpp" name="include/InterfaceSFML.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="306,5,483,32"/>
+<area shape="rect" id="Node000002" href="$JeuDeLaVie_8hpp.html" title=" " alt="" coords="336,80,453,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="397,33,397,64,392,64,392,33"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="98,379,166,405"/>
+<area shape="poly" id="edge19_Node000001_Node000006" title=" " alt="" coords="320,35,223,56,121,85,76,103,40,123,16,144,10,155,8,167,8,244,10,264,17,283,39,317,68,346,98,368,95,372,65,350,35,320,12,285,5,265,3,244,3,166,5,154,12,141,37,119,74,98,119,80,222,51,319,30"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="478,80,615,107"/>
+<area shape="poly" id="edge18_Node000001_Node000011" title=" " alt="" coords="422,30,507,70,505,75,420,35"/>
+<area shape="rect" id="Node000003" href="$Grille_8hpp.html" title=" " alt="" coords="292,155,369,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="386,109,354,145,350,141,382,105"/>
+<area shape="poly" id="edge15_Node000002_Node000006" title=" " alt="" coords="337,108,282,123,221,147,163,183,138,205,117,231,109,246,104,263,104,299,111,334,122,364,117,366,106,336,98,300,99,262,104,244,112,228,134,201,160,179,219,143,280,118,335,103"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="413,379,467,405"/>
+<area shape="poly" id="edge16_Node000002_Node000007" title=" " alt="" coords="438,105,484,124,528,153,561,186,579,229,582,252,578,274,568,295,553,315,517,348,479,373,476,369,514,344,549,311,563,292,572,273,576,252,573,230,556,189,525,157,481,129,436,110"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="379,304,437,331"/>
+<area shape="poly" id="edge17_Node000002_Node000009" title=" " alt="" coords="422,105,456,124,494,151,530,186,558,228,563,246,559,261,548,274,533,285,494,301,453,312,452,307,492,296,530,281,544,270,554,259,557,246,554,230,526,190,491,155,453,128,420,109"/>
+<area shape="rect" id="Node000010" href="$Constantes_8hpp.html" title="Configuration centralisée du projet." alt="" coords="430,229,543,256"/>
+<area shape="poly" id="edge14_Node000002_Node000010" title=" " alt="" coords="405,106,473,215,468,217,400,109"/>
+<area shape="rect" id="Node000004" href="$Cellule_8hpp.html" title=" " alt="" coords="144,229,230,256"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="307,184,227,224,224,219,304,179"/>
+<area shape="poly" id="edge13_Node000003_Node000006" title=" " alt="" coords="292,171,253,174,209,183,167,201,149,215,134,231,120,263,116,298,119,333,126,363,121,364,114,334,110,298,114,261,130,228,146,211,165,197,208,178,252,169,292,166"/>
+<area shape="rect" id="Node000008" href="$RegleJeu_8hpp.html" title=" " alt="" coords="253,229,355,256"/>
+<area shape="poly" id="edge8_Node000003_Node000008" title=" " alt="" coords="329,183,316,216,311,214,324,181"/>
+<area shape="poly" id="edge12_Node000003_Node000009" title=" " alt="" coords="341,180,369,228,399,289,394,291,364,231,336,183"/>
+<area shape="poly" id="edge11_Node000003_Node000010" title=" " alt="" coords="359,179,447,220,445,225,357,184"/>
+<area shape="rect" id="Node000005" href="$EtatCellule_8hpp.html" title=" " alt="" coords="194,304,304,331"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="200,255,231,290,227,294,196,258"/>
+<area shape="poly" id="edge7_Node000004_Node000006" title=" " alt="" coords="185,257,144,365,139,363,180,256"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="230,333,167,373,164,368,228,329"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="283,329,400,373,398,378,282,334"/>
+<area shape="poly" id="edge10_Node000008_Node000006" title=" " alt="" coords="313,256,325,292,326,313,318,332,290,359,255,377,217,387,182,392,181,387,216,382,253,372,287,355,314,329,321,312,320,293,308,257"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="324,254,379,293,376,297,321,259"/>
+</map>

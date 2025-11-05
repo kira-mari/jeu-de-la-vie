@@ -1,0 +1,41 @@
+Projet Académique - Tous droits réservés
+==========================================
+
+Copyright (c) 2025 Ahmed GHEMARI
+
+Ce projet a été réalisé dans le cadre du cours de Programmation Orientée Objet (POO)
+de niveau A2 (2ème année).
+
+Utilisation Académique Uniquement
+----------------------------------
+
+Ce code est fourni à des fins éducatives et de démonstration uniquement.
+Il ne peut être copié, modifié ou redistribué sans autorisation écrite explicite
+des auteurs.
+
+Restrictions
+------------
+
+- ❌ Interdiction de copie pour d'autres projets scolaires
+- ❌ Interdiction d'utilisation commerciale
+- ❌ Interdiction de redistribution
+- ✅ Autorisation de consultation pour apprentissage personnel
+- ✅ Autorisation de citation avec référence appropriée
+
+Attribution
+-----------
+
+Si vous citez ce projet dans un travail académique, veuillez utiliser la référence suivante:
+
+    Ahmed GHEMARI. (2025). 
+    Jeu de la Vie de Conway - Implémentation C++17 avec architecture POO.
+    Projet académique A2, Cours de Programmation Orientée Objet.
+    
+
+Remarques
+---------
+
+Ce projet utilise les bibliothèques suivantes sous leurs licences respectives:
+- SFML (zlib/libpng license)
+- Qt (LGPL/Commercial)
+- CMake (BSD 3-Clause)

@@ -1,0 +1,17 @@
+<map id="ModeConsole::sauvegarderIteration" name="ModeConsole::sauvegarderIteration">
+<area shape="rect" id="Node000001" title="Sauvegarde la grille actuelle dans un fichier." alt="" coords="5,99,186,141"/>
+<area shape="rect" id="Node000002" href="$classGestionnaireFichier.html#a7f617aede460be3b06c7dd842d7e2732" title="Sauvegarde une grille dans un fichier." alt="" coords="234,99,367,141"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,117,218,117,218,123,186,123"/>
+<area shape="rect" id="Node000003" href="$classGrille.html#aab75610fe73ae48bd035a048c55832f0" title="Obtient une cellule à une position donnée." alt="" coords="431,5,569,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="328,96,367,68,414,42,429,35,431,40,416,46,370,73,331,100"/>
+<area shape="rect" id="Node000005" href="$classCellule.html#a4eecc7c38f6d8fa642804d9c7472d05e" title="Obtient l&#39;état actuel de la cellule." alt="" coords="434,56,566,83"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="367,101,430,84,431,90,368,106"/>
+<area shape="rect" id="Node000006" href="$classGrille.html#a1ab5c8e0ea0d1dc21549c38d0f0f5cf9" title="Obtient le nombre de colonnes." alt="" coords="415,107,585,133"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="367,117,399,117,399,123,367,123"/>
+<area shape="rect" id="Node000007" href="$classGrille.html#a96b5f98d212a0ee9e2f71d73ebe5bb91" title="Obtient le nombre de lignes." alt="" coords="424,157,577,184"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="368,134,431,150,430,156,367,139"/>
+<area shape="rect" id="Node000008" href="$classEtatCellule.html#a951476a3806853a1db9ed7303171162c" title="Obtient la valeur entière de l&#39;état (pour sauvegarder)." alt="" coords="424,208,576,235"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="331,140,370,167,416,194,431,200,429,205,414,198,367,172,328,144"/>
+<area shape="rect" id="Node000004" href="$classGrille.html#aa4c9ce36bb4f2c59a83aeb39d73fc285" title="Vérifie si une position est valide dans la grille." alt="" coords="633,5,793,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="570,16,618,16,618,21,570,21"/>
+</map>

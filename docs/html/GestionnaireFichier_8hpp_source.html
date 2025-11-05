@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Jeu de la Vie de Conway:  Fichier source de include/GestionnaireFichier.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Jeu de la Vie de Conway<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Implémentation C++17 avec architecture POO complète</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('GestionnaireFichier_8hpp_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">GestionnaireFichier.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="GestionnaireFichier_8hpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef GESTIONNAIRE_FICHIER_HPP</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define GESTIONNAIRE_FICHIER_HPP</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="Grille_8hpp.html">Grille.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"></span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> * @brief Classe responsable de la lecture et l&#39;écriture des fichiers de grilles</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> */</span></div>
+<div class="foldopen" id="foldopen00011" data-start="{" data-end="};">
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="classGestionnaireFichier.html">   11</a></span><span class="keyword">class </span><a class="code hl_class" href="classGestionnaireFichier.html">GestionnaireFichier</a> {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">public</span>:<span class="comment"></span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">    /**</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">     * @brief Charge une grille depuis un fichier</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">     * @param cheminFichier Le chemin du fichier à lire</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">     * @param regle Les règles à appliquer à la grille</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">     * @return Un pointeur unique vers la grille chargée</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">     * @throws std::runtime_error si le fichier ne peut pas être lu</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">static</span> std::unique_ptr&lt;Grille&gt; <a class="code hl_function" href="classGestionnaireFichier.html#afcc13514ae0cbdbefac605136c16130f">chargerGrille</a>(</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="keyword">const</span> std::string&amp; cheminFichier,</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        std::shared_ptr&lt;RegleJeu&gt; regle = <span class="keyword">nullptr</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    );</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="comment"></span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">    /**</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">     * @brief Sauvegarde une grille dans un fichier</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">     * @param grille La grille à sauvegarder</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">     * @param cheminFichier Le chemin du fichier de sortie</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">     * @throws std::runtime_error si le fichier ne peut pas être écrit</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classGestionnaireFichier.html#a7f617aede460be3b06c7dd842d7e2732">sauvegarderGrille</a>(<span class="keyword">const</span> <a class="code hl_class" href="classGrille.html">Grille</a>&amp; grille, <span class="keyword">const</span> std::string&amp; cheminFichier);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="comment"></span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">    /**</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">     * @brief Crée le dossier de sortie pour les résultats</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">     * @param cheminFichierEntree Le chemin du fichier d&#39;entrée</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">     * @return Le chemin du dossier de sortie créé</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">static</span> std::string <a class="code hl_function" href="classGestionnaireFichier.html#aaa46013c4ccdaf794fcee83aae0d9eef">creerDossierSortie</a>(<span class="keyword">const</span> std::string&amp; cheminFichierEntree);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="comment"></span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">    /**</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">     * @brief Extrait le nom du fichier sans l&#39;extension</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">     * @param chemin Le chemin complet du fichier</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">     * @return Le nom du fichier sans extension</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">static</span> std::string <a class="code hl_function" href="classGestionnaireFichier.html#ad2082a763415af83d454839115aa6623">extraireNomFichier</a>(<span class="keyword">const</span> std::string&amp; chemin);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>};</div>
+</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#endif </span><span class="comment">// GESTIONNAIRE_FICHIER_HPP</span></div>
+<div class="ttc" id="aGrille_8hpp_html"><div class="ttname"><a href="Grille_8hpp.html">Grille.hpp</a></div></div>
+<div class="ttc" id="aclassGestionnaireFichier_html"><div class="ttname"><a href="classGestionnaireFichier.html">GestionnaireFichier</a></div><div class="ttdoc">Classe responsable de la lecture et l&#39;écriture des fichiers de grilles.</div><div class="ttdef"><b>Definition</b> <a href="#l00011">GestionnaireFichier.hpp:11</a></div></div>
+<div class="ttc" id="aclassGestionnaireFichier_html_a7f617aede460be3b06c7dd842d7e2732"><div class="ttname"><a href="classGestionnaireFichier.html#a7f617aede460be3b06c7dd842d7e2732">GestionnaireFichier::sauvegarderGrille</a></div><div class="ttdeci">static void sauvegarderGrille(const Grille &amp;grille, const std::string &amp;cheminFichier)</div><div class="ttdoc">Sauvegarde une grille dans un fichier.</div><div class="ttdef"><b>Definition</b> <a href="GestionnaireFichier_8cpp_source.html#l00061">GestionnaireFichier.cpp:61</a></div></div>
+<div class="ttc" id="aclassGestionnaireFichier_html_aaa46013c4ccdaf794fcee83aae0d9eef"><div class="ttname"><a href="classGestionnaireFichier.html#aaa46013c4ccdaf794fcee83aae0d9eef">GestionnaireFichier::creerDossierSortie</a></div><div class="ttdeci">static std::string creerDossierSortie(const std::string &amp;cheminFichierEntree)</div><div class="ttdoc">Crée le dossier de sortie pour les résultats.</div><div class="ttdef"><b>Definition</b> <a href="GestionnaireFichier_8cpp_source.html#l00086">GestionnaireFichier.cpp:86</a></div></div>
+<div class="ttc" id="aclassGestionnaireFichier_html_ad2082a763415af83d454839115aa6623"><div class="ttname"><a href="classGestionnaireFichier.html#ad2082a763415af83d454839115aa6623">GestionnaireFichier::extraireNomFichier</a></div><div class="ttdeci">static std::string extraireNomFichier(const std::string &amp;chemin)</div><div class="ttdoc">Extrait le nom du fichier sans l&#39;extension.</div><div class="ttdef"><b>Definition</b> <a href="GestionnaireFichier_8cpp_source.html#l00104">GestionnaireFichier.cpp:104</a></div></div>
+<div class="ttc" id="aclassGestionnaireFichier_html_afcc13514ae0cbdbefac605136c16130f"><div class="ttname"><a href="classGestionnaireFichier.html#afcc13514ae0cbdbefac605136c16130f">GestionnaireFichier::chargerGrille</a></div><div class="ttdeci">static std::unique_ptr&lt; Grille &gt; chargerGrille(const std::string &amp;cheminFichier, std::shared_ptr&lt; RegleJeu &gt; regle=nullptr)</div><div class="ttdoc">Charge une grille depuis un fichier.</div><div class="ttdef"><b>Definition</b> <a href="GestionnaireFichier_8cpp_source.html#l00009">GestionnaireFichier.cpp:9</a></div></div>
+<div class="ttc" id="aclassGrille_html"><div class="ttname"><a href="classGrille.html">Grille</a></div><div class="ttdoc">Classe représentant la grille du jeu de la vie.</div><div class="ttdef"><b>Definition</b> <a href="Grille_8hpp_source.html#l00018">Grille.hpp:18</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a href="GestionnaireFichier_8hpp.html">GestionnaireFichier.hpp</a></li>
+    <li class="footer">Généré le <span class="timestamp"></span> pour Jeu de la Vie de Conway par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
+  </ul>
+</div>
+</body>
+</html>

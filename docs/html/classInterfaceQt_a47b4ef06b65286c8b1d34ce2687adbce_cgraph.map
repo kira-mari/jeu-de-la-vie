@@ -1,0 +1,7 @@
+<map id="InterfaceQt::initialiserLayout" name="InterfaceQt::initialiserLayout">
+<area shape="rect" id="Node000001" title="Initialise la mise en page." alt="" coords="5,23,151,65"/>
+<area shape="rect" id="Node000002" href="$classGrille.html#a1ab5c8e0ea0d1dc21549c38d0f0f5cf9" title="Obtient le nombre de colonnes." alt="" coords="199,5,369,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,32,183,28,184,34,151,38"/>
+<area shape="rect" id="Node000003" href="$classGrille.html#a96b5f98d212a0ee9e2f71d73ebe5bb91" title="Obtient le nombre de lignes." alt="" coords="207,56,360,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="151,50,192,55,191,61,151,56"/>
+</map>

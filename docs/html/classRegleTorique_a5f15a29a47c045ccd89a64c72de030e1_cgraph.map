@@ -1,0 +1,13 @@
+<map id="RegleTorique::compterVoisinsVivants" name="RegleTorique::compterVoisinsVivants">
+<area shape="rect" id="Node000001" title="Compte le nombre de voisins vivants." alt="" coords="5,73,200,116"/>
+<area shape="rect" id="Node000002" href="$classCellule.html#a70d2731234961e330fe0a31486d1dec7" title="Vérifie si la cellule est vivante." alt="" coords="267,5,398,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,70,247,41,269,34,271,40,249,47,165,75"/>
+<area shape="rect" id="Node000003" href="$classGrille.html#aab75610fe73ae48bd035a048c55832f0" title="Obtient une cellule à une position donnée." alt="" coords="264,56,402,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="199,81,248,76,249,81,200,87"/>
+<area shape="rect" id="Node000005" href="$classGrille.html#a1ab5c8e0ea0d1dc21549c38d0f0f5cf9" title="Obtient le nombre de colonnes." alt="" coords="248,107,418,133"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="200,103,232,106,232,112,199,108"/>
+<area shape="rect" id="Node000006" href="$classGrille.html#a96b5f98d212a0ee9e2f71d73ebe5bb91" title="Obtient le nombre de lignes." alt="" coords="256,157,410,184"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="165,114,249,143,271,150,269,155,247,148,163,119"/>
+<area shape="rect" id="Node000004" href="$classGrille.html#aa4c9ce36bb4f2c59a83aeb39d73fc285" title="Vérifie si une position est valide dans la grille." alt="" coords="466,56,625,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="402,67,450,67,450,72,402,72"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="RegleTorique::compterVoisinsVivants" name="RegleTorique::compterVoisinsVivants">
+<area shape="rect" id="Node000001" title="Compte le nombre de voisins vivants." alt="" coords="269,5,463,48"/>
+<area shape="rect" id="Node000002" href="$classRegleTorique.html#aea2f956fa0b75f4a8d9919f4a36e9eee" title="Calcule le nouvel état d&#39;une cellule selon les règles du jeu." alt="" coords="5,13,221,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="253,29,221,29,221,24,253,24"/>
+</map>

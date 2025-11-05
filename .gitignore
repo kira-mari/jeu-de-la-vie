@@ -1,0 +1,74 @@
+# Fichiers de build
+build/
+cmake-build-*/
+*.exe
+*.out
+*.app
+*.o
+*.obj
+*.a
+*.lib
+*.dll
+*.so
+*.dylib
+
+# Dossiers de sortie générés
+*_out/
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps/
+
+# IDE
+.vscode/
+.vs/
+.idea/
+*.user
+*.suo
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.code-workspace
+
+# Système
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+*.bak
+
+# Logs
+*.log
+
+# Coverage
+*.gcda
+*.gcno
+*.gcov
+coverage.info
+coverage/
+lcov.info
+
+# Documentation générée
+Doxyfile.bak
+
+# Packages et dépendances
+vcpkg_installed/
+packages/
+*.zip
+*.tar.gz
+
+# Tests
+Testing/
+test_results/
+
+# Temporaires
+*.tmp
+*.temp
+*.cache

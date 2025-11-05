@@ -1,0 +1,7 @@
+<map id="InterfaceQt" name="InterfaceQt">
+<area shape="rect" id="Node000001" title="Interface graphique moderne avec Qt." alt="" coords="38,552,215,1240"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,208,101,277"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="61,292,91,552,85,552,56,292"/>
+<area shape="rect" id="Node000003" href="$classJeuDeLaVie.html" title="Classe principale orchestrant le jeu de la vie." alt="" coords="125,5,274,480"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="176,480,170,535,164,535,171,480"/>
+</map>

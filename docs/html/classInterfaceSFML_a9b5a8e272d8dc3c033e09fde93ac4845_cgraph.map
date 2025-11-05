@@ -1,0 +1,13 @@
+<map id="InterfaceSFML::dessinerInformations" name="InterfaceSFML::dessinerInformations">
+<area shape="rect" id="Node000001" title="Dessine les informations à l&#39;écran." alt="" coords="5,81,242,108"/>
+<area shape="rect" id="Node000002" href="$classCellule.html#a70d2731234961e330fe0a31486d1dec7" title="Vérifie si la cellule est vivante." alt="" coords="309,5,440,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,78,289,41,312,34,313,40,290,47,171,83"/>
+<area shape="rect" id="Node000003" href="$classGrille.html#aab75610fe73ae48bd035a048c55832f0" title="Obtient une cellule à une position donnée." alt="" coords="306,56,444,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="242,80,290,75,290,80,243,85"/>
+<area shape="rect" id="Node000005" href="$classGrille.html#a1ab5c8e0ea0d1dc21549c38d0f0f5cf9" title="Obtient le nombre de colonnes." alt="" coords="290,107,460,133"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="243,104,274,107,274,113,242,109"/>
+<area shape="rect" id="Node000006" href="$classGrille.html#a96b5f98d212a0ee9e2f71d73ebe5bb91" title="Obtient le nombre de lignes." alt="" coords="298,157,452,184"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="171,106,290,143,313,150,312,155,289,148,169,111"/>
+<area shape="rect" id="Node000004" href="$classGrille.html#aa4c9ce36bb4f2c59a83aeb39d73fc285" title="Vérifie si une position est valide dans la grille." alt="" coords="508,56,667,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="444,67,492,67,492,72,444,72"/>
+</map>

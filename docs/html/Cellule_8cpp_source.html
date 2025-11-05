@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Jeu de la Vie de Conway:  Fichier source de src/Cellule.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Jeu de la Vie de Conway<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Implémentation C++17 avec architecture POO complète</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('Cellule_8cpp_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Cellule.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="Cellule_8cpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="Cellule_8hpp.html">Cellule.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="foldopen" id="foldopen00003" data-start="{" data-end="}">
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno"><a class="line" href="classCellule.html#aa6af1f35c295fcbfb5d346e966cfbd3e">    3</a></span><a class="code hl_function" href="classCellule.html#aa6af1f35c295fcbfb5d346e966cfbd3e">Cellule::Cellule</a>(<span class="keywordtype">int</span> <a class="code hl_variable" href="classCellule.html#a5268ed48f739dea56f997adee11a465e">ligne</a>, <span class="keywordtype">int</span> <a class="code hl_variable" href="classCellule.html#ac78b85139d74c4e58593fcb5e6ee6cf0">colonne</a>, std::unique_ptr&lt;EtatCellule&gt; etatInitial)</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>    : <a class="code hl_variable" href="classCellule.html#a5268ed48f739dea56f997adee11a465e">ligne</a>(<a class="code hl_variable" href="classCellule.html#a5268ed48f739dea56f997adee11a465e">ligne</a>), <a class="code hl_variable" href="classCellule.html#ac78b85139d74c4e58593fcb5e6ee6cf0">colonne</a>(<a class="code hl_variable" href="classCellule.html#ac78b85139d74c4e58593fcb5e6ee6cf0">colonne</a>) {</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    <span class="keywordflow">if</span> (etatInitial) {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>        <a class="code hl_variable" href="classCellule.html#a5badf5f86d91cd17b57c8d2526f129bb">etat</a> = std::move(etatInitial);</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>        <a class="code hl_variable" href="classCellule.html#a5badf5f86d91cd17b57c8d2526f129bb">etat</a> = std::make_unique&lt;CelluleMorte&gt;();</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    }</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>}</div>
+</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="foldopen" id="foldopen00012" data-start="{" data-end="}">
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="classCellule.html#a3d7444eb647bbe1801dfd9fce6cce28d">   12</a></span><a class="code hl_function" href="classCellule.html#aa6af1f35c295fcbfb5d346e966cfbd3e">Cellule::Cellule</a>(<span class="keyword">const</span> <a class="code hl_function" href="classCellule.html#aa6af1f35c295fcbfb5d346e966cfbd3e">Cellule</a>&amp; autre)</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    : <a class="code hl_variable" href="classCellule.html#a5268ed48f739dea56f997adee11a465e">ligne</a>(autre.<a class="code hl_variable" href="classCellule.html#a5268ed48f739dea56f997adee11a465e">ligne</a>), <a class="code hl_variable" href="classCellule.html#ac78b85139d74c4e58593fcb5e6ee6cf0">colonne</a>(autre.<a class="code hl_variable" href="classCellule.html#ac78b85139d74c4e58593fcb5e6ee6cf0">colonne</a>) {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <a class="code hl_variable" href="classCellule.html#a5badf5f86d91cd17b57c8d2526f129bb">etat</a> = autre.<a class="code hl_variable" href="classCellule.html#a5badf5f86d91cd17b57c8d2526f129bb">etat</a>-&gt;cloner();</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>}</div>
+</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="}">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="classCellule.html#a038ef894ac3e18ec6d696913f8daf130">   17</a></span><a class="code hl_function" href="classCellule.html#aa6af1f35c295fcbfb5d346e966cfbd3e">Cellule</a>&amp; <a class="code hl_function" href="classCellule.html#a038ef894ac3e18ec6d696913f8daf130">Cellule::operator=</a>(<span class="keyword">const</span> <a class="code hl_function" href="classCellule.html#aa6af1f35c295fcbfb5d346e966cfbd3e">Cellule</a>&amp; autre) {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordflow">if</span> (<span class="keyword">this</span> != &amp;autre) {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <a class="code hl_variable" href="classCellule.html#a5268ed48f739dea56f997adee11a465e">ligne</a> = autre.<a class="code hl_variable" href="classCellule.html#a5268ed48f739dea56f997adee11a465e">ligne</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <a class="code hl_variable" href="classCellule.html#ac78b85139d74c4e58593fcb5e6ee6cf0">colonne</a> = autre.<a class="code hl_variable" href="classCellule.html#ac78b85139d74c4e58593fcb5e6ee6cf0">colonne</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <a class="code hl_variable" href="classCellule.html#a5badf5f86d91cd17b57c8d2526f129bb">etat</a> = autre.<a class="code hl_variable" href="classCellule.html#a5badf5f86d91cd17b57c8d2526f129bb">etat</a>-&gt;cloner();</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    }</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>}</div>
+</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="}">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="classCellule.html#aaa9f824dde2fdc68ef4483e3062f2dae">   26</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classCellule.html#aaa9f824dde2fdc68ef4483e3062f2dae">Cellule::definirEtat</a>(std::unique_ptr&lt;EtatCellule&gt; nouvelEtat) {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_variable" href="classCellule.html#a5badf5f86d91cd17b57c8d2526f129bb">etat</a> = std::move(nouvelEtat);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>}</div>
+</div>
+<div class="ttc" id="aCellule_8hpp_html"><div class="ttname"><a href="Cellule_8hpp.html">Cellule.hpp</a></div></div>
+<div class="ttc" id="aclassCellule_html_a038ef894ac3e18ec6d696913f8daf130"><div class="ttname"><a href="classCellule.html#a038ef894ac3e18ec6d696913f8daf130">Cellule::operator=</a></div><div class="ttdeci">Cellule &amp; operator=(const Cellule &amp;autre)</div><div class="ttdef"><b>Definition</b> <a href="#l00017">Cellule.cpp:17</a></div></div>
+<div class="ttc" id="aclassCellule_html_a5268ed48f739dea56f997adee11a465e"><div class="ttname"><a href="classCellule.html#a5268ed48f739dea56f997adee11a465e">Cellule::ligne</a></div><div class="ttdeci">int ligne</div><div class="ttdef"><b>Definition</b> <a href="Cellule_8hpp_source.html#l00016">Cellule.hpp:16</a></div></div>
+<div class="ttc" id="aclassCellule_html_a5badf5f86d91cd17b57c8d2526f129bb"><div class="ttname"><a href="classCellule.html#a5badf5f86d91cd17b57c8d2526f129bb">Cellule::etat</a></div><div class="ttdeci">std::unique_ptr&lt; EtatCellule &gt; etat</div><div class="ttdef"><b>Definition</b> <a href="Cellule_8hpp_source.html#l00015">Cellule.hpp:15</a></div></div>
+<div class="ttc" id="aclassCellule_html_aa6af1f35c295fcbfb5d346e966cfbd3e"><div class="ttname"><a href="classCellule.html#aa6af1f35c295fcbfb5d346e966cfbd3e">Cellule::Cellule</a></div><div class="ttdeci">Cellule(int ligne, int colonne, std::unique_ptr&lt; EtatCellule &gt; etatInitial=nullptr)</div><div class="ttdoc">Constructeur de cellule.</div><div class="ttdef"><b>Definition</b> <a href="#l00003">Cellule.cpp:3</a></div></div>
+<div class="ttc" id="aclassCellule_html_aaa9f824dde2fdc68ef4483e3062f2dae"><div class="ttname"><a href="classCellule.html#aaa9f824dde2fdc68ef4483e3062f2dae">Cellule::definirEtat</a></div><div class="ttdeci">void definirEtat(std::unique_ptr&lt; EtatCellule &gt; nouvelEtat)</div><div class="ttdoc">Définit le nouvel état de la cellule.</div><div class="ttdef"><b>Definition</b> <a href="#l00026">Cellule.cpp:26</a></div></div>
+<div class="ttc" id="aclassCellule_html_ac78b85139d74c4e58593fcb5e6ee6cf0"><div class="ttname"><a href="classCellule.html#ac78b85139d74c4e58593fcb5e6ee6cf0">Cellule::colonne</a></div><div class="ttdeci">int colonne</div><div class="ttdef"><b>Definition</b> <a href="Cellule_8hpp_source.html#l00017">Cellule.hpp:17</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="Cellule_8cpp.html">Cellule.cpp</a></li>
+    <li class="footer">Généré le <span class="timestamp"></span> pour Jeu de la Vie de Conway par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
+  </ul>
+</div>
+</body>
+</html>

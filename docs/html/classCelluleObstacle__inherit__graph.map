@@ -1,0 +1,5 @@
+<map id="CelluleObstacle" name="CelluleObstacle">
+<area shape="rect" id="Node000001" title="Classe représentant une cellule obstacle (extension bonus) Les cellules obstacles ne changent jamais ..." alt="" coords="5,229,129,405"/>
+<area shape="rect" id="Node000002" href="$classEtatCellule.html" title="Classe abstraite représentant l&#39;état d&#39;une cellule." alt="" coords="15,5,119,181"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="70,196,70,230,65,230,65,196"/>
+</map>

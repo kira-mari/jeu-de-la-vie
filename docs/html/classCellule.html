@@ -1,0 +1,581 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Jeu de la Vie de Conway: Référence de la classe Cellule</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Jeu de la Vie de Conway<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Implémentation C++17 avec architecture POO complète</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('classCellule.html','','classCellule-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Référence de la classe Cellule</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Classe représentant une cellule dans le jeu de la vie.  
+ <a href="#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Cellule_8hpp_source.html">Cellule.hpp</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Graphe de collaboration de Cellule:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classCellule__coll__graph.svg" width="130" height="315"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:aa6af1f35c295fcbfb5d346e966cfbd3e" id="r_aa6af1f35c295fcbfb5d346e966cfbd3e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa6af1f35c295fcbfb5d346e966cfbd3e">Cellule</a> (int <a class="el" href="#a5268ed48f739dea56f997adee11a465e">ligne</a>, int <a class="el" href="#ac78b85139d74c4e58593fcb5e6ee6cf0">colonne</a>, std::unique_ptr&lt; <a class="el" href="classEtatCellule.html">EtatCellule</a> &gt; etatInitial=nullptr)</td></tr>
+<tr class="memdesc:aa6af1f35c295fcbfb5d346e966cfbd3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de cellule.  <br /></td></tr>
+<tr class="memitem:a3d7444eb647bbe1801dfd9fce6cce28d" id="r_a3d7444eb647bbe1801dfd9fce6cce28d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d7444eb647bbe1801dfd9fce6cce28d">Cellule</a> (const <a class="el" href="classCellule.html">Cellule</a> &amp;autre)</td></tr>
+<tr class="memitem:a038ef894ac3e18ec6d696913f8daf130" id="r_a038ef894ac3e18ec6d696913f8daf130"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCellule.html">Cellule</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a038ef894ac3e18ec6d696913f8daf130">operator=</a> (const <a class="el" href="classCellule.html">Cellule</a> &amp;autre)</td></tr>
+<tr class="memitem:aab24114dccf83128add38fc51a2286d4" id="r_aab24114dccf83128add38fc51a2286d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab24114dccf83128add38fc51a2286d4">~Cellule</a> ()=default</td></tr>
+<tr class="memitem:aaa9f824dde2fdc68ef4483e3062f2dae" id="r_aaa9f824dde2fdc68ef4483e3062f2dae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa9f824dde2fdc68ef4483e3062f2dae">definirEtat</a> (std::unique_ptr&lt; <a class="el" href="classEtatCellule.html">EtatCellule</a> &gt; nouvelEtat)</td></tr>
+<tr class="memdesc:aaa9f824dde2fdc68ef4483e3062f2dae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Définit le nouvel état de la cellule.  <br /></td></tr>
+<tr class="memitem:a4eecc7c38f6d8fa642804d9c7472d05e" id="r_a4eecc7c38f6d8fa642804d9c7472d05e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classEtatCellule.html">EtatCellule</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4eecc7c38f6d8fa642804d9c7472d05e">obtenirEtat</a> () const</td></tr>
+<tr class="memdesc:a4eecc7c38f6d8fa642804d9c7472d05e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtient l'état actuel de la cellule.  <br /></td></tr>
+<tr class="memitem:a70d2731234961e330fe0a31486d1dec7" id="r_a70d2731234961e330fe0a31486d1dec7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70d2731234961e330fe0a31486d1dec7">estVivante</a> () const</td></tr>
+<tr class="memdesc:a70d2731234961e330fe0a31486d1dec7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vérifie si la cellule est vivante.  <br /></td></tr>
+<tr class="memitem:a4e34ac281afdba1d793fbd0239022a5e" id="r_a4e34ac281afdba1d793fbd0239022a5e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e34ac281afdba1d793fbd0239022a5e">estObstacle</a> () const</td></tr>
+<tr class="memdesc:a4e34ac281afdba1d793fbd0239022a5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vérifie si la cellule est un obstacle.  <br /></td></tr>
+<tr class="memitem:afa6d1897fba6b17244a3a2231631807d" id="r_afa6d1897fba6b17244a3a2231631807d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa6d1897fba6b17244a3a2231631807d">obtenirLigne</a> () const</td></tr>
+<tr class="memdesc:afa6d1897fba6b17244a3a2231631807d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtient la ligne de la cellule.  <br /></td></tr>
+<tr class="memitem:a3b49f55f113dbc359c3474c389d600c5" id="r_a3b49f55f113dbc359c3474c389d600c5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b49f55f113dbc359c3474c389d600c5">obtenirColonne</a> () const</td></tr>
+<tr class="memdesc:a3b49f55f113dbc359c3474c389d600c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtient la colonne de la cellule.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Attributs privés</h2></td></tr>
+<tr class="memitem:a5badf5f86d91cd17b57c8d2526f129bb" id="r_a5badf5f86d91cd17b57c8d2526f129bb"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classEtatCellule.html">EtatCellule</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5badf5f86d91cd17b57c8d2526f129bb">etat</a></td></tr>
+<tr class="memitem:a5268ed48f739dea56f997adee11a465e" id="r_a5268ed48f739dea56f997adee11a465e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5268ed48f739dea56f997adee11a465e">ligne</a></td></tr>
+<tr class="memitem:ac78b85139d74c4e58593fcb5e6ee6cf0" id="r_ac78b85139d74c4e58593fcb5e6ee6cf0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac78b85139d74c4e58593fcb5e6ee6cf0">colonne</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Classe représentant une cellule dans le jeu de la vie. </p>
+<p>Une cellule possède un état (vivante, morte, obstacle) et des coordonnées. Elle utilise la composition avec <a class="el" href="classEtatCellule.html" title="Classe abstraite représentant l&#39;état d&#39;une cellule.">EtatCellule</a> pour son comportement. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="Cellule_8hpp_source.html#l00013">13</a> du fichier <a class="el" href="Cellule_8hpp_source.html">Cellule.hpp</a>.</p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a id="aa6af1f35c295fcbfb5d346e966cfbd3e" name="aa6af1f35c295fcbfb5d346e966cfbd3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6af1f35c295fcbfb5d346e966cfbd3e">&#9670;&#160;</a></span>Cellule() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Cellule::Cellule </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>ligne</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>colonne</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classEtatCellule.html">EtatCellule</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>etatInitial</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructeur de cellule. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ligne</td><td>La ligne de la cellule dans la grille </td></tr>
+    <tr><td class="paramname">colonne</td><td>La colonne de la cellule dans la grille </td></tr>
+    <tr><td class="paramname">etatInitial</td><td>L'état initial de la cellule (mort par défaut) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="Cellule_8cpp_source.html#l00003">3</a> du fichier <a class="el" href="Cellule_8cpp_source.html">Cellule.cpp</a>.</p>
+
+<p class="reference">Références <a class="el" href="Cellule_8hpp_source.html#l00017">colonne</a>, <a class="el" href="Cellule_8hpp_source.html#l00015">etat</a>, et <a class="el" href="Cellule_8hpp_source.html#l00016">ligne</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="Cellule_8cpp_source.html#l00012">Cellule()</a>, et <a class="el" href="Cellule_8cpp_source.html#l00017">operator=()</a>.</p>
+<div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classCellule_aa6af1f35c295fcbfb5d346e966cfbd3e_icgraph.svg" width="292" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a3d7444eb647bbe1801dfd9fce6cce28d" name="a3d7444eb647bbe1801dfd9fce6cce28d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d7444eb647bbe1801dfd9fce6cce28d">&#9670;&#160;</a></span>Cellule() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Cellule::Cellule </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCellule.html">Cellule</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>autre</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="Cellule_8cpp_source.html#l00012">12</a> du fichier <a class="el" href="Cellule_8cpp_source.html">Cellule.cpp</a>.</p>
+
+<p class="reference">Références <a class="el" href="Cellule_8cpp_source.html#l00003">Cellule()</a>, <a class="el" href="Cellule_8hpp_source.html#l00017">colonne</a>, <a class="el" href="Cellule_8hpp_source.html#l00015">etat</a>, et <a class="el" href="Cellule_8hpp_source.html#l00016">ligne</a>.</p>
+<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe d'appel pour cette fonction :</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classCellule_a3d7444eb647bbe1801dfd9fce6cce28d_cgraph.svg" width="278" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="aab24114dccf83128add38fc51a2286d4" name="aab24114dccf83128add38fc51a2286d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab24114dccf83128add38fc51a2286d4">&#9670;&#160;</a></span>~Cellule()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Cellule::~Cellule </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel default">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentation des fonctions membres</h2>
+<a id="aaa9f824dde2fdc68ef4483e3062f2dae" name="aaa9f824dde2fdc68ef4483e3062f2dae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa9f824dde2fdc68ef4483e3062f2dae">&#9670;&#160;</a></span>definirEtat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Cellule::definirEtat </td>
+          <td>(</td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classEtatCellule.html">EtatCellule</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>nouvelEtat</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définit le nouvel état de la cellule. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nouvelEtat</td><td>Le nouvel état à assigner </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="Cellule_8cpp_source.html#l00026">26</a> du fichier <a class="el" href="Cellule_8cpp_source.html">Cellule.cpp</a>.</p>
+
+<p class="reference">Références <a class="el" href="Cellule_8hpp_source.html#l00015">etat</a>.</p>
+
+</div>
+</div>
+<a id="a4e34ac281afdba1d793fbd0239022a5e" name="a4e34ac281afdba1d793fbd0239022a5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e34ac281afdba1d793fbd0239022a5e">&#9670;&#160;</a></span>estObstacle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Cellule::estObstacle </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vérifie si la cellule est un obstacle. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>true si la cellule est un obstacle, false sinon </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="Cellule_8hpp_source.html#l00059">59</a> du fichier <a class="el" href="Cellule_8hpp_source.html">Cellule.hpp</a>.</p>
+
+<p class="reference">Références <a class="el" href="Cellule_8hpp_source.html#l00015">etat</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="ModeConsole_8cpp_source.html#l00048">ModeConsole::afficherGrille()</a>, <a class="el" href="RegleJeu_8cpp_source.html#l00009">RegleStandard::calculerNouvelEtat()</a>, <a class="el" href="RegleJeu_8cpp_source.html#l00072">RegleTorique::calculerNouvelEtat()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00585">InterfaceQt::dessinerGrille()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00315">InterfaceSFML::dessinerGrille()</a>, et <a class="el" href="TestsUnitaires_8cpp_source.html#l00217">TestsUnitaires::testerObstacles()</a>.</p>
+<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classCellule_a4e34ac281afdba1d793fbd0239022a5e_icgraph.svg" width="100%" height="524"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a70d2731234961e330fe0a31486d1dec7" name="a70d2731234961e330fe0a31486d1dec7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70d2731234961e330fe0a31486d1dec7">&#9670;&#160;</a></span>estVivante()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Cellule::estVivante </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vérifie si la cellule est vivante. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>true si la cellule est vivante, false sinon </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="Cellule_8hpp_source.html#l00053">53</a> du fichier <a class="el" href="Cellule_8hpp_source.html">Cellule.hpp</a>.</p>
+
+<p class="reference">Références <a class="el" href="Cellule_8hpp_source.html#l00015">etat</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="ModeConsole_8cpp_source.html#l00048">ModeConsole::afficherGrille()</a>, <a class="el" href="RegleJeu_8cpp_source.html#l00009">RegleStandard::calculerNouvelEtat()</a>, <a class="el" href="RegleJeu_8cpp_source.html#l00072">RegleTorique::calculerNouvelEtat()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00570">InterfaceQt::compterCellulesVivantes()</a>, <a class="el" href="RegleJeu_8cpp_source.html#l00042">RegleStandard::compterVoisinsVivants()</a>, <a class="el" href="RegleJeu_8cpp_source.html#l00103">RegleTorique::compterVoisinsVivants()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00585">InterfaceQt::dessinerGrille()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00315">InterfaceSFML::dessinerGrille()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00347">InterfaceSFML::dessinerInformations()</a>, et <a class="el" href="TestsUnitaires_8cpp_source.html#l00217">TestsUnitaires::testerObstacles()</a>.</p>
+<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classCellule_a70d2731234961e330fe0a31486d1dec7_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a3b49f55f113dbc359c3474c389d600c5" name="a3b49f55f113dbc359c3474c389d600c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b49f55f113dbc359c3474c389d600c5">&#9670;&#160;</a></span>obtenirColonne()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Cellule::obtenirColonne </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtient la colonne de la cellule. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>Le numéro de colonne </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="Cellule_8hpp_source.html#l00071">71</a> du fichier <a class="el" href="Cellule_8hpp_source.html">Cellule.hpp</a>.</p>
+
+<p class="reference">Références <a class="el" href="Cellule_8hpp_source.html#l00017">colonne</a>.</p>
+
+</div>
+</div>
+<a id="a4eecc7c38f6d8fa642804d9c7472d05e" name="a4eecc7c38f6d8fa642804d9c7472d05e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4eecc7c38f6d8fa642804d9c7472d05e">&#9670;&#160;</a></span>obtenirEtat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classEtatCellule.html">EtatCellule</a> &amp; Cellule::obtenirEtat </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtient l'état actuel de la cellule. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>Une référence constante vers l'état </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="Cellule_8hpp_source.html#l00047">47</a> du fichier <a class="el" href="Cellule_8hpp_source.html">Cellule.hpp</a>.</p>
+
+<p class="reference">Références <a class="el" href="Cellule_8hpp_source.html#l00015">etat</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="RegleJeu_8cpp_source.html#l00009">RegleStandard::calculerNouvelEtat()</a>, <a class="el" href="RegleJeu_8cpp_source.html#l00072">RegleTorique::calculerNouvelEtat()</a>, et <a class="el" href="GestionnaireFichier_8cpp_source.html#l00061">GestionnaireFichier::sauvegarderGrille()</a>.</p>
+<div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classCellule_a4eecc7c38f6d8fa642804d9c7472d05e_icgraph.svg" width="100%" height="416"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="afa6d1897fba6b17244a3a2231631807d" name="afa6d1897fba6b17244a3a2231631807d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa6d1897fba6b17244a3a2231631807d">&#9670;&#160;</a></span>obtenirLigne()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Cellule::obtenirLigne </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtient la ligne de la cellule. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>Le numéro de ligne </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="Cellule_8hpp_source.html#l00065">65</a> du fichier <a class="el" href="Cellule_8hpp_source.html">Cellule.hpp</a>.</p>
+
+<p class="reference">Références <a class="el" href="Cellule_8hpp_source.html#l00016">ligne</a>.</p>
+
+</div>
+</div>
+<a id="a038ef894ac3e18ec6d696913f8daf130" name="a038ef894ac3e18ec6d696913f8daf130"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a038ef894ac3e18ec6d696913f8daf130">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCellule.html">Cellule</a> &amp; Cellule::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classCellule.html">Cellule</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>autre</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="Cellule_8cpp_source.html#l00017">17</a> du fichier <a class="el" href="Cellule_8cpp_source.html">Cellule.cpp</a>.</p>
+
+<p class="reference">Références <a class="el" href="Cellule_8cpp_source.html#l00003">Cellule()</a>, <a class="el" href="Cellule_8hpp_source.html#l00017">colonne</a>, <a class="el" href="Cellule_8hpp_source.html#l00015">etat</a>, et <a class="el" href="Cellule_8hpp_source.html#l00016">ligne</a>.</p>
+<div id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe d'appel pour cette fonction :</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classCellule_a038ef894ac3e18ec6d696913f8daf130_cgraph.svg" width="292" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Documentation des données membres</h2>
+<a id="ac78b85139d74c4e58593fcb5e6ee6cf0" name="ac78b85139d74c4e58593fcb5e6ee6cf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac78b85139d74c4e58593fcb5e6ee6cf0">&#9670;&#160;</a></span>colonne</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Cellule::colonne</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="Cellule_8hpp_source.html#l00017">17</a> du fichier <a class="el" href="Cellule_8hpp_source.html">Cellule.hpp</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="Cellule_8cpp_source.html#l00012">Cellule()</a>, <a class="el" href="Cellule_8cpp_source.html#l00003">Cellule()</a>, <a class="el" href="Cellule_8hpp_source.html#l00071">obtenirColonne()</a>, et <a class="el" href="Cellule_8cpp_source.html#l00017">operator=()</a>.</p>
+
+</div>
+</div>
+<a id="a5badf5f86d91cd17b57c8d2526f129bb" name="a5badf5f86d91cd17b57c8d2526f129bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5badf5f86d91cd17b57c8d2526f129bb">&#9670;&#160;</a></span>etat</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classEtatCellule.html">EtatCellule</a>&gt; Cellule::etat</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="Cellule_8hpp_source.html#l00015">15</a> du fichier <a class="el" href="Cellule_8hpp_source.html">Cellule.hpp</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="Cellule_8cpp_source.html#l00012">Cellule()</a>, <a class="el" href="Cellule_8cpp_source.html#l00003">Cellule()</a>, <a class="el" href="Cellule_8cpp_source.html#l00026">definirEtat()</a>, <a class="el" href="Cellule_8hpp_source.html#l00059">estObstacle()</a>, <a class="el" href="Cellule_8hpp_source.html#l00053">estVivante()</a>, <a class="el" href="Cellule_8hpp_source.html#l00047">obtenirEtat()</a>, et <a class="el" href="Cellule_8cpp_source.html#l00017">operator=()</a>.</p>
+
+</div>
+</div>
+<a id="a5268ed48f739dea56f997adee11a465e" name="a5268ed48f739dea56f997adee11a465e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5268ed48f739dea56f997adee11a465e">&#9670;&#160;</a></span>ligne</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Cellule::ligne</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="Cellule_8hpp_source.html#l00016">16</a> du fichier <a class="el" href="Cellule_8hpp_source.html">Cellule.hpp</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="Cellule_8cpp_source.html#l00012">Cellule()</a>, <a class="el" href="Cellule_8cpp_source.html#l00003">Cellule()</a>, <a class="el" href="Cellule_8hpp_source.html#l00065">obtenirLigne()</a>, et <a class="el" href="Cellule_8cpp_source.html#l00017">operator=()</a>.</p>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
+<li>include/<a class="el" href="Cellule_8hpp_source.html">Cellule.hpp</a></li>
+<li>src/<a class="el" href="Cellule_8cpp_source.html">Cellule.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="classCellule.html">Cellule</a></li>
+    <li class="footer">Généré le <span class="timestamp"></span> pour Jeu de la Vie de Conway par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
+  </ul>
+</div>
+</body>
+</html>

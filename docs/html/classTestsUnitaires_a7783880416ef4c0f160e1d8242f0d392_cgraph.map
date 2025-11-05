@@ -1,0 +1,16 @@
+<map id="TestsUnitaires::testerObstacles" name="TestsUnitaires::testerObstacles">
+<area shape="rect" id="Node000001" title="Teste les cellules obstacles." alt="" coords="5,123,211,149"/>
+<area shape="rect" id="Node000002" href="$classTestsUnitaires.html#af1671fe34db212a79ee1f4b2869d576e" title="Affiche le résultat d&#39;un test." alt="" coords="267,5,422,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,120,258,58,271,52,273,57,260,62,136,124"/>
+<area shape="rect" id="Node000003" href="$classTestsUnitaires.html#a6430263d628fa3e1f55be64cf1aae756" title="Crée une grille de test." alt="" coords="259,72,431,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="173,119,264,100,265,105,175,125"/>
+<area shape="rect" id="Node000004" href="$classGrille.html#ab4c852bc2327224eac9da60841f30baa" title="Définit l&#39;état d&#39;une cellule." alt="" coords="479,97,637,124"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="211,128,463,113,464,119,211,133"/>
+<area shape="rect" id="Node000006" href="$classCellule.html#a4e34ac281afdba1d793fbd0239022a5e" title="Vérifie si la cellule est un obstacle." alt="" coords="275,173,414,200"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="175,147,265,167,264,172,173,153"/>
+<area shape="rect" id="Node000007" href="$classCellule.html#a70d2731234961e330fe0a31486d1dec7" title="Vérifie si la cellule est vivante." alt="" coords="279,224,410,251"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="134,147,191,178,260,210,278,216,276,221,258,214,188,183,132,152"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="432,93,464,97,463,102,431,98"/>
+<area shape="rect" id="Node000005" href="$classGrille.html#aa4c9ce36bb4f2c59a83aeb39d73fc285" title="Vérifie si une position est valide dans la grille." alt="" coords="685,97,845,124"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="638,108,670,108,670,113,638,113"/>
+</map>

@@ -1,0 +1,17 @@
+<map id="InterfaceQt::onStepBack" name="InterfaceQt::onStepBack">
+<area shape="rect" id="Node000001" title="Recule d&#39;une itération." alt="" coords="5,81,171,108"/>
+<area shape="rect" id="Node000002" href="$classInterfaceQt.html#a06b809d43dbf3814ab103a8d42de319a" title="Met à jour l&#39;affichage." alt="" coords="219,73,384,116"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,92,203,92,203,97,171,97"/>
+<area shape="rect" id="Node000003" href="$classInterfaceQt.html#abe5b2e247e50614efbf88402c774899c" title="Compte les cellules vivantes." alt="" coords="432,73,620,116"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="384,92,416,92,416,97,384,97"/>
+<area shape="rect" id="Node000004" href="$classCellule.html#a70d2731234961e330fe0a31486d1dec7" title="Vérifie si la cellule est vivante." alt="" coords="688,5,819,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="585,70,667,41,690,34,691,39,669,47,587,75"/>
+<area shape="rect" id="Node000005" href="$classGrille.html#aab75610fe73ae48bd035a048c55832f0" title="Obtient une cellule à une position donnée." alt="" coords="684,56,823,83"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="621,81,668,76,669,81,621,87"/>
+<area shape="rect" id="Node000007" href="$classGrille.html#a1ab5c8e0ea0d1dc21549c38d0f0f5cf9" title="Obtient le nombre de colonnes." alt="" coords="668,107,839,133"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="621,103,653,106,653,111,621,108"/>
+<area shape="rect" id="Node000008" href="$classGrille.html#a96b5f98d212a0ee9e2f71d73ebe5bb91" title="Obtient le nombre de lignes." alt="" coords="677,157,830,184"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="587,114,669,143,691,150,690,155,667,148,585,119"/>
+<area shape="rect" id="Node000006" href="$classGrille.html#aa4c9ce36bb4f2c59a83aeb39d73fc285" title="Vérifie si une position est valide dans la grille." alt="" coords="887,56,1046,83"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="823,67,871,67,871,72,823,72"/>
+</map>

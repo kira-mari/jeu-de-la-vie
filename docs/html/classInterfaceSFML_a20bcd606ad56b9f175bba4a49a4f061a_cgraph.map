@@ -1,0 +1,9 @@
+<map id="InterfaceSFML::gererEvenements" name="InterfaceSFML::gererEvenements">
+<area shape="rect" id="Node000001" title="Gère les événements (clavier, souris, fermeture)." alt="" coords="5,31,223,57"/>
+<area shape="rect" id="Node000002" href="$classInterfaceSFML.html#af660192fb32e44dfbf073a9d4ec927be" title="Gère les entrées clavier pour placer des motifs." alt="" coords="271,23,477,65"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="223,41,255,41,255,47,223,47"/>
+<area shape="rect" id="Node000003" href="$classGrille.html#a1ab5c8e0ea0d1dc21549c38d0f0f5cf9" title="Obtient le nombre de colonnes." alt="" coords="525,5,695,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="477,30,509,27,510,32,478,36"/>
+<area shape="rect" id="Node000004" href="$classGrille.html#a96b5f98d212a0ee9e2f71d73ebe5bb91" title="Obtient le nombre de lignes." alt="" coords="534,56,687,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="478,52,518,57,518,62,477,58"/>
+</map>

@@ -1,0 +1,346 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Jeu de la Vie de Conway: Référence de la classe EtatCellule</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Jeu de la Vie de Conway<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Implémentation C++17 avec architecture POO complète</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('classEtatCellule.html','','classEtatCellule-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Référence de la classe EtatCellule<span class="mlabels"><span class="mlabel abstract">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Classe abstraite représentant l'état d'une cellule.  
+ <a href="#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="EtatCellule_8hpp_source.html">EtatCellule.hpp</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Graphe d'héritage de EtatCellule:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classEtatCellule__inherit__graph.svg" width="388" height="411"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Graphe de collaboration de EtatCellule:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classEtatCellule__coll__graph.svg" width="115" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:a9f89d5e8bd0060ecdc580a88ba5ae88f" id="r_a9f89d5e8bd0060ecdc580a88ba5ae88f"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f89d5e8bd0060ecdc580a88ba5ae88f">~EtatCellule</a> ()=default</td></tr>
+<tr class="memitem:a86d113659ceacd34152be74bb73d22f6" id="r_a86d113659ceacd34152be74bb73d22f6"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86d113659ceacd34152be74bb73d22f6">estVivante</a> () const =0</td></tr>
+<tr class="memdesc:a86d113659ceacd34152be74bb73d22f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indique si la cellule est vivante.  <br /></td></tr>
+<tr class="memitem:a7996f95099502592fb5075bb842b6851" id="r_a7996f95099502592fb5075bb842b6851"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7996f95099502592fb5075bb842b6851">estObstacle</a> () const =0</td></tr>
+<tr class="memdesc:a7996f95099502592fb5075bb842b6851"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indique si la cellule est un obstacle.  <br /></td></tr>
+<tr class="memitem:a40d064d2eb4ffdaf4ce5ffc290f23db0" id="r_a40d064d2eb4ffdaf4ce5ffc290f23db0"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classEtatCellule.html">EtatCellule</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40d064d2eb4ffdaf4ce5ffc290f23db0">cloner</a> () const =0</td></tr>
+<tr class="memdesc:a40d064d2eb4ffdaf4ce5ffc290f23db0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée une copie de l'état.  <br /></td></tr>
+<tr class="memitem:a3d2959d956a0ee9d169fd67a67d4658c" id="r_a3d2959d956a0ee9d169fd67a67d4658c"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d2959d956a0ee9d169fd67a67d4658c">versChaine</a> () const =0</td></tr>
+<tr class="memdesc:a3d2959d956a0ee9d169fd67a67d4658c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtient une représentation textuelle de l'état.  <br /></td></tr>
+<tr class="memitem:a951476a3806853a1db9ed7303171162c" id="r_a951476a3806853a1db9ed7303171162c"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a951476a3806853a1db9ed7303171162c">versEntier</a> () const =0</td></tr>
+<tr class="memdesc:a951476a3806853a1db9ed7303171162c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtient la valeur entière de l'état (pour sauvegarder).  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Classe abstraite représentant l'état d'une cellule. </p>
+<p>États possibles : Vivante, Morte, Obstacle (mort ou vivant). </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="EtatCellule_8hpp_source.html#l00012">12</a> du fichier <a class="el" href="EtatCellule_8hpp_source.html">EtatCellule.hpp</a>.</p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a id="a9f89d5e8bd0060ecdc580a88ba5ae88f" name="a9f89d5e8bd0060ecdc580a88ba5ae88f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f89d5e8bd0060ecdc580a88ba5ae88f">&#9670;&#160;</a></span>~EtatCellule()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual EtatCellule::~EtatCellule </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span><span class="mlabel default">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentation des fonctions membres</h2>
+<a id="a40d064d2eb4ffdaf4ce5ffc290f23db0" name="a40d064d2eb4ffdaf4ce5ffc290f23db0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40d064d2eb4ffdaf4ce5ffc290f23db0">&#9670;&#160;</a></span>cloner()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::unique_ptr&lt; <a class="el" href="classEtatCellule.html">EtatCellule</a> &gt; EtatCellule::cloner </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Crée une copie de l'état. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>Un pointeur unique vers une copie de l'état </dd></dl>
+
+<p>Implémenté dans <a class="el" href="classCelluleMorte.html#af1f85cb2c2d0312be28a8f6a753108a5">CelluleMorte</a>, <a class="el" href="classCelluleObstacle.html#a92ac01594b25f11242e6a23f92c96036">CelluleObstacle</a>, et <a class="el" href="classCelluleVivante.html#ae5703e67ed3bb652f3f5b8cbee7a5523">CelluleVivante</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="RegleJeu_8cpp_source.html#l00009">RegleStandard::calculerNouvelEtat()</a>, et <a class="el" href="RegleJeu_8cpp_source.html#l00072">RegleTorique::calculerNouvelEtat()</a>.</p>
+<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classEtatCellule_a40d064d2eb4ffdaf4ce5ffc290f23db0_icgraph.svg" width="412" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a7996f95099502592fb5075bb842b6851" name="a7996f95099502592fb5075bb842b6851"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7996f95099502592fb5075bb842b6851">&#9670;&#160;</a></span>estObstacle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool EtatCellule::estObstacle </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Indique si la cellule est un obstacle. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>true si la cellule est un obstacle, false sinon </dd></dl>
+
+<p>Implémenté dans <a class="el" href="classCelluleMorte.html#a6b30412a8d225a1d370789a6a90329c2">CelluleMorte</a>, <a class="el" href="classCelluleObstacle.html#ac708f6ac68cdda268af86f209e868da9">CelluleObstacle</a>, et <a class="el" href="classCelluleVivante.html#a98a7f87d7e074ad4ff3af7c16da9ec4d">CelluleVivante</a>.</p>
+
+</div>
+</div>
+<a id="a86d113659ceacd34152be74bb73d22f6" name="a86d113659ceacd34152be74bb73d22f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86d113659ceacd34152be74bb73d22f6">&#9670;&#160;</a></span>estVivante()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool EtatCellule::estVivante </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Indique si la cellule est vivante. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>true si la cellule est vivante, false sinon </dd></dl>
+
+<p>Implémenté dans <a class="el" href="classCelluleMorte.html#a2d0c727fc11e265d4d482faf669c94b4">CelluleMorte</a>, <a class="el" href="classCelluleObstacle.html#ad4a42e37a1ef20f9f6775fd6a37e888d">CelluleObstacle</a>, et <a class="el" href="classCelluleVivante.html#a9e31843c59c6d0b6964be780c14ba5e6">CelluleVivante</a>.</p>
+
+</div>
+</div>
+<a id="a3d2959d956a0ee9d169fd67a67d4658c" name="a3d2959d956a0ee9d169fd67a67d4658c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d2959d956a0ee9d169fd67a67d4658c">&#9670;&#160;</a></span>versChaine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string EtatCellule::versChaine </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtient une représentation textuelle de l'état. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>Une chaîne de caractères représentant l'état </dd></dl>
+
+<p>Implémenté dans <a class="el" href="classCelluleMorte.html#a4ee9326fb3c06b03125ddec70c1396af">CelluleMorte</a>, <a class="el" href="classCelluleObstacle.html#a24526f5f6af907c97719d7fd39ab7970">CelluleObstacle</a>, et <a class="el" href="classCelluleVivante.html#a13fe499e7e3339a366819eb86c3ee0b8">CelluleVivante</a>.</p>
+
+</div>
+</div>
+<a id="a951476a3806853a1db9ed7303171162c" name="a951476a3806853a1db9ed7303171162c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a951476a3806853a1db9ed7303171162c">&#9670;&#160;</a></span>versEntier()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int EtatCellule::versEntier </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtient la valeur entière de l'état (pour sauvegarder). </p>
+<dl class="section return"><dt>Renvoie</dt><dd>0 pour mort, 1 pour vivant, 2 pour obstacle </dd></dl>
+
+<p>Implémenté dans <a class="el" href="classCelluleMorte.html#a2b9b7ac85bfec6bf9090e40b3297cfbd">CelluleMorte</a>, <a class="el" href="classCelluleObstacle.html#a8da1d763e4798a36cf88ed98abafeace">CelluleObstacle</a>, et <a class="el" href="classCelluleVivante.html#aa82ef670e10e7f07339889650d4294c9">CelluleVivante</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="GestionnaireFichier_8cpp_source.html#l00061">GestionnaireFichier::sauvegarderGrille()</a>.</p>
+<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classEtatCellule_a951476a3806853a1db9ed7303171162c_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
+<li>include/<a class="el" href="EtatCellule_8hpp_source.html">EtatCellule.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="classEtatCellule.html">EtatCellule</a></li>
+    <li class="footer">Généré le <span class="timestamp"></span> pour Jeu de la Vie de Conway par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
+  </ul>
+</div>
+</body>
+</html>
