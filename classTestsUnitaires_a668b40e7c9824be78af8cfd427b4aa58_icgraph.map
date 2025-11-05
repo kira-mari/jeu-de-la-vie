@@ -1,0 +1,7 @@
+<map id="TestsUnitaires::testerReglesBase" name="TestsUnitaires::testerReglesBase">
+<area shape="rect" id="Node000001" title="Teste les règles de base." alt="" coords="335,13,571,38"/>
+<area shape="rect" id="Node000002" href="$classTestsUnitaires.html#a17aa4e9d0afbd2614193d2638f4b78c7" title="Exécute tous les tests." alt="" coords="108,5,287,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="321,28,287,28,287,23,321,23"/>
+<area shape="rect" id="Node000003" href="$test__main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Programme principal pour exécuter les tests unitaires." alt="" coords="5,13,60,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="94,28,60,28,60,23,94,23"/>
+</map>

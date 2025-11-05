@@ -1,0 +1,28 @@
+<map id="src/RegleJeu.cpp" name="src/RegleJeu.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="367,5,497,31"/>
+<area shape="rect" id="Node000002" href="$RegleJeu_8hpp.html" title=" " alt="" coords="5,152,112,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="371,33,291,52,205,81,141,113,88,146,85,142,138,109,203,76,289,47,369,28"/>
+<area shape="rect" id="Node000005" href="$Grille_8hpp.html" title=" " alt="" coords="216,79,301,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="405,33,301,76,299,71,403,28"/>
+<area shape="rect" id="Node000006" href="$Cellule_8hpp.html" title=" " alt="" coords="385,152,479,177"/>
+<area shape="poly" id="edge14_Node000001_Node000006" title=" " alt="" coords="435,31,435,138,429,138,429,31"/>
+<area shape="rect" id="Node000007" href="$EtatCellule_8hpp.html" title=" " alt="" coords="371,225,493,251"/>
+<area shape="poly" id="edge15_Node000001_Node000007" title=" " alt="" coords="445,29,465,56,487,93,500,135,500,157,494,178,481,201,463,218,459,215,476,197,490,176,495,156,494,136,482,95,461,59,440,33"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="555,79,640,104"/>
+<area shape="poly" id="edge16_Node000001_Node000010" title=" " alt="" coords="460,28,559,71,557,76,458,33"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="99,225,162,251"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="72,176,111,214,107,218,69,180"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="195,299,272,324"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="62,177,69,212,77,232,89,249,109,266,133,280,182,298,180,303,130,285,106,271,85,252,72,234,64,214,57,178"/>
+<area shape="poly" id="edge10_Node000005_Node000002" title=" " alt="" coords="227,107,105,150,104,145,226,102"/>
+<area shape="poly" id="edge12_Node000005_Node000003" title=" " alt="" coords="241,106,213,127,183,154,161,184,144,214,140,211,157,181,179,150,209,123,238,102"/>
+<area shape="poly" id="edge13_Node000005_Node000004" title=" " alt="" coords="252,106,239,127,228,153,222,188,222,224,230,285,225,286,217,224,217,188,223,151,234,124,248,103"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="288,102,392,144,390,149,286,106"/>
+<area shape="rect" id="Node000009" href="$Constantes_8hpp.html" title="Configuration centralisée du projet." alt="" coords="237,152,360,177"/>
+<area shape="poly" id="edge11_Node000005_Node000009" title=" " alt="" coords="268,103,288,139,283,141,263,106"/>
+<area shape="poly" id="edge9_Node000006_Node000004" title=" " alt="" coords="418,180,262,292,259,288,415,175"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="435,178,435,212,429,212,429,178"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="401,253,280,296,278,291,399,248"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="403,299,461,324"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="435,251,435,285,429,285,429,251"/>
+</map>

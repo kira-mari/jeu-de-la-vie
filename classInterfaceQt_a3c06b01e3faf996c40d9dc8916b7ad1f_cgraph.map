@@ -1,0 +1,5 @@
+<map id="InterfaceQt::onParalleleChanged" name="InterfaceQt::onParalleleChanged">
+<area shape="rect" id="Node000001" title="Toggle parallélisation." alt="" coords="5,5,180,45"/>
+<area shape="rect" id="Node000002" href="$classJeuDeLaVie.html#a63f27d62e27687c8c0879ae52eabadd6" title="Active ou désactive le mode parallèle." alt="" coords="228,13,465,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,23,214,23,214,28,180,28"/>
+</map>

@@ -1,0 +1,32 @@
+<map id="include/InterfaceSFML.hpp" name="include/InterfaceSFML.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="313,5,508,31"/>
+<area shape="rect" id="Node000002" href="$JeuDeLaVie_8hpp.html" title=" " alt="" coords="349,79,473,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="413,31,413,65,408,65,408,31"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="93,372,171,397"/>
+<area shape="poly" id="edge19_Node000001_Node000006" title=" " alt="" coords="333,33,233,53,126,81,79,99,41,119,17,140,10,152,8,164,8,239,10,259,17,278,40,313,70,341,101,363,98,367,67,345,36,316,12,281,5,261,3,239,3,163,5,150,13,137,38,114,77,94,124,76,232,47,332,28"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="497,79,644,104"/>
+<area shape="poly" id="edge18_Node000001_Node000011" title=" " alt="" coords="437,28,533,71,531,75,435,33"/>
+<area shape="rect" id="Node000003" href="$Grille_8hpp.html" title=" " alt="" coords="301,152,387,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="402,106,366,144,362,140,398,103"/>
+<area shape="poly" id="edge15_Node000002_Node000006" title=" " alt="" coords="349,104,291,119,227,142,166,178,139,200,117,227,109,242,104,259,104,294,112,329,123,358,118,360,107,331,99,295,99,258,104,240,112,224,136,197,163,173,225,137,290,113,348,99"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="427,372,485,397"/>
+<area shape="poly" id="edge16_Node000002_Node000007" title=" " alt="" coords="456,102,504,120,552,150,585,182,603,225,606,249,601,271,590,292,574,311,535,344,495,368,492,363,532,340,570,308,585,289,596,269,600,248,597,226,580,185,549,154,502,125,454,107"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="393,299,455,324"/>
+<area shape="poly" id="edge17_Node000002_Node000009" title=" " alt="" coords="439,102,474,120,514,147,553,181,582,224,587,242,583,258,571,271,555,282,513,298,470,307,469,302,512,292,552,277,568,267,578,255,582,242,578,226,549,185,511,151,471,125,436,107"/>
+<area shape="rect" id="Node000010" href="$Constantes_8hpp.html" title="Configuration centralisée du projet." alt="" coords="445,225,568,251"/>
+<area shape="poly" id="edge14_Node000002_Node000010" title=" " alt="" coords="421,103,494,212,489,215,416,106"/>
+<area shape="rect" id="Node000004" href="$Cellule_8hpp.html" title=" " alt="" coords="145,225,239,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="321,180,230,222,228,217,318,175"/>
+<area shape="poly" id="edge13_Node000003_Node000006" title=" " alt="" coords="302,174,204,194,160,209,144,218,134,227,119,259,116,294,119,329,126,358,121,360,114,330,110,294,114,257,130,224,141,213,158,204,203,189,301,169"/>
+<area shape="rect" id="Node000008" href="$RegleJeu_8hpp.html" title=" " alt="" coords="264,225,371,251"/>
+<area shape="poly" id="edge8_Node000003_Node000008" title=" " alt="" coords="342,179,329,214,324,212,337,177"/>
+<area shape="poly" id="edge12_Node000003_Node000009" title=" " alt="" coords="354,176,385,224,416,285,411,287,380,227,350,179"/>
+<area shape="poly" id="edge11_Node000003_Node000010" title=" " alt="" coords="371,175,469,217,466,222,369,180"/>
+<area shape="rect" id="Node000005" href="$EtatCellule_8hpp.html" title=" " alt="" coords="195,299,317,324"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="205,249,239,287,235,290,201,253"/>
+<area shape="poly" id="edge7_Node000004_Node000006" title=" " alt="" coords="190,252,145,360,140,358,185,250"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="237,326,165,367,163,363,235,322"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="289,322,414,366,413,371,287,327"/>
+<area shape="poly" id="edge10_Node000008_Node000006" title=" " alt="" coords="326,250,338,286,338,306,330,326,300,354,262,372,222,382,185,386,184,381,221,377,260,367,297,349,326,322,333,305,332,286,321,252"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="336,248,397,289,394,293,333,253"/>
+</map>

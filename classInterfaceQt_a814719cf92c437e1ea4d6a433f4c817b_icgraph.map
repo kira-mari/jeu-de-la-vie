@@ -1,0 +1,5 @@
+<map id="InterfaceQt::dessinerGrille" name="InterfaceQt::dessinerGrille">
+<area shape="rect" id="Node000001" title="Dessine la grille (appelé par paintEvent de GrilleWidget)" alt="" coords="235,5,428,31"/>
+<area shape="rect" id="Node000002" href="$classGrilleWidget.html#afce97f46f26bce8687e52a4f40c81d5c" title=" " alt="" coords="5,5,187,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="221,21,187,21,187,15,221,15"/>
+</map>

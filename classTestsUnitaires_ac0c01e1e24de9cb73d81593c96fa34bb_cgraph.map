@@ -1,0 +1,16 @@
+<map id="TestsUnitaires::testerModeTorique" name="TestsUnitaires::testerModeTorique">
+<area shape="rect" id="Node000001" title="Teste la grille torique." alt="" coords="5,63,201,103"/>
+<area shape="rect" id="Node000002" href="$classTestsUnitaires.html#af1671fe34db212a79ee1f4b2869d576e" title="Affiche le résultat d&#39;un test." alt="" coords="259,5,430,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,60,246,46,247,51,189,65"/>
+<area shape="rect" id="Node000003" href="$classTestsUnitaires.html#a6430263d628fa3e1f55be64cf1aae756" title="Crée une grille de test." alt="" coords="249,70,440,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="201,80,236,80,236,85,201,85"/>
+<area shape="rect" id="Node000006" href="$classGrille.html#a980652764fefe3f45fcc0516a6e59abb" title="Met à jour la grille pour passer à l&#39;itération suivante." alt="" coords="273,119,416,145"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="202,100,269,114,268,119,201,105"/>
+<area shape="rect" id="Node000004" href="$classGrille.html#ab4c852bc2327224eac9da60841f30baa" title="Définit l&#39;état d&#39;une cellule." alt="" coords="492,70,669,95"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="440,80,478,80,478,85,440,85"/>
+<area shape="rect" id="Node000005" href="$classGrille.html#aa4c9ce36bb4f2c59a83aeb39d73fc285" title="Vérifie si une position est valide dans la grille." alt="" coords="721,70,899,95"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="670,80,708,80,708,85,670,85"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="406,117,505,96,506,101,407,122"/>
+<area shape="rect" id="Node000007" href="$classGrille.html#a7073ca25319522d4602550da3dfb1d22" title="Met à jour un ensemble de lignes (parallélisation optimisée)" alt="" coords="488,119,673,145"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="416,129,474,129,474,135,416,135"/>
+</map>

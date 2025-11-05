@@ -1,0 +1,7 @@
+<map id="EtatCellule::cloner" name="EtatCellule::cloner">
+<area shape="rect" id="Node000001" title="Crée une copie de l&#39;état." alt="" coords="301,31,443,56"/>
+<area shape="rect" id="Node000002" href="$classRegleStandard.html#a0c051f441f8b5aeac028872a7347fc35" title="Calcule le nouvel état d&#39;une cellule selon les règles du jeu." alt="" coords="5,5,253,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="287,37,251,33,251,28,288,32"/>
+<area shape="rect" id="Node000003" href="$classRegleTorique.html#aea2f956fa0b75f4a8d9919f4a36e9eee" title="Calcule le nouvel état d&#39;une cellule selon les règles du jeu." alt="" coords="11,55,248,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="288,54,249,58,248,53,287,49"/>
+</map>

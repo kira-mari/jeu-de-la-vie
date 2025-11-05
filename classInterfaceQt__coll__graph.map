@@ -1,0 +1,21 @@
+<map id="InterfaceQt" name="InterfaceQt">
+<area shape="rect" id="Node000001" title="Interface graphique moderne avec Qt." alt="" coords="5,1252,207,1897"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="31,954,139,1019"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="89,1033,97,1252,92,1252,84,1033"/>
+<area shape="rect" id="Node000003" href="$classJeuDeLaVie.html" title="Classe principale orchestrant le jeu de la vie." alt="" coords="163,784,335,1189"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="202,1190,191,1237,186,1235,197,1189"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="241,181,417,246"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="330,246,318,462,306,610,290,760,289,768,284,767,285,760,301,609,312,461,325,246"/>
+<area shape="rect" id="Node000005" href="$classGrille.html" title="Classe représentant la grille du jeu de la vie." alt="" coords="418,316,581,721"/>
+<area shape="poly" id="edge8_Node000005_Node000004" title=" " alt="" coords="362,245,387,276,412,317,408,320,382,279,358,248"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="87,479,258,559"/>
+<area shape="poly" id="edge10_Node000009_Node000004" title=" " alt="" coords="246,248,227,262,212,279,189,323,176,371,171,419,171,463,165,462,166,419,171,370,184,321,208,276,224,258,243,244"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="416,409,380,353,349,293,338,263,343,261,354,291,385,350,420,406"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="463,173,629,253"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="543,254,536,300,530,299,537,253"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="653,181,852,246"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="728,248,593,409,589,406,724,245"/>
+<area shape="rect" id="Node000008" href="$classRegleJeu.html" title="Classe abstraite représentant les règles du jeu." alt="" coords="659,5,847,111"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="755,111,755,164,750,164,750,111"/>
+<area shape="poly" id="edge9_Node000003_Node000009" title=" " alt="" coords="182,558,216,767,211,768,176,559"/>
+</map>

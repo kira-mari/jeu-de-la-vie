@@ -1,0 +1,20 @@
+<map id="RegleStandard::calculerNouvelEtat" name="RegleStandard::calculerNouvelEtat">
+<area shape="rect" id="Node000001" title="Calcule le nouvel état d&#39;une cellule selon les règles du jeu." alt="" coords="5,143,253,168"/>
+<area shape="rect" id="Node000002" href="$classEtatCellule.html#a40d064d2eb4ffdaf4ce5ffc290f23db0" title="Crée une copie de l&#39;état." alt="" coords="343,5,485,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,140,212,96,255,70,300,48,343,32,345,37,302,52,258,75,215,100,149,145"/>
+<area shape="rect" id="Node000003" href="$classRegleStandard.html#ab892c4bd38ca021326c6188d0db0e421" title="Compte le nombre de voisins vivants." alt="" coords="301,106,527,146"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="252,140,287,136,288,142,253,145"/>
+<area shape="rect" id="Node000005" href="$classCellule.html#a70d2731234961e330fe0a31486d1dec7" title="Vérifie si la cellule est vivante." alt="" coords="580,167,725,192"/>
+<area shape="poly" id="edge8_Node000001_Node000005" title=" " alt="" coords="254,158,566,173,566,178,253,164"/>
+<area shape="rect" id="Node000006" href="$classGrille.html#aab75610fe73ae48bd035a048c55832f0" title="Obtient une cellule à une position donnée." alt="" coords="575,63,731,88"/>
+<area shape="poly" id="edge9_Node000001_Node000006" title=" " alt="" coords="157,140,222,114,301,91,368,81,437,74,561,70,561,76,437,80,369,86,302,97,224,119,159,145"/>
+<area shape="rect" id="Node000007" href="$classCellule.html#a4e34ac281afdba1d793fbd0239022a5e" title="Vérifie si la cellule est un obstacle." alt="" coords="338,221,490,247"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="177,166,355,215,354,220,176,171"/>
+<area shape="rect" id="Node000008" href="$classCellule.html#a4eecc7c38f6d8fa642804d9c7472d05e" title="Obtient l&#39;état actuel de la cellule." alt="" coords="341,271,487,296"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="149,166,214,211,257,236,302,257,328,265,326,271,300,262,255,240,211,215,146,171"/>
+<area shape="rect" id="Node000004" href="$classGrille.html#aa4c9ce36bb4f2c59a83aeb39d73fc285" title="Vérifie si une position est valide dans la grille." alt="" coords="779,88,956,113"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="527,117,765,104,765,109,527,122"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="504,143,583,161,581,166,503,149"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="508,103,578,88,579,93,509,109"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="731,82,765,86,765,91,731,87"/>
+</map>

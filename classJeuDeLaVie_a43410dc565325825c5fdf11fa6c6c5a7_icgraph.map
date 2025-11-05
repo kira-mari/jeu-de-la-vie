@@ -1,0 +1,14 @@
+<map id="JeuDeLaVie::estModeTorique" name="JeuDeLaVie::estModeTorique">
+<area shape="rect" id="Node000001" title="Vérifie si le mode torique est actif." alt="" coords="931,31,1137,56"/>
+<area shape="rect" id="Node000002" href="$classInterfaceSFML.html#a9b5a8e272d8dc3c033e09fde93ac4845" title="Dessine les informations à l&#39;écran." alt="" coords="621,5,883,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="917,36,882,32,883,27,918,30"/>
+<area shape="rect" id="Node000006" href="$classInterfaceSFML.html#a20bcd606ad56b9f175bba4a49a4f061a" title="Gère les événements (clavier, souris, fermeture)" alt="" coords="335,56,573,81"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="916,51,573,66,573,61,916,46"/>
+<area shape="rect" id="Node000003" href="$classInterfaceSFML.html#aa50033cc2b996da556fdebca5db2c7ef" title="Met à jour l&#39;affichage." alt="" coords="368,7,540,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="608,21,540,22,540,16,608,16"/>
+<area shape="rect" id="Node000004" href="$classInterfaceSFML.html#a518c46fbb99e76a49149d03b900b6cdc" title="Lance la boucle principale de l&#39;interface graphique." alt="" coords="108,32,287,57"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="354,32,287,39,287,33,354,27"/>
+<area shape="rect" id="Node000005" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Point d&#39;entrée du programme." alt="" coords="5,32,60,57"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="94,47,60,47,60,42,94,42"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="321,59,287,56,287,50,321,54"/>
+</map>

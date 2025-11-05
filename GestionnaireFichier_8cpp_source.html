@@ -1,0 +1,235 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Jeu de la Vie de Conway:  Fichier source de src/GestionnaireFichier.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Jeu de la Vie de Conway<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Implémentation C++17 avec architecture POO complète</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('GestionnaireFichier_8cpp_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">GestionnaireFichier.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="GestionnaireFichier_8cpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="GestionnaireFichier_8hpp.html">GestionnaireFichier.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="EtatCellule_8hpp.html">EtatCellule.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;fstream&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;sstream&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;stdexcept&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;filesystem&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="foldopen" id="foldopen00009" data-start="{" data-end="}">
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="classGestionnaireFichier.html#afcc13514ae0cbdbefac605136c16130f">    9</a></span>std::unique_ptr&lt;Grille&gt; <a class="code hl_function" href="classGestionnaireFichier.html#afcc13514ae0cbdbefac605136c16130f">GestionnaireFichier::chargerGrille</a>(</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keyword">const</span> std::string&amp; cheminFichier,</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    std::shared_ptr&lt;RegleJeu&gt; regle</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>) {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    std::ifstream fichier(cheminFichier);</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keywordflow">if</span> (!fichier.is_open()) {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Impossible d&#39;ouvrir le fichier : &quot;</span> + cheminFichier);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    }</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">int</span> nbLignes, nbColonnes;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    fichier &gt;&gt; nbLignes &gt;&gt; nbColonnes;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordflow">if</span> (nbLignes &lt;= 0 || nbColonnes &lt;= 0) {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Dimensions de grille invalides dans le fichier&quot;</span>);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    }</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">auto</span> grille = std::make_unique&lt;Grille&gt;(nbLignes, nbColonnes, regle);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="comment">// Lire l&#39;état de chaque cellule</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; nbLignes; ++i) {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; nbColonnes; ++j) {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            <span class="keywordtype">int</span> valeur;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            <span class="keywordflow">if</span> (!(fichier &gt;&gt; valeur)) {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Erreur de lecture des données de la grille&quot;</span>);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            }</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            std::unique_ptr&lt;EtatCellule&gt; etat;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            <span class="keywordflow">switch</span> (valeur) {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                <span class="keywordflow">case</span> 0:</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                    etat = std::make_unique&lt;CelluleMorte&gt;();</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                <span class="keywordflow">case</span> 1:</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                    etat = std::make_unique&lt;CelluleVivante&gt;();</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                <span class="keywordflow">case</span> 2:</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                    etat = std::make_unique&lt;CelluleObstacle&gt;(<span class="keyword">false</span>);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                <span class="keywordflow">case</span> 3:</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                    etat = std::make_unique&lt;CelluleObstacle&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                <span class="keywordflow">default</span>:</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                    <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Valeur de cellule invalide : &quot;</span> + std::to_string(valeur));</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            }</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            grille-&gt;definirEtatCellule(i, j, std::move(etat));</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    }</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    fichier.close();</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordflow">return</span> grille;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>}</div>
+</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="foldopen" id="foldopen00061" data-start="{" data-end="}">
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classGestionnaireFichier.html#a7f617aede460be3b06c7dd842d7e2732">   61</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classGestionnaireFichier.html#a7f617aede460be3b06c7dd842d7e2732">GestionnaireFichier::sauvegarderGrille</a>(<span class="keyword">const</span> <a class="code hl_class" href="classGrille.html">Grille</a>&amp; grille, <span class="keyword">const</span> std::string&amp; cheminFichier) {</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    std::ofstream fichier(cheminFichier);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordflow">if</span> (!fichier.is_open()) {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Impossible de créer le fichier : &quot;</span> + cheminFichier);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="comment">// Écrire les dimensions</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    fichier &lt;&lt; grille.<a class="code hl_function" href="classGrille.html#a96b5f98d212a0ee9e2f71d73ebe5bb91">obtenirNbLignes</a>() &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; grille.<a class="code hl_function" href="classGrille.html#a1ab5c8e0ea0d1dc21549c38d0f0f5cf9">obtenirNbColonnes</a>() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="comment">// Écrire l&#39;état de chaque cellule</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; grille.<a class="code hl_function" href="classGrille.html#a96b5f98d212a0ee9e2f71d73ebe5bb91">obtenirNbLignes</a>(); ++i) {</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; grille.<a class="code hl_function" href="classGrille.html#a1ab5c8e0ea0d1dc21549c38d0f0f5cf9">obtenirNbColonnes</a>(); ++j) {</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            <span class="keyword">const</span> <a class="code hl_class" href="classCellule.html">Cellule</a>&amp; cellule = grille.<a class="code hl_function" href="classGrille.html#aab75610fe73ae48bd035a048c55832f0">obtenirCellule</a>(i, j);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            fichier &lt;&lt; cellule.<a class="code hl_function" href="classCellule.html#a4eecc7c38f6d8fa642804d9c7472d05e">obtenirEtat</a>().<a class="code hl_function" href="classEtatCellule.html#a951476a3806853a1db9ed7303171162c">versEntier</a>();</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            <span class="keywordflow">if</span> (j &lt; grille.<a class="code hl_function" href="classGrille.html#a1ab5c8e0ea0d1dc21549c38d0f0f5cf9">obtenirNbColonnes</a>() - 1) {</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                fichier &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            }</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        }</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        fichier &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    }</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    fichier.close();</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>}</div>
+</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="foldopen" id="foldopen00086" data-start="{" data-end="}">
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="classGestionnaireFichier.html#aaa46013c4ccdaf794fcee83aae0d9eef">   86</a></span>std::string <a class="code hl_function" href="classGestionnaireFichier.html#aaa46013c4ccdaf794fcee83aae0d9eef">GestionnaireFichier::creerDossierSortie</a>(<span class="keyword">const</span> std::string&amp; cheminFichierEntree) {</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keyword">namespace </span>fs = std::filesystem;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    std::string nomFichier = <a class="code hl_function" href="classGestionnaireFichier.html#ad2082a763415af83d454839115aa6623">extraireNomFichier</a>(cheminFichierEntree);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    fs::path cheminFichier(cheminFichierEntree);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    fs::path dossierParent = cheminFichier.parent_path();</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    std::string nomDossier = nomFichier + <span class="stringliteral">&quot;_out&quot;</span>;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    fs::path cheminDossierSortie = dossierParent / nomDossier;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="comment">// Créer le dossier s&#39;il n&#39;existe pas</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keywordflow">if</span> (!fs::exists(cheminDossierSortie)) {</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        fs::create_directories(cheminDossierSortie);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    }</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="keywordflow">return</span> cheminDossierSortie.string();</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>}</div>
+</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="foldopen" id="foldopen00104" data-start="{" data-end="}">
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="classGestionnaireFichier.html#ad2082a763415af83d454839115aa6623">  104</a></span>std::string <a class="code hl_function" href="classGestionnaireFichier.html#ad2082a763415af83d454839115aa6623">GestionnaireFichier::extraireNomFichier</a>(<span class="keyword">const</span> std::string&amp; chemin) {</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="keyword">namespace </span>fs = std::filesystem;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    fs::path cheminFichier(chemin);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="keywordflow">return</span> cheminFichier.stem().string();</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>}</div>
+</div>
+<div class="ttc" id="aEtatCellule_8hpp_html"><div class="ttname"><a href="EtatCellule_8hpp.html">EtatCellule.hpp</a></div></div>
+<div class="ttc" id="aGestionnaireFichier_8hpp_html"><div class="ttname"><a href="GestionnaireFichier_8hpp.html">GestionnaireFichier.hpp</a></div></div>
+<div class="ttc" id="aclassCellule_html"><div class="ttname"><a href="classCellule.html">Cellule</a></div><div class="ttdoc">Classe représentant une cellule dans le jeu de la vie.</div><div class="ttdef"><b>Definition</b> <a href="Cellule_8hpp_source.html#l00013">Cellule.hpp:13</a></div></div>
+<div class="ttc" id="aclassCellule_html_a4eecc7c38f6d8fa642804d9c7472d05e"><div class="ttname"><a href="classCellule.html#a4eecc7c38f6d8fa642804d9c7472d05e">Cellule::obtenirEtat</a></div><div class="ttdeci">const EtatCellule &amp; obtenirEtat() const</div><div class="ttdoc">Obtient l&#39;état actuel de la cellule.</div><div class="ttdef"><b>Definition</b> <a href="Cellule_8hpp_source.html#l00047">Cellule.hpp:47</a></div></div>
+<div class="ttc" id="aclassEtatCellule_html_a951476a3806853a1db9ed7303171162c"><div class="ttname"><a href="classEtatCellule.html#a951476a3806853a1db9ed7303171162c">EtatCellule::versEntier</a></div><div class="ttdeci">virtual int versEntier() const =0</div><div class="ttdoc">Obtient la valeur entière de l&#39;état (pour sauvegarder).</div></div>
+<div class="ttc" id="aclassGestionnaireFichier_html_a7f617aede460be3b06c7dd842d7e2732"><div class="ttname"><a href="classGestionnaireFichier.html#a7f617aede460be3b06c7dd842d7e2732">GestionnaireFichier::sauvegarderGrille</a></div><div class="ttdeci">static void sauvegarderGrille(const Grille &amp;grille, const std::string &amp;cheminFichier)</div><div class="ttdoc">Sauvegarde une grille dans un fichier.</div><div class="ttdef"><b>Definition</b> <a href="#l00061">GestionnaireFichier.cpp:61</a></div></div>
+<div class="ttc" id="aclassGestionnaireFichier_html_aaa46013c4ccdaf794fcee83aae0d9eef"><div class="ttname"><a href="classGestionnaireFichier.html#aaa46013c4ccdaf794fcee83aae0d9eef">GestionnaireFichier::creerDossierSortie</a></div><div class="ttdeci">static std::string creerDossierSortie(const std::string &amp;cheminFichierEntree)</div><div class="ttdoc">Crée le dossier de sortie pour les résultats.</div><div class="ttdef"><b>Definition</b> <a href="#l00086">GestionnaireFichier.cpp:86</a></div></div>
+<div class="ttc" id="aclassGestionnaireFichier_html_ad2082a763415af83d454839115aa6623"><div class="ttname"><a href="classGestionnaireFichier.html#ad2082a763415af83d454839115aa6623">GestionnaireFichier::extraireNomFichier</a></div><div class="ttdeci">static std::string extraireNomFichier(const std::string &amp;chemin)</div><div class="ttdoc">Extrait le nom du fichier sans l&#39;extension.</div><div class="ttdef"><b>Definition</b> <a href="#l00104">GestionnaireFichier.cpp:104</a></div></div>
+<div class="ttc" id="aclassGestionnaireFichier_html_afcc13514ae0cbdbefac605136c16130f"><div class="ttname"><a href="classGestionnaireFichier.html#afcc13514ae0cbdbefac605136c16130f">GestionnaireFichier::chargerGrille</a></div><div class="ttdeci">static std::unique_ptr&lt; Grille &gt; chargerGrille(const std::string &amp;cheminFichier, std::shared_ptr&lt; RegleJeu &gt; regle=nullptr)</div><div class="ttdoc">Charge une grille depuis un fichier.</div><div class="ttdef"><b>Definition</b> <a href="#l00009">GestionnaireFichier.cpp:9</a></div></div>
+<div class="ttc" id="aclassGrille_html"><div class="ttname"><a href="classGrille.html">Grille</a></div><div class="ttdoc">Classe représentant la grille du jeu de la vie.</div><div class="ttdef"><b>Definition</b> <a href="Grille_8hpp_source.html#l00018">Grille.hpp:18</a></div></div>
+<div class="ttc" id="aclassGrille_html_a1ab5c8e0ea0d1dc21549c38d0f0f5cf9"><div class="ttname"><a href="classGrille.html#a1ab5c8e0ea0d1dc21549c38d0f0f5cf9">Grille::obtenirNbColonnes</a></div><div class="ttdeci">int obtenirNbColonnes() const</div><div class="ttdoc">Obtient le nombre de colonnes.</div><div class="ttdef"><b>Definition</b> <a href="Grille_8hpp_source.html#l00063">Grille.hpp:63</a></div></div>
+<div class="ttc" id="aclassGrille_html_a96b5f98d212a0ee9e2f71d73ebe5bb91"><div class="ttname"><a href="classGrille.html#a96b5f98d212a0ee9e2f71d73ebe5bb91">Grille::obtenirNbLignes</a></div><div class="ttdeci">int obtenirNbLignes() const</div><div class="ttdoc">Obtient le nombre de lignes.</div><div class="ttdef"><b>Definition</b> <a href="Grille_8hpp_source.html#l00057">Grille.hpp:57</a></div></div>
+<div class="ttc" id="aclassGrille_html_aab75610fe73ae48bd035a048c55832f0"><div class="ttname"><a href="classGrille.html#aab75610fe73ae48bd035a048c55832f0">Grille::obtenirCellule</a></div><div class="ttdeci">Cellule &amp; obtenirCellule(int ligne, int colonne)</div><div class="ttdoc">Obtient une cellule à une position donnée.</div><div class="ttdef"><b>Definition</b> <a href="Grille_8cpp_source.html#l00075">Grille.cpp:75</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="GestionnaireFichier_8cpp.html">GestionnaireFichier.cpp</a></li>
+    <li class="footer">Généré le <span class="timestamp"></span> pour Jeu de la Vie de Conway par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
+  </ul>
+</div>
+</body>
+</html>

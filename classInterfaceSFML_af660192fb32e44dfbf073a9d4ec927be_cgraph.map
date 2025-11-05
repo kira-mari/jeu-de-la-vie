@@ -1,0 +1,11 @@
+<map id="InterfaceSFML::gererPlacementMotif" name="InterfaceSFML::gererPlacementMotif">
+<area shape="rect" id="Node000001" title="Gère les entrées clavier pour placer des motifs." alt="" coords="5,73,232,113"/>
+<area shape="rect" id="Node000002" href="$classJeuDeLaVie.html#a3f6dc54b2b1ebef7111e7aa5a2622be3" title="Obtient la grille actuelle." alt="" coords="282,5,467,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,70,279,39,308,32,310,37,281,45,181,75"/>
+<area shape="rect" id="Node000003" href="$classGrille.html#a1ab5c8e0ea0d1dc21549c38d0f0f5cf9" title="Obtient le nombre de colonnes." alt="" coords="280,55,469,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="232,79,266,75,266,81,232,84"/>
+<area shape="rect" id="Node000004" href="$classGrille.html#a96b5f98d212a0ee9e2f71d73ebe5bb91" title="Obtient le nombre de lignes." alt="" coords="289,104,460,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="232,101,276,105,275,110,232,106"/>
+<area shape="rect" id="Node000005" href="$classJeuDeLaVie.html#a8bf2b5c24e44c400922032a0f697850b" title="Place un motif sur la grille." alt="" coords="285,153,464,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="186,110,281,138,313,147,312,152,279,143,185,115"/>
+</map>

@@ -1,0 +1,20 @@
+<map id="TestsUnitaires::testerReglesBase" name="TestsUnitaires::testerReglesBase">
+<area shape="rect" id="Node000001" title="Teste les règles de base." alt="" coords="5,81,241,107"/>
+<area shape="rect" id="Node000002" href="$classTestsUnitaires.html#af1671fe34db212a79ee1f4b2869d576e" title="Affiche le résultat d&#39;un test." alt="" coords="559,55,729,95"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="241,87,545,76,545,82,242,92"/>
+<area shape="rect" id="Node000003" href="$classTestsUnitaires.html#a6430263d628fa3e1f55be64cf1aae756" title="Crée une grille de test." alt="" coords="305,5,495,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="170,79,339,32,340,37,171,84"/>
+<area shape="rect" id="Node000006" href="$classGrille.html#a980652764fefe3f45fcc0516a6e59abb" title="Met à jour la grille pour passer à l&#39;itération suivante." alt="" coords="573,120,715,145"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="157,104,218,125,290,142,360,149,431,150,559,141,559,147,432,155,360,154,289,147,216,130,155,109"/>
+<area shape="rect" id="Node000008" href="$classTestsUnitaires.html#a1fea61fb0483bb1f7e0284d828ad347f" title="Teste l&#39;évolution d&#39;une grille après n itérations." alt="" coords="289,107,511,132"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="242,102,276,105,275,111,241,107"/>
+<area shape="rect" id="Node000004" href="$classGrille.html#ab4c852bc2327224eac9da60841f30baa" title="Définit l&#39;état d&#39;une cellule." alt="" coords="781,39,959,64"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="496,22,768,41,767,47,495,27"/>
+<area shape="rect" id="Node000005" href="$classGrille.html#aa4c9ce36bb4f2c59a83aeb39d73fc285" title="Vérifie si une position est valide dans la grille." alt="" coords="1011,39,1188,64"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="959,49,997,49,997,54,959,54"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="689,117,728,105,826,67,828,72,730,110,691,123"/>
+<area shape="rect" id="Node000007" href="$classGrille.html#a7073ca25319522d4602550da3dfb1d22" title="Met à jour un ensemble de lignes (parallélisation optimisée)" alt="" coords="777,120,963,145"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="715,130,764,130,764,135,715,135"/>
+<area shape="poly" id="edge9_Node000008_Node000002" title=" " alt="" coords="471,104,545,90,546,96,472,109"/>
+<area shape="poly" id="edge10_Node000008_Node000006" title=" " alt="" coords="511,123,559,125,559,131,511,128"/>
+</map>

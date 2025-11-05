@@ -1,0 +1,5 @@
+<map id="RegleStandard::compterVoisinsVivants" name="RegleStandard::compterVoisinsVivants">
+<area shape="rect" id="Node000001" title="Compte le nombre de voisins vivants." alt="" coords="301,5,527,45"/>
+<area shape="rect" id="Node000002" href="$classRegleStandard.html#a0c051f441f8b5aeac028872a7347fc35" title="Calcule le nouvel état d&#39;une cellule selon les règles du jeu." alt="" coords="5,13,253,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="288,28,253,28,253,23,288,23"/>
+</map>

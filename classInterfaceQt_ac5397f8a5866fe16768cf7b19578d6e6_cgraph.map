@@ -1,0 +1,5 @@
+<map id="InterfaceQt::onToriqueChanged" name="InterfaceQt::onToriqueChanged">
+<area shape="rect" id="Node000001" title="Toggle mode torique." alt="" coords="5,5,228,31"/>
+<area shape="rect" id="Node000002" href="$classJeuDeLaVie.html#ac699c345951d0e8e022f859339e68fda" title="Active ou désactive le mode torique." alt="" coords="276,5,504,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="228,15,262,15,262,21,228,21"/>
+</map>

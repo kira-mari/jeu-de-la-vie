@@ -1,0 +1,9 @@
+<map id="InterfaceSFML::calculerTailleCellule" name="InterfaceSFML::calculerTailleCellule">
+<area shape="rect" id="Node000001" title="Calcule la taille optimale des cellules." alt="" coords="5,47,213,87"/>
+<area shape="rect" id="Node000002" href="$classJeuDeLaVie.html#a3f6dc54b2b1ebef7111e7aa5a2622be3" title="Obtient la grille actuelle." alt="" coords="263,5,449,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="209,45,278,31,279,36,210,50"/>
+<area shape="rect" id="Node000003" href="$classGrille.html#a1ab5c8e0ea0d1dc21549c38d0f0f5cf9" title="Obtient le nombre de colonnes." alt="" coords="261,55,451,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="213,65,248,65,248,70,213,70"/>
+<area shape="rect" id="Node000004" href="$classGrille.html#a96b5f98d212a0ee9e2f71d73ebe5bb91" title="Obtient le nombre de lignes." alt="" coords="271,104,441,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="210,85,279,99,278,104,209,90"/>
+</map>

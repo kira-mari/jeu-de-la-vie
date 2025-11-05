@@ -1,0 +1,37 @@
+<map id="ModeConsole::executer" name="ModeConsole::executer">
+<area shape="rect" id="Node000001" title="Exécute le mode console." alt="" coords="5,92,180,117"/>
+<area shape="rect" id="Node000002" href="$classModeConsole.html#ae77e7a8e7b14d611164441ecf12d3433" title="Affiche la grille dans la console." alt="" coords="491,171,693,196"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,115,170,137,229,155,292,167,356,175,477,182,477,187,356,180,291,172,227,161,168,142,118,120"/>
+<area shape="rect" id="Node000010" href="$classJeuDeLaVie.html#af3e2bbbe85d122db859c6049adad142a" title="Exécute une itération du jeu." alt="" coords="228,5,443,31"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="117,89,167,65,227,41,258,32,259,37,229,46,169,70,119,94"/>
+<area shape="rect" id="Node000012" href="$classJeuDeLaVie.html#a64c17035b0448747418084db872c72c8" title="Obtient le numéro d&#39;itération actuel." alt="" coords="233,120,438,145"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="181,112,219,117,219,122,180,117"/>
+<area shape="rect" id="Node000013" href="$classModeConsole.html#a75b55e1983d7ca8dbbb4ebec6a68589d" title="Sauvegarde la grille actuelle dans un fichier." alt="" coords="236,55,435,95"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="180,91,222,86,223,92,181,97"/>
+<area shape="rect" id="Node000003" href="$classCellule.html#a4e34ac281afdba1d793fbd0239022a5e" title="Vérifie si la cellule est un obstacle." alt="" coords="760,85,912,111"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="621,168,740,121,770,112,771,117,742,126,623,173"/>
+<area shape="rect" id="Node000004" href="$classCellule.html#a70d2731234961e330fe0a31486d1dec7" title="Vérifie si la cellule est vivante." alt="" coords="763,135,909,160"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="678,168,749,157,750,163,679,173"/>
+<area shape="rect" id="Node000005" href="$classGrille.html#aab75610fe73ae48bd035a048c55832f0" title="Obtient une cellule à une position donnée." alt="" coords="758,283,914,308"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="629,194,662,208,695,227,719,249,728,259,743,269,757,276,755,281,740,274,725,263,715,253,692,231,659,213,627,198"/>
+<area shape="rect" id="Node000007" href="$classJeuDeLaVie.html#a3f6dc54b2b1ebef7111e7aa5a2622be3" title="Obtient la grille actuelle." alt="" coords="743,36,929,61"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="605,169,661,122,699,95,740,72,761,63,763,68,743,76,702,99,665,126,609,173"/>
+<area shape="rect" id="Node000008" href="$classGrille.html#a1ab5c8e0ea0d1dc21549c38d0f0f5cf9" title="Obtient le nombre de colonnes." alt="" coords="741,184,931,209"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="694,186,728,188,728,193,693,192"/>
+<area shape="rect" id="Node000009" href="$classGrille.html#a96b5f98d212a0ee9e2f71d73ebe5bb91" title="Obtient le nombre de lignes." alt="" coords="751,233,921,259"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="642,193,742,219,773,227,771,233,741,225,641,199"/>
+<area shape="rect" id="Node000006" href="$classGrille.html#aa4c9ce36bb4f2c59a83aeb39d73fc285" title="Vérifie si une position est valide dans la grille." alt="" coords="979,283,1156,308"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="914,293,965,293,965,298,914,298"/>
+<area shape="rect" id="Node000011" href="$classJeuDeLaVie.html#a0c9dbfff7118bd6fe99b3fa99889fe96" title="Vérifie si le jeu est terminé" alt="" coords="504,5,680,31"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="443,15,490,15,490,21,443,21"/>
+<area shape="poly" id="edge13_Node000013_Node000007" title=" " alt="" coords="435,67,729,52,730,57,435,73"/>
+<area shape="rect" id="Node000014" href="$classGestionnaireFichier.html#a7f617aede460be3b06c7dd842d7e2732" title="Sauvegarde une grille dans un fichier." alt="" coords="518,241,666,281"/>
+<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="424,93,444,107,463,132,470,157,476,182,493,207,526,232,523,236,489,210,471,184,465,158,459,134,441,111,421,98"/>
+<area shape="poly" id="edge15_Node000014_Node000005" title=" " alt="" coords="667,269,745,280,744,285,666,274"/>
+<area shape="poly" id="edge17_Node000014_Node000008" title=" " alt="" coords="666,239,773,210,774,215,667,244"/>
+<area shape="poly" id="edge18_Node000014_Node000009" title=" " alt="" coords="666,254,737,249,737,255,667,259"/>
+<area shape="rect" id="Node000015" href="$classCellule.html#a4eecc7c38f6d8fa642804d9c7472d05e" title="Obtient l&#39;état actuel de la cellule." alt="" coords="763,332,909,357"/>
+<area shape="poly" id="edge16_Node000014_Node000015" title=" " alt="" coords="640,278,742,318,767,326,766,331,740,323,638,283"/>
+<area shape="rect" id="Node000016" href="$classEtatCellule.html#a951476a3806853a1db9ed7303171162c" title="Obtient la valeur entière de l&#39;état (pour sauvegarder)" alt="" coords="753,381,919,407"/>
+<area shape="poly" id="edge19_Node000014_Node000016" title=" " alt="" coords="617,279,672,324,706,347,742,368,759,375,757,379,740,372,703,352,668,328,613,283"/>
+</map>

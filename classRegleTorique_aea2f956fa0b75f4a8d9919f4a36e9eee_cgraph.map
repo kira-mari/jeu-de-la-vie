@@ -1,0 +1,23 @@
+<map id="RegleTorique::calculerNouvelEtat" name="RegleTorique::calculerNouvelEtat">
+<area shape="rect" id="Node000001" title="Calcule le nouvel état d&#39;une cellule selon les règles du jeu." alt="" coords="5,143,243,168"/>
+<area shape="rect" id="Node000002" href="$classEtatCellule.html#a40d064d2eb4ffdaf4ce5ffc290f23db0" title="Crée une copie de l&#39;état." alt="" coords="327,5,469,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,140,204,96,246,70,290,48,331,32,332,37,292,52,248,75,207,100,143,145"/>
+<area shape="rect" id="Node000003" href="$classRegleTorique.html#a5f15a29a47c045ccd89a64c72de030e1" title="Compte le nombre de voisins vivants." alt="" coords="291,106,505,146"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="242,140,277,136,278,142,243,145"/>
+<area shape="rect" id="Node000004" href="$classCellule.html#a70d2731234961e330fe0a31486d1dec7" title="Vérifie si la cellule est vivante." alt="" coords="575,39,721,64"/>
+<area shape="poly" id="edge9_Node000001_Node000004" title=" " alt="" coords="152,140,215,115,290,91,361,77,433,66,561,53,562,59,433,71,362,82,291,97,216,120,154,145"/>
+<area shape="rect" id="Node000005" href="$classGrille.html#aab75610fe73ae48bd035a048c55832f0" title="Obtient une cellule à une position donnée." alt="" coords="570,187,726,212"/>
+<area shape="poly" id="edge10_Node000001_Node000005" title=" " alt="" coords="243,163,557,189,556,194,243,168"/>
+<area shape="rect" id="Node000009" href="$classCellule.html#a4e34ac281afdba1d793fbd0239022a5e" title="Vérifie si la cellule est un obstacle." alt="" coords="322,221,474,247"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="170,166,341,215,339,220,169,171"/>
+<area shape="rect" id="Node000010" href="$classCellule.html#a4eecc7c38f6d8fa642804d9c7472d05e" title="Obtient l&#39;état actuel de la cellule." alt="" coords="325,271,471,296"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="143,166,206,211,248,236,292,257,313,264,311,269,290,262,245,240,203,215,140,170"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="456,103,553,73,580,65,582,70,554,78,458,109"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="460,143,554,173,583,181,581,186,553,178,458,149"/>
+<area shape="rect" id="Node000007" href="$classGrille.html#a1ab5c8e0ea0d1dc21549c38d0f0f5cf9" title="Obtient le nombre de colonnes." alt="" coords="553,88,743,113"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="505,112,539,109,540,114,506,118"/>
+<area shape="rect" id="Node000008" href="$classGrille.html#a96b5f98d212a0ee9e2f71d73ebe5bb91" title="Obtient le nombre de lignes." alt="" coords="563,137,733,163"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="506,134,549,138,549,143,505,139"/>
+<area shape="rect" id="Node000006" href="$classGrille.html#aa4c9ce36bb4f2c59a83aeb39d73fc285" title="Vérifie si une position est valide dans la grille." alt="" coords="791,187,968,212"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="726,197,777,197,777,202,726,202"/>
+</map>

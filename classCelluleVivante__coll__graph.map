@@ -1,0 +1,5 @@
+<map id="CelluleVivante" name="CelluleVivante">
+<area shape="rect" id="Node000001" title="Classe représentant une cellule vivante." alt="" coords="8,219,124,364"/>
+<area shape="rect" id="Node000002" href="$classEtatCellule.html" title="Classe abstraite représentant l&#39;état d&#39;une cellule." alt="" coords="5,5,127,171"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="69,185,69,218,63,218,63,185"/>
+</map>

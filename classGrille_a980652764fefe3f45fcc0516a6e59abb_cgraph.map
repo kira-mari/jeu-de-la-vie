@@ -1,0 +1,9 @@
+<map id="Grille::mettreAJour" name="Grille::mettreAJour">
+<area shape="rect" id="Node000001" title="Met à jour la grille pour passer à l&#39;itération suivante." alt="" coords="5,31,148,56"/>
+<area shape="rect" id="Node000002" href="$classGrille.html#ab4c852bc2327224eac9da60841f30baa" title="Définit l&#39;état d&#39;une cellule." alt="" coords="200,5,377,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,32,186,28,187,33,149,37"/>
+<area shape="rect" id="Node000004" href="$classGrille.html#a7073ca25319522d4602550da3dfb1d22" title="Met à jour un ensemble de lignes (parallélisation optimisée)" alt="" coords="196,55,381,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="149,49,183,53,182,58,148,54"/>
+<area shape="rect" id="Node000003" href="$classGrille.html#aa4c9ce36bb4f2c59a83aeb39d73fc285" title="Vérifie si une position est valide dans la grille." alt="" coords="429,5,607,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="378,15,416,15,416,21,378,21"/>
+</map>

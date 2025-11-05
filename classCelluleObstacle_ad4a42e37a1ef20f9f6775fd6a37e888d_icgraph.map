@@ -1,0 +1,5 @@
+<map id="CelluleObstacle::estVivante" name="CelluleObstacle::estVivante">
+<area shape="rect" id="Node000001" title="Indique si la cellule est vivante." alt="" coords="215,13,398,40"/>
+<area shape="rect" id="Node000002" href="$classCelluleObstacle.html#a30e408270e563463a14ebc19dbe96d53" title=" " alt="" coords="5,5,167,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,29,167,29,167,24,199,24"/>
+</map>

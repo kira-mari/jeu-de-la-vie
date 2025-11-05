@@ -1,0 +1,11 @@
+<map id="TestsUnitaires::testerPlaneur" name="TestsUnitaires::testerPlaneur">
+<area shape="rect" id="Node000001" title="Teste le planeur." alt="" coords="5,42,215,67"/>
+<area shape="rect" id="Node000002" href="$classTestsUnitaires.html#af1671fe34db212a79ee1f4b2869d576e" title="Affiche le résultat d&#39;un test." alt="" coords="273,5,443,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="215,40,259,34,259,40,215,45"/>
+<area shape="rect" id="Node000003" href="$classTestsUnitaires.html#a6430263d628fa3e1f55be64cf1aae756" title="Crée une grille de test." alt="" coords="263,70,453,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="215,64,249,68,248,73,215,69"/>
+<area shape="rect" id="Node000004" href="$classGrille.html#ab4c852bc2327224eac9da60841f30baa" title="Définit l&#39;état d&#39;une cellule." alt="" coords="501,70,679,95"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="454,80,488,80,488,85,454,85"/>
+<area shape="rect" id="Node000005" href="$classGrille.html#aa4c9ce36bb4f2c59a83aeb39d73fc285" title="Vérifie si une position est valide dans la grille." alt="" coords="727,70,904,95"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="679,80,713,80,713,85,679,85"/>
+</map>

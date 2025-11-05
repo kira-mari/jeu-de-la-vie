@@ -1,0 +1,29 @@
+<map id="Grille::Grille" name="Grille::Grille">
+<area shape="rect" id="Node000001" title="Constructeur de la grille." alt="" coords="1222,107,1312,133"/>
+<area shape="rect" id="Node000002" href="$classGrille.html#a6420a449d2fb674c1be9000099eb30a9" title="Constructeur de copie." alt="" coords="1046,5,1135,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1237,99,1207,75,1173,53,1133,35,1135,30,1176,48,1210,71,1241,94"/>
+<area shape="rect" id="Node000003" href="$classGrille.html#a980652764fefe3f45fcc0516a6e59abb" title="Met à jour la grille pour passer à l&#39;itération suivante." alt="" coords="828,81,958,108"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1210,105,1174,97,1060,90,959,92,958,87,1060,85,1175,92,1211,99"/>
+<area shape="rect" id="Node000010" href="$classGrille.html#a7073ca25319522d4602550da3dfb1d22" title="Met à jour un ensemble de lignes (parallélisation optimisée)." alt="" coords="1006,107,1174,133"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="1207,123,1175,123,1175,117,1207,117"/>
+<area shape="rect" id="Node000011" href="$classGrille.html#adfa10ad84dbbc5f12f18568b77707163" title="Opérateur d&#39;affectation." alt="" coords="1033,157,1147,184"/>
+<area shape="poly" id="edge14_Node000001_Node000011" title=" " alt="" coords="1208,139,1140,159,1138,154,1207,134"/>
+<area shape="rect" id="Node000012" href="$classGrille.html#a3456a1123dbf85daec10839613ec1230" title="Compare deux grilles." alt="" coords="1029,208,1151,235"/>
+<area shape="poly" id="edge15_Node000001_Node000012" title=" " alt="" coords="1244,146,1213,173,1176,198,1149,210,1147,205,1173,194,1210,169,1240,142"/>
+<area shape="rect" id="Node000004" href="$classTestsUnitaires.html#a1fea61fb0483bb1f7e0284d828ad347f" title="Teste l&#39;évolution d&#39;une grille après n itérations." alt="" coords="579,56,780,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="812,88,780,84,780,79,812,82"/>
+<area shape="rect" id="Node000009" href="$classTestsUnitaires.html#a668b40e7c9824be78af8cfd427b4aa58" title="Teste les règles de base." alt="" coords="314,107,531,133"/>
+<area shape="poly" id="edge11_Node000003_Node000009" title=" " alt="" coords="813,102,532,117,531,112,812,96"/>
+<area shape="rect" id="Node000005" href="$classTestsUnitaires.html#acd912aefe999f1178f6c72f41bece368" title="Teste le motif stable (bloc)." alt="" coords="336,5,509,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="593,55,493,35,494,30,594,50"/>
+<area shape="rect" id="Node000008" href="$classTestsUnitaires.html#ad353b61378429174dd396ee458261aa2" title="Teste le motif oscillateur (clignotant)." alt="" coords="320,56,525,83"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="564,72,526,72,526,67,564,67"/>
+<area shape="poly" id="edge9_Node000004_Node000009" title=" " alt="" coords="594,89,494,109,493,103,593,84"/>
+<area shape="rect" id="Node000006" href="$classTestsUnitaires.html#a17aa4e9d0afbd2614193d2638f4b78c7" title="Exécute tous les tests." alt="" coords="103,48,266,91"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="342,38,267,55,266,49,341,33"/>
+<area shape="rect" id="Node000007" href="$test__main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Programme principal pour exécuter les tests unitaires." alt="" coords="5,56,55,83"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="87,72,55,72,55,67,87,67"/>
+<area shape="poly" id="edge8_Node000008_Node000006" title=" " alt="" coords="304,72,267,72,267,67,304,67"/>
+<area shape="poly" id="edge10_Node000009_Node000006" title=" " alt="" coords="341,105,266,89,267,84,342,100"/>
+<area shape="poly" id="edge13_Node000010_Node000003" title=" " alt="" coords="990,110,958,106,959,100,991,105"/>
+</map>

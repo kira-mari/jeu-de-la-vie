@@ -1,0 +1,17 @@
+<map id="JeuDeLaVie" name="JeuDeLaVie">
+<area shape="rect" id="Node000001" title="Classe principale orchestrant le jeu de la vie." alt="" coords="81,784,253,1189"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="159,181,335,246"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="248,246,236,462,224,610,208,760,207,768,202,767,203,760,219,609,230,461,243,246"/>
+<area shape="rect" id="Node000003" href="$classGrille.html" title="Classe représentant la grille du jeu de la vie." alt="" coords="336,316,499,721"/>
+<area shape="poly" id="edge6_Node000003_Node000002" title=" " alt="" coords="280,245,305,276,330,317,326,320,300,279,276,248"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="5,479,176,559"/>
+<area shape="poly" id="edge8_Node000007_Node000002" title=" " alt="" coords="164,248,145,262,130,279,107,323,94,371,89,419,89,463,83,462,84,419,89,370,102,321,126,276,142,258,161,244"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="334,409,298,353,267,293,256,263,261,261,272,291,303,350,338,406"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="381,173,547,253"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="461,254,454,300,448,299,455,253"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="571,181,770,246"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="646,248,511,409,507,406,642,245"/>
+<area shape="rect" id="Node000006" href="$classRegleJeu.html" title="Classe abstraite représentant les règles du jeu." alt="" coords="577,5,765,111"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="673,111,673,164,668,164,668,111"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="100,558,134,767,129,768,94,559"/>
+</map>

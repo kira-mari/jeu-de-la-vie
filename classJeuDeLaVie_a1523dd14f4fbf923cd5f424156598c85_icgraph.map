@@ -1,0 +1,12 @@
+<map id="JeuDeLaVie::obtenirIterationMax" name="JeuDeLaVie::obtenirIterationMax">
+<area shape="rect" id="Node000001" title="Obtient le nombre maximum d&#39;itérations." alt="" coords="864,31,1097,56"/>
+<area shape="rect" id="Node000002" href="$classInterfaceSFML.html#a9b5a8e272d8dc3c033e09fde93ac4845" title="Dessine les informations à l&#39;écran." alt="" coords="555,5,816,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="850,35,816,32,817,27,850,29"/>
+<area shape="rect" id="Node000004" href="$classInterfaceSFML.html#a518c46fbb99e76a49149d03b900b6cdc" title="Lance la boucle principale de l&#39;interface graphique." alt="" coords="108,31,287,56"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="850,46,287,46,287,41,850,41"/>
+<area shape="rect" id="Node000003" href="$classInterfaceSFML.html#aa50033cc2b996da556fdebca5db2c7ef" title="Met à jour l&#39;affichage." alt="" coords="335,5,507,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="541,21,507,21,507,15,541,15"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="322,32,287,36,286,31,321,27"/>
+<area shape="rect" id="Node000005" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Point d&#39;entrée du programme." alt="" coords="5,31,60,56"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="94,46,60,46,60,41,94,41"/>
+</map>

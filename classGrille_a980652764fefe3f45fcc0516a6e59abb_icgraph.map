@@ -1,0 +1,21 @@
+<map id="Grille::mettreAJour" name="Grille::mettreAJour">
+<area shape="rect" id="Node000001" title="Met à jour la grille pour passer à l&#39;itération suivante." alt="" coords="888,104,1031,129"/>
+<area shape="rect" id="Node000002" href="$classTestsUnitaires.html#a1fea61fb0483bb1f7e0284d828ad347f" title="Teste l&#39;évolution d&#39;une grille après n itérations." alt="" coords="619,53,840,79"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="887,104,787,81,788,76,888,98"/>
+<area shape="rect" id="Node000007" href="$classTestsUnitaires.html#a668b40e7c9824be78af8cfd427b4aa58" title="Teste les règles de base." alt="" coords="335,104,571,129"/>
+<area shape="poly" id="edge11_Node000001_Node000007" title=" " alt="" coords="875,119,571,119,571,114,875,114"/>
+<area shape="rect" id="Node000008" href="$classTestsUnitaires.html#ac0c01e1e24de9cb73d81593c96fa34bb" title="Teste la grille torique." alt="" coords="631,154,827,194"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="895,135,811,157,809,151,894,130"/>
+<area shape="rect" id="Node000003" href="$classTestsUnitaires.html#acd912aefe999f1178f6c72f41bece368" title="Teste le motif stable (bloc)" alt="" coords="359,5,547,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="642,54,526,33,527,28,643,48"/>
+<area shape="rect" id="Node000006" href="$classTestsUnitaires.html#ad353b61378429174dd396ee458261aa2" title="Teste le motif oscillateur (clignotant)" alt="" coords="339,55,566,80"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="605,69,566,69,566,64,605,64"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="646,84,523,107,522,101,645,79"/>
+<area shape="rect" id="Node000004" href="$classTestsUnitaires.html#a17aa4e9d0afbd2614193d2638f4b78c7" title="Exécute tous les tests." alt="" coords="108,73,287,113"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="368,36,335,45,248,75,246,70,334,39,367,31"/>
+<area shape="rect" id="Node000005" href="$test__main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Programme principal pour exécuter les tests unitaires." alt="" coords="5,80,60,105"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="94,95,60,95,60,90,94,90"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="326,83,287,86,286,81,325,77"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="321,107,287,104,287,98,321,102"/>
+<area shape="poly" id="edge10_Node000008_Node000004" title=" " alt="" coords="618,176,481,167,407,158,334,145,287,131,243,115,245,110,288,126,335,139,408,152,482,161,618,170"/>
+</map>

@@ -1,0 +1,17 @@
+<map id="InterfaceSFML::dessinerGrille" name="InterfaceSFML::dessinerGrille">
+<area shape="rect" id="Node000001" title="Dessine la grille." alt="" coords="5,129,219,155"/>
+<area shape="rect" id="Node000002" href="$classCellule.html#a4e34ac281afdba1d793fbd0239022a5e" title="Vérifie si la cellule est un obstacle." alt="" coords="285,5,437,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,127,186,84,225,60,266,40,285,32,287,37,268,44,227,65,189,89,131,131"/>
+<area shape="rect" id="Node000003" href="$classCellule.html#a70d2731234961e330fe0a31486d1dec7" title="Vérifie si la cellule est vivante." alt="" coords="289,55,434,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="149,127,266,89,294,81,295,86,267,94,150,132"/>
+<area shape="rect" id="Node000004" href="$classGrille.html#aab75610fe73ae48bd035a048c55832f0" title="Obtient une cellule à une position donnée." alt="" coords="283,104,439,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="219,128,269,123,270,129,219,134"/>
+<area shape="rect" id="Node000006" href="$classJeuDeLaVie.html#a3f6dc54b2b1ebef7111e7aa5a2622be3" title="Obtient la grille actuelle." alt="" coords="269,153,454,179"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="219,150,255,153,255,158,219,155"/>
+<area shape="rect" id="Node000007" href="$classGrille.html#a1ab5c8e0ea0d1dc21549c38d0f0f5cf9" title="Obtient le nombre de colonnes." alt="" coords="267,203,456,228"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="154,152,267,187,299,196,298,202,266,193,152,157"/>
+<area shape="rect" id="Node000008" href="$classGrille.html#a96b5f98d212a0ee9e2f71d73ebe5bb91" title="Obtient le nombre de lignes." alt="" coords="276,252,447,277"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="131,153,190,194,268,237,290,245,288,250,266,242,187,198,128,157"/>
+<area shape="rect" id="Node000005" href="$classGrille.html#aa4c9ce36bb4f2c59a83aeb39d73fc285" title="Vérifie si une position est valide dans la grille." alt="" coords="504,104,681,129"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="439,114,490,114,490,119,439,119"/>
+</map>

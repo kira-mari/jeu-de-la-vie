@@ -1,0 +1,9 @@
+<map id="InterfaceQt::onStep" name="InterfaceQt::onStep">
+<area shape="rect" id="Node000001" title="Avance d&#39;une itération." alt="" coords="476,42,624,67"/>
+<area shape="rect" id="Node000002" href="$classInterfaceQt.html#a08632443206d676198dfd1f7492e7437" title="Initialise les widgets." alt="" coords="247,5,411,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="462,46,410,39,411,34,463,40"/>
+<area shape="rect" id="Node000004" href="$classInterfaceQt.html#a11edcee9206379725a8e97e68a100e80" title="Gestion des événements clavier." alt="" coords="229,70,428,95"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="463,68,429,73,428,67,462,63"/>
+<area shape="rect" id="Node000003" href="$classInterfaceQt.html#a0eea8fab1e83d4b90961bd4241fc5689" title="Constructeur de l&#39;interface Qt." alt="" coords="5,13,181,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="233,28,182,28,182,23,233,23"/>
+</map>

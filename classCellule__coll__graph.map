@@ -1,0 +1,7 @@
+<map id="Cellule" name="Cellule">
+<area shape="rect" id="Node000001" title="Classe représentant une cellule dans le jeu de la vie." alt="" coords="43,361,180,627"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,233,217,299"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,299,114,345,109,345,109,299"/>
+<area shape="rect" id="Node000003" href="$classEtatCellule.html" title="Classe abstraite représentant l&#39;état d&#39;une cellule." alt="" coords="51,5,172,171"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="114,171,114,217,109,217,109,171"/>
+</map>

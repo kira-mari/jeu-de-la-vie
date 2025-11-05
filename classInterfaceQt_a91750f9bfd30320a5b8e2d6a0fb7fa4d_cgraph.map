@@ -1,0 +1,5 @@
+<map id="InterfaceQt::onIterationMaxChanged" name="InterfaceQt::onIterationMaxChanged">
+<area shape="rect" id="Node000001" title="Change le nombre d&#39;itérations maximum." alt="" coords="5,5,180,45"/>
+<area shape="rect" id="Node000002" href="$classJeuDeLaVie.html#a1888b97a0febcf98ac6d57bee34847a6" title="Définit le nombre maximum d&#39;itérations." alt="" coords="228,13,456,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,23,214,23,214,28,180,28"/>
+</map>

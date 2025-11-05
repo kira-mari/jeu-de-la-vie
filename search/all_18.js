@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['séparation_20gui_20logique_0',['Séparation GUI/Logique',['../md_CONCEPTION.html#autotoc_md85',1,'']]],
+  ['séquence_20mermaid_1',['2. Diagramme de Séquence (Mermaid)',['../md_CONCEPTION.html#autotoc_md67',1,'']]],
+  ['sauvegardergrille_2',['sauvegarderGrille',['../classGestionnaireFichier.html#a7f617aede460be3b06c7dd842d7e2732',1,'GestionnaireFichier']]],
+  ['sauvegarderiteration_3',['sauvegarderIteration',['../classModeConsole.html#a75b55e1983d7ca8dbbb4ebec6a68589d',1,'ModeConsole']]],
+  ['scolaire_4',['Pour le projet scolaire',['../index.html#autotoc_md54',1,'']]],
+  ['scripts_20de_20lancement_20rapide_20windows_5',['Scripts de lancement rapide (Windows)',['../index.html#autotoc_md24',1,'']]],
+  ['seuil_5fgrande_5fgrille_6',['SEUIL_GRANDE_GRILLE',['../namespaceConfig.html#a688ccd5ac17f76619659d41a7908172b',1,'Config']]],
+  ['sf_7',['sf',['../namespacesf.html',1,'']]],
+  ['sfml_8',['Choix de Qt vs SFML',['../md_CONCEPTION.html#autotoc_md87',1,'']]],
+  ['sfml_20et_20qt_9',['Raccourcis clavier (SFML et Qt)',['../index.html#autotoc_md26',1,'']]],
+  ['sfml_20légère_20et_20rapide_10',['2. Interface SFML (Légère et rapide)',['../index.html#autotoc_md12',1,'']]],
+  ['sfml_5fversion_5f2_11',['sfml_version_2',['../InterfaceSFML_8cpp.html#ac4ec9acb723c62c0f4a46c675f07efc3',1,'SFML_VERSION_2:&#160;InterfaceSFML.cpp'],['../InterfaceSFML_8hpp.html#ac4ec9acb723c62c0f4a46c675f07efc3',1,'SFML_VERSION_2:&#160;InterfaceSFML.hpp']]],
+  ['shared_5fptr_12',['Utilisation de unique_ptr et shared_ptr',['../md_CONCEPTION.html#autotoc_md83',1,'']]],
+  ['si_20qt_20installé_13',['3. Copier les plugins Qt (si Qt installé)',['../index.html#autotoc_md20',1,'']]],
+  ['slidervitesse_14',['sliderVitesse',['../classInterfaceQt.html#a5f82eb20eac06772a5511845286981de',1,'InterfaceQt']]],
+  ['solid_20appliqués_15',['Principes SOLID appliqués',['../index.html#autotoc_md29',1,'']]],
+  ['spatiale_16',['Complexité spatiale',['../md_CONCEPTION.html#autotoc_md90',1,'']]],
+  ['spiniterationmax_17',['spinIterationMax',['../classInterfaceQt.html#a5d4fd0b79de87e621faaf62416c6ceb2',1,'InterfaceQt']]],
+  ['state_20pattern_18',['State Pattern',['../md_CONCEPTION.html#autotoc_md77',1,'']]],
+  ['strategy_20pattern_19',['Strategy Pattern',['../md_CONCEPTION.html#autotoc_md76',1,'']]],
+  ['strong_20mode_20console_20strong_20export_20fichiers_20',['3. &lt;strong&gt;Mode Console&lt;/strong&gt; (Export fichiers)',['../index.html#autotoc_md14',1,'']]],
+  ['structure_20du_20projet_21',['Structure du projet',['../index.html#autotoc_md41',1,'']]],
+  ['sur_20github_20pages_22',['Déployer sur GitHub Pages',['../index.html#autotoc_md48',1,'']]]
+];

@@ -1,0 +1,10 @@
+<map id="RegleStandard::compterVoisinsVivants" name="RegleStandard::compterVoisinsVivants">
+<area shape="rect" id="Node000001" title="Compte le nombre de voisins vivants." alt="" coords="5,15,231,55"/>
+<area shape="rect" id="Node000002" href="$classGrille.html#aa4c9ce36bb4f2c59a83aeb39d73fc285" title="Vérifie si une position est valide dans la grille." alt="" coords="483,23,660,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="231,13,278,7,357,3,435,7,502,17,501,22,434,13,357,8,279,13,231,18"/>
+<area shape="rect" id="Node000003" href="$classCellule.html#a70d2731234961e330fe0a31486d1dec7" title="Vérifie si la cellule est vivante." alt="" coords="284,23,429,48"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="231,33,270,33,270,38,231,38"/>
+<area shape="rect" id="Node000004" href="$classGrille.html#aab75610fe73ae48bd035a048c55832f0" title="Obtient une cellule à une position donnée." alt="" coords="279,72,435,97"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="216,53,282,66,281,72,215,58"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="412,69,501,48,502,54,413,74"/>
+</map>
