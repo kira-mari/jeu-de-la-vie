@@ -112,6 +112,13 @@ public:
     void definirModeParallele(bool actif);
     
     /**
+     * @brief Définit l'état d'une cellule (utilisé par les interfaces pour le dessin)
+     * @param ligne La ligne de la cellule
+     * @param colonne La colonne de la cellule
+     * @param etat Le nouvel état (ownership transféré)
+     */
+    void definirEtatCellule(int ligne, int colonne, std::unique_ptr<EtatCellule> etat);
+    /**
      * @brief Place un motif sur la grille
      * @param motif Le nom du motif
      * @param ligne La ligne de départ

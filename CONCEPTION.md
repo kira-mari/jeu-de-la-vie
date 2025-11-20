@@ -120,6 +120,7 @@ classDiagram
         +reinitialiser(nouvelleGrille)
         +definirModeTorique(actif)
         +definirModeParallele(actif)
+        +definirEtatCellule(ligne, colonne, etat) void
         +placerMotif(motif, ligne, colonne) bool
     }
     
@@ -153,9 +154,11 @@ classDiagram
         -couleurObstacleMort : Color
         -couleurObstacleVivant : Color
         -couleurGrille : Color
+        -vue : sf::View
         +InterfaceSFML(jeuRef, largeur, hauteur, titre)
         +executer() void
         +definirDelaiIteration(delai) void
+        +mettreAJourVue() void
         -gererEvenements() void
         -afficher() void
         -dessinerGrille() void
@@ -182,8 +185,10 @@ classDiagram
         -delaiMs : int
         -tailleCellule : int
         -iterationMax : int
+        -drawMode : int
         +InterfaceQt(jeuRef)
         +executer() void
+        +canvasMouseEvent(x, y, buttons) void
         +dessinerGrille(painter) void
         -onPlayPause() void
         -onStep() void
@@ -316,6 +321,24 @@ sequenceDiagram
     J-->>IG: true
     IG->>IG: afficher message console
     IG-->>U: "Motif 'planeur' placé"
+```
+
+### Séquence : Dessin souris (SFML)
+
+```mermaid
+sequenceDiagram
+    participant U as Utilisateur
+    participant IG as InterfaceSFML
+    participant J as JeuDeLaVie
+    participant G as Grille
+
+    U->>IG: Clic souris (x,y)
+    IG->>IG: mapPixelToCoords(x,y)
+    IG->>J: definirEtatCellule(ligne, colonne, EtatCellule)
+    J->>G: definirEtatCellule(ligne, colonne, etat)
+    G-->>J: OK
+    J-->>IG: OK
+    IG-->>U: affichage mis à jour
 ```
 
 ### Interface Qt - Interaction utilisateur
@@ -514,3 +537,4 @@ flowchart TD
 - Mode séquentiel: ~2.5s
 - Mode parallèle (8 threads): ~2.2s  
 - Gain: **~15%** grâce à l'optimisation sans mutex
+

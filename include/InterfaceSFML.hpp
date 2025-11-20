@@ -22,6 +22,10 @@
  * Affichage rapide et léger avec support des motifs et contrôles clavier.
  */
 class InterfaceSFML {
+public:
+    // Dessin par souris
+    enum class ModeDessin { Vivante = 0, Morte = 1, ObstacleMorte = 2, ObstacleVivante = 3 };
+    
 private:
     std::unique_ptr<sf::RenderWindow> fenetre;
     JeuDeLaVie& jeu;
@@ -35,6 +39,11 @@ private:
     sf::Color couleurMorte;
     sf::Color couleurObstacle;
     sf::Color couleurGrille;
+    
+    ModeDessin modeDessin;
+    bool sourisEnfoncee;
+    int boutonSouris; // 0 = gauche, 1 = milieu, 2 = droite
+    sf::View vue; // Vue utilisée pour garder les cellules carrées
     
 public:
     /**
@@ -105,6 +114,10 @@ private:
      * @param touche La touche pressée
      */
     void gererPlacementMotif(sf::KeyCode touche);
+    /**
+     * @brief Met à jour la vue pour préserver l'aspect carré des cellules
+     */
+    void mettreAJourVue();
 };
 
 #endif // INTERFACE_SFML_HPP

@@ -53,6 +53,10 @@ private:
     int tailleCellule;
     int iterationMax;
     
+    // Outils de dessin
+    QComboBox* cmbDrawType; // Sélection du type de cellule à dessiner
+    int drawMode; // 0=vivante,1=morte,2=obstacle mort,3=obstacle vivant
+    
     // Couleurs
     QColor couleurVivante;
     QColor couleurMorte;
@@ -147,6 +151,14 @@ public:
      * @brief Dessine la grille (appelé par paintEvent de GrilleWidget)
      */
     void dessinerGrille(QPainter& painter);
+
+    /**
+     * @brief Méthode appelée par le widget de grille lors d'événements souris
+     * @param x position x en pixels
+     * @param y position y en pixels
+     * @param buttons masques des boutons souris
+     */
+    void canvasMouseEvent(int x, int y, Qt::MouseButtons buttons);
     
 private:
     /**
@@ -187,6 +199,8 @@ public:
     
 protected:
     void paintEvent(QPaintEvent* event) override;
+    void mousePressEvent(QMouseEvent* event) override;
+    void mouseMoveEvent(QMouseEvent* event) override;
     
     friend class InterfaceQt;
 };

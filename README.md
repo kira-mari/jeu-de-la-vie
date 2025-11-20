@@ -86,6 +86,17 @@
 .\build\Release\jeu_de_la_vie.exe .\exemples\exemple3_complexe.txt -m sfml
 ```
 
+### Dessin interactif (SFML)
+
+- Interaction souris :
+  - Clic gauche : place une cellule vivante
+  - Clic droit : place une cellule morte
+  - Maintenir `Ctrl` + clic gauche : place un obstacle vivant
+  - Maintenir `Ctrl` + clic droit : place un obstacle mort
+- Cliquer-glisser (drag) : peint en continu sur la grille
+- Le mapping utilise `fenetre->mapPixelToCoords(...)` pour convertir les pixels en coordonnées monde, garantissant un alignement exact même après redimensionnement.
+- Une `sf::View` est utilisée avec un viewport centré (letterboxing) pour préserver l'aspect carré des cellules lors du redimensionnement de la fenêtre.
+
 ---
 
 ### 3. **Mode Console** (Export fichiers)
@@ -154,6 +165,7 @@ Options:
   -p              Active la parallélisation
   -h, --help      Affiche l'aide
 ```
+
 
 ### Scripts de lancement rapide (Windows)
 

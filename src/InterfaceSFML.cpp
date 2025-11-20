@@ -18,6 +18,8 @@ InterfaceSFML::InterfaceSFML(
 ) : jeu(jeuRef),
     enPause(false),
     delaiIteration(Config::DELAI_ITERATION_DEFAUT),
+    modeDessin(ModeDessin::Vivante),
+    sourisEnfoncee(false),
     couleurVivante(sf::Color(Config::CouleurVivanteSFML::R, Config::CouleurVivanteSFML::G, Config::CouleurVivanteSFML::B)),
     couleurMorte(sf::Color(Config::CouleurMorteSFML::R, Config::CouleurMorteSFML::G, Config::CouleurMorteSFML::B)),
     couleurObstacle(sf::Color(Config::CouleurObstacleMortSFML::R, Config::CouleurObstacleMortSFML::G, Config::CouleurObstacleMortSFML::B)),
@@ -57,6 +59,70 @@ InterfaceSFML::InterfaceSFML(
     
     fenetre->setFramerateLimit(Config::FPS_LIMITE);
     calculerTailleCellule();
+    // Initialiser la vue pour garder des cellules carrées
+    mettreAJourVue();
+    fenetre->setView(vue);
+}
+
+void InterfaceSFML::mettreAJourVue() {
+    const Grille& grille = jeu.obtenirGrille();
+    float worldWidth = static_cast<float>(grille.obtenirNbColonnes() * tailleCellule);
+    float worldHeight = static_cast<float>(grille.obtenirNbLignes() * tailleCellule);
+
+    // Définir la taille et le centre de la vue en coordonnées monde
+    #ifdef SFML_VERSION_3
+        vue.setSize({worldWidth, worldHeight});
+        vue.setCenter({worldWidth / 2.f, worldHeight / 2.f});
+    #else
+        vue.setSize(worldWidth, worldHeight);
+        vue.setCenter(worldWidth / 2.f, worldHeight / 2.f);
+    #endif
+
+    // Calculer le viewport (lettres-boxing) pour préserver l'aspect
+    sf::Vector2u winSize = fenetre->getSize();
+    float winW = static_cast<float>(winSize.x);
+    float winH = static_cast<float>(winSize.y);
+    if (winW <= 0.f || winH <= 0.f) return;
+
+    float windowAspect = winW / winH;
+    float worldAspect = (worldWidth > 0.f && worldHeight > 0.f) ? (worldWidth / worldHeight) : 1.f;
+
+    float viewportLeft = 0.f, viewportTop = 0.f, viewportW = 1.f, viewportH = 1.f;
+    if (windowAspect > worldAspect) {
+        // fenetre plus large -> barres horizontales
+        viewportW = worldAspect / windowAspect;
+        viewportLeft = (1.f - viewportW) / 2.f;
+        viewportTop = 0.f;
+        viewportH = 1.f;
+    } else {
+        // fenetre plus haute -> barres verticales
+        viewportH = windowAspect / worldAspect;
+        viewportTop = (1.f - viewportH) / 2.f;
+        viewportLeft = 0.f;
+        viewportW = 1.f;
+    }
+
+    // Construct viewport as position+size to be compatible across SFML versions
+    sf::FloatRect viewport(sf::Vector2f(viewportLeft, viewportTop), sf::Vector2f(viewportW, viewportH));
+    vue.setViewport(viewport);
+}
+
+// Helper interne: applique un état selon la position pixel
+static void appliquerEtatDepuisPixel(JeuDeLaVie& jeu, float x, float y, int tailleCellule, InterfaceSFML::ModeDessin mode) {
+    const Grille& grilleConst = jeu.obtenirGrille();
+    int colonne = static_cast<int>(x / static_cast<float>(tailleCellule));
+    int ligne = static_cast<int>(y / static_cast<float>(tailleCellule));
+    if (!grilleConst.estPositionValide(ligne, colonne)) return;
+
+    if (mode == InterfaceSFML::ModeDessin::Vivante) {
+        jeu.definirEtatCellule(ligne, colonne, std::make_unique<CelluleVivante>());
+    } else if (mode == InterfaceSFML::ModeDessin::Morte) {
+        jeu.definirEtatCellule(ligne, colonne, std::make_unique<CelluleMorte>());
+    } else if (mode == InterfaceSFML::ModeDessin::ObstacleMorte) {
+        jeu.definirEtatCellule(ligne, colonne, std::make_unique<CelluleObstacle>(false));
+    } else if (mode == InterfaceSFML::ModeDessin::ObstacleVivante) {
+        jeu.definirEtatCellule(ligne, colonne, std::make_unique<CelluleObstacle>(true));
+    }
 }
 
 void InterfaceSFML::calculerTailleCellule() {
@@ -102,9 +168,81 @@ void InterfaceSFML::gererEvenements() {
     #ifdef SFML_VERSION_3
         // SFML 3.0 : pollEvent retourne un optional
         while (auto event = fenetre->pollEvent()) {
-            // SFML 3.0 : Event est un std::variant, utiliser std::visit ou if/else avec is<>
+            // SFML 3.0 : Event est un std::variant, utiliser getIf
             if (event->is<sf::Event::Closed>()) {
                 fenetre->close();
+            }
+            else if (const auto* mousePressed = event->getIf<sf::Event::MouseButtonPressed>()) {
+                sourisEnfoncee = true;
+                boutonSouris = static_cast<int>(mousePressed->button);
+
+                #ifdef SFML_VERSION_3
+                    bool ctrl = sf::Keyboard::isKeyPressed(sf::Keyboard::Key::LControl) || sf::Keyboard::isKeyPressed(sf::Keyboard::Key::RControl);
+                #else
+                    bool ctrl = sf::Keyboard::isKeyPressed(sf::Keyboard::LControl) || sf::Keyboard::isKeyPressed(sf::Keyboard::RControl);
+                #endif
+
+                if (ctrl) {
+                    if (mousePressed->button == sf::Mouse::Button::Left) modeDessin = ModeDessin::ObstacleVivante;
+                    else if (mousePressed->button == sf::Mouse::Button::Right) modeDessin = ModeDessin::ObstacleMorte;
+                    else modeDessin = ModeDessin::ObstacleMorte;
+                } else {
+                    if (mousePressed->button == sf::Mouse::Button::Left) modeDessin = ModeDessin::Vivante;
+                    else if (mousePressed->button == sf::Mouse::Button::Right) modeDessin = ModeDessin::Morte;
+                    else modeDessin = ModeDessin::Morte;
+                }
+
+                #ifdef SFML_VERSION_3
+                    auto pixelPos = sf::Mouse::getPosition(*fenetre);
+                    auto worldPos = fenetre->mapPixelToCoords(sf::Vector2i(static_cast<int>(pixelPos.x), static_cast<int>(pixelPos.y)));
+                    appliquerEtatDepuisPixel(jeu, worldPos.x, worldPos.y, tailleCellule, modeDessin);
+                #else
+                    {
+                        sf::Vector2i pixelPos(event.mouseButton.x, event.mouseButton.y);
+                        auto worldPos = fenetre->mapPixelToCoords(pixelPos);
+                        appliquerEtatDepuisPixel(jeu, worldPos.x, worldPos.y, tailleCellule, modeDessin);
+                    }
+                #endif
+            }
+            else if (const auto* mouseReleased = event->getIf<sf::Event::MouseButtonReleased>()) {
+                sourisEnfoncee = false;
+            }
+            else if (const auto* resized = event->getIf<sf::Event::Resized>()) {
+                // Recalculer la taille des cellules lorsque la fenêtre est redimensionnée
+                (void)resized; // variable parfois non utilisée selon la version
+                calculerTailleCellule();
+                mettreAJourVue();
+                fenetre->setView(vue);
+            }
+            else if (const auto* mouseMoved = event->getIf<sf::Event::MouseMoved>()) {
+                if (sourisEnfoncee) {
+                    // Recalculer le mode selon le bouton actuellement enfoncé et l'état Ctrl
+#ifdef SFML_VERSION_3
+                    bool ctrl = sf::Keyboard::isKeyPressed(sf::Keyboard::Key::LControl) || sf::Keyboard::isKeyPressed(sf::Keyboard::Key::RControl);
+#else
+                    bool ctrl = sf::Keyboard::isKeyPressed(sf::Keyboard::LControl) || sf::Keyboard::isKeyPressed(sf::Keyboard::RControl);
+#endif
+                    if (ctrl) {
+                        if (boutonSouris == static_cast<int>(sf::Mouse::Button::Left)) modeDessin = ModeDessin::ObstacleVivante;
+                        else if (boutonSouris == static_cast<int>(sf::Mouse::Button::Right)) modeDessin = ModeDessin::ObstacleMorte;
+                        else modeDessin = ModeDessin::ObstacleMorte;
+                    } else {
+                        if (boutonSouris == static_cast<int>(sf::Mouse::Button::Left)) modeDessin = ModeDessin::Vivante;
+                        else if (boutonSouris == static_cast<int>(sf::Mouse::Button::Right)) modeDessin = ModeDessin::Morte;
+                        else modeDessin = ModeDessin::Morte;
+                    }
+#ifdef SFML_VERSION_3
+                    auto pixelPos = sf::Mouse::getPosition(*fenetre);
+                    auto worldPos = fenetre->mapPixelToCoords(sf::Vector2i(static_cast<int>(pixelPos.x), static_cast<int>(pixelPos.y)));
+                    appliquerEtatDepuisPixel(jeu, worldPos.x, worldPos.y, tailleCellule, modeDessin);
+#else
+                    {
+                        sf::Vector2i pixelPos(mouseMoved->x, mouseMoved->y);
+                        auto worldPos = fenetre->mapPixelToCoords(pixelPos);
+                        appliquerEtatDepuisPixel(jeu, worldPos.x, worldPos.y, tailleCellule, modeDessin);
+                    }
+#endif
+                }
             }
             else if (const auto* keyPressed = event->getIf<sf::Event::KeyPressed>()) {
                 switch (keyPressed->code) {
@@ -175,31 +313,77 @@ void InterfaceSFML::gererEvenements() {
             if (event.type == sf::Event::Closed) {
                 fenetre->close();
             }
-            else if (event.type == sf::Event::KeyPressed) {
-                switch (event.key.code) {
-                    case sf::Keyboard::Space:
-                        // Pause/Reprendre
-                        enPause = !enPause;
-                        horloge.restart();
-                        std::cout << (enPause ? "Pause" : "Reprise") << std::endl;
-                        break;
-                        
-                    case sf::Keyboard::Right:
-                        // Avancer d'une iteration
-                        if (jeu.executerIteration()) {
-                            std::cout << "Iteration " << jeu.obtenirIteration() << std::endl;
+            else if (event.type == sf::Event::Resized) {
+                // recalculer la taille des cellules lorsque la fenêtre est redimensionnée
+                calculerTailleCellule();
+                mettreAJourVue();
+                fenetre->setView(vue);
+            }
+            else if (event.type == sf::Event::MouseButtonPressed) {
+                sourisEnfoncee = true;
+                boutonSouris = static_cast<int>(event.mouseButton.button);
+                bool ctrl = sf::Keyboard::isKeyPressed(sf::Keyboard::LControl) || sf::Keyboard::isKeyPressed(sf::Keyboard::RControl);
+                if (ctrl) {
+                    if (event.mouseButton.button == sf::Mouse::Left) modeDessin = ModeDessin::ObstacleVivante;
+                    else if (event.mouseButton.button == sf::Mouse::Right) modeDessin = ModeDessin::ObstacleMorte;
+                    else modeDessin = ModeDessin::ObstacleMorte;
+                } else {
+                    if (event.mouseButton.button == sf::Mouse::Left) modeDessin = ModeDessin::Vivante;
+                    else if (event.mouseButton.button == sf::Mouse::Right) modeDessin = ModeDessin::Morte;
+                    else modeDessin = ModeDessin::Morte;
+                }
+
+                appliquerEtatDepuisPixel(jeu, event.mouseButton.x, event.mouseButton.y, tailleCellule, modeDessin);
+            }
+            else if (event.type == sf::Event::MouseButtonReleased) {
+                sourisEnfoncee = false;
+            }
+            else if (event.type == sf::Event::MouseMoved) {
+                if (sourisEnfoncee) {
+                    // Recalculer le mode selon Ctrl + bouton courant
+                    bool ctrl = sf::Keyboard::isKeyPressed(sf::Keyboard::LControl) || sf::Keyboard::isKeyPressed(sf::Keyboard::RControl);
+                    if (ctrl) {
+                        if (boutonSouris == static_cast<int>(sf::Mouse::Left)) modeDessin = ModeDessin::ObstacleVivante;
+                        else if (boutonSouris == static_cast<int>(sf::Mouse::Right)) modeDessin = ModeDessin::ObstacleMorte;
+                        else modeDessin = ModeDessin::ObstacleMorte;
+                    } else {
+                        if (boutonSouris == static_cast<int>(sf::Mouse::Left)) modeDessin = ModeDessin::Vivante;
+                        else if (boutonSouris == static_cast<int>(sf::Mouse::Right)) modeDessin = ModeDessin::Morte;
+                        else modeDessin = ModeDessin::Morte;
+                    }
+
+                    // appliquer continuellement pendant le drag
+                    appliquerEtatDepuisPixel(jeu, event.mouseMove.x, event.mouseMove.y, tailleCellule, modeDessin);
+                }
+            }
+            else if (event.type == sf::Event::MouseMoved) {
+                if (sourisEnfoncee) {
+                    // Recalculer le mode selon Ctrl + bouton courant
+                    bool ctrl = sf::Keyboard::isKeyPressed(sf::Keyboard::LControl) || sf::Keyboard::isKeyPressed(sf::Keyboard::RControl);
+                    if (ctrl) {
+                        if (boutonSouris == static_cast<int>(sf::Mouse::Left)) modeDessin = ModeDessin::ObstacleVivante;
+                        else if (boutonSouris == static_cast<int>(sf::Mouse::Right)) modeDessin = ModeDessin::ObstacleMorte;
+                        else modeDessin = ModeDessin::ObstacleMorte;
+                    } else {
+                        if (boutonSouris == static_cast<int>(sf::Mouse::Left)) modeDessin = ModeDessin::Vivante;
+                        else if (boutonSouris == static_cast<int>(sf::Mouse::Right)) modeDessin = ModeDessin::Morte;
+                        else modeDessin = ModeDessin::Morte;
+                    }
+
+                    // appliquer continuellement pendant le drag en mappant les pixels vers les coordonnées monde
+                    #ifdef SFML_VERSION_3
+                        auto pixelPos = sf::Mouse::getPosition(*fenetre);
+                        auto worldPos = fenetre->mapPixelToCoords(sf::Vector2i(static_cast<int>(pixelPos.x), static_cast<int>(pixelPos.y)));
+                        appliquerEtatDepuisPixel(jeu, worldPos.x, worldPos.y, tailleCellule, modeDessin);
+                    #else
+                        {
+                            sf::Vector2i pixelPos(event.mouseMove.x, event.mouseMove.y);
+                            auto worldPos = fenetre->mapPixelToCoords(pixelPos);
+                            appliquerEtatDepuisPixel(jeu, worldPos.x, worldPos.y, tailleCellule, modeDessin);
                         }
-                        break;
-                        
-                    case sf::Keyboard::Left:
-                        // Revenir en arriere
-                        if (jeu.revenirEnArriere()) {
-                            std::cout << "Retour a l'iteration " << jeu.obtenirIteration() << std::endl;
-                        } else {
-                            std::cout << "Impossible de revenir en arriere (debut de la simulation)" << std::endl;
-                        }
-                        break;
-                        
+                    #endif
+                }
+            }
                     case sf::Keyboard::Up:
                         // Accelerer
                         delaiIteration = std::max(Config::DELAI_ITERATION_MIN, delaiIteration - Config::DELAI_ITERATION_PAS);

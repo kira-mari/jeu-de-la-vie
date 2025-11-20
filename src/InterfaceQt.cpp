@@ -1,6 +1,7 @@
 #include "InterfaceQt.hpp"
 #include <QVBoxLayout>
 #include <QHBoxLayout>
+#include <QMouseEvent>
 #include <QGroupBox>
 #include <QMessageBox>
 #include <QApplication>
@@ -225,6 +226,19 @@ void InterfaceQt::initialiserWidgets() {
     
     lblIterationMax = new QLabel("Itération max: Illimité");
     lblIterationMax->setStyleSheet("font-size: 13px; color: #666;");
+
+    // Outil dessin: sélection du type de cellule
+    cmbDrawType = new QComboBox();
+    cmbDrawType->addItem("Vivante");
+    cmbDrawType->addItem("Morte");
+    cmbDrawType->addItem("Obstacle (mort)");
+    cmbDrawType->addItem("Obstacle (vivante)");
+    cmbDrawType->setCurrentIndex(0);
+    cmbDrawType->setStyleSheet(
+        "QComboBox { padding: 5px; border: 2px solid #ddd; border-radius: 4px; font-size: 13px; }"
+    );
+    drawMode = 0;
+    connect(cmbDrawType, QOverload<int>::of(&QComboBox::currentIndexChanged), [this](int idx){ drawMode = idx; });
 }
 
 void InterfaceQt::initialiserLayout() {
@@ -362,6 +376,9 @@ void InterfaceQt::initialiserLayout() {
     QVBoxLayout* motifsLayout = new QVBoxLayout(groupMotifs);
     motifsLayout->addWidget(cmbMotifs);
     motifsLayout->addWidget(btnPlacerMotif);
+    motifsLayout->addWidget(new QLabel(""));
+    motifsLayout->addWidget(new QLabel("Outil dessin:"));
+    motifsLayout->addWidget(cmbDrawType);
     controlLayout->addWidget(groupMotifs);
     
     controlLayout->addStretch();
@@ -616,6 +633,36 @@ void InterfaceQt::dessinerGrille(QPainter& painter) {
     }
 }
 
+void InterfaceQt::canvasMouseEvent(int x, int y, Qt::MouseButtons buttons) {
+    (void)buttons;
+    // Calculer la cellule ciblée
+    int colonne = x / tailleCellule;
+    int ligne = y / tailleCellule;
+    const Grille& grille = jeu.obtenirGrille();
+    if (!grille.estPositionValide(ligne, colonne)) return;
+
+    // Déterminer le type à appliquer selon drawMode (sélection UI)
+    switch (drawMode) {
+        case 0:
+            jeu.definirEtatCellule(ligne, colonne, std::make_unique<CelluleVivante>());
+            break;
+        case 1:
+            jeu.definirEtatCellule(ligne, colonne, std::make_unique<CelluleMorte>());
+            break;
+        case 2:
+            jeu.definirEtatCellule(ligne, colonne, std::make_unique<CelluleObstacle>(false));
+            break;
+        case 3:
+            jeu.definirEtatCellule(ligne, colonne, std::make_unique<CelluleObstacle>(true));
+            break;
+        default:
+            break;
+    }
+
+    // Mettre à jour immédiatement l'affichage
+    mettreAJourAffichage();
+}
+
 void InterfaceQt::keyPressEvent(QKeyEvent* event) {
     switch (event->key()) {
         case Qt::Key_Space:
@@ -651,4 +698,19 @@ void GrilleWidget::paintEvent(QPaintEvent* /*event*/) {
     QPainter painter(this);
     painter.setRenderHint(QPainter::Antialiasing);
     parent->dessinerGrille(painter);
+}
+
+void GrilleWidget::mousePressEvent(QMouseEvent* event) {
+    if (!parent) return;
+    QPoint pos = event->pos();
+    parent->canvasMouseEvent(pos.x(), pos.y(), event->buttons());
+}
+
+void GrilleWidget::mouseMoveEvent(QMouseEvent* event) {
+    if (!parent) return;
+    // Si un bouton est enfoncé, dessiner en drag
+    if (event->buttons() & (Qt::LeftButton | Qt::RightButton | Qt::MiddleButton)) {
+        QPoint pos = event->pos();
+        parent->canvasMouseEvent(pos.x(), pos.y(), event->buttons());
+    }
 }

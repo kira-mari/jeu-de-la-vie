@@ -123,3 +123,16 @@ void JeuDeLaVie::definirModeParallele(bool actif) {
 bool JeuDeLaVie::placerMotif(const std::string& motif, int ligne, int colonne) {
     return grille->placerMotif(motif, ligne, colonne);
 }
+
+void JeuDeLaVie::definirEtatCellule(int ligne, int colonne, std::unique_ptr<EtatCellule> etat) {
+    if (!grille) return;
+    if (!grille->estPositionValide(ligne, colonne)) return;
+
+    // Appliquer l'état demandé
+    grille->definirEtatCellule(ligne, colonne, std::move(etat));
+
+    // Après modification manuelle depuis l'interface, réinitialiser l'historique
+    historique.clear();
+    historique.push_back(std::make_unique<Grille>(*grille));
+    iteration = 0;
+}
