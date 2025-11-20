@@ -412,40 +412,6 @@ void InterfaceSFML::gererEvenements() {
                         gererPlacementMotif(event.key.code);
                         break;
                 }
-            }
-                    case sf::Keyboard::Up:
-                        // Accelerer
-                        delaiIteration = std::max(Config::DELAI_ITERATION_MIN, delaiIteration - Config::DELAI_ITERATION_PAS);
-                        std::cout << "Delai: " << delaiIteration << "s" << std::endl;
-                        break;
-                        
-                    case sf::Keyboard::Down:
-                        // Ralentir
-                        delaiIteration = std::min(Config::DELAI_ITERATION_MAX, delaiIteration + Config::DELAI_ITERATION_PAS);
-                        std::cout << "Delai: " << delaiIteration << "s" << std::endl;
-                        break;
-                        
-                    case sf::Keyboard::T:
-                        // Toggle mode torique
-                        {
-                            bool modeTorique = jeu.estModeTorique();
-                            jeu.definirModeTorique(!modeTorique);
-                            std::cout << "Mode torique: " << (!modeTorique ? "active" : "desactive") << std::endl;
-                        }
-                        break;
-                        
-                    case sf::Keyboard::P:
-                        // Toggle mode parallele
-                        {
-                            bool modeParallele = jeu.estModeParallele();
-                            jeu.definirModeParallele(!modeParallele);
-                            std::cout << "Mode parallele: " << (!modeParallele ? "active" : "desactive") << std::endl;
-                        }
-                        break;
-                        
-                    default:
-                        gererPlacementMotif(event.key.code);
-                        break;
                 }
             }
         }
