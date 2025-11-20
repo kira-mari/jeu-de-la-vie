@@ -73,10 +73,10 @@ $(function() {
   <div class="headertitle"><div class="title">Document de Conception - Jeu de la Vie</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md61"></a> </p>
-<h1><a class="anchor" id="autotoc_md62"></a>
+<div class="textblock"><p><a class="anchor" id="autotoc_md62"></a> </p>
+<h1><a class="anchor" id="autotoc_md63"></a>
 1. Diagramme de Classes (Mermaid)</h1>
-<h2><a class="anchor" id="autotoc_md63"></a>
+<h2><a class="anchor" id="autotoc_md64"></a>
 Hiérarchie des États de Cellules</h2>
 <div class="fragment"><div class="line">classDiagram</div>
 <div class="line">    class EtatCellule {</div>
@@ -113,7 +113,7 @@ Hiérarchie des États de Cellules</h2>
 <div class="line">    EtatCellule &lt;|-- CelluleMorte</div>
 <div class="line">    EtatCellule &lt;|-- CelluleVivante</div>
 <div class="line">    EtatCellule &lt;|-- CelluleObstacle</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md64"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md65"></a>
 Hiérarchie des Règles du Jeu</h2>
 <div class="fragment"><div class="line">classDiagram</div>
 <div class="line">    class RegleJeu {</div>
@@ -134,7 +134,7 @@ Hiérarchie des Règles du Jeu</h2>
 <div class="line">    </div>
 <div class="line">    RegleJeu &lt;|-- RegleStandard : bordures fixes</div>
 <div class="line">    RegleJeu &lt;|-- RegleTorique : grille bouclée</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md65"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md66"></a>
 Architecture Principale</h2>
 <div class="fragment"><div class="line">classDiagram</div>
 <div class="line">    class Cellule {</div>
@@ -187,6 +187,7 @@ Architecture Principale</h2>
 <div class="line">        +reinitialiser(nouvelleGrille)</div>
 <div class="line">        +definirModeTorique(actif)</div>
 <div class="line">        +definirModeParallele(actif)</div>
+<div class="line">        +definirEtatCellule(ligne, colonne, etat) void</div>
 <div class="line">        +placerMotif(motif, ligne, colonne) bool</div>
 <div class="line">    }</div>
 <div class="line">    </div>
@@ -194,7 +195,7 @@ Architecture Principale</h2>
 <div class="line">    Grille &quot;1&quot; o-- &quot;n*m&quot; Cellule : contient</div>
 <div class="line">    Grille &quot;1&quot; o-- &quot;1&quot; RegleJeu : utilise</div>
 <div class="line">    JeuDeLaVie &quot;1&quot; o-- &quot;1&quot; Grille : gère</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md66"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md67"></a>
 Interfaces et Utilitaires</h2>
 <div class="fragment"><div class="line">classDiagram</div>
 <div class="line">    class GestionnaireFichier {</div>
@@ -217,9 +218,11 @@ Interfaces et Utilitaires</h2>
 <div class="line">        -couleurObstacleMort : Color</div>
 <div class="line">        -couleurObstacleVivant : Color</div>
 <div class="line">        -couleurGrille : Color</div>
+<div class="line">        -vue : sf::View</div>
 <div class="line">        +InterfaceSFML(jeuRef, largeur, hauteur, titre)</div>
 <div class="line">        +executer() void</div>
 <div class="line">        +definirDelaiIteration(delai) void</div>
+<div class="line">        +mettreAJourVue() void</div>
 <div class="line">        -gererEvenements() void</div>
 <div class="line">        -afficher() void</div>
 <div class="line">        -dessinerGrille() void</div>
@@ -246,8 +249,10 @@ Interfaces et Utilitaires</h2>
 <div class="line">        -delaiMs : int</div>
 <div class="line">        -tailleCellule : int</div>
 <div class="line">        -iterationMax : int</div>
+<div class="line">        -drawMode : int</div>
 <div class="line">        +InterfaceQt(jeuRef)</div>
 <div class="line">        +executer() void</div>
+<div class="line">        +canvasMouseEvent(x, y, buttons) void</div>
 <div class="line">        +dessinerGrille(painter) void</div>
 <div class="line">        -onPlayPause() void</div>
 <div class="line">        -onStep() void</div>
@@ -298,9 +303,9 @@ Interfaces et Utilitaires</h2>
 <div class="line">    GrilleWidget --&gt; InterfaceQt : appelle dessinerGrille</div>
 <div class="line">    ModeConsole --&gt; JeuDeLaVie : utilise</div>
 <div class="line">    GestionnaireFichier --&gt; Grille : crée</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md67"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md68"></a>
 2. Diagramme de Séquence (Mermaid)</h1>
-<h2><a class="anchor" id="autotoc_md68"></a>
+<h2><a class="anchor" id="autotoc_md69"></a>
 Exécution d'une itération</h2>
 <div class="fragment"><div class="line">sequenceDiagram</div>
 <div class="line">    participant U as Utilisateur</div>
@@ -325,7 +330,7 @@ Exécution d'une itération</h2>
 <div class="line">    J--&gt;&gt;IG: true</div>
 <div class="line">    IG-&gt;&gt;IG: afficher()</div>
 <div class="line">    IG--&gt;&gt;U: écran mis à jour</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md69"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md70"></a>
 Chargement d'un fichier</h2>
 <div class="fragment"><div class="line">sequenceDiagram</div>
 <div class="line">    participant M as main</div>
@@ -350,7 +355,7 @@ Chargement d'un fichier</h2>
 <div class="line">    end</div>
 <div class="line">    </div>
 <div class="line">    GF--&gt;&gt;M: unique_ptr~Grille~</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md70"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md71"></a>
 Placement de motif interactif</h2>
 <div class="fragment"><div class="line">sequenceDiagram</div>
 <div class="line">    participant U as Utilisateur</div>
@@ -371,7 +376,22 @@ Placement de motif interactif</h2>
 <div class="line">    J--&gt;&gt;IG: true</div>
 <div class="line">    IG-&gt;&gt;IG: afficher message console</div>
 <div class="line">    IG--&gt;&gt;U: &quot;Motif &#39;planeur&#39; placé&quot;</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md71"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md72"></a>
+Séquence : Dessin souris (SFML)</h2>
+<div class="fragment"><div class="line">sequenceDiagram</div>
+<div class="line">    participant U as Utilisateur</div>
+<div class="line">    participant IG as InterfaceSFML</div>
+<div class="line">    participant J as JeuDeLaVie</div>
+<div class="line">    participant G as Grille</div>
+<div class="line"> </div>
+<div class="line">    U-&gt;&gt;IG: Clic souris (x,y)</div>
+<div class="line">    IG-&gt;&gt;IG: mapPixelToCoords(x,y)</div>
+<div class="line">    IG-&gt;&gt;J: definirEtatCellule(ligne, colonne, EtatCellule)</div>
+<div class="line">    J-&gt;&gt;G: definirEtatCellule(ligne, colonne, etat)</div>
+<div class="line">    G--&gt;&gt;J: OK</div>
+<div class="line">    J--&gt;&gt;IG: OK</div>
+<div class="line">    IG--&gt;&gt;U: affichage mis à jour</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md73"></a>
 Interface Qt - Interaction utilisateur</h2>
 <div class="fragment"><div class="line">sequenceDiagram</div>
 <div class="line">    participant U as Utilisateur</div>
@@ -408,9 +428,9 @@ Interface Qt - Interaction utilisateur</h2>
 <div class="line">    U-&gt;&gt;IQ: Clic bouton &quot;Pause&quot;</div>
 <div class="line">    IQ-&gt;&gt;T: stop()</div>
 <div class="line">    IQ-&gt;&gt;IQ: setText(&quot;▶ Démarrer&quot;)</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md72"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md74"></a>
 3. Diagramme d'Activité (Mermaid)</h1>
-<h2><a class="anchor" id="autotoc_md73"></a>
+<h2><a class="anchor" id="autotoc_md75"></a>
 Activité principale du programme</h2>
 <div class="fragment"><div class="line">flowchart TD</div>
 <div class="line">    Start([Début]) --&gt; Args[Analyser arguments CLI]</div>
@@ -449,7 +469,7 @@ Activité principale du programme</h2>
 <div class="line">    StopQt --&gt; LoopQt</div>
 <div class="line">    TimerQt --&gt;|Non| LoopQt</div>
 <div class="line">    LoopQt --&gt;|Fermée| End([Fin])</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md74"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md76"></a>
 Mise à jour de la grille avec parallélisation</h2>
 <div class="fragment"><div class="line">flowchart TD</div>
 <div class="line">    Start([Début mettreAJour]) --&gt; NewGrid[Créer nouvelle grille vide]</div>
@@ -470,16 +490,16 @@ Mise à jour de la grille avec parallélisation</h2>
 <div class="line">    </div>
 <div class="line">    Wait --&gt; Replace[Remplacer ancienne grille&lt;br/&gt;par nouvelle]</div>
 <div class="line">    Replace --&gt; End([Fin])</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md75"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md77"></a>
 4. Patterns de Conception Utilisés</h1>
-<h2><a class="anchor" id="autotoc_md76"></a>
+<h2><a class="anchor" id="autotoc_md78"></a>
 Strategy Pattern</h2>
 <ul>
 <li><b><a class="el" href="classRegleJeu.html" title="Classe abstraite représentant les règles du jeu.">RegleJeu</a></b> avec ses implémentations (<a class="el" href="classRegleStandard.html" title="Implémentation des règles standard du jeu de la vie.">RegleStandard</a>, <a class="el" href="classRegleTorique.html" title="Implémentation des règles pour une grille torique (extension bonus)">RegleTorique</a>)</li>
 <li>Permet de changer les règles du jeu dynamiquement</li>
 <li>Utilisé dans <code><a class="el" href="classGrille.html" title="Classe représentant la grille du jeu de la vie.">Grille</a></code> pour sélectionner le mode torique ou non</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md77"></a>
+<h2><a class="anchor" id="autotoc_md79"></a>
 State Pattern</h2>
 <ul>
 <li><b><a class="el" href="classEtatCellule.html" title="Classe abstraite représentant l&#39;état d&#39;une cellule.">EtatCellule</a></b> avec ses états concrets (<a class="el" href="classCelluleMorte.html" title="Classe représentant une cellule morte.">CelluleMorte</a>, <a class="el" href="classCelluleVivante.html" title="Classe représentant une cellule vivante.">CelluleVivante</a>, <a class="el" href="classCelluleObstacle.html" title="Classe représentant une cellule obstacle (extension bonus) Les cellules obstacles ne changent jamais ...">CelluleObstacle</a>)</li>
@@ -487,37 +507,37 @@ State Pattern</h2>
 <li>Transition d'état gérée par les règles du jeu</li>
 <li><b><a class="el" href="classCelluleObstacle.html" title="Classe représentant une cellule obstacle (extension bonus) Les cellules obstacles ne changent jamais ...">CelluleObstacle</a></b> peut être vivant (orange) ou mort (rouge) et ne change jamais d'état pendant la simulation</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md78"></a>
+<h2><a class="anchor" id="autotoc_md80"></a>
 Template Method Pattern</h2>
 <ul>
 <li><b><a class="el" href="classRegleJeu.html#a609e1db8b39928850ad88ce636a7011d" title="Calcule le nouvel état d&#39;une cellule selon les règles du jeu.">RegleJeu::calculerNouvelEtat()</a></b> utilise <b>compterVoisinsVivants()</b></li>
 <li>Chaque sous-classe implémente sa propre façon de compter les voisins</li>
 <li><a class="el" href="classRegleTorique.html" title="Implémentation des règles pour une grille torique (extension bonus)">RegleTorique</a> compte les voisins avec grille bouclée</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md79"></a>
+<h2><a class="anchor" id="autotoc_md81"></a>
 Dependency Injection</h2>
 <ul>
 <li>Les règles sont injectées dans la <a class="el" href="classGrille.html" title="Classe représentant la grille du jeu de la vie.">Grille</a> via le constructeur</li>
 <li>L'interface graphique reçoit une référence au <a class="el" href="classJeuDeLaVie.html" title="Classe principale orchestrant le jeu de la vie.">JeuDeLaVie</a></li>
 <li>Facilite les tests et la flexibilité</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md80"></a>
+<h2><a class="anchor" id="autotoc_md82"></a>
 Observer Pattern (implicite via événements Qt)</h2>
 <ul>
 <li><a class="el" href="classInterfaceQt.html" title="Interface graphique moderne avec Qt.">InterfaceQt</a> utilise le système de signals/slots de Qt</li>
 <li>Les boutons émettent des signaux connectés aux slots (onPlayPause, onStep, etc.)</li>
 <li>QTimer émet timeout signal pour l'animation automatique</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md81"></a>
+<h2><a class="anchor" id="autotoc_md83"></a>
 MVC Pattern (Model-View-Controller)</h2>
 <ul>
 <li><b>Model</b> : <a class="el" href="classJeuDeLaVie.html" title="Classe principale orchestrant le jeu de la vie.">JeuDeLaVie</a>, <a class="el" href="classGrille.html" title="Classe représentant la grille du jeu de la vie.">Grille</a>, <a class="el" href="classCellule.html" title="Classe représentant une cellule dans le jeu de la vie.">Cellule</a> (logique métier)</li>
 <li><b>View</b> : <a class="el" href="classInterfaceSFML.html" title="Interface graphique avec SFML pour le jeu de la vie.">InterfaceSFML</a> (SFML), <a class="el" href="classInterfaceQt.html" title="Interface graphique moderne avec Qt.">InterfaceQt</a>, <a class="el" href="classModeConsole.html" title="Mode console pour l&#39;exécution et la sauvegarde des itérations.">ModeConsole</a> (affichage)</li>
 <li><b>Controller</b> : Gestion d'événements dans les interfaces</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md82"></a>
+<h1><a class="anchor" id="autotoc_md84"></a>
 5. Justification des Choix Techniques</h1>
-<h2><a class="anchor" id="autotoc_md83"></a>
+<h2><a class="anchor" id="autotoc_md85"></a>
 Utilisation de unique_ptr et shared_ptr</h2>
 <ul>
 <li><b>unique_ptr</b> pour la propriété exclusive :<ul>
@@ -531,21 +551,21 @@ Utilisation de unique_ptr et shared_ptr</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md84"></a>
+<h2><a class="anchor" id="autotoc_md86"></a>
 Polymorphisme</h2>
 <ul>
 <li>Les états et règles utilisent le polymorphisme pour permettre l'extensibilité</li>
 <li>Facilite l'ajout de nouveaux états (ex: CelluleEnCroissance) ou règles (ex: RegleHighLife)</li>
 <li>Respect du principe Open/Closed (SOLID)</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md85"></a>
+<h2><a class="anchor" id="autotoc_md87"></a>
 Séparation GUI/Logique</h2>
 <ul>
 <li>La logique métier (<a class="el" href="classGrille.html" title="Classe représentant la grille du jeu de la vie.">Grille</a>, <a class="el" href="classCellule.html" title="Classe représentant une cellule dans le jeu de la vie.">Cellule</a>, Règles) est complètement indépendante de l'affichage</li>
 <li>Facilite les tests unitaires</li>
 <li>Permet d'avoir 3 interfaces différentes (Console, SFML, Qt) sans dupliquer la logique</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md86"></a>
+<h2><a class="anchor" id="autotoc_md88"></a>
 Multithreading optimisé</h2>
 <ul>
 <li>Utilisation de std::thread pour la parallélisation par lignes</li>
@@ -553,16 +573,16 @@ Multithreading optimisé</h2>
 <li>Division du travail équitable entre threads (mettreAJourLignes)</li>
 <li>Gain de performance de ~15% sur grandes grilles (500x500+)</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md87"></a>
+<h2><a class="anchor" id="autotoc_md89"></a>
 Choix de Qt vs SFML</h2>
 <ul>
 <li><b>SFML</b> : Légère, rapide, idéale pour animation fluide et grandes grilles</li>
 <li><b>Qt</b> : Interface professionnelle avec widgets natifs, contrôles riches</li>
 <li>Compilation conditionnelle : le projet compile avec l'une, l'autre, ou les deux</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md88"></a>
+<h1><a class="anchor" id="autotoc_md90"></a>
 6. Complexité et Performance</h1>
-<h2><a class="anchor" id="autotoc_md89"></a>
+<h2><a class="anchor" id="autotoc_md91"></a>
 Complexité temporelle</h2>
 <ul>
 <li>Mise à jour séquentielle: <b>O(n × m)</b> où n×m est la taille de la grille</li>
@@ -570,14 +590,14 @@ Complexité temporelle</h2>
 <li>Comptage des voisins: <b>O(1)</b> (toujours 8 voisins à vérifier)</li>
 <li>Placement de motif: <b>O(k)</b> où k est la taille du motif</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md90"></a>
+<h2><a class="anchor" id="autotoc_md92"></a>
 Complexité spatiale</h2>
 <ul>
 <li>Stockage de la grille: <b>O(n × m)</b></li>
 <li><a class="el" href="classGrille.html" title="Classe représentant la grille du jeu de la vie.">Grille</a> temporaire lors de la mise à jour: <b>O(n × m)</b></li>
 <li>Historique (undo): <b>O(h × n × m)</b> où h est le nombre d'itérations sauvegardées</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md91"></a>
+<h2><a class="anchor" id="autotoc_md93"></a>
 Optimisations implémentées</h2>
 <ul>
 <li><b>Réservation de mémoire</b> avec reserve() pour éviter les réallocations</li>
@@ -586,7 +606,7 @@ Optimisations implémentées</h2>
 <li><b>Taille de cellule adaptative</b> : ajustée automatiquement selon la taille de grille</li>
 <li><b>Calcul exact de fenêtre</b> : pas d'espace noir inutile (SFML/Qt)</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md92"></a>
+<h2><a class="anchor" id="autotoc_md94"></a>
 Benchmark (grille 1000×1000, 100 itérations)</h2>
 <ul>
 <li>Mode séquentiel: ~2.5s</li>

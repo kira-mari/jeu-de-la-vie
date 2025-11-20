@@ -1,14 +1,19 @@
 <map id="InterfaceSFML::InterfaceSFML" name="InterfaceSFML::InterfaceSFML">
-<area shape="rect" id="Node000001" title="Constructeur de l&#39;interface graphique SFML." alt="" coords="5,66,221,91"/>
-<area shape="rect" id="Node000002" href="$classInterfaceSFML.html#a0d632238c209cf64ab1a27685fe77384" title="Calcule la taille optimale des cellules." alt="" coords="269,29,477,69"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="221,64,256,60,256,65,222,69"/>
-<area shape="rect" id="Node000003" href="$classJeuDeLaVie.html#a3f6dc54b2b1ebef7111e7aa5a2622be3" title="Obtient la grille actuelle." alt="" coords="527,11,713,36"/>
-<area shape="poly" id="edge5_Node000001_Node000003" title=" " alt="" coords="137,63,196,37,269,15,332,6,396,3,514,8,514,13,396,8,332,11,270,20,198,42,140,68"/>
-<area shape="rect" id="Node000004" href="$classGrille.html#a1ab5c8e0ea0d1dc21549c38d0f0f5cf9" title="Obtient le nombre de colonnes." alt="" coords="525,63,715,88"/>
-<area shape="poly" id="edge6_Node000001_Node000004" title=" " alt="" coords="221,78,477,78,512,78,512,83,477,84,221,83"/>
-<area shape="rect" id="Node000005" href="$classGrille.html#a96b5f98d212a0ee9e2f71d73ebe5bb91" title="Obtient le nombre de lignes." alt="" coords="535,116,705,142"/>
-<area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="222,87,521,117,521,122,221,92"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="477,36,513,32,514,37,478,41"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="478,58,512,62,512,67,477,63"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="434,67,526,97,565,110,564,115,525,102,432,72"/>
+<area shape="rect" id="Node000001" title="Constructeur de l&#39;interface graphique SFML." alt="" coords="5,96,221,121"/>
+<area shape="rect" id="Node000002" href="$classInterfaceSFML.html#a0d632238c209cf64ab1a27685fe77384" title="Calcule la taille optimale des cellules." alt="" coords="278,31,486,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="173,93,274,71,275,77,174,98"/>
+<area shape="rect" id="Node000003" href="$classJeuDeLaVie.html#a3f6dc54b2b1ebef7111e7aa5a2622be3" title="Obtient la grille actuelle." alt="" coords="545,92,730,117"/>
+<area shape="poly" id="edge9_Node000001_Node000003" title=" " alt="" coords="182,119,270,130,382,136,494,130,571,117,572,123,495,135,382,142,269,135,181,124"/>
+<area shape="rect" id="Node000004" href="$classGrille.html#a1ab5c8e0ea0d1dc21549c38d0f0f5cf9" title="Obtient le nombre de colonnes." alt="" coords="543,141,732,166"/>
+<area shape="poly" id="edge10_Node000001_Node000004" title=" " alt="" coords="160,119,212,132,270,142,404,152,529,154,529,159,404,158,269,147,211,137,158,124"/>
+<area shape="rect" id="Node000005" href="$classGrille.html#a96b5f98d212a0ee9e2f71d73ebe5bb91" title="Obtient le nombre de lignes." alt="" coords="552,38,723,64"/>
+<area shape="poly" id="edge11_Node000001_Node000005" title=" " alt="" coords="129,94,187,53,227,32,269,17,310,8,353,4,439,6,518,18,582,32,581,37,517,23,438,12,353,9,311,13,270,22,229,37,190,58,132,98"/>
+<area shape="rect" id="Node000006" href="$classInterfaceSFML.html#ae14bea1479191a62abf18f42f7387bcc" title="Met à jour la vue pour préserver l&#39;aspect carré des cellules." alt="" coords="269,96,495,121"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="222,106,255,106,255,111,222,111"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="479,69,563,86,562,92,478,74"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="470,69,496,81,511,92,521,104,530,115,544,126,560,134,558,139,541,131,526,119,517,108,507,96,493,85,468,74"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="486,48,538,48,538,54,486,54"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="495,104,531,103,531,109,495,109"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="455,119,552,136,551,141,454,124"/>
+<area shape="poly" id="edge8_Node000006_Node000005" title=" " alt="" coords="439,93,566,64,567,69,440,98"/>
 </map>

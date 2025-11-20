@@ -1,11 +1,11 @@
 <map id="InterfaceQt" name="InterfaceQt">
-<area shape="rect" id="Node000001" title="Interface graphique moderne avec Qt." alt="" coords="5,1252,207,1897"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="31,954,139,1019"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="89,1033,97,1252,92,1252,84,1033"/>
-<area shape="rect" id="Node000003" href="$classJeuDeLaVie.html" title="Classe principale orchestrant le jeu de la vie." alt="" coords="163,784,335,1189"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="202,1190,191,1237,186,1235,197,1189"/>
+<area shape="rect" id="Node000001" title="Interface graphique moderne avec Qt." alt="" coords="5,1272,207,1937"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="31,964,139,1029"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="89,1044,97,1272,92,1272,84,1044"/>
+<area shape="rect" id="Node000003" href="$classJeuDeLaVie.html" title="Classe principale orchestrant le jeu de la vie." alt="" coords="163,784,335,1209"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="201,1210,190,1257,185,1256,196,1209"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="241,181,417,246"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="330,246,318,462,306,610,290,760,289,768,284,767,285,760,301,609,312,461,325,246"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="330,246,317,462,306,610,290,760,289,768,284,767,285,760,300,609,312,461,325,246"/>
 <area shape="rect" id="Node000005" href="$classGrille.html" title="Classe représentant la grille du jeu de la vie." alt="" coords="418,316,581,721"/>
 <area shape="poly" id="edge8_Node000005_Node000004" title=" " alt="" coords="362,245,387,276,412,317,408,320,382,279,358,248"/>
 <area shape="rect" id="Node000009" title=" " alt="" coords="87,479,258,559"/>
@@ -17,5 +17,5 @@
 <area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="728,248,593,409,589,406,724,245"/>
 <area shape="rect" id="Node000008" href="$classRegleJeu.html" title="Classe abstraite représentant les règles du jeu." alt="" coords="659,5,847,111"/>
 <area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="755,111,755,164,750,164,750,111"/>
-<area shape="poly" id="edge9_Node000003_Node000009" title=" " alt="" coords="182,558,216,767,211,768,176,559"/>
+<area shape="poly" id="edge9_Node000003_Node000009" title=" " alt="" coords="182,558,215,767,210,768,176,559"/>
 </map>

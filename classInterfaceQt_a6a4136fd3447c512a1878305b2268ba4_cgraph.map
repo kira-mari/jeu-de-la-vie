@@ -1,0 +1,25 @@
+<map id="InterfaceQt::canvasMouseEvent" name="InterfaceQt::canvasMouseEvent">
+<area shape="rect" id="Node000001" title="Méthode appelée par le widget de grille lors d&#39;événements souris." alt="" coords="5,90,197,130"/>
+<area shape="rect" id="Node000002" href="$classJeuDeLaVie.html#a87e0b20d13a6adfc6d86c3ed4429b605" title="Définit l&#39;état d&#39;une cellule (utilisé par les interfaces pour le dessin)" alt="" coords="245,5,461,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,87,244,47,291,32,293,37,246,53,148,92"/>
+<area shape="rect" id="Node000003" href="$classGrille.html#aa4c9ce36bb4f2c59a83aeb39d73fc285" title="Vérifie si une position est valide dans la grille." alt="" coords="1004,107,1181,132"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="197,99,344,89,533,81,744,80,851,84,956,91,1023,101,1022,107,956,97,851,89,744,85,533,86,344,94,198,104"/>
+<area shape="rect" id="Node000004" href="$classInterfaceQt.html#a06b809d43dbf3814ab103a8d42de319a" title="Met à jour l&#39;affichage." alt="" coords="263,159,444,199"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="175,127,268,153,266,158,174,133"/>
+<area shape="rect" id="Node000008" href="$classJeuDeLaVie.html#a3f6dc54b2b1ebef7111e7aa5a2622be3" title="Obtient la grille actuelle." alt="" coords="769,304,954,329"/>
+<area shape="poly" id="edge12_Node000001_Node000008" title=" " alt="" coords="126,128,179,170,212,191,246,209,311,234,379,254,517,284,646,302,755,311,755,316,646,307,516,289,378,259,310,239,244,214,209,196,176,174,123,132"/>
+<area shape="rect" id="Node000005" href="$classInterfaceQt.html#abe5b2e247e50614efbf88402c774899c" title="Compte les cellules vivantes." alt="" coords="509,159,719,199"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="444,177,495,177,495,182,444,182"/>
+<area shape="rect" id="Node000011" href="$classJeuDeLaVie.html#a64c17035b0448747418084db872c72c8" title="Obtient le numéro d&#39;itération actuel." alt="" coords="511,224,717,249"/>
+<area shape="poly" id="edge11_Node000004_Node000011" title=" " alt="" coords="445,197,543,218,542,224,444,202"/>
+<area shape="rect" id="Node000006" href="$classCellule.html#a70d2731234961e330fe0a31486d1dec7" title="Vérifie si la cellule est vivante." alt="" coords="789,107,934,132"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="697,157,794,133,796,138,698,162"/>
+<area shape="rect" id="Node000007" href="$classGrille.html#aab75610fe73ae48bd035a048c55832f0" title="Obtient une cellule à une position donnée." alt="" coords="783,156,939,181"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="719,172,770,170,770,175,719,177"/>
+<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="701,197,720,209,738,230,745,251,752,272,768,291,776,296,773,300,765,295,747,274,740,253,733,233,717,213,698,202"/>
+<area shape="rect" id="Node000009" href="$classGrille.html#a1ab5c8e0ea0d1dc21549c38d0f0f5cf9" title="Obtient le nombre de colonnes." alt="" coords="767,205,956,231"/>
+<area shape="poly" id="edge9_Node000005_Node000009" title=" " alt="" coords="719,193,767,201,766,206,718,198"/>
+<area shape="rect" id="Node000010" href="$classGrille.html#a96b5f98d212a0ee9e2f71d73ebe5bb91" title="Obtient le nombre de lignes." alt="" coords="776,255,947,280"/>
+<area shape="poly" id="edge10_Node000005_Node000010" title=" " alt="" coords="691,197,720,209,744,225,768,241,786,248,784,253,765,246,741,230,717,214,689,202"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="921,153,1019,132,1020,138,922,159"/>
+</map>

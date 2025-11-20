@@ -6,5 +6,6 @@ var searchData=
   ['delai_5fiteration_5fpas_3',['DELAI_ITERATION_PAS',['../namespaceConfig.html#a0be28dc5fe74eb0aa7b9843539827bbb',1,'Config']]],
   ['delaiiteration_4',['delaiIteration',['../classInterfaceSFML.html#a258966415eaa585d50a402f48225688b',1,'InterfaceSFML']]],
   ['delaims_5',['delaiMs',['../classInterfaceQt.html#a32c57c0f531f52c716aee1d636cffc06',1,'InterfaceQt']]],
-  ['dossiersortie_6',['dossierSortie',['../classModeConsole.html#aeae4afcaa7fc6fc6a7721c81d6dc1f6d',1,'ModeConsole']]]
+  ['dossiersortie_6',['dossierSortie',['../classModeConsole.html#aeae4afcaa7fc6fc6a7721c81d6dc1f6d',1,'ModeConsole']]],
+  ['drawmode_7',['drawMode',['../classInterfaceQt.html#a956563ac9a7c88e6ddd13745e9b724d7',1,'InterfaceQt']]]
 ];

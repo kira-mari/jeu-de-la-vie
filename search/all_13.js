@@ -1,5 +1,28 @@
 var searchData=
 [
-  ['nbcolonnes_0',['nbColonnes',['../classGrille.html#ae1318e580e7e2c7d8675ae53e518c9fb',1,'Grille']]],
-  ['nblignes_1',['nbLignes',['../classGrille.html#a6c386d01785a0aa294eb4b1519023617',1,'Grille']]]
+  ['main_0',['main',['../test__main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;test_main.cpp'],['../main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;main.cpp']]],
+  ['main_2ecpp_1',['main.cpp',['../main_8cpp.html',1,'']]],
+  ['matières_2',['Table des matières',['../index.html#autotoc_md2',1,'']]],
+  ['mermaid_3',['mermaid',['../md_CONCEPTION.html#autotoc_md63',1,'1. Diagramme de Classes (Mermaid)'],['../md_CONCEPTION.html#autotoc_md68',1,'2. Diagramme de Séquence (Mermaid)'],['../md_CONCEPTION.html#autotoc_md74',1,'3. Diagramme d&apos;Activité (Mermaid)']]],
+  ['method_20pattern_4',['Template Method Pattern',['../md_CONCEPTION.html#autotoc_md80',1,'']]],
+  ['mettreajour_5',['mettreAJour',['../classGrille.html#a980652764fefe3f45fcc0516a6e59abb',1,'Grille']]],
+  ['mettreajouraffichage_6',['mettreAJourAffichage',['../classInterfaceQt.html#a06b809d43dbf3814ab103a8d42de319a',1,'InterfaceQt']]],
+  ['mettreajourlignes_7',['mettreAJourLignes',['../classGrille.html#a7073ca25319522d4602550da3dfb1d22',1,'Grille']]],
+  ['mettreajourvue_8',['mettreAJourVue',['../classInterfaceSFML.html#ae14bea1479191a62abf18f42f7387bcc',1,'InterfaceSFML']]],
+  ['mise_20à_20jour_20de_20la_20grille_20avec_20parallélisation_9',['Mise à jour de la grille avec parallélisation',['../md_CONCEPTION.html#autotoc_md76',1,'']]],
+  ['mode_20console_20strong_20export_20fichiers_10',['3. &lt;strong&gt;Mode Console&lt;/strong&gt; (Export fichiers)',['../index.html#autotoc_md15',1,'']]],
+  ['modeconsole_11',['modeconsole',['../classModeConsole.html#a80e1f1dda3c6e0727032b8877ed357db',1,'ModeConsole::ModeConsole()'],['../classModeConsole.html',1,'ModeConsole']]],
+  ['modeconsole_2ecpp_12',['ModeConsole.cpp',['../ModeConsole_8cpp.html',1,'']]],
+  ['modeconsole_2ehpp_13',['ModeConsole.hpp',['../ModeConsole_8hpp.html',1,'']]],
+  ['modedessin_14',['modedessin',['../classInterfaceSFML.html#a81575798ea005f88d7c0d7b01b89c4ad',1,'InterfaceSFML::modeDessin'],['../classInterfaceSFML.html#abaa8fc086dace2cde5f8bad0fbef0c7c',1,'InterfaceSFML::ModeDessin']]],
+  ['model_20view_20controller_15',['MVC Pattern (Model-View-Controller)',['../md_CONCEPTION.html#autotoc_md83',1,'']]],
+  ['modeparallele_16',['modeParallele',['../classJeuDeLaVie.html#a3b0e21b094a091999dfe1cff1189f774',1,'JeuDeLaVie']]],
+  ['moderne_20et_20professionnelle_20recommandé_17',['1. Interface Qt (Moderne et professionnelle) - RECOMMANDÉ',['../index.html#autotoc_md10',1,'']]],
+  ['modetorique_18',['modeTorique',['../classJeuDeLaVie.html#a1bcc9aaf58ab3c354f3edc34cd5c7b81',1,'JeuDeLaVie']]],
+  ['morte_19',['Morte',['../classInterfaceSFML.html#abaa8fc086dace2cde5f8bad0fbef0c7cae4a04e3db1758bf0b260938227232512',1,'InterfaceSFML']]],
+  ['motif_20interactif_20',['Placement de motif interactif',['../md_CONCEPTION.html#autotoc_md71',1,'']]],
+  ['mousemoveevent_21',['mouseMoveEvent',['../classGrilleWidget.html#aa4683d81eb2289f0949b545b649ba45e',1,'GrilleWidget']]],
+  ['mousepressevent_22',['mousePressEvent',['../classGrilleWidget.html#a60420d46e58cb4705d0533d3364250c3',1,'GrilleWidget']]],
+  ['multithreading_20optimisé_23',['Multithreading optimisé',['../md_CONCEPTION.html#autotoc_md88',1,'']]],
+  ['mvc_20pattern_20model_20view_20controller_24',['MVC Pattern (Model-View-Controller)',['../md_CONCEPTION.html#autotoc_md83',1,'']]]
 ];

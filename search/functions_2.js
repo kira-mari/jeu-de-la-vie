@@ -4,7 +4,7 @@ var searchData=
   ['definircouleurvivante_1',['definirCouleurVivante',['../classInterfaceSFML.html#a6c4a62a27245977c1c8df3884774f07c',1,'InterfaceSFML']]],
   ['definirdelaiiteration_2',['definirDelaiIteration',['../classInterfaceSFML.html#a69764f25f5f9ff4d15f0aa5ab3a0577f',1,'InterfaceSFML']]],
   ['definiretat_3',['definirEtat',['../classCellule.html#aaa9f824dde2fdc68ef4483e3062f2dae',1,'Cellule']]],
-  ['definiretatcellule_4',['definirEtatCellule',['../classGrille.html#ab4c852bc2327224eac9da60841f30baa',1,'Grille']]],
+  ['definiretatcellule_4',['definiretatcellule',['../classGrille.html#ab4c852bc2327224eac9da60841f30baa',1,'Grille::definirEtatCellule()'],['../classJeuDeLaVie.html#a87e0b20d13a6adfc6d86c3ed4429b605',1,'JeuDeLaVie::definirEtatCellule(int ligne, int colonne, std::unique_ptr&lt; EtatCellule &gt; etat)']]],
   ['definiriterationmax_5',['definirIterationMax',['../classJeuDeLaVie.html#a1888b97a0febcf98ac6d57bee34847a6',1,'JeuDeLaVie']]],
   ['definirmodeparallele_6',['definirModeParallele',['../classJeuDeLaVie.html#a63f27d62e27687c8c0879ae52eabadd6',1,'JeuDeLaVie']]],
   ['definirmodetorique_7',['definirModeTorique',['../classJeuDeLaVie.html#ac699c345951d0e8e022f859339e68fda',1,'JeuDeLaVie']]],

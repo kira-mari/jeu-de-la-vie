@@ -1,0 +1,7 @@
+<map id="InterfaceQt::canvasMouseEvent" name="InterfaceQt::canvasMouseEvent">
+<area shape="rect" id="Node000001" title="Méthode appelée par le widget de grille lors d&#39;événements souris." alt="" coords="281,27,473,67"/>
+<area shape="rect" id="Node000002" href="$classGrilleWidget.html#aa4683d81eb2289f0949b545b649ba45e" title=" " alt="" coords="5,5,233,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="267,38,231,33,231,28,268,32"/>
+<area shape="rect" id="Node000003" href="$classGrilleWidget.html#a60420d46e58cb4705d0533d3364250c3" title=" " alt="" coords="24,55,215,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="268,62,215,68,215,62,268,57"/>
+</map>

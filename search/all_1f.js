@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['états_20de_20cellules_0',['Hiérarchie des États de Cellules',['../md_CONCEPTION.html#autotoc_md63',1,'']]],
-  ['événements_20qt_1',['Observer Pattern (implicite via événements Qt)',['../md_CONCEPTION.html#autotoc_md80',1,'']]]
+  ['à_20jour_20de_20la_20grille_20avec_20parallélisation_0',['Mise à jour de la grille avec parallélisation',['../md_CONCEPTION.html#autotoc_md76',1,'']]],
+  ['à_20présenter_1',['Points forts à présenter',['../index.html#autotoc_md56',1,'']]]
 ];

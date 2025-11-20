@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['🎮_20jeu_20de_20la_20vie_20de_20conway_20projet_20poo_20c_0',['🎮 Jeu de la Vie de Conway - Projet POO C++',['../index.html',1,'']]]
+  ['états_20de_20cellules_0',['Hiérarchie des États de Cellules',['../md_CONCEPTION.html#autotoc_md64',1,'']]],
+  ['événements_20qt_1',['Observer Pattern (implicite via événements Qt)',['../md_CONCEPTION.html#autotoc_md82',1,'']]]
 ];

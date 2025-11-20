@@ -1,0 +1,17 @@
+<map id="JeuDeLaVie::definirEtatCellule" name="JeuDeLaVie::definirEtatCellule">
+<area shape="rect" id="Node000001" title="Définit l&#39;état d&#39;une cellule (utilisé par les interfaces pour le dessin)" alt="" coords="861,35,1077,60"/>
+<area shape="rect" id="Node000002" href="$InterfaceSFML_8cpp.html#a1f6f08272591bae8f84b65fe8198a642" title=" " alt="" coords="625,5,810,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="847,36,810,31,811,26,848,31"/>
+<area shape="rect" id="Node000006" href="$classInterfaceQt.html#a6a4136fd3447c512a1878305b2268ba4" title="Méthode appelée par le widget de grille lors d&#39;événements souris." alt="" coords="621,55,813,95"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="848,63,814,67,813,62,847,58"/>
+<area shape="rect" id="Node000003" href="$classInterfaceSFML.html#a20bcd606ad56b9f175bba4a49a4f061a" title="Gère les événements (clavier, souris, fermeture)" alt="" coords="335,5,573,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="611,21,574,21,574,15,611,15"/>
+<area shape="rect" id="Node000004" href="$classInterfaceSFML.html#a518c46fbb99e76a49149d03b900b6cdc" title="Lance la boucle principale de l&#39;interface graphique." alt="" coords="108,5,287,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="321,21,287,21,287,15,321,15"/>
+<area shape="rect" id="Node000005" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Point d&#39;entrée du programme." alt="" coords="5,5,60,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+<area shape="rect" id="Node000007" href="$classGrilleWidget.html#aa4683d81eb2289f0949b545b649ba45e" title=" " alt="" coords="340,59,568,84"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="608,76,568,76,568,70,608,71"/>
+<area shape="rect" id="Node000008" href="$classGrilleWidget.html#a60420d46e58cb4705d0533d3364250c3" title=" " alt="" coords="359,109,549,149"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="608,100,550,112,549,107,607,95"/>
+</map>
