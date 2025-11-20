@@ -444,7 +444,6 @@ void InterfaceSFML::gererEvenements() {
                         break;
                         
                     default:
-                        // Gerer les motifs (G pour planeur, B pour bloc, etc.)
                         gererPlacementMotif(event.key.code);
                         break;
                 }
