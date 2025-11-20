@@ -333,15 +333,15 @@ void InterfaceSFML::gererEvenements() {
                     else modeDessin = ModeDessin::Morte;
                 }
 
-                appliquerEtatDepuisPixel(jeu, event.mouseButton.x, event.mouseButton.y, tailleCellule, modeDessin);
+                sf::Vector2i pixelPos(event.mouseButton.x, event.mouseButton.y);
+                auto worldPos = fenetre->mapPixelToCoords(pixelPos);
+                appliquerEtatDepuisPixel(jeu, worldPos.x, worldPos.y, tailleCellule, modeDessin);
             }
             else if (event.type == sf::Event::MouseButtonReleased) {
                 sourisEnfoncee = false;
             }
-            // NOTE: mouse-move handling consolidated below (maps pixels to world coords)
             else if (event.type == sf::Event::MouseMoved) {
                 if (sourisEnfoncee) {
-                    // Recalculer le mode selon Ctrl + bouton courant
                     bool ctrl = sf::Keyboard::isKeyPressed(sf::Keyboard::LControl) || sf::Keyboard::isKeyPressed(sf::Keyboard::RControl);
                     if (ctrl) {
                         if (boutonSouris == static_cast<int>(sf::Mouse::Left)) modeDessin = ModeDessin::ObstacleVivante;
@@ -353,18 +353,9 @@ void InterfaceSFML::gererEvenements() {
                         else modeDessin = ModeDessin::Morte;
                     }
 
-                    // appliquer continuellement pendant le drag en mappant les pixels vers les coordonnées monde
-                    #ifdef SFML_VERSION_3
-                        auto pixelPos = sf::Mouse::getPosition(*fenetre);
-                        auto worldPos = fenetre->mapPixelToCoords(sf::Vector2i(static_cast<int>(pixelPos.x), static_cast<int>(pixelPos.y)));
-                        appliquerEtatDepuisPixel(jeu, worldPos.x, worldPos.y, tailleCellule, modeDessin);
-                    #else
-                        {
-                            sf::Vector2i pixelPos(event.mouseMove.x, event.mouseMove.y);
-                            auto worldPos = fenetre->mapPixelToCoords(pixelPos);
-                            appliquerEtatDepuisPixel(jeu, worldPos.x, worldPos.y, tailleCellule, modeDessin);
-                        }
-                    #endif
+                    sf::Vector2i pixelPos(event.mouseMove.x, event.mouseMove.y);
+                    auto worldPos = fenetre->mapPixelToCoords(pixelPos);
+                    appliquerEtatDepuisPixel(jeu, worldPos.x, worldPos.y, tailleCellule, modeDessin);
                 }
             }
             else if (event.type == sf::Event::KeyPressed) {
@@ -411,7 +402,6 @@ void InterfaceSFML::gererEvenements() {
                     default:
                         gererPlacementMotif(event.key.code);
                         break;
-                }
                 }
             }
         }
