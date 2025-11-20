@@ -338,24 +338,7 @@ void InterfaceSFML::gererEvenements() {
             else if (event.type == sf::Event::MouseButtonReleased) {
                 sourisEnfoncee = false;
             }
-            else if (event.type == sf::Event::MouseMoved) {
-                if (sourisEnfoncee) {
-                    // Recalculer le mode selon Ctrl + bouton courant
-                    bool ctrl = sf::Keyboard::isKeyPressed(sf::Keyboard::LControl) || sf::Keyboard::isKeyPressed(sf::Keyboard::RControl);
-                    if (ctrl) {
-                        if (boutonSouris == static_cast<int>(sf::Mouse::Left)) modeDessin = ModeDessin::ObstacleVivante;
-                        else if (boutonSouris == static_cast<int>(sf::Mouse::Right)) modeDessin = ModeDessin::ObstacleMorte;
-                        else modeDessin = ModeDessin::ObstacleMorte;
-                    } else {
-                        if (boutonSouris == static_cast<int>(sf::Mouse::Left)) modeDessin = ModeDessin::Vivante;
-                        else if (boutonSouris == static_cast<int>(sf::Mouse::Right)) modeDessin = ModeDessin::Morte;
-                        else modeDessin = ModeDessin::Morte;
-                    }
-
-                    // appliquer continuellement pendant le drag
-                    appliquerEtatDepuisPixel(jeu, event.mouseMove.x, event.mouseMove.y, tailleCellule, modeDessin);
-                }
-            }
+            // NOTE: mouse-move handling consolidated below (maps pixels to world coords)
             else if (event.type == sf::Event::MouseMoved) {
                 if (sourisEnfoncee) {
                     // Recalculer le mode selon Ctrl + bouton courant
@@ -382,6 +365,52 @@ void InterfaceSFML::gererEvenements() {
                             appliquerEtatDepuisPixel(jeu, worldPos.x, worldPos.y, tailleCellule, modeDessin);
                         }
                     #endif
+                }
+            }
+            else if (event.type == sf::Event::KeyPressed) {
+                switch (event.key.code) {
+                    case sf::Keyboard::Space:
+                        enPause = !enPause;
+                        horloge.restart();
+                        std::cout << (enPause ? "Pause" : "Reprise") << std::endl;
+                        break;
+                    case sf::Keyboard::Right:
+                        if (jeu.executerIteration()) {
+                            std::cout << "Iteration " << jeu.obtenirIteration() << std::endl;
+                        }
+                        break;
+                    case sf::Keyboard::Left:
+                        if (jeu.revenirEnArriere()) {
+                            std::cout << "Retour a l'iteration " << jeu.obtenirIteration() << std::endl;
+                        } else {
+                            std::cout << "Impossible de revenir en arriere (debut de la simulation)" << std::endl;
+                        }
+                        break;
+                    case sf::Keyboard::Up:
+                        delaiIteration = std::max(Config::DELAI_ITERATION_MIN, delaiIteration - Config::DELAI_ITERATION_PAS);
+                        std::cout << "Delai: " << delaiIteration << "s" << std::endl;
+                        break;
+                    case sf::Keyboard::Down:
+                        delaiIteration = std::min(Config::DELAI_ITERATION_MAX, delaiIteration + Config::DELAI_ITERATION_PAS);
+                        std::cout << "Delai: " << delaiIteration << "s" << std::endl;
+                        break;
+                    case sf::Keyboard::T:
+                        {
+                            bool modeTorique = jeu.estModeTorique();
+                            jeu.definirModeTorique(!modeTorique);
+                            std::cout << "Mode torique: " << (!modeTorique ? "active" : "desactive") << std::endl;
+                        }
+                        break;
+                    case sf::Keyboard::P:
+                        {
+                            bool modeParallele = jeu.estModeParallele();
+                            jeu.definirModeParallele(!modeParallele);
+                            std::cout << "Mode parallele: " << (!modeParallele ? "active" : "desactive") << std::endl;
+                        }
+                        break;
+                    default:
+                        gererPlacementMotif(event.key.code);
+                        break;
                 }
             }
                     case sf::Keyboard::Up:
