@@ -3,7 +3,8 @@ var annotated_dup =
     [ "Config", "namespaceConfig.html", [
       [ "CouleurVivanteSFML", "structConfig_1_1CouleurVivanteSFML.html", "structConfig_1_1CouleurVivanteSFML" ],
       [ "CouleurMorteSFML", "structConfig_1_1CouleurMorteSFML.html", "structConfig_1_1CouleurMorteSFML" ],
-      [ "CouleurObstacleSFML", "structConfig_1_1CouleurObstacleSFML.html", "structConfig_1_1CouleurObstacleSFML" ],
+      [ "CouleurObstacleMortSFML", "structConfig_1_1CouleurObstacleMortSFML.html", "structConfig_1_1CouleurObstacleMortSFML" ],
+      [ "CouleurObstacleVivantSFML", "structConfig_1_1CouleurObstacleVivantSFML.html", "structConfig_1_1CouleurObstacleVivantSFML" ],
       [ "CouleurGrilleSFML", "structConfig_1_1CouleurGrilleSFML.html", "structConfig_1_1CouleurGrilleSFML" ]
     ] ],
     [ "Cellule", "classCellule.html", "classCellule" ],

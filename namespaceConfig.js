@@ -2,7 +2,8 @@ var namespaceConfig =
 [
     [ "CouleurVivanteSFML", "structConfig_1_1CouleurVivanteSFML.html", "structConfig_1_1CouleurVivanteSFML" ],
     [ "CouleurMorteSFML", "structConfig_1_1CouleurMorteSFML.html", "structConfig_1_1CouleurMorteSFML" ],
-    [ "CouleurObstacleSFML", "structConfig_1_1CouleurObstacleSFML.html", "structConfig_1_1CouleurObstacleSFML" ],
+    [ "CouleurObstacleMortSFML", "structConfig_1_1CouleurObstacleMortSFML.html", "structConfig_1_1CouleurObstacleMortSFML" ],
+    [ "CouleurObstacleVivantSFML", "structConfig_1_1CouleurObstacleVivantSFML.html", "structConfig_1_1CouleurObstacleVivantSFML" ],
     [ "CouleurGrilleSFML", "structConfig_1_1CouleurGrilleSFML.html", "structConfig_1_1CouleurGrilleSFML" ],
     [ "COULEUR_BOUTON_PAUSE", "namespaceConfig.html#aeb23f0ba17f45f2751f6ee9095587346", null ],
     [ "COULEUR_BOUTON_PLAY", "namespaceConfig.html#aa7af60b7a9a9cd2634c10b9a56bdab47", null ],

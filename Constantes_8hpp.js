@@ -2,7 +2,8 @@ var Constantes_8hpp =
 [
     [ "Config::CouleurVivanteSFML", "structConfig_1_1CouleurVivanteSFML.html", "structConfig_1_1CouleurVivanteSFML" ],
     [ "Config::CouleurMorteSFML", "structConfig_1_1CouleurMorteSFML.html", "structConfig_1_1CouleurMorteSFML" ],
-    [ "Config::CouleurObstacleSFML", "structConfig_1_1CouleurObstacleSFML.html", "structConfig_1_1CouleurObstacleSFML" ],
+    [ "Config::CouleurObstacleMortSFML", "structConfig_1_1CouleurObstacleMortSFML.html", "structConfig_1_1CouleurObstacleMortSFML" ],
+    [ "Config::CouleurObstacleVivantSFML", "structConfig_1_1CouleurObstacleVivantSFML.html", "structConfig_1_1CouleurObstacleVivantSFML" ],
     [ "Config::CouleurGrilleSFML", "structConfig_1_1CouleurGrilleSFML.html", "structConfig_1_1CouleurGrilleSFML" ],
     [ "Config::COULEUR_BOUTON_PAUSE", "namespaceConfig.html#aeb23f0ba17f45f2751f6ee9095587346", null ],
     [ "Config::COULEUR_BOUTON_PLAY", "namespaceConfig.html#aa7af60b7a9a9cd2634c10b9a56bdab47", null ],

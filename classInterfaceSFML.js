@@ -1,5 +1,11 @@
 var classInterfaceSFML =
 [
+    [ "ModeDessin", "classInterfaceSFML.html#abaa8fc086dace2cde5f8bad0fbef0c7c", [
+      [ "Vivante", "classInterfaceSFML.html#abaa8fc086dace2cde5f8bad0fbef0c7ca758541adeb0d17c3fbc10a89fa2763a2", null ],
+      [ "Morte", "classInterfaceSFML.html#abaa8fc086dace2cde5f8bad0fbef0c7cae4a04e3db1758bf0b260938227232512", null ],
+      [ "ObstacleMorte", "classInterfaceSFML.html#abaa8fc086dace2cde5f8bad0fbef0c7ca9a50aa0b2e242a8b850985d01fe8ff93", null ],
+      [ "ObstacleVivante", "classInterfaceSFML.html#abaa8fc086dace2cde5f8bad0fbef0c7ca29fd9a94dcf67df8420037ff4e14d1e7", null ]
+    ] ],
     [ "InterfaceSFML", "classInterfaceSFML.html#aeacec8b2d51f4c6bb1ae7d45aa90aaf7", null ],
     [ "afficher", "classInterfaceSFML.html#aa50033cc2b996da556fdebca5db2c7ef", null ],
     [ "calculerTailleCellule", "classInterfaceSFML.html#a0d632238c209cf64ab1a27685fe77384", null ],
@@ -11,6 +17,9 @@ var classInterfaceSFML =
     [ "executer", "classInterfaceSFML.html#a518c46fbb99e76a49149d03b900b6cdc", null ],
     [ "gererEvenements", "classInterfaceSFML.html#a20bcd606ad56b9f175bba4a49a4f061a", null ],
     [ "gererPlacementMotif", "classInterfaceSFML.html#af660192fb32e44dfbf073a9d4ec927be", null ],
+    [ "mettreAJourVue", "classInterfaceSFML.html#ae14bea1479191a62abf18f42f7387bcc", null ],
+    [ "zoomerSurPixel", "classInterfaceSFML.html#a19018415b9d7b2a517f3d7075015eaee", null ],
+    [ "boutonSouris", "classInterfaceSFML.html#aae0d174b26088a334ad6d0ba4d03e499", null ],
     [ "couleurGrille", "classInterfaceSFML.html#af906405bd5f28fcfdb533fd826444bc6", null ],
     [ "couleurMorte", "classInterfaceSFML.html#a359cca6fbca1ee4a0b1dedbc06bb600e", null ],
     [ "couleurObstacle", "classInterfaceSFML.html#a25bd4726025835756cec871d29bd9f11", null ],
@@ -20,5 +29,12 @@ var classInterfaceSFML =
     [ "fenetre", "classInterfaceSFML.html#aa8a29ec53248bbca685a9d5fe361f09c", null ],
     [ "horloge", "classInterfaceSFML.html#a39a2a641c46906e0ab896d0a9452fcbc", null ],
     [ "jeu", "classInterfaceSFML.html#ac6277f3121df804864d0976905fa1755", null ],
-    [ "tailleCellule", "classInterfaceSFML.html#a6b556892abcc6b00d3927566cf62885c", null ]
+    [ "modeDessin", "classInterfaceSFML.html#a81575798ea005f88d7c0d7b01b89c4ad", null ],
+    [ "sourisEnfoncee", "classInterfaceSFML.html#a86ec1512679022eb563628f3c9c2c23c", null ],
+    [ "tailleCellule", "classInterfaceSFML.html#a6b556892abcc6b00d3927566cf62885c", null ],
+    [ "vue", "classInterfaceSFML.html#aeb8d960effce4f9b1ab570358aca5855", null ],
+    [ "zoomMax", "classInterfaceSFML.html#afb689ca73f687b0f1ed1fbd4fe5037e7", null ],
+    [ "zoomMin", "classInterfaceSFML.html#ab69365adb4dffcf849efae33678138b2", null ],
+    [ "zoomNiveau", "classInterfaceSFML.html#a58658bd4f8c0d6bd56cbaaf9da0c61bb", null ],
+    [ "zoomPas", "classInterfaceSFML.html#a09015571fead334407d2fa97ead017ae", null ]
 ];

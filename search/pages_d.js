@@ -1,6 +1,11 @@
 var searchData=
 [
-  ['hiérarchie_20des_20états_20de_20cellules_0',['Hiérarchie des États de Cellules',['../md_CONCEPTION.html#autotoc_md63',1,'']]],
-  ['hiérarchie_20des_20classes_1',['Hiérarchie des classes',['../index.html#autotoc_md31',1,'']]],
-  ['hiérarchie_20des_20règles_20du_20jeu_2',['Hiérarchie des Règles du Jeu',['../md_CONCEPTION.html#autotoc_md64',1,'']]]
+  ['fichier_0',['Chargement d&apos;un fichier',['../md_CONCEPTION.html#autotoc_md70',1,'']]],
+  ['fichier_20d_20entrée_1',['Fichier d&apos;entrée',['../index.html#autotoc_md35',1,'']]],
+  ['fichiers_2',['fichiers',['../index.html#autotoc_md15',1,'3. &lt;b&gt;Mode Console&lt;/b&gt; (Export fichiers)'],['../index.html#autotoc_md34',1,'Format des fichiers']]],
+  ['fonctionnalités_3',['Fonctionnalités',['../index.html#autotoc_md4',1,'']]],
+  ['fonctionnalités_20avancées_4',['Fonctionnalités avancées',['../index.html#autotoc_md7',1,'']]],
+  ['fonctionnalités_20de_20base_5',['Fonctionnalités de base',['../index.html#autotoc_md5',1,'']]],
+  ['format_20des_20fichiers_6',['Format des fichiers',['../index.html#autotoc_md34',1,'']]],
+  ['forts_20à_20présenter_7',['Points forts à présenter',['../index.html#autotoc_md56',1,'']]]
 ];
