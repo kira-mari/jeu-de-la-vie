@@ -161,6 +161,9 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:ae14bea1479191a62abf18f42f7387bcc" id="r_ae14bea1479191a62abf18f42f7387bcc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfaceSFML.html#ae14bea1479191a62abf18f42f7387bcc">mettreAJourVue</a> ()</td></tr>
 <tr class="memdesc:ae14bea1479191a62abf18f42f7387bcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Met à jour la vue pour préserver l'aspect carré des cellules.  <br /></td></tr>
 <tr class="separator:ae14bea1479191a62abf18f42f7387bcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19018415b9d7b2a517f3d7075015eaee" id="r_a19018415b9d7b2a517f3d7075015eaee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfaceSFML.html#a19018415b9d7b2a517f3d7075015eaee">zoomerSurPixel</a> (const sf::Vector2i &amp;pixel, float factor)</td></tr>
+<tr class="memdesc:a19018415b9d7b2a517f3d7075015eaee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applique un zoom centré sur un pixel de la fenêtre.  <br /></td></tr>
+<tr class="separator:a19018415b9d7b2a517f3d7075015eaee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -192,6 +195,14 @@ Private Attributes</h2></td></tr>
 <tr class="separator:aae0d174b26088a334ad6d0ba4d03e499"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb8d960effce4f9b1ab570358aca5855" id="r_aeb8d960effce4f9b1ab570358aca5855"><td class="memItemLeft" align="right" valign="top">sf::View&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfaceSFML.html#aeb8d960effce4f9b1ab570358aca5855">vue</a></td></tr>
 <tr class="separator:aeb8d960effce4f9b1ab570358aca5855"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58658bd4f8c0d6bd56cbaaf9da0c61bb" id="r_a58658bd4f8c0d6bd56cbaaf9da0c61bb"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfaceSFML.html#a58658bd4f8c0d6bd56cbaaf9da0c61bb">zoomNiveau</a> = 1.0f</td></tr>
+<tr class="separator:a58658bd4f8c0d6bd56cbaaf9da0c61bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09015571fead334407d2fa97ead017ae" id="r_a09015571fead334407d2fa97ead017ae"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfaceSFML.html#a09015571fead334407d2fa97ead017ae">zoomPas</a> = 1.15f</td></tr>
+<tr class="separator:a09015571fead334407d2fa97ead017ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab69365adb4dffcf849efae33678138b2" id="r_ab69365adb4dffcf849efae33678138b2"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfaceSFML.html#ab69365adb4dffcf849efae33678138b2">zoomMin</a> = 0.05f</td></tr>
+<tr class="separator:ab69365adb4dffcf849efae33678138b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb689ca73f687b0f1ed1fbd4fe5037e7" id="r_afb689ca73f687b0f1ed1fbd4fe5037e7"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfaceSFML.html#afb689ca73f687b0f1ed1fbd4fe5037e7">zoomMax</a> = 10.0f</td></tr>
+<tr class="separator:afb689ca73f687b0f1ed1fbd4fe5037e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface graphique avec SFML pour le jeu de la vie. </p>
@@ -702,81 +713,83 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classInterfaceSFML_a518c46fbb99e76a49149d03b900b6cdc_cgraph.png" border="0" usemap="#aclassInterfaceSFML_a518c46fbb99e76a49149d03b900b6cdc_cgraph" alt=""/></div>
 <map name="aclassInterfaceSFML_a518c46fbb99e76a49149d03b900b6cdc_cgraph" id="aclassInterfaceSFML_a518c46fbb99e76a49149d03b900b6cdc_cgraph">
-<area shape="rect" title="Lance la boucle principale de l&#39;interface graphique." alt="" coords="5,280,184,305"/>
-<area shape="rect" href="classInterfaceSFML.html#aa50033cc2b996da556fdebca5db2c7ef" title="Met à jour l&#39;affichage." alt="" coords="265,280,437,305"/>
-<area shape="poly" title=" " alt="" coords="184,290,251,290,251,295,184,295"/>
-<area shape="rect" href="classJeuDeLaVie.html#a64c17035b0448747418084db872c72c8" title="Obtient le numéro d&#39;itération actuel." alt="" coords="842,57,1047,83"/>
-<area shape="poly" title=" " alt="" coords="116,278,181,240,278,190,394,139,456,116,518,98,598,82,679,72,828,65,828,70,680,77,599,87,519,103,458,121,396,144,280,195,183,245,118,282"/>
-<area shape="rect" href="classJeuDeLaVie.html#a1523dd14f4fbf923cd5f424156598c85" title="Obtient le nombre maximum d&#39;itérations." alt="" coords="828,5,1061,31"/>
-<area shape="poly" title=" " alt="" coords="102,278,151,214,188,176,231,144,302,106,377,76,455,53,534,36,611,24,685,17,814,11,815,17,685,22,612,30,535,42,457,58,379,81,304,111,233,148,191,180,155,218,106,282"/>
-<area shape="rect" href="classJeuDeLaVie.html#af3e2bbbe85d122db859c6049adad142a" title="Exécute une itération du jeu." alt="" coords="542,731,757,756"/>
-<area shape="poly" title=" " alt="" coords="106,304,157,379,248,494,306,557,372,618,443,672,520,717,537,724,534,729,517,722,440,677,368,622,303,561,244,498,153,382,102,307"/>
-<area shape="rect" href="classInterfaceSFML.html#a20bcd606ad56b9f175bba4a49a4f061a" title="Gère les événements (clavier, souris, fermeture)" alt="" coords="232,428,471,453"/>
-<area shape="poly" title=" " alt="" coords="119,303,318,419,315,423,117,308"/>
-<area shape="rect" href="classInterfaceSFML.html#a6be07281be6cedd2ea9dde170234630c" title="Dessine la grille." alt="" coords="543,355,756,380"/>
-<area shape="poly" title=" " alt="" coords="404,303,585,349,584,354,402,308"/>
-<area shape="rect" href="classInterfaceSFML.html#a9b5a8e272d8dc3c033e09fde93ac4845" title="Dessine les informations à l&#39;écran." alt="" coords="519,204,780,229"/>
-<area shape="poly" title=" " alt="" coords="390,277,518,239,562,229,563,235,519,245,391,282"/>
-<area shape="rect" href="classCellule.html#a4e34ac281afdba1d793fbd0239022a5e" title="Vérifie si la cellule est un obstacle." alt="" coords="869,304,1021,329"/>
-<area shape="poly" title=" " alt="" coords="724,352,856,329,857,334,725,357"/>
-<area shape="rect" href="classCellule.html#a70d2731234961e330fe0a31486d1dec7" title="Vérifie si la cellule est vivante." alt="" coords="872,255,1017,280"/>
-<area shape="poly" title=" " alt="" coords="727,352,779,333,793,323,802,312,812,301,827,290,858,278,860,283,829,295,815,305,806,316,796,327,781,338,729,357"/>
-<area shape="rect" href="classGrille.html#aab75610fe73ae48bd035a048c55832f0" title="Obtient une cellule à une position donnée." alt="" coords="867,205,1023,231"/>
-<area shape="poly" title=" " alt="" coords="742,352,778,333,789,323,795,312,801,288,808,264,815,253,826,241,853,227,855,232,830,245,819,256,813,267,806,290,800,314,793,326,782,337,745,357"/>
-<area shape="rect" href="classJeuDeLaVie.html#a3f6dc54b2b1ebef7111e7aa5a2622be3" title="Obtient la grille actuelle." alt="" coords="852,455,1037,480"/>
-<area shape="poly" title=" " alt="" coords="732,377,781,390,850,417,909,446,907,451,848,422,779,395,730,383"/>
-<area shape="rect" href="classGrille.html#a1ab5c8e0ea0d1dc21549c38d0f0f5cf9" title="Obtient le nombre de colonnes." alt="" coords="850,553,1039,579"/>
-<area shape="poly" title=" " alt="" coords="758,375,782,391,797,409,805,428,807,467,809,505,815,523,830,540,839,547,836,551,826,544,811,525,803,506,801,467,800,430,793,412,778,395,755,380"/>
+<area shape="rect" title="Lance la boucle principale de l&#39;interface graphique." alt="" coords="5,107,184,132"/>
+<area shape="rect" href="classInterfaceSFML.html#aa50033cc2b996da556fdebca5db2c7ef" title="Met à jour l&#39;affichage." alt="" coords="265,309,437,335"/>
+<area shape="poly" title=" " alt="" coords="114,130,325,299,322,303,110,134"/>
+<area shape="rect" href="classJeuDeLaVie.html#a64c17035b0448747418084db872c72c8" title="Obtient le numéro d&#39;itération actuel." alt="" coords="842,157,1047,183"/>
+<area shape="poly" title=" " alt="" coords="184,121,780,154,829,158,828,163,780,159,184,126"/>
+<area shape="rect" href="classJeuDeLaVie.html#a1523dd14f4fbf923cd5f424156598c85" title="Obtient le nombre maximum d&#39;itérations." alt="" coords="828,81,1061,107"/>
+<area shape="poly" title=" " alt="" coords="176,104,232,98,389,90,546,86,814,88,814,93,546,91,389,95,232,103,176,109"/>
+<area shape="rect" href="classJeuDeLaVie.html#af3e2bbbe85d122db859c6049adad142a" title="Exécute une itération du jeu." alt="" coords="542,5,757,31"/>
+<area shape="poly" title=" " alt="" coords="114,104,165,74,231,47,307,30,385,20,528,12,528,18,385,25,308,36,233,53,168,79,117,109"/>
+<area shape="rect" href="classInterfaceSFML.html#a20bcd606ad56b9f175bba4a49a4f061a" title="Gère les événements (clavier, souris, fermeture)" alt="" coords="232,473,471,499"/>
+<area shape="poly" title=" " alt="" coords="105,131,156,222,234,346,285,410,331,462,327,465,281,413,230,349,151,225,100,133"/>
+<area shape="rect" href="classInterfaceSFML.html#a6be07281be6cedd2ea9dde170234630c" title="Dessine la grille." alt="" coords="543,359,756,384"/>
+<area shape="poly" title=" " alt="" coords="429,332,559,354,558,359,428,337"/>
+<area shape="rect" href="classInterfaceSFML.html#a9b5a8e272d8dc3c033e09fde93ac4845" title="Dessine les informations à l&#39;écran." alt="" coords="519,309,780,335"/>
+<area shape="poly" title=" " alt="" coords="438,319,505,319,505,325,438,325"/>
+<area shape="rect" href="classCellule.html#a4e34ac281afdba1d793fbd0239022a5e" title="Vérifie si la cellule est un obstacle." alt="" coords="869,405,1021,431"/>
+<area shape="poly" title=" " alt="" coords="731,381,856,401,855,407,730,387"/>
+<area shape="rect" href="classCellule.html#a70d2731234961e330fe0a31486d1dec7" title="Vérifie si la cellule est vivante." alt="" coords="872,307,1017,332"/>
+<area shape="poly" title=" " alt="" coords="722,356,858,332,859,337,723,361"/>
+<area shape="rect" href="classGrille.html#aab75610fe73ae48bd035a048c55832f0" title="Obtient une cellule à une position donnée." alt="" coords="867,356,1023,381"/>
+<area shape="poly" title=" " alt="" coords="756,368,853,367,853,372,756,373"/>
+<area shape="rect" href="classJeuDeLaVie.html#a3f6dc54b2b1ebef7111e7aa5a2622be3" title="Obtient la grille actuelle." alt="" coords="852,553,1037,579"/>
+<area shape="poly" title=" " alt="" coords="758,380,782,395,797,413,804,431,807,469,809,506,816,523,830,540,841,548,838,553,826,544,811,526,804,507,801,469,799,433,792,415,778,399,755,384"/>
+<area shape="rect" href="classGrille.html#a1ab5c8e0ea0d1dc21549c38d0f0f5cf9" title="Obtient le nombre de colonnes." alt="" coords="850,455,1039,480"/>
+<area shape="poly" title=" " alt="" coords="749,382,781,394,797,406,806,418,815,430,829,441,844,448,841,452,827,446,811,434,802,422,793,410,779,399,747,387"/>
 <area shape="rect" href="classGrille.html#a96b5f98d212a0ee9e2f71d73ebe5bb91" title="Obtient le nombre de lignes." alt="" coords="859,504,1030,529"/>
-<area shape="poly" title=" " alt="" coords="757,377,782,391,794,403,801,416,807,442,812,468,819,479,830,491,848,501,845,506,826,495,814,482,807,469,801,443,796,418,790,406,778,395,755,381"/>
-<area shape="rect" href="classGrille.html#aa4c9ce36bb4f2c59a83aeb39d73fc285" title="Vérifie si une position est valide dans la grille." alt="" coords="1109,305,1287,331"/>
-<area shape="poly" title=" " alt="" coords="1020,228,1062,241,1119,267,1168,296,1165,300,1117,272,1060,246,1018,233"/>
-<area shape="poly" title=" " alt="" coords="725,227,859,250,858,255,724,232"/>
-<area shape="poly" title=" " alt="" coords="780,215,852,215,852,220,780,220"/>
-<area shape="poly" title=" " alt="" coords="763,227,782,240,798,258,806,276,810,313,813,351,818,370,830,390,864,422,902,446,899,451,861,426,826,393,814,372,807,352,805,313,801,278,793,261,778,244,760,232"/>
-<area shape="poly" title=" " alt="" coords="766,227,782,240,797,259,808,278,817,316,814,354,807,392,799,430,797,467,806,504,815,522,830,540,840,549,836,553,826,544,811,525,801,506,792,468,794,429,802,391,809,354,811,316,803,280,793,262,778,244,762,232"/>
-<area shape="poly" title=" " alt="" coords="765,228,782,240,804,271,813,303,812,336,807,368,802,399,801,430,809,461,830,491,848,504,845,508,826,495,804,463,796,431,796,399,802,367,807,335,807,304,799,274,778,244,762,232"/>
-<area shape="rect" href="classJeuDeLaVie.html#ad6a15c16668bb872c335543ea616e93f" title="Vérifie si le mode parallèle est actif." alt="" coords="837,156,1053,181"/>
-<area shape="poly" title=" " alt="" coords="728,201,852,181,853,186,728,207"/>
-<area shape="rect" href="classJeuDeLaVie.html#a43410dc565325825c5fdf11fa6c6c5a7" title="Vérifie si le mode torique est actif." alt="" coords="841,107,1048,132"/>
-<area shape="poly" title=" " alt="" coords="726,201,779,182,793,173,802,163,812,152,827,142,848,134,850,139,829,147,815,156,806,166,796,177,781,187,727,206"/>
-<area shape="poly" title=" " alt="" coords="671,202,778,132,801,111,827,93,848,84,850,89,829,98,805,115,782,136,674,206"/>
-<area shape="poly" title=" " alt="" coords="658,202,684,170,723,127,771,82,827,44,852,32,854,37,829,48,775,86,726,130,688,173,662,205"/>
-<area shape="rect" href="classJeuDeLaVie.html#a0c9dbfff7118bd6fe99b3fa99889fe96" title="Vérifie si le jeu est terminé" alt="" coords="857,731,1033,756"/>
-<area shape="poly" title=" " alt="" coords="757,741,843,741,843,746,757,746"/>
-<area shape="poly" title=" " alt="" coords="369,426,432,384,474,361,518,341,557,329,593,325,656,326,685,326,714,321,745,310,778,289,789,278,796,267,802,242,807,217,814,204,826,192,835,186,838,190,830,196,819,207,812,219,807,243,801,269,794,282,782,293,748,315,716,327,685,331,656,331,593,330,558,335,520,346,476,365,435,388,372,430"/>
-<area shape="poly" title=" " alt="" coords="367,426,416,381,444,350,468,317,483,282,487,250,494,220,503,205,517,190,560,175,638,159,827,131,828,136,639,164,561,180,520,195,507,208,499,222,492,251,488,283,473,319,448,353,420,384,370,430"/>
-<area shape="poly" title=" " alt="" coords="368,426,418,381,445,350,468,317,479,292,484,270,485,227,490,186,499,166,517,145,533,137,560,128,638,111,829,82,829,87,639,117,561,134,535,142,520,149,504,169,495,187,490,227,489,270,484,294,473,319,449,354,421,385,371,430"/>
-<area shape="poly" title=" " alt="" coords="365,452,414,518,473,609,486,641,491,669,500,694,520,717,531,725,528,729,517,721,495,696,486,670,481,643,468,611,410,521,361,455"/>
-<area shape="rect" href="InterfaceSFML_8cpp.html#a1f6f08272591bae8f84b65fe8198a642" title=" " alt="" coords="557,404,742,429"/>
-<area shape="poly" title=" " alt="" coords="471,428,543,423,543,428,471,434"/>
-<area shape="rect" href="classInterfaceSFML.html#a0d632238c209cf64ab1a27685fe77384" title="Calcule la taille optimale des cellules." alt="" coords="545,503,753,543"/>
-<area shape="poly" title=" " alt="" coords="393,451,519,489,552,497,551,503,518,494,391,456"/>
-<area shape="rect" href="classJeuDeLaVie.html#a63f27d62e27687c8c0879ae52eabadd6" title="Active ou désactive le mode parallèle." alt="" coords="531,632,768,657"/>
-<area shape="poly" title=" " alt="" coords="363,452,385,486,421,531,466,578,520,617,537,625,534,630,517,622,463,582,417,535,381,489,358,455"/>
-<area shape="rect" href="classJeuDeLaVie.html#ac699c345951d0e8e022f859339e68fda" title="Active ou désactive le mode torique." alt="" coords="535,681,763,707"/>
-<area shape="poly" title=" " alt="" coords="364,452,451,576,520,668,530,674,528,678,517,672,446,579,360,455"/>
-<area shape="rect" href="classInterfaceSFML.html#af660192fb32e44dfbf073a9d4ec927be" title="Gère les entrées clavier pour placer des motifs." alt="" coords="536,567,763,607"/>
-<area shape="poly" title=" " alt="" coords="369,451,432,501,474,529,520,553,539,561,537,566,518,558,472,533,429,505,365,456"/>
-<area shape="rect" href="classInterfaceSFML.html#ae14bea1479191a62abf18f42f7387bcc" title="Met à jour la vue pour préserver l&#39;aspect carré des cellules." alt="" coords="537,453,762,479"/>
-<area shape="poly" title=" " alt="" coords="471,448,523,453,522,458,471,453"/>
-<area shape="rect" href="classJeuDeLaVie.html#a444c078a494f06290049293c37b8eeb2" title="Revient à l&#39;itération précédente." alt="" coords="544,253,755,279"/>
-<area shape="poly" title=" " alt="" coords="362,426,423,363,468,327,517,296,557,280,559,285,520,300,471,331,427,367,366,430"/>
-<area shape="poly" title=" " alt="" coords="742,420,813,420,893,416,978,407,1061,389,1118,365,1167,336,1169,341,1121,370,1062,394,979,412,894,422,813,425,742,425"/>
-<area shape="poly" title=" " alt="" coords="725,427,857,450,856,455,724,432"/>
-<area shape="rect" href="classJeuDeLaVie.html#a87e0b20d13a6adfc6d86c3ed4429b605" title="Définit l&#39;état d&#39;une cellule (utilisé par les interfaces pour le dessin)" alt="" coords="837,353,1053,379"/>
-<area shape="poly" title=" " alt="" coords="724,401,856,378,857,384,725,407"/>
-<area shape="poly" title=" " alt="" coords="753,501,863,480,864,485,754,506"/>
-<area shape="poly" title=" " alt="" coords="754,536,843,549,842,554,753,541"/>
-<area shape="poly" title=" " alt="" coords="753,518,846,516,846,522,753,524"/>
-<area shape="poly" title=" " alt="" coords="756,565,778,553,794,539,802,523,810,506,826,491,841,483,843,487,830,495,814,509,806,525,798,542,782,557,759,570"/>
-<area shape="poly" title=" " alt="" coords="763,576,836,571,837,576,763,582"/>
-<area shape="poly" title=" " alt="" coords="733,565,779,553,827,539,868,530,869,535,829,545,781,558,734,570"/>
-<area shape="rect" href="classJeuDeLaVie.html#a8bf2b5c24e44c400922032a0f697850b" title="Place un motif sur la grille." alt="" coords="855,603,1034,628"/>
-<area shape="poly" title=" " alt="" coords="763,595,842,603,841,608,763,601"/>
-<area shape="poly" title=" " alt="" coords="762,464,838,464,838,470,762,469"/>
-<area shape="poly" title=" " alt="" coords="751,476,781,489,797,502,806,515,815,528,829,540,843,546,841,551,827,544,811,532,802,518,793,505,779,494,749,481"/>
-<area shape="poly" title=" " alt="" coords="725,476,857,499,856,504,724,481"/>
+<area shape="poly" title=" " alt="" coords="758,381,782,395,794,406,801,419,807,444,812,468,819,480,830,491,847,501,845,506,826,495,815,483,807,470,801,445,796,421,789,410,778,399,755,386"/>
+<area shape="rect" href="classGrille.html#aa4c9ce36bb4f2c59a83aeb39d73fc285" title="Vérifie si une position est valide dans la grille." alt="" coords="1109,529,1287,555"/>
+<area shape="poly" title=" " alt="" coords="1024,376,1063,392,1101,420,1135,453,1184,516,1180,520,1131,457,1098,424,1060,396,1022,381"/>
+<area shape="poly" title=" " alt="" coords="780,318,858,317,858,323,780,323"/>
+<area shape="poly" title=" " alt="" coords="731,332,853,352,852,357,730,337"/>
+<area shape="poly" title=" " alt="" coords="764,333,782,345,800,370,808,395,809,420,807,445,804,470,805,494,813,517,830,540,841,549,838,553,826,544,808,520,800,495,799,469,801,444,804,420,803,395,796,372,778,349,761,337"/>
+<area shape="poly" title=" " alt="" coords="760,333,782,345,794,357,801,369,807,395,812,419,819,430,830,441,839,448,836,452,826,445,815,434,807,421,801,396,796,371,789,360,778,349,757,337"/>
+<area shape="poly" title=" " alt="" coords="763,333,782,345,797,363,804,382,807,420,809,457,816,474,830,491,848,503,845,507,826,495,811,477,804,458,801,420,799,383,792,366,778,349,760,337"/>
+<area shape="rect" href="classJeuDeLaVie.html#ad6a15c16668bb872c335543ea616e93f" title="Vérifie si le mode parallèle est actif." alt="" coords="837,208,1053,233"/>
+<area shape="poly" title=" " alt="" coords="675,307,743,276,827,243,861,234,862,239,829,249,745,280,678,312"/>
+<area shape="rect" href="classJeuDeLaVie.html#a43410dc565325825c5fdf11fa6c6c5a7" title="Vérifie si le mode torique est actif." alt="" coords="841,257,1048,283"/>
+<area shape="poly" title=" " alt="" coords="722,307,858,282,859,288,723,312"/>
+<area shape="poly" title=" " alt="" coords="663,307,730,253,777,221,827,194,855,184,857,189,829,199,780,226,733,257,666,311"/>
+<area shape="poly" title=" " alt="" coords="659,307,725,232,773,186,826,144,859,125,892,109,895,114,862,129,830,148,777,190,729,236,663,311"/>
+<area shape="rect" href="classJeuDeLaVie.html#a0c9dbfff7118bd6fe99b3fa99889fe96" title="Vérifie si le jeu est terminé" alt="" coords="857,5,1033,31"/>
+<area shape="poly" title=" " alt="" coords="757,15,843,15,843,21,757,21"/>
+<area shape="poly" title=" " alt="" coords="363,471,412,418,468,346,481,319,487,296,496,274,517,253,559,230,603,214,650,203,697,197,787,196,866,203,865,209,787,201,697,203,651,209,605,219,561,235,520,257,501,277,492,297,486,321,473,349,416,422,367,475"/>
+<area shape="poly" title=" " alt="" coords="362,471,449,370,517,296,558,279,600,266,686,252,770,249,845,253,845,259,770,255,687,258,601,272,559,284,520,300,453,373,366,475"/>
+<area shape="poly" title=" " alt="" coords="365,471,415,419,443,384,468,346,477,326,482,307,485,271,491,237,501,221,517,205,558,179,603,161,651,149,700,143,794,143,874,152,873,158,793,148,700,148,652,154,605,166,561,184,520,209,505,224,496,239,490,271,487,307,482,327,473,349,447,387,419,423,369,475"/>
+<area shape="poly" title=" " alt="" coords="366,471,416,420,444,385,468,346,480,318,487,294,491,249,496,203,503,178,516,150,539,116,566,85,619,37,622,41,570,89,543,119,521,153,508,180,501,204,496,249,492,295,485,320,473,349,449,388,420,423,369,475"/>
+<area shape="rect" href="InterfaceSFML_8cpp.html#a1f6f08272591bae8f84b65fe8198a642" title=" " alt="" coords="557,687,742,712"/>
+<area shape="poly" title=" " alt="" coords="362,498,385,533,420,581,466,631,492,653,520,672,545,683,543,688,517,676,489,657,462,635,416,584,380,536,358,501"/>
+<area shape="rect" href="classInterfaceSFML.html#a0d632238c209cf64ab1a27685fe77384" title="Calcule la taille optimale des cellules." alt="" coords="545,409,753,449"/>
+<area shape="poly" title=" " alt="" coords="418,471,531,449,532,454,419,476"/>
+<area shape="rect" href="classJeuDeLaVie.html#a63f27d62e27687c8c0879ae52eabadd6" title="Active ou désactive le mode parallèle." alt="" coords="531,523,768,548"/>
+<area shape="poly" title=" " alt="" coords="429,496,559,518,558,523,428,501"/>
+<area shape="rect" href="classJeuDeLaVie.html#ac699c345951d0e8e022f859339e68fda" title="Active ou désactive le mode torique." alt="" coords="535,572,763,597"/>
+<area shape="poly" title=" " alt="" coords="377,496,441,527,519,558,551,567,550,572,518,563,438,532,375,501"/>
+<area shape="rect" href="classInterfaceSFML.html#af660192fb32e44dfbf073a9d4ec927be" title="Gère les entrées clavier pour placer des motifs." alt="" coords="536,622,763,662"/>
+<area shape="poly" title=" " alt="" coords="368,497,430,551,473,581,520,608,537,615,535,620,517,612,471,586,427,555,364,501"/>
+<area shape="rect" href="classInterfaceSFML.html#ae14bea1479191a62abf18f42f7387bcc" title="Met à jour la vue pour préserver l&#39;aspect carré des cellules." alt="" coords="537,473,762,499"/>
+<area shape="poly" title=" " alt="" coords="471,483,523,483,523,489,471,489"/>
+<area shape="rect" href="classJeuDeLaVie.html#a444c078a494f06290049293c37b8eeb2" title="Revient à l&#39;itération précédente." alt="" coords="544,736,755,761"/>
+<area shape="poly" title=" " alt="" coords="360,498,379,542,412,604,460,669,488,698,520,722,532,729,530,734,517,727,485,702,456,672,408,607,374,544,355,500"/>
+<area shape="rect" href="classInterfaceSFML.html#a19018415b9d7b2a517f3d7075015eaee" title="Applique un zoom centré sur un pixel de la fenêtre." alt="" coords="553,786,746,826"/>
+<area shape="poly" title=" " alt="" coords="359,498,375,549,407,624,429,664,455,704,485,741,520,772,541,784,538,789,517,776,482,744,451,707,424,667,402,626,370,551,354,500"/>
+<area shape="poly" title=" " alt="" coords="742,707,828,713,920,717,1003,714,1036,709,1060,701,1102,673,1136,637,1163,599,1182,566,1187,569,1168,602,1140,641,1105,678,1062,706,1037,714,1003,719,920,722,828,719,742,712"/>
+<area shape="poly" title=" " alt="" coords="741,688,779,672,794,656,802,639,810,621,826,603,868,581,870,585,830,607,815,624,807,641,799,659,781,676,743,693"/>
+<area shape="rect" href="classJeuDeLaVie.html#a87e0b20d13a6adfc6d86c3ed4429b605" title="Définit l&#39;état d&#39;une cellule (utilisé par les interfaces pour le dessin)" alt="" coords="837,665,1053,691"/>
+<area shape="poly" title=" " alt="" coords="742,690,823,684,823,689,742,695"/>
+<area shape="poly" title=" " alt="" coords="755,445,782,460,799,480,806,501,813,522,830,540,841,547,838,551,826,544,809,524,801,503,794,483,778,464,752,449"/>
+<area shape="poly" title=" " alt="" coords="754,440,836,451,836,456,753,445"/>
+<area shape="poly" title=" " alt="" coords="744,446,781,460,805,475,829,490,851,498,850,503,827,495,802,480,779,464,742,451"/>
+<area shape="poly" title=" " alt="" coords="732,619,779,607,883,580,885,585,781,613,733,625"/>
+<area shape="poly" title=" " alt="" coords="761,620,778,608,790,594,797,580,801,551,806,520,813,505,826,491,836,484,839,488,830,495,818,508,811,522,806,552,802,582,795,597,782,612,764,624"/>
+<area shape="poly" title=" " alt="" coords="757,620,778,608,794,592,801,575,810,557,826,540,845,530,848,535,830,544,814,560,806,577,798,595,782,612,760,624"/>
+<area shape="rect" href="classJeuDeLaVie.html#a8bf2b5c24e44c400922032a0f697850b" title="Place un motif sur la grille." alt="" coords="855,616,1034,641"/>
+<area shape="poly" title=" " alt="" coords="763,634,841,631,842,636,763,640"/>
+<area shape="poly" title=" " alt="" coords="740,496,781,509,805,524,829,540,851,547,850,552,827,544,803,529,779,514,738,501"/>
+<area shape="poly" title=" " alt="" coords="762,476,836,472,836,477,762,482"/>
+<area shape="poly" title=" " alt="" coords="762,495,846,504,845,509,762,500"/>
 </map>
 </div>
 <div class="dynheader">
@@ -821,50 +834,52 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classInterfaceSFML_a20bcd606ad56b9f175bba4a49a4f061a_cgraph.png" border="0" usemap="#aclassInterfaceSFML_a20bcd606ad56b9f175bba4a49a4f061a_cgraph" alt=""/></div>
 <map name="aclassInterfaceSFML_a20bcd606ad56b9f175bba4a49a4f061a_cgraph" id="aclassInterfaceSFML_a20bcd606ad56b9f175bba4a49a4f061a_cgraph">
-<area shape="rect" title="Gère les événements (clavier, souris, fermeture)" alt="" coords="5,332,244,357"/>
-<area shape="rect" href="InterfaceSFML_8cpp.html#a1f6f08272591bae8f84b65fe8198a642" title=" " alt="" coords="318,55,503,80"/>
-<area shape="poly" title=" " alt="" coords="128,331,146,284,180,218,228,148,257,116,290,89,304,81,307,86,294,94,261,120,232,151,184,221,151,286,133,333"/>
-<area shape="rect" href="classInterfaceSFML.html#a0d632238c209cf64ab1a27685fe77384" title="Calcule la taille optimale des cellules." alt="" coords="307,154,515,194"/>
-<area shape="poly" title=" " alt="" coords="136,330,198,270,242,234,291,204,306,197,308,202,293,208,245,239,201,274,139,334"/>
-<area shape="rect" href="classJeuDeLaVie.html#a63f27d62e27687c8c0879ae52eabadd6" title="Active ou désactive le mode parallèle." alt="" coords="292,283,529,308"/>
-<area shape="poly" title=" " alt="" coords="199,329,323,308,323,313,199,335"/>
-<area shape="rect" href="classJeuDeLaVie.html#ac699c345951d0e8e022f859339e68fda" title="Active ou désactive le mode torique." alt="" coords="297,332,525,357"/>
-<area shape="poly" title=" " alt="" coords="244,342,283,342,283,347,244,347"/>
-<area shape="rect" href="classJeuDeLaVie.html#ad6a15c16668bb872c335543ea616e93f" title="Vérifie si le mode parallèle est actif." alt="" coords="303,381,519,407"/>
-<area shape="poly" title=" " alt="" coords="199,355,323,376,323,382,199,360"/>
-<area shape="rect" href="classJeuDeLaVie.html#a43410dc565325825c5fdf11fa6c6c5a7" title="Vérifie si le mode torique est actif." alt="" coords="307,431,514,456"/>
-<area shape="poly" title=" " alt="" coords="151,355,214,386,293,417,322,425,320,430,291,422,212,391,149,360"/>
-<area shape="rect" href="classJeuDeLaVie.html#af3e2bbbe85d122db859c6049adad142a" title="Exécute une itération du jeu." alt="" coords="303,480,518,505"/>
-<area shape="poly" title=" " alt="" coords="141,356,203,410,246,441,293,466,312,474,310,479,291,471,243,445,200,414,137,360"/>
-<area shape="rect" href="classInterfaceSFML.html#af660192fb32e44dfbf073a9d4ec927be" title="Gère les entrées clavier pour placer des motifs." alt="" coords="297,218,524,258"/>
-<area shape="poly" title=" " alt="" coords="150,329,213,299,291,267,315,259,317,264,293,273,216,304,153,334"/>
-<area shape="rect" href="classInterfaceSFML.html#ae14bea1479191a62abf18f42f7387bcc" title="Met à jour la vue pour préserver l&#39;aspect carré des cellules." alt="" coords="298,104,523,129"/>
-<area shape="poly" title=" " alt="" coords="130,330,152,292,187,240,234,186,261,161,291,140,305,132,308,137,293,144,264,165,237,189,191,243,156,295,135,333"/>
-<area shape="rect" href="classJeuDeLaVie.html#a64c17035b0448747418084db872c72c8" title="Obtient le numéro d&#39;itération actuel." alt="" coords="308,529,513,555"/>
-<area shape="poly" title=" " alt="" coords="136,356,160,389,195,433,241,478,293,516,307,522,304,527,291,520,237,482,191,436,155,392,132,359"/>
-<area shape="rect" href="classJeuDeLaVie.html#a444c078a494f06290049293c37b8eeb2" title="Revient à l&#39;itération précédente." alt="" coords="305,579,516,604"/>
-<area shape="poly" title=" " alt="" coords="134,357,154,398,188,455,235,515,263,542,293,565,304,571,302,576,291,570,259,546,231,519,184,458,150,401,129,359"/>
+<area shape="rect" title="Gère les événements (clavier, souris, fermeture)" alt="" coords="5,355,244,380"/>
+<area shape="rect" href="InterfaceSFML_8cpp.html#a1f6f08272591bae8f84b65fe8198a642" title=" " alt="" coords="318,51,503,76"/>
+<area shape="poly" title=" " alt="" coords="127,353,144,303,176,230,198,191,225,152,255,117,290,87,304,78,307,83,294,91,259,120,229,155,203,193,181,232,149,305,132,355"/>
+<area shape="rect" href="classInterfaceSFML.html#a0d632238c209cf64ab1a27685fe77384" title="Calcule la taille optimale des cellules." alt="" coords="307,101,515,141"/>
+<area shape="poly" title=" " alt="" coords="130,353,151,313,186,259,233,200,261,174,290,150,301,144,303,149,294,155,264,178,237,204,190,262,156,316,135,356"/>
+<area shape="rect" href="classJeuDeLaVie.html#a63f27d62e27687c8c0879ae52eabadd6" title="Active ou désactive le mode parallèle." alt="" coords="292,280,529,305"/>
+<area shape="poly" title=" " alt="" coords="163,352,291,314,328,306,329,311,293,319,165,357"/>
+<area shape="rect" href="classJeuDeLaVie.html#ac699c345951d0e8e022f859339e68fda" title="Active ou désactive le mode torique." alt="" coords="297,329,525,355"/>
+<area shape="poly" title=" " alt="" coords="244,354,283,351,283,356,244,359"/>
+<area shape="rect" href="classJeuDeLaVie.html#ad6a15c16668bb872c335543ea616e93f" title="Vérifie si le mode parallèle est actif." alt="" coords="303,379,519,404"/>
+<area shape="poly" title=" " alt="" coords="244,375,289,378,289,384,244,380"/>
+<area shape="rect" href="classJeuDeLaVie.html#a43410dc565325825c5fdf11fa6c6c5a7" title="Vérifie si le mode torique est actif." alt="" coords="307,428,514,453"/>
+<area shape="poly" title=" " alt="" coords="166,378,293,414,329,423,328,428,291,419,165,383"/>
+<area shape="rect" href="classJeuDeLaVie.html#af3e2bbbe85d122db859c6049adad142a" title="Exécute une itération du jeu." alt="" coords="303,477,518,503"/>
+<area shape="poly" title=" " alt="" coords="144,378,208,420,249,444,293,464,317,471,315,476,291,468,247,448,205,425,141,382"/>
+<area shape="rect" href="classInterfaceSFML.html#af660192fb32e44dfbf073a9d4ec927be" title="Gère les entrées clavier pour placer des motifs." alt="" coords="297,215,524,255"/>
+<area shape="poly" title=" " alt="" coords="142,352,206,310,291,265,311,257,312,262,293,270,209,315,145,357"/>
+<area shape="rect" href="classInterfaceSFML.html#ae14bea1479191a62abf18f42f7387bcc" title="Met à jour la vue pour préserver l&#39;aspect carré des cellules." alt="" coords="298,165,523,191"/>
+<area shape="poly" title=" " alt="" coords="133,353,156,322,193,280,238,237,291,201,309,193,311,198,293,206,242,241,196,284,161,325,137,356"/>
+<area shape="rect" href="classJeuDeLaVie.html#a64c17035b0448747418084db872c72c8" title="Obtient le numéro d&#39;itération actuel." alt="" coords="308,527,513,552"/>
+<area shape="poly" title=" " alt="" coords="138,378,199,444,243,481,293,513,309,520,307,525,291,518,240,486,195,447,134,382"/>
+<area shape="rect" href="classJeuDeLaVie.html#a444c078a494f06290049293c37b8eeb2" title="Revient à l&#39;itération précédente." alt="" coords="305,576,516,601"/>
+<area shape="poly" title=" " alt="" coords="135,379,157,416,191,466,238,519,264,542,293,562,305,569,303,573,291,567,261,547,234,523,187,469,152,419,130,381"/>
+<area shape="rect" href="classInterfaceSFML.html#a19018415b9d7b2a517f3d7075015eaee" title="Applique un zoom centré sur un pixel de la fenêtre." alt="" coords="314,626,507,666"/>
+<area shape="poly" title=" " alt="" coords="133,379,153,424,186,487,233,555,262,585,294,612,303,618,300,623,290,616,258,589,229,558,182,490,148,426,128,382"/>
 <area shape="rect" href="classJeuDeLaVie.html#a87e0b20d13a6adfc6d86c3ed4429b605" title="Définit l&#39;état d&#39;une cellule (utilisé par les interfaces pour le dessin)" alt="" coords="577,55,793,80"/>
-<area shape="poly" title=" " alt="" coords="504,65,563,65,563,70,504,70"/>
+<area shape="poly" title=" " alt="" coords="504,62,563,63,563,68,504,67"/>
 <area shape="rect" href="classGrille.html#aa4c9ce36bb4f2c59a83aeb39d73fc285" title="Vérifie si une position est valide dans la grille." alt="" coords="597,5,774,31"/>
-<area shape="poly" title=" " alt="" coords="482,52,600,31,601,36,483,57"/>
-<area shape="rect" href="classJeuDeLaVie.html#a3f6dc54b2b1ebef7111e7aa5a2622be3" title="Obtient la grille actuelle." alt="" coords="593,104,778,129"/>
-<area shape="poly" title=" " alt="" coords="483,77,601,99,600,104,482,83"/>
-<area shape="poly" title=" " alt="" coords="507,151,610,130,611,135,508,157"/>
-<area shape="rect" href="classGrille.html#a1ab5c8e0ea0d1dc21549c38d0f0f5cf9" title="Obtient le nombre de colonnes." alt="" coords="591,203,780,228"/>
-<area shape="poly" title=" " alt="" coords="515,187,587,198,587,203,514,192"/>
-<area shape="rect" href="classGrille.html#a96b5f98d212a0ee9e2f71d73ebe5bb91" title="Obtient le nombre de lignes." alt="" coords="600,153,771,179"/>
-<area shape="poly" title=" " alt="" coords="515,168,586,166,586,172,515,174"/>
-<area shape="rect" href="classJeuDeLaVie.html#a0c9dbfff7118bd6fe99b3fa99889fe96" title="Vérifie si le jeu est terminé" alt="" coords="597,480,773,505"/>
-<area shape="poly" title=" " alt="" coords="518,490,583,490,583,495,518,495"/>
-<area shape="poly" title=" " alt="" coords="507,215,528,204,543,188,551,172,559,155,576,139,586,132,589,137,579,143,563,158,556,174,547,191,531,208,509,220"/>
-<area shape="poly" title=" " alt="" coords="524,226,577,222,577,227,524,231"/>
-<area shape="poly" title=" " alt="" coords="487,215,529,203,577,187,609,179,610,184,578,193,530,209,489,221"/>
-<area shape="rect" href="classJeuDeLaVie.html#a8bf2b5c24e44c400922032a0f697850b" title="Place un motif sur la grille." alt="" coords="596,252,775,277"/>
-<area shape="poly" title=" " alt="" coords="524,246,582,252,582,257,524,252"/>
-<area shape="poly" title=" " alt="" coords="523,114,579,114,579,119,523,119"/>
-<area shape="poly" title=" " alt="" coords="500,127,531,140,546,152,556,164,564,176,579,188,596,196,594,201,576,192,561,180,551,167,542,155,528,144,498,132"/>
-<area shape="poly" title=" " alt="" coords="483,127,601,148,600,153,482,132"/>
+<area shape="poly" title=" " alt="" coords="488,48,594,30,595,36,489,53"/>
+<area shape="rect" href="classJeuDeLaVie.html#a3f6dc54b2b1ebef7111e7aa5a2622be3" title="Obtient la grille actuelle." alt="" coords="593,108,778,133"/>
+<area shape="poly" title=" " alt="" coords="473,73,611,103,610,108,472,79"/>
+<area shape="poly" title=" " alt="" coords="515,118,579,118,579,123,515,123"/>
+<area shape="rect" href="classGrille.html#a1ab5c8e0ea0d1dc21549c38d0f0f5cf9" title="Obtient le nombre de colonnes." alt="" coords="591,207,780,232"/>
+<area shape="poly" title=" " alt="" coords="503,138,531,150,546,161,555,172,565,182,579,192,598,200,596,205,576,196,561,186,551,175,542,165,528,155,501,143"/>
+<area shape="rect" href="classGrille.html#a96b5f98d212a0ee9e2f71d73ebe5bb91" title="Obtient le nombre de lignes." alt="" coords="600,157,771,183"/>
+<area shape="poly" title=" " alt="" coords="515,137,601,152,600,157,514,142"/>
+<area shape="rect" href="classJeuDeLaVie.html#a0c9dbfff7118bd6fe99b3fa99889fe96" title="Vérifie si le jeu est terminé" alt="" coords="597,477,773,503"/>
+<area shape="poly" title=" " alt="" coords="518,487,583,487,583,493,518,493"/>
+<area shape="poly" title=" " alt="" coords="502,213,528,200,543,186,551,172,560,157,576,142,588,136,590,141,579,147,564,160,555,174,547,190,531,204,505,218"/>
+<area shape="poly" title=" " alt="" coords="524,226,577,223,577,228,524,231"/>
+<area shape="poly" title=" " alt="" coords="490,213,577,191,612,183,614,188,578,197,491,218"/>
+<area shape="rect" href="classJeuDeLaVie.html#a8bf2b5c24e44c400922032a0f697850b" title="Place un motif sur la grille." alt="" coords="596,256,775,281"/>
+<area shape="poly" title=" " alt="" coords="525,246,582,254,582,259,524,252"/>
+<area shape="poly" title=" " alt="" coords="472,163,610,134,611,139,473,168"/>
+<area shape="poly" title=" " alt="" coords="496,188,587,202,586,207,495,193"/>
+<area shape="poly" title=" " alt="" coords="523,172,586,170,586,176,523,177"/>
 </map>
 </div>
 <div class="dynheader">
@@ -998,6 +1013,65 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="321,21,287,21,287,15,321,15"/>
 <area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Point d&#39;entrée du programme." alt="" coords="5,5,60,31"/>
 <area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a19018415b9d7b2a517f3d7075015eaee" name="a19018415b9d7b2a517f3d7075015eaee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19018415b9d7b2a517f3d7075015eaee">&#9670;&#160;</a></span>zoomerSurPixel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void InterfaceSFML::zoomerSurPixel </td>
+          <td>(</td>
+          <td class="paramtype">const sf::Vector2i &amp;&#160;</td>
+          <td class="paramname"><em>pixel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>factor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Applique un zoom centré sur un pixel de la fenêtre. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pixel</td><td>Position en pixels relative à la fenêtre </td></tr>
+    <tr><td class="paramname">factor</td><td>Facteur appliqué à la vue (vue.zoom(factor)) </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classInterfaceSFML_a19018415b9d7b2a517f3d7075015eaee_icgraph.png" border="0" usemap="#aclassInterfaceSFML_a19018415b9d7b2a517f3d7075015eaee_icgraph" alt=""/></div>
+<map name="aclassInterfaceSFML_a19018415b9d7b2a517f3d7075015eaee_icgraph" id="aclassInterfaceSFML_a19018415b9d7b2a517f3d7075015eaee_icgraph">
+<area shape="rect" title="Applique un zoom centré sur un pixel de la fenêtre." alt="" coords="621,5,815,45"/>
+<area shape="rect" href="classInterfaceSFML.html#a20bcd606ad56b9f175bba4a49a4f061a" title="Gère les événements (clavier, souris, fermeture)" alt="" coords="335,13,573,38"/>
+<area shape="poly" title=" " alt="" coords="608,28,574,28,574,23,608,23"/>
+<area shape="rect" href="classInterfaceSFML.html#a518c46fbb99e76a49149d03b900b6cdc" title="Lance la boucle principale de l&#39;interface graphique." alt="" coords="108,13,287,38"/>
+<area shape="poly" title=" " alt="" coords="321,28,287,28,287,23,321,23"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Point d&#39;entrée du programme." alt="" coords="5,13,60,38"/>
+<area shape="poly" title=" " alt="" coords="94,28,60,28,60,23,94,23"/>
 </map>
 </div>
 
@@ -1301,6 +1375,94 @@ Here is the caller graph for this function:</div>
       <table class="memname">
         <tr>
           <td class="memname">sf::View InterfaceSFML::vue</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afb689ca73f687b0f1ed1fbd4fe5037e7" name="afb689ca73f687b0f1ed1fbd4fe5037e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb689ca73f687b0f1ed1fbd4fe5037e7">&#9670;&#160;</a></span>zoomMax</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float InterfaceSFML::zoomMax = 10.0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab69365adb4dffcf849efae33678138b2" name="ab69365adb4dffcf849efae33678138b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab69365adb4dffcf849efae33678138b2">&#9670;&#160;</a></span>zoomMin</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float InterfaceSFML::zoomMin = 0.05f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a58658bd4f8c0d6bd56cbaaf9da0c61bb" name="a58658bd4f8c0d6bd56cbaaf9da0c61bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58658bd4f8c0d6bd56cbaaf9da0c61bb">&#9670;&#160;</a></span>zoomNiveau</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float InterfaceSFML::zoomNiveau = 1.0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a09015571fead334407d2fa97ead017ae" name="a09015571fead334407d2fa97ead017ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09015571fead334407d2fa97ead017ae">&#9670;&#160;</a></span>zoomPas</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float InterfaceSFML::zoomPas = 1.15f</td>
         </tr>
       </table>
   </td>

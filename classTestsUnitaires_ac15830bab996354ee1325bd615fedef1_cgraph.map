@@ -1,0 +1,15 @@
+<map id="TestsUnitaires::testerHistorique" name="TestsUnitaires::testerHistorique">
+<area shape="rect" id="Node000001" title="Teste l&#39;historique (retour en arrière)" alt="" coords="5,119,232,145"/>
+<area shape="rect" id="Node000002" href="$classTestsUnitaires.html#af1671fe34db212a79ee1f4b2869d576e" title="Affiche le résultat d&#39;un test." alt="" coords="302,5,473,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,117,204,87,279,55,300,47,302,52,281,60,206,92,146,122"/>
+<area shape="rect" id="Node000003" href="$classJeuDeLaVie.html#af3e2bbbe85d122db859c6049adad142a" title="Exécute une itération du jeu." alt="" coords="280,70,495,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="188,117,303,95,304,101,189,122"/>
+<area shape="rect" id="Node000005" href="$classJeuDeLaVie.html#a3f6dc54b2b1ebef7111e7aa5a2622be3" title="Obtient la grille actuelle." alt="" coords="295,119,480,145"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="232,129,281,129,281,135,232,135"/>
+<area shape="rect" id="Node000006" href="$classJeuDeLaVie.html#a64c17035b0448747418084db872c72c8" title="Obtient le numéro d&#39;itération actuel." alt="" coords="285,169,490,194"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="189,142,304,163,303,169,188,147"/>
+<area shape="rect" id="Node000007" href="$classJeuDeLaVie.html#a444c078a494f06290049293c37b8eeb2" title="Revient à l&#39;itération précédente." alt="" coords="282,218,493,243"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="145,142,206,172,281,203,311,212,310,217,279,208,204,177,143,147"/>
+<area shape="rect" id="Node000004" href="$classJeuDeLaVie.html#a0c9dbfff7118bd6fe99b3fa99889fe96" title="Vérifie si le jeu est terminé" alt="" coords="543,70,719,95"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="495,80,529,80,529,85,495,85"/>
+</map>

@@ -6,7 +6,7 @@ var searchData=
   ['vie_3',['Document de Conception - Jeu de la Vie',['../md_CONCEPTION.html',1,'']]],
   ['vie_20de_20conway_20projet_20poo_20c_4',['🎮 Jeu de la Vie de Conway - Projet POO C++',['../index.html',1,'']]],
   ['view_20controller_5',['MVC Pattern (Model-View-Controller)',['../md_CONCEPTION.html#autotoc_md83',1,'']]],
-  ['vivante_6',['vivante',['../classCelluleObstacle.html#a8ff9d12004da9f57bf586cc7e68f1be5',1,'CelluleObstacle::vivante'],['../classInterfaceSFML.html#abaa8fc086dace2cde5f8bad0fbef0c7ca758541adeb0d17c3fbc10a89fa2763a2',1,'InterfaceSFML::Vivante']]],
+  ['vivante_6',['vivante',['../classInterfaceSFML.html#abaa8fc086dace2cde5f8bad0fbef0c7ca758541adeb0d17c3fbc10a89fa2763a2',1,'InterfaceSFML::Vivante'],['../classCelluleObstacle.html#a8ff9d12004da9f57bf586cc7e68f1be5',1,'CelluleObstacle::vivante']]],
   ['vs_20sfml_7',['Choix de Qt vs SFML',['../md_CONCEPTION.html#autotoc_md89',1,'']]],
   ['vue_8',['vue',['../classInterfaceSFML.html#aeb8d960effce4f9b1ab570358aca5855',1,'InterfaceSFML']]]
 ];

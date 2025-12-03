@@ -1,50 +1,56 @@
 <map id="JeuDeLaVie::obtenirIteration" name="JeuDeLaVie::obtenirIteration">
-<area shape="rect" id="Node000001" title="Obtient le numéro d&#39;itération actuel." alt="" coords="1056,163,1261,188"/>
-<area shape="rect" id="Node000002" href="$classInterfaceSFML.html#a9b5a8e272d8dc3c033e09fde93ac4845" title="Dessine les informations à l&#39;écran." alt="" coords="747,61,1008,87"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1124,158,1070,129,1007,102,961,89,962,84,1009,97,1073,124,1127,153"/>
-<area shape="rect" id="Node000004" href="$classInterfaceSFML.html#a518c46fbb99e76a49149d03b900b6cdc" title="Lance la boucle principale de l&#39;interface graphique." alt="" coords="254,87,433,112"/>
-<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="1137,154,1083,99,1047,72,1007,51,935,28,872,14,815,9,761,10,648,26,506,51,436,68,376,89,375,84,434,63,505,46,647,21,761,4,815,3,872,9,936,23,1009,46,1050,67,1087,95,1141,150"/>
-<area shape="rect" id="Node000006" href="$classModeConsole.html#a79ad19df6d20c391fbaf9a7b4fb2f350" title="Exécute le mode console." alt="" coords="790,163,965,188"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="1042,178,965,178,965,173,1042,173"/>
-<area shape="rect" id="Node000007" href="$classInterfaceSFML.html#a20bcd606ad56b9f175bba4a49a4f061a" title="Gère les événements (clavier, souris, fermeture)" alt="" coords="758,112,997,137"/>
-<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="1074,163,948,140,949,135,1075,158"/>
-<area shape="rect" id="Node000008" href="$classInterfaceQt.html#a06b809d43dbf3814ab103a8d42de319a" title="Met à jour l&#39;affichage." alt="" coords="787,343,968,383"/>
-<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="1129,198,910,345,907,341,1126,194"/>
-<area shape="rect" id="Node000016" href="$classInterfaceQt.html#a1c1b614c51a456e7b5f407724df14f38" title="Avance d&#39;une itération." alt="" coords="528,277,676,303"/>
-<area shape="poly" id="edge28_Node000001_Node000016" title=" " alt="" coords="1083,194,665,280,664,275,1082,188"/>
-<area shape="rect" id="Node000019" href="$classInterfaceQt.html#abe1c50d3e3b80f6adecb9bf0cb9fca4c" title="Mise à jour automatique (timer)" alt="" coords="510,527,694,552"/>
-<area shape="poly" id="edge29_Node000001_Node000019" title=" " alt="" coords="1149,202,1128,244,1098,296,1058,350,1010,397,971,424,929,448,842,486,757,512,683,529,681,524,755,507,840,481,927,443,968,420,1006,393,1054,347,1093,293,1124,242,1144,200"/>
-<area shape="rect" id="Node000003" href="$classInterfaceSFML.html#aa50033cc2b996da556fdebca5db2c7ef" title="Met à jour l&#39;affichage." alt="" coords="516,61,688,87"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="733,77,688,77,688,71,733,71"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="503,86,433,93,433,88,502,81"/>
-<area shape="rect" id="Node000005" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Point d&#39;entrée du programme." alt="" coords="66,125,121,151"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="248,117,121,137,121,131,247,112"/>
-<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="776,173,121,142,121,137,776,168"/>
-<area shape="poly" id="edge9_Node000007_Node000004" title=" " alt="" coords="744,121,433,106,433,101,744,116"/>
-<area shape="rect" id="Node000009" href="$classInterfaceQt.html#a6a4136fd3447c512a1878305b2268ba4" title="Méthode appelée par le widget de grille lors d&#39;événements souris." alt="" coords="506,213,698,253"/>
-<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="831,339,769,303,698,267,668,255,670,250,700,262,771,298,834,334"/>
-<area shape="rect" id="Node000012" href="$classInterfaceQt.html#a0eea8fab1e83d4b90961bd4241fc5689" title="Constructeur de l&#39;interface Qt." alt="" coords="5,476,181,501"/>
-<area shape="poly" id="edge14_Node000008_Node000012" title=" " alt="" coords="827,392,748,436,725,453,700,466,631,483,560,496,418,508,288,508,181,501,182,496,288,502,418,502,559,491,630,478,698,461,722,448,745,432,824,388"/>
-<area shape="rect" id="Node000013" href="$classInterfaceQt.html#a280bb380e08e13ec39b8dca2ae917950" title="Place un motif." alt="" coords="505,425,699,451"/>
-<area shape="poly" id="edge15_Node000008_Node000013" title=" " alt="" coords="792,390,699,415,653,428,651,423,698,410,791,385"/>
-<area shape="rect" id="Node000015" href="$classInterfaceQt.html#af564176618a18f272b92be6bfd9d029d" title="Réinitialise la simulation." alt="" coords="524,376,680,401"/>
-<area shape="poly" id="edge18_Node000008_Node000015" title=" " alt="" coords="773,376,680,384,680,379,773,370"/>
-<area shape="poly" id="edge20_Node000008_Node000016" title=" " alt="" coords="792,342,698,317,654,305,656,300,699,312,793,337"/>
-<area shape="rect" id="Node000018" href="$classInterfaceQt.html#abe7956e622104a15a5de0b3f8c84921d" title="Recule d&#39;une itération." alt="" coords="512,327,692,352"/>
-<area shape="poly" id="edge23_Node000008_Node000018" title=" " alt="" coords="773,357,692,350,692,345,773,352"/>
-<area shape="poly" id="edge26_Node000008_Node000019" title=" " alt="" coords="843,395,760,464,700,510,653,529,651,524,697,505,757,460,840,391"/>
-<area shape="rect" id="Node000010" href="$classGrilleWidget.html#aa4683d81eb2289f0949b545b649ba45e" title=" " alt="" coords="229,213,457,239"/>
-<area shape="poly" id="edge12_Node000009_Node000010" title=" " alt="" coords="492,233,458,232,458,226,492,227"/>
-<area shape="rect" id="Node000011" href="$classGrilleWidget.html#a60420d46e58cb4705d0533d3364250c3" title=" " alt="" coords="248,263,439,303"/>
-<area shape="poly" id="edge13_Node000009_Node000011" title=" " alt="" coords="493,257,440,267,439,262,492,252"/>
-<area shape="rect" id="Node000014" href="$classInterfaceQt.html#a08632443206d676198dfd1f7492e7437" title="Initialise les widgets." alt="" coords="261,378,425,418"/>
-<area shape="poly" id="edge16_Node000013_Node000014" title=" " alt="" coords="506,426,425,413,426,408,506,421"/>
-<area shape="poly" id="edge17_Node000014_Node000012" title=" " alt="" coords="275,425,130,478,129,473,273,420"/>
-<area shape="poly" id="edge19_Node000015_Node000014" title=" " alt="" coords="511,395,426,398,425,392,510,389"/>
-<area shape="poly" id="edge21_Node000016_Node000014" title=" " alt="" coords="519,310,507,316,492,328,483,341,474,354,459,367,427,382,425,377,456,363,470,350,479,338,488,325,504,312,517,305"/>
-<area shape="rect" id="Node000017" href="$classInterfaceQt.html#a11edcee9206379725a8e97e68a100e80" title="Gestion des événements clavier." alt="" coords="244,328,443,353"/>
-<area shape="poly" id="edge22_Node000016_Node000017" title=" " alt="" coords="523,308,409,331,408,325,522,303"/>
-<area shape="poly" id="edge24_Node000018_Node000014" title=" " alt="" coords="533,358,426,382,425,377,531,353"/>
-<area shape="poly" id="edge25_Node000018_Node000017" title=" " alt="" coords="498,343,443,343,443,338,498,337"/>
-<area shape="poly" id="edge27_Node000019_Node000012" title=" " alt="" coords="496,535,229,510,181,504,182,499,230,505,496,529"/>
+<area shape="rect" id="Node000001" title="Obtient le numéro d&#39;itération actuel." alt="" coords="1056,240,1261,265"/>
+<area shape="rect" id="Node000002" href="$classInterfaceSFML.html#a9b5a8e272d8dc3c033e09fde93ac4845" title="Dessine les informations à l&#39;écran." alt="" coords="747,209,1008,235"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1042,243,994,237,994,232,1043,237"/>
+<area shape="rect" id="Node000004" href="$classInterfaceSFML.html#a518c46fbb99e76a49149d03b900b6cdc" title="Lance la boucle principale de l&#39;interface graphique." alt="" coords="254,79,433,104"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="1115,237,1064,217,1007,199,850,163,692,135,548,115,433,102,433,97,549,110,693,130,851,158,1009,194,1066,212,1117,232"/>
+<area shape="rect" id="Node000006" href="$classModeConsole.html#a79ad19df6d20c391fbaf9a7b4fb2f350" title="Exécute le mode console." alt="" coords="790,5,965,31"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="1145,228,1125,187,1095,136,1055,86,1032,63,1007,44,986,34,964,27,966,22,988,29,1009,40,1036,59,1059,82,1099,133,1130,184,1149,226"/>
+<area shape="rect" id="Node000007" href="$classInterfaceSFML.html#a20bcd606ad56b9f175bba4a49a4f061a" title="Gère les événements (clavier, souris, fermeture)" alt="" coords="758,55,997,80"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="1139,230,1085,165,1048,131,1007,102,959,83,961,78,1009,97,1051,127,1089,162,1143,227"/>
+<area shape="rect" id="Node000008" href="$classInterfaceQt.html#a06b809d43dbf3814ab103a8d42de319a" title="Met à jour l&#39;affichage." alt="" coords="787,339,968,379"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="1112,273,932,342,930,337,1110,268"/>
+<area shape="rect" id="Node000016" href="$classInterfaceQt.html#a1c1b614c51a456e7b5f407724df14f38" title="Avance d&#39;une itération." alt="" coords="528,469,676,495"/>
+<area shape="poly" id="edge28_Node000001_Node000016" title=" " alt="" coords="1141,278,1086,336,1050,368,1009,394,947,417,859,438,677,473,676,468,858,433,945,411,1007,389,1047,363,1083,333,1137,274"/>
+<area shape="rect" id="Node000019" href="$classInterfaceQt.html#abe1c50d3e3b80f6adecb9bf0cb9fca4c" title="Mise à jour automatique (timer)" alt="" coords="510,519,694,544"/>
+<area shape="poly" id="edge29_Node000001_Node000019" title=" " alt="" coords="1150,279,1130,321,1100,372,1059,423,1036,446,1009,466,972,486,932,502,849,524,767,535,694,538,694,533,766,530,848,519,930,497,970,481,1007,461,1032,442,1056,420,1095,369,1125,319,1145,277"/>
+<area shape="rect" id="Node000020" href="$classTestsUnitaires.html#ac15830bab996354ee1325bd615fedef1" title="Teste l&#39;historique (retour en arrière)" alt="" coords="764,545,991,571"/>
+<area shape="poly" id="edge30_Node000001_Node000020" title=" " alt="" coords="1151,279,1131,327,1101,387,1061,450,1036,479,1010,505,971,531,929,548,927,543,968,526,1006,501,1033,475,1056,446,1097,384,1126,324,1146,277"/>
+<area shape="rect" id="Node000003" href="$classInterfaceSFML.html#aa50033cc2b996da556fdebca5db2c7ef" title="Met à jour l&#39;affichage." alt="" coords="516,156,688,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="797,209,668,184,669,179,798,204"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="545,155,386,107,388,102,546,149"/>
+<area shape="rect" id="Node000005" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Point d&#39;entrée du programme." alt="" coords="66,41,121,67"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="244,79,120,61,121,55,245,74"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="776,25,121,55,121,50,776,20"/>
+<area shape="poly" id="edge9_Node000007_Node000004" title=" " alt="" coords="744,76,433,90,433,85,744,71"/>
+<area shape="rect" id="Node000009" href="$classInterfaceQt.html#a6a4136fd3447c512a1878305b2268ba4" title="Méthode appelée par le widget de grille lors d&#39;événements souris." alt="" coords="506,206,698,246"/>
+<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="828,335,698,267,655,249,657,244,700,262,830,330"/>
+<area shape="rect" id="Node000012" href="$classInterfaceQt.html#a0eea8fab1e83d4b90961bd4241fc5689" title="Constructeur de l&#39;interface Qt." alt="" coords="5,376,181,401"/>
+<area shape="poly" id="edge14_Node000008_Node000012" title=" " alt="" coords="807,338,754,323,698,311,617,304,534,305,452,312,373,323,234,351,135,379,134,373,233,346,372,318,452,306,534,300,617,299,699,306,755,317,809,333"/>
+<area shape="rect" id="Node000013" href="$classInterfaceQt.html#a280bb380e08e13ec39b8dca2ae917950" title="Place un motif." alt="" coords="505,371,699,396"/>
+<area shape="poly" id="edge15_Node000008_Node000013" title=" " alt="" coords="773,371,699,378,698,372,773,366"/>
+<area shape="rect" id="Node000015" href="$classInterfaceQt.html#af564176618a18f272b92be6bfd9d029d" title="Réinitialise la simulation." alt="" coords="524,321,680,347"/>
+<area shape="poly" id="edge18_Node000008_Node000015" title=" " alt="" coords="773,352,680,344,680,338,773,347"/>
+<area shape="poly" id="edge20_Node000008_Node000016" title=" " alt="" coords="784,387,748,406,734,418,725,432,716,446,700,459,672,472,670,467,697,454,712,442,721,429,730,415,745,401,782,382"/>
+<area shape="rect" id="Node000018" href="$classInterfaceQt.html#abe7956e622104a15a5de0b3f8c84921d" title="Recule d&#39;une itération." alt="" coords="512,420,692,445"/>
+<area shape="poly" id="edge23_Node000008_Node000018" title=" " alt="" coords="790,385,699,410,652,423,651,417,698,405,789,380"/>
+<area shape="poly" id="edge26_Node000008_Node000019" title=" " alt="" coords="842,390,748,468,726,491,700,510,671,521,669,516,697,505,722,487,745,464,839,386"/>
+<area shape="rect" id="Node000010" href="$classGrilleWidget.html#aa4683d81eb2289f0949b545b649ba45e" title=" " alt="" coords="229,217,457,243"/>
+<area shape="poly" id="edge12_Node000009_Node000010" title=" " alt="" coords="492,230,458,231,458,226,492,225"/>
+<area shape="rect" id="Node000011" href="$classGrilleWidget.html#a60420d46e58cb4705d0533d3364250c3" title=" " alt="" coords="248,153,439,193"/>
+<area shape="poly" id="edge13_Node000009_Node000011" title=" " alt="" coords="492,206,439,195,440,190,493,201"/>
+<area shape="rect" id="Node000014" href="$classInterfaceQt.html#a08632443206d676198dfd1f7492e7437" title="Initialise les widgets." alt="" coords="261,369,425,409"/>
+<area shape="poly" id="edge16_Node000013_Node000014" title=" " alt="" coords="491,388,426,390,426,384,491,383"/>
+<area shape="poly" id="edge17_Node000014_Node000012" title=" " alt="" coords="248,391,181,391,181,386,248,386"/>
+<area shape="poly" id="edge19_Node000015_Node000014" title=" " alt="" coords="529,352,426,374,425,369,527,347"/>
+<area shape="poly" id="edge21_Node000016_Node000014" title=" " alt="" coords="529,468,504,459,480,446,456,432,404,411,406,406,459,428,482,441,506,454,531,463"/>
+<area shape="rect" id="Node000017" href="$classInterfaceQt.html#a11edcee9206379725a8e97e68a100e80" title="Gestion des événements clavier." alt="" coords="244,443,443,468"/>
+<area shape="poly" id="edge22_Node000016_Node000017" title=" " alt="" coords="514,476,443,468,443,463,515,470"/>
+<area shape="poly" id="edge24_Node000018_Node000014" title=" " alt="" coords="513,420,425,405,426,400,514,415"/>
+<area shape="poly" id="edge25_Node000018_Node000017" title=" " alt="" coords="498,444,443,449,443,444,498,439"/>
+<area shape="poly" id="edge27_Node000019_Node000012" title=" " alt="" coords="496,532,434,527,366,518,296,503,228,482,192,464,158,443,107,404,110,399,161,439,195,460,230,477,297,498,367,512,435,522,496,527"/>
+<area shape="rect" id="Node000021" href="$classTestsUnitaires.html#a17aa4e9d0afbd2614193d2638f4b78c7" title="Exécute tous les tests." alt="" coords="513,569,691,609"/>
+<area shape="poly" id="edge31_Node000020_Node000021" title=" " alt="" coords="751,575,692,581,691,576,750,569"/>
+<area shape="rect" id="Node000022" href="$test__main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Programme principal pour exécuter les tests unitaires." alt="" coords="316,576,371,601"/>
+<area shape="poly" id="edge32_Node000021_Node000022" title=" " alt="" coords="499,591,371,591,371,586,499,586"/>
 </map>

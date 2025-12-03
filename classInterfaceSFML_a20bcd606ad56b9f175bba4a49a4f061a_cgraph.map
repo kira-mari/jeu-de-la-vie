@@ -1,46 +1,48 @@
 <map id="InterfaceSFML::gererEvenements" name="InterfaceSFML::gererEvenements">
-<area shape="rect" id="Node000001" title="Gère les événements (clavier, souris, fermeture)" alt="" coords="5,332,244,357"/>
-<area shape="rect" id="Node000002" href="$InterfaceSFML_8cpp.html#a1f6f08272591bae8f84b65fe8198a642" title=" " alt="" coords="318,55,503,80"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,331,146,284,180,218,228,148,257,116,290,89,304,81,307,86,294,94,261,120,232,151,184,221,151,286,133,333"/>
-<area shape="rect" id="Node000006" href="$classInterfaceSFML.html#a0d632238c209cf64ab1a27685fe77384" title="Calcule la taille optimale des cellules." alt="" coords="307,154,515,194"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="136,330,198,270,242,234,291,204,306,197,308,202,293,208,245,239,201,274,139,334"/>
-<area shape="rect" id="Node000009" href="$classJeuDeLaVie.html#a63f27d62e27687c8c0879ae52eabadd6" title="Active ou désactive le mode parallèle." alt="" coords="292,283,529,308"/>
-<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="199,329,323,308,323,313,199,335"/>
-<area shape="rect" id="Node000010" href="$classJeuDeLaVie.html#ac699c345951d0e8e022f859339e68fda" title="Active ou désactive le mode torique." alt="" coords="297,332,525,357"/>
-<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="244,342,283,342,283,347,244,347"/>
-<area shape="rect" id="Node000011" href="$classJeuDeLaVie.html#ad6a15c16668bb872c335543ea616e93f" title="Vérifie si le mode parallèle est actif." alt="" coords="303,381,519,407"/>
-<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="199,355,323,376,323,382,199,360"/>
-<area shape="rect" id="Node000012" href="$classJeuDeLaVie.html#a43410dc565325825c5fdf11fa6c6c5a7" title="Vérifie si le mode torique est actif." alt="" coords="307,431,514,456"/>
-<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="151,355,214,386,293,417,322,425,320,430,291,422,212,391,149,360"/>
-<area shape="rect" id="Node000013" href="$classJeuDeLaVie.html#af3e2bbbe85d122db859c6049adad142a" title="Exécute une itération du jeu." alt="" coords="303,480,518,505"/>
-<area shape="poly" id="edge13_Node000001_Node000013" title=" " alt="" coords="141,356,203,410,246,441,293,466,312,474,310,479,291,471,243,445,200,414,137,360"/>
-<area shape="rect" id="Node000015" href="$classInterfaceSFML.html#af660192fb32e44dfbf073a9d4ec927be" title="Gère les entrées clavier pour placer des motifs." alt="" coords="297,218,524,258"/>
-<area shape="poly" id="edge15_Node000001_Node000015" title=" " alt="" coords="150,329,213,299,291,267,315,259,317,264,293,273,216,304,153,334"/>
-<area shape="rect" id="Node000017" href="$classInterfaceSFML.html#ae14bea1479191a62abf18f42f7387bcc" title="Met à jour la vue pour préserver l&#39;aspect carré des cellules." alt="" coords="298,104,523,129"/>
-<area shape="poly" id="edge20_Node000001_Node000017" title=" " alt="" coords="130,330,152,292,187,240,234,186,261,161,291,140,305,132,308,137,293,144,264,165,237,189,191,243,156,295,135,333"/>
-<area shape="rect" id="Node000018" href="$classJeuDeLaVie.html#a64c17035b0448747418084db872c72c8" title="Obtient le numéro d&#39;itération actuel." alt="" coords="308,529,513,555"/>
-<area shape="poly" id="edge24_Node000001_Node000018" title=" " alt="" coords="136,356,160,389,195,433,241,478,293,516,307,522,304,527,291,520,237,482,191,436,155,392,132,359"/>
-<area shape="rect" id="Node000019" href="$classJeuDeLaVie.html#a444c078a494f06290049293c37b8eeb2" title="Revient à l&#39;itération précédente." alt="" coords="305,579,516,604"/>
-<area shape="poly" id="edge25_Node000001_Node000019" title=" " alt="" coords="134,357,154,398,188,455,235,515,263,542,293,565,304,571,302,576,291,570,259,546,231,519,184,458,150,401,129,359"/>
+<area shape="rect" id="Node000001" title="Gère les événements (clavier, souris, fermeture)" alt="" coords="5,355,244,380"/>
+<area shape="rect" id="Node000002" href="$InterfaceSFML_8cpp.html#a1f6f08272591bae8f84b65fe8198a642" title=" " alt="" coords="318,51,503,76"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,353,144,303,176,230,198,191,225,152,255,117,290,87,304,78,307,83,294,91,259,120,229,155,203,193,181,232,149,305,132,355"/>
+<area shape="rect" id="Node000006" href="$classInterfaceSFML.html#a0d632238c209cf64ab1a27685fe77384" title="Calcule la taille optimale des cellules." alt="" coords="307,101,515,141"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="130,353,151,313,186,259,233,200,261,174,290,150,301,144,303,149,294,155,264,178,237,204,190,262,156,316,135,356"/>
+<area shape="rect" id="Node000009" href="$classJeuDeLaVie.html#a63f27d62e27687c8c0879ae52eabadd6" title="Active ou désactive le mode parallèle." alt="" coords="292,280,529,305"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="163,352,291,314,328,306,329,311,293,319,165,357"/>
+<area shape="rect" id="Node000010" href="$classJeuDeLaVie.html#ac699c345951d0e8e022f859339e68fda" title="Active ou désactive le mode torique." alt="" coords="297,329,525,355"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="244,354,283,351,283,356,244,359"/>
+<area shape="rect" id="Node000011" href="$classJeuDeLaVie.html#ad6a15c16668bb872c335543ea616e93f" title="Vérifie si le mode parallèle est actif." alt="" coords="303,379,519,404"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="244,375,289,378,289,384,244,380"/>
+<area shape="rect" id="Node000012" href="$classJeuDeLaVie.html#a43410dc565325825c5fdf11fa6c6c5a7" title="Vérifie si le mode torique est actif." alt="" coords="307,428,514,453"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="166,378,293,414,329,423,328,428,291,419,165,383"/>
+<area shape="rect" id="Node000013" href="$classJeuDeLaVie.html#af3e2bbbe85d122db859c6049adad142a" title="Exécute une itération du jeu." alt="" coords="303,477,518,503"/>
+<area shape="poly" id="edge13_Node000001_Node000013" title=" " alt="" coords="144,378,208,420,249,444,293,464,317,471,315,476,291,468,247,448,205,425,141,382"/>
+<area shape="rect" id="Node000015" href="$classInterfaceSFML.html#af660192fb32e44dfbf073a9d4ec927be" title="Gère les entrées clavier pour placer des motifs." alt="" coords="297,215,524,255"/>
+<area shape="poly" id="edge15_Node000001_Node000015" title=" " alt="" coords="142,352,206,310,291,265,311,257,312,262,293,270,209,315,145,357"/>
+<area shape="rect" id="Node000017" href="$classInterfaceSFML.html#ae14bea1479191a62abf18f42f7387bcc" title="Met à jour la vue pour préserver l&#39;aspect carré des cellules." alt="" coords="298,165,523,191"/>
+<area shape="poly" id="edge20_Node000001_Node000017" title=" " alt="" coords="133,353,156,322,193,280,238,237,291,201,309,193,311,198,293,206,242,241,196,284,161,325,137,356"/>
+<area shape="rect" id="Node000018" href="$classJeuDeLaVie.html#a64c17035b0448747418084db872c72c8" title="Obtient le numéro d&#39;itération actuel." alt="" coords="308,527,513,552"/>
+<area shape="poly" id="edge24_Node000001_Node000018" title=" " alt="" coords="138,378,199,444,243,481,293,513,309,520,307,525,291,518,240,486,195,447,134,382"/>
+<area shape="rect" id="Node000019" href="$classJeuDeLaVie.html#a444c078a494f06290049293c37b8eeb2" title="Revient à l&#39;itération précédente." alt="" coords="305,576,516,601"/>
+<area shape="poly" id="edge25_Node000001_Node000019" title=" " alt="" coords="135,379,157,416,191,466,238,519,264,542,293,562,305,569,303,573,291,567,261,547,234,523,187,469,152,419,130,381"/>
+<area shape="rect" id="Node000020" href="$classInterfaceSFML.html#a19018415b9d7b2a517f3d7075015eaee" title="Applique un zoom centré sur un pixel de la fenêtre." alt="" coords="314,626,507,666"/>
+<area shape="poly" id="edge26_Node000001_Node000020" title=" " alt="" coords="133,379,153,424,186,487,233,555,262,585,294,612,303,618,300,623,290,616,258,589,229,558,182,490,148,426,128,382"/>
 <area shape="rect" id="Node000003" href="$classJeuDeLaVie.html#a87e0b20d13a6adfc6d86c3ed4429b605" title="Définit l&#39;état d&#39;une cellule (utilisé par les interfaces pour le dessin)" alt="" coords="577,55,793,80"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="504,65,563,65,563,70,504,70"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="504,62,563,63,563,68,504,67"/>
 <area shape="rect" id="Node000004" href="$classGrille.html#aa4c9ce36bb4f2c59a83aeb39d73fc285" title="Vérifie si une position est valide dans la grille." alt="" coords="597,5,774,31"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="482,52,600,31,601,36,483,57"/>
-<area shape="rect" id="Node000005" href="$classJeuDeLaVie.html#a3f6dc54b2b1ebef7111e7aa5a2622be3" title="Obtient la grille actuelle." alt="" coords="593,104,778,129"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="483,77,601,99,600,104,482,83"/>
-<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="507,151,610,130,611,135,508,157"/>
-<area shape="rect" id="Node000007" href="$classGrille.html#a1ab5c8e0ea0d1dc21549c38d0f0f5cf9" title="Obtient le nombre de colonnes." alt="" coords="591,203,780,228"/>
-<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="515,187,587,198,587,203,514,192"/>
-<area shape="rect" id="Node000008" href="$classGrille.html#a96b5f98d212a0ee9e2f71d73ebe5bb91" title="Obtient le nombre de lignes." alt="" coords="600,153,771,179"/>
-<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="515,168,586,166,586,172,515,174"/>
-<area shape="rect" id="Node000014" href="$classJeuDeLaVie.html#a0c9dbfff7118bd6fe99b3fa99889fe96" title="Vérifie si le jeu est terminé" alt="" coords="597,480,773,505"/>
-<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="518,490,583,490,583,495,518,495"/>
-<area shape="poly" id="edge16_Node000015_Node000005" title=" " alt="" coords="507,215,528,204,543,188,551,172,559,155,576,139,586,132,589,137,579,143,563,158,556,174,547,191,531,208,509,220"/>
-<area shape="poly" id="edge17_Node000015_Node000007" title=" " alt="" coords="524,226,577,222,577,227,524,231"/>
-<area shape="poly" id="edge18_Node000015_Node000008" title=" " alt="" coords="487,215,529,203,577,187,609,179,610,184,578,193,530,209,489,221"/>
-<area shape="rect" id="Node000016" href="$classJeuDeLaVie.html#a8bf2b5c24e44c400922032a0f697850b" title="Place un motif sur la grille." alt="" coords="596,252,775,277"/>
-<area shape="poly" id="edge19_Node000015_Node000016" title=" " alt="" coords="524,246,582,252,582,257,524,252"/>
-<area shape="poly" id="edge21_Node000017_Node000005" title=" " alt="" coords="523,114,579,114,579,119,523,119"/>
-<area shape="poly" id="edge22_Node000017_Node000007" title=" " alt="" coords="500,127,531,140,546,152,556,164,564,176,579,188,596,196,594,201,576,192,561,180,551,167,542,155,528,144,498,132"/>
-<area shape="poly" id="edge23_Node000017_Node000008" title=" " alt="" coords="483,127,601,148,600,153,482,132"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="488,48,594,30,595,36,489,53"/>
+<area shape="rect" id="Node000005" href="$classJeuDeLaVie.html#a3f6dc54b2b1ebef7111e7aa5a2622be3" title="Obtient la grille actuelle." alt="" coords="593,108,778,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="473,73,611,103,610,108,472,79"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="515,118,579,118,579,123,515,123"/>
+<area shape="rect" id="Node000007" href="$classGrille.html#a1ab5c8e0ea0d1dc21549c38d0f0f5cf9" title="Obtient le nombre de colonnes." alt="" coords="591,207,780,232"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="503,138,531,150,546,161,555,172,565,182,579,192,598,200,596,205,576,196,561,186,551,175,542,165,528,155,501,143"/>
+<area shape="rect" id="Node000008" href="$classGrille.html#a96b5f98d212a0ee9e2f71d73ebe5bb91" title="Obtient le nombre de lignes." alt="" coords="600,157,771,183"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="515,137,601,152,600,157,514,142"/>
+<area shape="rect" id="Node000014" href="$classJeuDeLaVie.html#a0c9dbfff7118bd6fe99b3fa99889fe96" title="Vérifie si le jeu est terminé" alt="" coords="597,477,773,503"/>
+<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="518,487,583,487,583,493,518,493"/>
+<area shape="poly" id="edge16_Node000015_Node000005" title=" " alt="" coords="502,213,528,200,543,186,551,172,560,157,576,142,588,136,590,141,579,147,564,160,555,174,547,190,531,204,505,218"/>
+<area shape="poly" id="edge17_Node000015_Node000007" title=" " alt="" coords="524,226,577,223,577,228,524,231"/>
+<area shape="poly" id="edge18_Node000015_Node000008" title=" " alt="" coords="490,213,577,191,612,183,614,188,578,197,491,218"/>
+<area shape="rect" id="Node000016" href="$classJeuDeLaVie.html#a8bf2b5c24e44c400922032a0f697850b" title="Place un motif sur la grille." alt="" coords="596,256,775,281"/>
+<area shape="poly" id="edge19_Node000015_Node000016" title=" " alt="" coords="525,246,582,254,582,259,524,252"/>
+<area shape="poly" id="edge21_Node000017_Node000005" title=" " alt="" coords="472,163,610,134,611,139,473,168"/>
+<area shape="poly" id="edge22_Node000017_Node000007" title=" " alt="" coords="496,188,587,202,586,207,495,193"/>
+<area shape="poly" id="edge23_Node000017_Node000008" title=" " alt="" coords="523,172,586,170,586,176,523,177"/>
 </map>
