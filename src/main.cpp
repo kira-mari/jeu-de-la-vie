@@ -36,6 +36,7 @@ void afficherAide() {
     std::cout << "  -t              Active le mode torique (grille bouclée)" << std::endl;
     std::cout << "  -p              Active la parallélisation" << std::endl;
     std::cout << "  -h, --help      Affiche cette aide" << std::endl;
+    std::cout << "  -d <NxM>|<N>   Crée une grille vide de dimensions N x M (ou N x N si un seul nombre)" << std::endl;
     std::cout << std::endl;
     std::cout << "Modes graphiques:" << std::endl;
     std::cout << "  sfml            Interface SFML (légère, jeu vidéo)" << std::endl;
@@ -95,18 +96,18 @@ int main(int argc, char* argv[]) {
     }
     
     // Analyse des arguments
-    if (argc < 2) {
-        std::cerr << "Erreur: Fichier d'entrée requis" << std::endl;
-        afficherAide();
-        return 1;
-    }
-    
-    fichierEntree = argv[1];
-    
-    // Traiter les options
-    for (int i = 2; i < argc; ++i) {
+    int i = 1;
+    int rows = 50;
+    int cols = 50;
+
+    // Scan arguments: accept optional file (first non-option) and options -m -n -t -p -d
+    while (i < argc) {
         std::string arg = argv[i];
-        
+        if (arg == "-h" || arg == "--help") {
+            afficherAide();
+            return 0;
+        }
+
         if (arg == "-m" && i + 1 < argc) {
             mode = argv[++i];
         }
@@ -119,6 +120,34 @@ int main(int argc, char* argv[]) {
         else if (arg == "-p") {
             modeParallele = true;
         }
+        else if (arg == "-d" && i + 1 < argc) {
+            std::string dim = argv[++i];
+            // Accept formats: NxM or N
+            size_t xPos = dim.find_first_of("xX");
+            try {
+                if (xPos != std::string::npos) {
+                    rows = std::stoi(dim.substr(0, xPos));
+                    cols = std::stoi(dim.substr(xPos + 1));
+                } else {
+                    rows = std::stoi(dim);
+                    cols = rows;
+                }
+                if (rows <= 0 || cols <= 0) throw std::invalid_argument("dimensions invalides");
+            } catch (...) {
+                std::cerr << "Argument -d invalide. Utilisez -d NxM ou -d N" << std::endl;
+                return 1;
+            }
+        }
+        else if (!arg.empty() && arg[0] != '-' && fichierEntree.empty()) {
+            // first non-option argument is input file
+            fichierEntree = arg;
+        }
+        else {
+            std::cerr << "Argument inconnu: " << arg << std::endl;
+            afficherAide();
+            return 1;
+        }
+        ++i;
     }
     
     try {
@@ -131,10 +160,16 @@ int main(int argc, char* argv[]) {
         }
         
         // Charger la grille depuis le fichier
-        std::cout << "Chargement de la grille depuis: " << fichierEntree << std::endl;
-        auto grille = GestionnaireFichier::chargerGrille(fichierEntree, regle);
-        std::cout << "Grille chargée: " << grille->obtenirNbLignes() 
-                  << "x" << grille->obtenirNbColonnes() << std::endl;
+        std::unique_ptr<Grille> grille;
+        if (!fichierEntree.empty()) {
+            std::cout << "Chargement de la grille depuis: " << fichierEntree << std::endl;
+            grille = GestionnaireFichier::chargerGrille(fichierEntree, regle);
+            std::cout << "Grille chargée: " << grille->obtenirNbLignes() 
+                      << "x" << grille->obtenirNbColonnes() << std::endl;
+        } else {
+            std::cout << "Aucun fichier d'entree fourni. Creation d'une grille vide de " << rows << "x" << cols << std::endl;
+            grille = std::make_unique<Grille>(rows, cols, regle);
+        }
         
         // Créer le jeu
         JeuDeLaVie jeu(std::move(grille), nbIterations, modeTorique, modeParallele);

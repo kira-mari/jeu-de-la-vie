@@ -44,6 +44,11 @@ private:
     bool sourisEnfoncee;
     int boutonSouris; // 0 = gauche, 1 = milieu, 2 = droite
     sf::View vue; // Vue utilisée pour garder les cellules carrées
+    // Zoom (molette)
+    float zoomNiveau = 1.0f; // facteur de zoom courant (>1 = zoom avant)
+    const float zoomPas = 1.15f;
+    const float zoomMin = 0.05f;
+    const float zoomMax = 10.0f;
     
 public:
     /**
@@ -118,6 +123,12 @@ private:
      * @brief Met à jour la vue pour préserver l'aspect carré des cellules
      */
     void mettreAJourVue();
+    /**
+     * @brief Applique un zoom centré sur un pixel de la fenêtre
+     * @param pixel Position en pixels relative à la fenêtre
+     * @param factor Facteur appliqué à la vue (vue.zoom(factor))
+     */
+    void zoomerSurPixel(const sf::Vector2i& pixel, float factor);
 };
 
 #endif // INTERFACE_SFML_HPP

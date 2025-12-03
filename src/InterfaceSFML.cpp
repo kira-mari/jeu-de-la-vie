@@ -2,6 +2,7 @@
 #include "Constantes.hpp"
 #include <iostream>
 #include <sstream>
+#include <cmath>
 
 // Détection de la version SFML
 #if SFML_VERSION_MAJOR >= 3
@@ -244,6 +245,20 @@ void InterfaceSFML::gererEvenements() {
 #endif
                 }
             }
+            else if (const auto* wheel = event->getIf<sf::Event::MouseWheelScrolled>()) {
+                // wheel->delta positive -> scroll up -> zoom in
+                float delta = wheel->delta;
+                if (delta != 0.f) {
+                    float factor = std::pow(1.15f, -delta);
+                    // calculer nouveau zoom en clampant
+                    float nouveau = zoomNiveau * (1.0f / factor);
+                    if (nouveau < zoomMin) factor = 1.0f / (zoomMin / zoomNiveau);
+                    else if (nouveau > zoomMax) factor = 1.0f / (zoomMax / zoomNiveau);
+                    // appliquer zoom centré sur la souris
+                    auto pixelPos = sf::Mouse::getPosition(*fenetre);
+                    zoomerSurPixel(sf::Vector2i(static_cast<int>(pixelPos.x), static_cast<int>(pixelPos.y)), factor);
+                }
+            }
             else if (const auto* keyPressed = event->getIf<sf::Event::KeyPressed>()) {
                 switch (keyPressed->code) {
                     case sf::Keyboard::Key::Space:
@@ -415,29 +430,24 @@ void InterfaceSFML::gererPlacementMotif(sf::KeyCode touche) {
     
     bool place = false;
     std::string nomMotif;
-    
     #ifdef SFML_VERSION_3
         switch (touche) {
             case sf::Keyboard::Key::G:
                 place = jeu.placerMotif("planeur", ligneCentre, colonneCentre);
                 nomMotif = "planeur";
                 break;
-                
             case sf::Keyboard::Key::B:
                 place = jeu.placerMotif("bloc", ligneCentre, colonneCentre);
                 nomMotif = "bloc";
                 break;
-                
             case sf::Keyboard::Key::C:
                 place = jeu.placerMotif("clignotant", ligneCentre, colonneCentre);
                 nomMotif = "clignotant";
                 break;
-                
             case sf::Keyboard::Key::H:
                 place = jeu.placerMotif("ruche", ligneCentre, colonneCentre);
                 nomMotif = "ruche";
                 break;
-                
             default:
                 break;
         }
@@ -447,30 +457,46 @@ void InterfaceSFML::gererPlacementMotif(sf::KeyCode touche) {
                 place = jeu.placerMotif("planeur", ligneCentre, colonneCentre);
                 nomMotif = "planeur";
                 break;
-                
             case sf::Keyboard::B:
                 place = jeu.placerMotif("bloc", ligneCentre, colonneCentre);
                 nomMotif = "bloc";
                 break;
-                
             case sf::Keyboard::C:
                 place = jeu.placerMotif("clignotant", ligneCentre, colonneCentre);
                 nomMotif = "clignotant";
                 break;
-                
             case sf::Keyboard::H:
                 place = jeu.placerMotif("ruche", ligneCentre, colonneCentre);
                 nomMotif = "ruche";
                 break;
-                
             default:
                 break;
         }
     #endif
-    
+
     if (place) {
         std::cout << "Motif '" << nomMotif << "' place" << std::endl;
     }
+}
+
+// Implémentation du zoom centré sur un pixel (définie après gererPlacementMotif pour éviter insertion accidentelle)
+void InterfaceSFML::zoomerSurPixel(const sf::Vector2i& pixel, float factor) {
+    // Conserver la position monde du pixel, appliquer zoom, recentrer pour que
+    // le pixel pointe vers le même point monde après zoom
+    auto avant = fenetre->mapPixelToCoords(pixel);
+    // Appliquer zoom à la vue
+    vue.zoom(factor);
+    // Mettre la vue dans la fenêtre avant de calculer les nouvelles coordonnées
+    fenetre->setView(vue);
+    // Clamper niveau logique (après application)
+    zoomNiveau *= (1.0f / factor);
+    if (zoomNiveau < zoomMin) zoomNiveau = zoomMin;
+    if (zoomNiveau > zoomMax) zoomNiveau = zoomMax;
+    auto apres = fenetre->mapPixelToCoords(pixel);
+    sf::Vector2f decalage = avant - apres;
+    auto centre = vue.getCenter();
+    vue.setCenter(centre + decalage);
+    fenetre->setView(vue);
 }
 
 void InterfaceSFML::afficher() {

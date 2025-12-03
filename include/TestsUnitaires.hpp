@@ -61,6 +61,21 @@ public:
      */
     static bool testerReglesBase();
     
+    /**
+     * @brief Teste la parallélisation
+     */
+    static bool testerParallelisation();
+    
+    /**
+     * @brief Teste l'historique (retour en arrière)
+     */
+    static bool testerHistorique();
+    
+    /**
+     * @brief Teste les motifs préprogrammés
+     */
+    static bool testerMotifs();
+    
 private:
     /**
      * @brief Crée une grille de test
