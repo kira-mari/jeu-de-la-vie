@@ -1,6 +1,7 @@
 var classJeuDeLaVie =
 [
     [ "JeuDeLaVie", "classJeuDeLaVie.html#aee75b0a492ab7e72a1ad59b6abd2f5eb", null ],
+    [ "definirEtatCellule", "classJeuDeLaVie.html#a87e0b20d13a6adfc6d86c3ed4429b605", null ],
     [ "definirIterationMax", "classJeuDeLaVie.html#a1888b97a0febcf98ac6d57bee34847a6", null ],
     [ "definirModeParallele", "classJeuDeLaVie.html#a63f27d62e27687c8c0879ae52eabadd6", null ],
     [ "definirModeTorique", "classJeuDeLaVie.html#ac699c345951d0e8e022f859339e68fda", null ],

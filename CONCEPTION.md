@@ -155,6 +155,10 @@ classDiagram
         -couleurObstacleVivant : Color
         -couleurGrille : Color
         -vue : sf::View
+        -modeDessin : ModeDessin
+        -sourisEnfoncee : bool
+        -boutonSouris : int
+        -zoomNiveau : float
         +InterfaceSFML(jeuRef, largeur, hauteur, titre)
         +executer() void
         +definirDelaiIteration(delai) void
@@ -165,6 +169,7 @@ classDiagram
         -dessinerInformations() void
         -gererPlacementMotif(touche) void
         -calculerTailleCellule() void
+        -zoomerSurPixel(pixel, factor) void
     }
     
     class InterfaceQt {
@@ -180,16 +185,21 @@ classDiagram
         -chkTorique : QCheckBox*
         -chkParallele : QCheckBox*
         -cmbMotifs : QComboBox*
+        -cmbDrawType : QComboBox*
         -timer : QTimer*
         -enPause : bool
         -delaiMs : int
         -tailleCellule : int
         -iterationMax : int
         -drawMode : int
+        -zoomScale : float
+        -offsetX : float
+        -offsetY : float
         +InterfaceQt(jeuRef)
         +executer() void
         +canvasMouseEvent(x, y, buttons) void
         +dessinerGrille(painter) void
+        +ajusterZoom(deltaSteps, mouseX, mouseY) void
         -onPlayPause() void
         -onStep() void
         -onStepBack() void
@@ -210,6 +220,9 @@ classDiagram
         -parent : InterfaceQt*
         +GrilleWidget(p, parentWidget)
         #paintEvent(event) void
+        #mousePressEvent(event) void
+        #mouseMoveEvent(event) void
+        #wheelEvent(event) void
     }
     
     class ModeConsole {
@@ -231,6 +244,9 @@ classDiagram
         -testerPlaneur()$ bool
         -testerModeTorique()$ bool
         -testerObstacles()$ bool
+        -testerParallelisation()$ bool
+        -testerHistorique()$ bool
+        -testerMotifs()$ bool
     }
     
     InterfaceSFML --> JeuDeLaVie : utilise (SFML)
@@ -339,6 +355,50 @@ sequenceDiagram
     G-->>J: OK
     J-->>IG: OK
     IG-->>U: affichage mis à jour
+```
+
+### Séquence : Zoom molette (SFML/Qt)
+
+```mermaid
+sequenceDiagram
+    participant U as Utilisateur
+    participant IG as Interface (SFML/Qt)
+    participant V as Vue/Canvas
+    
+    U->>IG: Molette souris (delta, x, y)
+    IG->>IG: Calculer position monde sous curseur
+    IG->>V: Appliquer facteur zoom
+    IG->>IG: Recalculer offset/centre pour<br/>garder point sous curseur fixe
+    IG->>V: Mettre à jour vue/affichage
+    V-->>U: Zoom centré sur curseur
+```
+
+### Séquence : Historique (retour en arrière)
+
+```mermaid
+sequenceDiagram
+    participant U as Utilisateur
+    participant IG as Interface
+    participant J as JeuDeLaVie
+    participant H as Historique
+    participant G as Grille
+
+    U->>IG: Appui Flèche Gauche
+    IG->>J: revenirEnArriere()
+    J->>H: Récupérer grille précédente
+    
+    alt Historique non vide
+        H-->>J: Grille sauvegardée
+        J->>J: Restaurer grille
+        J->>J: Décrémenter itération
+        J-->>IG: true
+        IG->>IG: mettreAJourAffichage()
+        IG-->>U: "Retour à l'itération N"
+    else Historique vide (itération 0)
+        H-->>J: nullptr
+        J-->>IG: false
+        IG-->>U: "Impossible de revenir"
+    end
 ```
 
 ### Interface Qt - Interaction utilisateur
@@ -537,4 +597,64 @@ flowchart TD
 - Mode séquentiel: ~2.5s
 - Mode parallèle (8 threads): ~2.2s  
 - Gain: **~15%** grâce à l'optimisation sans mutex
+
+## 7. Tests Unitaires
+
+### Couverture des tests
+
+Le projet inclut une suite complète de tests unitaires couvrant :
+
+| Catégorie | Nombre de tests | Description |
+|-----------|-----------------|-------------|
+| **Règles de base** | 4 | Naissance, survie, sous-population, surpopulation |
+| **Motif bloc** | 1 | Stabilité du bloc 2×2 |
+| **Motif clignotant** | 2 | Oscillation période 2 |
+| **Planeur** | 1 | Déplacement après 4 itérations |
+| **Mode torique** | 4 | Wrap-around, voisinage aux bords, différence vs standard |
+| **Obstacles** | 4 | Obstacle vivant/mort, comptage voisins |
+| **Parallélisation** | 2 | Résultats identiques seq/parallèle, benchmark |
+| **Historique** | 6 | Avancer, reculer, limites, restauration état |
+| **Motifs préprogrammés** | 6 | Placement planeur/bloc/clignotant/ruche, rejet invalides |
+
+**Total : 30 tests unitaires**
+
+### Exécution des tests
+
+```bash
+# Compiler et exécuter les tests
+cmake --build build --config Release
+./build/Release/tests.exe
+```
+
+### Sortie attendue
+
+```
+=====================================
+=== EXECUTION DES TESTS UNITAIRES ===
+=====================================
+
+--- Test des règles de base ---
+  Cellule morte -> vivante (3 voisins): REUSSI
+  ...
+
+--- Test du mode torique ---
+  Mode torique maintient les cellules vivantes: REUSSI
+  Voisinage torique wrap-around correct: REUSSI
+  ...
+
+--- Test de la parallelisation ---
+  Resultats identiques seq/parallele: REUSSI
+  [INFO] Temps sequentiel: XXXX us
+  [INFO] Temps parallele: XXXX us
+  ...
+
+--- Test de l'historique ---
+  Avancer a l'iteration 3: REUSSI
+  Retour a l'iteration 2: REUSSI
+  ...
+
+=====================================
+=== TOUS LES TESTS ONT REUSSI ✓ ===
+=====================================
+```
 

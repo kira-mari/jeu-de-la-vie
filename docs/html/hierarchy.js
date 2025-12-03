@@ -3,7 +3,8 @@ var hierarchy =
     [ "Cellule", "classCellule.html", null ],
     [ "Config::CouleurGrilleSFML", "structConfig_1_1CouleurGrilleSFML.html", null ],
     [ "Config::CouleurMorteSFML", "structConfig_1_1CouleurMorteSFML.html", null ],
-    [ "Config::CouleurObstacleSFML", "structConfig_1_1CouleurObstacleSFML.html", null ],
+    [ "Config::CouleurObstacleMortSFML", "structConfig_1_1CouleurObstacleMortSFML.html", null ],
+    [ "Config::CouleurObstacleVivantSFML", "structConfig_1_1CouleurObstacleVivantSFML.html", null ],
     [ "Config::CouleurVivanteSFML", "structConfig_1_1CouleurVivanteSFML.html", null ],
     [ "EtatCellule", "classEtatCellule.html", [
       [ "CelluleMorte", "classCelluleMorte.html", null ],

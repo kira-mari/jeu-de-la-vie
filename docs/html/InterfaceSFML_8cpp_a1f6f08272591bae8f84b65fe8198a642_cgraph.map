@@ -1,0 +1,9 @@
+<map id="appliquerEtatDepuisPixel" name="appliquerEtatDepuisPixel">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,173,83"/>
+<area shape="rect" id="Node000002" href="$classJeuDeLaVie.html#a87e0b20d13a6adfc6d86c3ed4429b605" title="Définit l&#39;état d&#39;une cellule (utilisé par les interfaces pour le dessin)." alt="" coords="221,5,420,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,53,241,33,242,38,154,58"/>
+<area shape="rect" id="Node000003" href="$classGrille.html#aa4c9ce36bb4f2c59a83aeb39d73fc285" title="Vérifie si une position est valide dans la grille." alt="" coords="241,56,400,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="173,67,225,67,225,72,173,72"/>
+<area shape="rect" id="Node000004" href="$classJeuDeLaVie.html#a3f6dc54b2b1ebef7111e7aa5a2622be3" title="Obtient la grille actuelle." alt="" coords="236,107,405,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="154,81,242,100,241,105,153,86"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="Grille::placerMotif" name="Grille::placerMotif">
+<area shape="rect" id="Node000001" title="Place un motif préprogrammé sur la grille (extension bonus)." alt="" coords="544,13,668,40"/>
+<area shape="rect" id="Node000002" href="$classTestsUnitaires.html#aa95eb78fac94f695d329b7cd9ac922d9" title="Teste les motifs préprogrammés." alt="" coords="314,13,496,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="529,29,497,29,497,24,529,24"/>
+<area shape="rect" id="Node000003" href="$classTestsUnitaires.html#a17aa4e9d0afbd2614193d2638f4b78c7" title="Exécute tous les tests." alt="" coords="103,5,266,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="299,29,266,29,266,24,299,24"/>
+<area shape="rect" id="Node000004" href="$test__main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Programme principal pour exécuter les tests unitaires." alt="" coords="5,13,55,40"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="87,29,55,29,55,24,87,24"/>
+</map>

@@ -1,52 +1,78 @@
 <map id="main" name="main">
-<area shape="rect" id="Node000001" title="Programme principal pour exécuter les tests unitaires." alt="" coords="5,152,55,178"/>
-<area shape="rect" id="Node000002" href="$classTestsUnitaires.html#a17aa4e9d0afbd2614193d2638f4b78c7" title="Exécute tous les tests." alt="" coords="103,144,266,186"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,162,87,162,87,168,55,168"/>
-<area shape="rect" id="Node000003" href="$classTestsUnitaires.html#acd912aefe999f1178f6c72f41bece368" title="Teste le motif stable (bloc)." alt="" coords="336,76,509,102"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="235,141,313,112,340,104,342,109,315,117,237,146"/>
-<area shape="rect" id="Node000012" href="$classTestsUnitaires.html#ad353b61378429174dd396ee458261aa2" title="Teste le motif oscillateur (clignotant)." alt="" coords="320,126,525,153"/>
-<area shape="poly" id="edge13_Node000002_Node000012" title=" " alt="" coords="266,154,304,150,305,155,266,159"/>
-<area shape="rect" id="Node000013" href="$classTestsUnitaires.html#ac0c01e1e24de9cb73d81593c96fa34bb" title="Teste la grille torique." alt="" coords="334,228,512,270"/>
-<area shape="poly" id="edge16_Node000002_Node000013" title=" " alt="" coords="239,184,315,213,335,220,333,225,313,218,237,189"/>
-<area shape="rect" id="Node000014" href="$classTestsUnitaires.html#a7783880416ef4c0f160e1d8242f0d392" title="Teste les cellules obstacles." alt="" coords="320,312,525,338"/>
-<area shape="poly" id="edge19_Node000002_Node000014" title=" " alt="" coords="207,185,254,232,315,280,363,303,360,308,313,285,250,236,203,188"/>
-<area shape="rect" id="Node000017" href="$classTestsUnitaires.html#aca78b84c54b4526bab6c6325e1b05e20" title="Teste le planeur." alt="" coords="328,177,518,204"/>
-<area shape="poly" id="edge25_Node000002_Node000017" title=" " alt="" coords="266,171,313,176,312,181,266,176"/>
-<area shape="rect" id="Node000018" href="$classTestsUnitaires.html#a668b40e7c9824be78af8cfd427b4aa58" title="Teste les règles de base." alt="" coords="314,25,531,52"/>
-<area shape="poly" id="edge28_Node000002_Node000018" title=" " alt="" coords="205,141,252,100,281,79,313,61,329,55,331,59,315,66,284,84,255,105,209,145"/>
-<area shape="rect" id="Node000004" href="$classTestsUnitaires.html#a6430263d628fa3e1f55be64cf1aae756" title="Crée une grille de test." alt="" coords="593,126,766,153"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="495,100,594,120,593,125,494,106"/>
-<area shape="rect" id="Node000007" href="$classTestsUnitaires.html#a1fea61fb0483bb1f7e0284d828ad347f" title="Teste l&#39;évolution d&#39;une grille après n itérations." alt="" coords="579,76,780,102"/>
-<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="509,86,564,86,564,92,509,92"/>
-<area shape="rect" id="Node000005" href="$classGrille.html#ab4c852bc2327224eac9da60841f30baa" title="Définit l&#39;état d&#39;une cellule." alt="" coords="1036,126,1194,153"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="766,137,1020,137,1020,142,766,142"/>
-<area shape="rect" id="Node000006" href="$classGrille.html#aa4c9ce36bb4f2c59a83aeb39d73fc285" title="Vérifie si une position est valide dans la grille." alt="" coords="1247,126,1407,153"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1195,137,1231,137,1231,142,1195,142"/>
-<area shape="rect" id="Node000008" href="$classTestsUnitaires.html#af1671fe34db212a79ee1f4b2869d576e" title="Affiche le résultat d&#39;un test." alt="" coords="828,177,983,220"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="749,100,781,112,827,137,867,165,864,170,824,142,779,117,747,105"/>
-<area shape="rect" id="Node000009" href="$classGrille.html#a980652764fefe3f45fcc0516a6e59abb" title="Met à jour la grille pour passer à l&#39;itération suivante." alt="" coords="840,76,970,102"/>
-<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="780,86,824,86,824,92,780,92"/>
-<area shape="poly" id="edge9_Node000009_Node000005" title=" " alt="" coords="964,100,1043,120,1042,125,963,106"/>
-<area shape="rect" id="Node000010" href="$classGrille.html#aa8f57932935f9b316ccdbd0705021d6b" title="Constructeur de la grille." alt="" coords="1282,50,1372,77"/>
-<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="962,72,1031,61,1157,55,1267,58,1267,63,1157,60,1031,66,963,78"/>
-<area shape="rect" id="Node000011" href="$classGrille.html#a7073ca25319522d4602550da3dfb1d22" title="Met à jour un ensemble de lignes (parallélisation optimisée)." alt="" coords="1031,76,1199,102"/>
-<area shape="poly" id="edge11_Node000009_Node000011" title=" " alt="" coords="971,86,1015,86,1015,92,971,92"/>
-<area shape="poly" id="edge12_Node000011_Node000010" title=" " alt="" coords="1199,76,1266,68,1267,73,1200,82"/>
-<area shape="poly" id="edge14_Node000012_Node000004" title=" " alt="" coords="526,137,578,137,578,142,526,142"/>
-<area shape="poly" id="edge15_Node000012_Node000007" title=" " alt="" coords="494,123,593,103,594,109,495,128"/>
-<area shape="poly" id="edge18_Node000013_Node000004" title=" " alt="" coords="499,225,530,213,589,186,640,159,642,163,591,191,532,218,501,230"/>
-<area shape="poly" id="edge17_Node000013_Node000008" title=" " alt="" coords="512,237,812,205,812,211,512,242"/>
-<area shape="poly" id="edge21_Node000014_Node000004" title=" " alt="" coords="469,309,500,296,530,280,567,252,602,221,656,163,660,167,606,225,571,256,533,285,502,301,471,314"/>
-<area shape="poly" id="edge22_Node000014_Node000005" title=" " alt="" coords="461,336,522,355,602,372,646,377,691,378,736,375,779,365,828,347,876,324,964,267,1037,209,1088,162,1092,166,1040,213,967,272,878,328,830,352,780,370,737,380,691,384,646,382,602,377,521,360,459,341"/>
-<area shape="poly" id="edge20_Node000014_Node000008" title=" " alt="" coords="484,309,620,276,779,234,821,222,823,227,780,240,621,281,485,314"/>
-<area shape="rect" id="Node000015" href="$classCellule.html#a4e34ac281afdba1d793fbd0239022a5e" title="Vérifie si la cellule est un obstacle." alt="" coords="610,329,749,356"/>
-<area shape="poly" id="edge23_Node000014_Node000015" title=" " alt="" coords="526,329,595,334,594,339,526,335"/>
-<area shape="rect" id="Node000016" href="$classCellule.html#a70d2731234961e330fe0a31486d1dec7" title="Vérifie si la cellule est vivante." alt="" coords="614,430,745,457"/>
-<area shape="poly" id="edge24_Node000014_Node000016" title=" " alt="" coords="447,336,506,372,580,409,615,423,614,428,578,414,503,376,444,341"/>
-<area shape="poly" id="edge27_Node000017_Node000004" title=" " alt="" coords="494,174,593,154,594,159,495,179"/>
-<area shape="poly" id="edge26_Node000017_Node000008" title=" " alt="" coords="518,189,812,194,812,199,518,195"/>
-<area shape="poly" id="edge30_Node000018_Node000004" title=" " alt="" coords="507,50,533,61,548,74,558,87,566,100,581,112,592,118,589,122,578,117,562,104,553,90,544,78,530,66,505,55"/>
-<area shape="poly" id="edge32_Node000018_Node000007" title=" " alt="" coords="495,50,594,69,593,75,494,55"/>
-<area shape="poly" id="edge29_Node000018_Node000008" title=" " alt="" coords="532,23,591,22,655,27,720,39,781,61,876,164,872,167,778,66,718,44,654,32,591,28,532,29"/>
-<area shape="poly" id="edge31_Node000018_Node000009" title=" " alt="" coords="483,22,545,11,620,4,701,5,780,17,832,38,875,64,872,69,830,43,779,22,700,10,621,9,546,17,484,27"/>
+<area shape="rect" id="Node000001" title="Programme principal pour exécuter les tests unitaires." alt="" coords="5,489,55,516"/>
+<area shape="rect" id="Node000002" href="$classTestsUnitaires.html#a17aa4e9d0afbd2614193d2638f4b78c7" title="Exécute tous les tests." alt="" coords="103,481,266,524"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,500,87,500,87,505,55,505"/>
+<area shape="rect" id="Node000003" href="$classTestsUnitaires.html#acd912aefe999f1178f6c72f41bece368" title="Teste le motif stable (bloc)." alt="" coords="336,388,509,415"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="220,479,264,454,313,431,351,417,353,422,315,436,266,459,222,483"/>
+<area shape="rect" id="Node000012" href="$classTestsUnitaires.html#ad353b61378429174dd396ee458261aa2" title="Teste le motif oscillateur (clignotant)." alt="" coords="320,591,525,617"/>
+<area shape="poly" id="edge13_Node000002_Node000012" title=" " alt="" coords="222,522,266,546,315,570,353,583,351,588,313,574,264,551,220,527"/>
+<area shape="rect" id="Node000013" href="$classTestsUnitaires.html#ac15830bab996354ee1325bd615fedef1" title="Teste l&#39;historique (retour en arrière)." alt="" coords="320,132,525,159"/>
+<area shape="poly" id="edge16_Node000002_Node000013" title=" " alt="" coords="198,479,402,170,406,173,202,482"/>
+<area shape="rect" id="Node000019" href="$classTestsUnitaires.html#ac0c01e1e24de9cb73d81593c96fa34bb" title="Teste la grille torique." alt="" coords="604,411,782,453"/>
+<area shape="poly" id="edge23_Node000002_Node000019" title=" " alt="" coords="266,484,314,476,588,440,589,446,314,481,267,489"/>
+<area shape="rect" id="Node000020" href="$classTestsUnitaires.html#aa95eb78fac94f695d329b7cd9ac922d9" title="Teste les motifs préprogrammés." alt="" coords="602,731,784,757"/>
+<area shape="poly" id="edge27_Node000002_Node000020" title=" " alt="" coords="204,522,251,575,281,603,315,627,383,661,455,689,526,709,591,724,590,730,525,715,454,694,381,666,313,632,278,607,247,579,200,526"/>
+<area shape="rect" id="Node000022" href="$classTestsUnitaires.html#a7783880416ef4c0f160e1d8242f0d392" title="Teste les cellules obstacles." alt="" coords="590,781,796,808"/>
+<area shape="poly" id="edge33_Node000002_Node000022" title=" " alt="" coords="195,524,210,565,235,617,270,670,291,694,316,714,377,748,444,771,511,784,575,792,574,797,511,790,442,776,374,753,312,718,288,697,266,673,230,620,205,567,190,526"/>
+<area shape="rect" id="Node000025" href="$classTestsUnitaires.html#a6cab42600bf26df1b4c28a7978dc3bab" title="Teste la parallélisation." alt="" coords="579,629,807,656"/>
+<area shape="poly" id="edge39_Node000002_Node000025" title=" " alt="" coords="267,509,394,533,464,552,533,576,557,592,581,608,616,622,615,627,578,613,554,597,530,581,463,557,393,538,266,514"/>
+<area shape="rect" id="Node000026" href="$classTestsUnitaires.html#aca78b84c54b4526bab6c6325e1b05e20" title="Teste le planeur." alt="" coords="598,477,788,504"/>
+<area shape="poly" id="edge42_Node000002_Node000026" title=" " alt="" coords="266,498,582,491,583,496,266,503"/>
+<area shape="rect" id="Node000027" href="$classTestsUnitaires.html#a668b40e7c9824be78af8cfd427b4aa58" title="Teste les règles de base." alt="" coords="314,337,531,364"/>
+<area shape="poly" id="edge45_Node000002_Node000027" title=" " alt="" coords="199,479,246,426,277,398,313,374,325,368,328,372,315,378,281,402,250,430,203,483"/>
+<area shape="rect" id="Node000004" href="$classTestsUnitaires.html#a6430263d628fa3e1f55be64cf1aae756" title="Crée une grille de test." alt="" coords="855,629,1027,656"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="435,413,491,483,533,524,581,558,619,571,689,588,855,623,854,628,688,593,618,576,578,562,529,528,487,487,431,417"/>
+<area shape="rect" id="Node000007" href="$classTestsUnitaires.html#a1fea61fb0483bb1f7e0284d828ad347f" title="Teste l&#39;évolution d&#39;une grille après n itérations." alt="" coords="593,360,793,387"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="509,390,577,383,578,388,510,395"/>
+<area shape="rect" id="Node000005" href="$classGrille.html#ab4c852bc2327224eac9da60841f30baa" title="Définit l&#39;état d&#39;une cellule." alt="" coords="1080,629,1238,656"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1027,640,1064,640,1064,645,1027,645"/>
+<area shape="rect" id="Node000006" href="$classGrille.html#aa4c9ce36bb4f2c59a83aeb39d73fc285" title="Vérifie si une position est valide dans la grille." alt="" coords="1291,655,1451,681"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1239,650,1276,654,1276,659,1239,655"/>
+<area shape="rect" id="Node000008" href="$classTestsUnitaires.html#af1671fe34db212a79ee1f4b2869d576e" title="Affiche le résultat d&#39;un test." alt="" coords="863,455,1018,497"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="772,385,808,396,855,418,897,443,894,448,852,423,806,401,770,390"/>
+<area shape="rect" id="Node000009" href="$classGrille.html#a980652764fefe3f45fcc0516a6e59abb" title="Met à jour la grille pour passer à l&#39;itération suivante." alt="" coords="876,375,1006,401"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="794,377,860,381,860,386,794,382"/>
+<area shape="poly" id="edge9_Node000009_Node000005" title=" " alt="" coords="971,400,1000,418,1029,441,1067,485,1101,533,1147,615,1143,617,1096,535,1063,488,1025,445,997,422,968,404"/>
+<area shape="rect" id="Node000010" href="$classGrille.html#aa8f57932935f9b316ccdbd0705021d6b" title="Constructeur de la grille." alt="" coords="1326,375,1416,401"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="1007,385,1311,385,1311,391,1007,391"/>
+<area shape="rect" id="Node000011" href="$classGrille.html#a7073ca25319522d4602550da3dfb1d22" title="Met à jour un ensemble de lignes (parallélisation optimisée)." alt="" coords="1075,400,1243,427"/>
+<area shape="poly" id="edge11_Node000009_Node000011" title=" " alt="" coords="1007,393,1060,399,1059,404,1006,398"/>
+<area shape="poly" id="edge12_Node000011_Node000010" title=" " alt="" coords="1243,401,1310,393,1311,398,1244,406"/>
+<area shape="poly" id="edge14_Node000012_Node000004" title=" " alt="" coords="450,615,508,643,544,656,580,665,655,674,730,673,802,667,864,657,864,662,803,672,731,679,654,679,579,671,542,661,506,648,448,620"/>
+<area shape="poly" id="edge15_Node000012_Node000007" title=" " alt="" coords="428,589,447,550,480,498,524,443,549,418,578,396,587,391,590,396,581,401,553,422,527,446,484,501,452,553,432,592"/>
+<area shape="poly" id="edge17_Node000013_Node000008" title=" " alt="" coords="466,157,651,226,745,269,782,290,809,310,827,336,835,361,841,385,857,412,891,444,888,447,853,415,836,387,830,362,822,338,805,314,779,295,743,274,649,231,464,162"/>
+<area shape="rect" id="Node000014" href="$classJeuDeLaVie.html#af3e2bbbe85d122db859c6049adad142a" title="Exécute une itération du jeu." alt="" coords="594,5,792,32"/>
+<area shape="poly" id="edge18_Node000013_Node000014" title=" " alt="" coords="439,129,498,86,537,62,578,42,598,34,600,39,580,46,540,67,501,91,442,134"/>
+<area shape="rect" id="Node000016" href="$classJeuDeLaVie.html#a3f6dc54b2b1ebef7111e7aa5a2622be3" title="Obtient la grille actuelle." alt="" coords="608,107,778,133"/>
+<area shape="poly" id="edge20_Node000013_Node000016" title=" " alt="" coords="526,133,593,127,593,132,526,138"/>
+<area shape="rect" id="Node000017" href="$classJeuDeLaVie.html#a64c17035b0448747418084db872c72c8" title="Obtient le numéro d&#39;itération actuel." alt="" coords="600,157,786,184"/>
+<area shape="poly" id="edge21_Node000013_Node000017" title=" " alt="" coords="526,152,584,158,584,163,526,158"/>
+<area shape="rect" id="Node000018" href="$classJeuDeLaVie.html#a444c078a494f06290049293c37b8eeb2" title="Revient à l&#39;itération précédente." alt="" coords="596,56,790,83"/>
+<area shape="poly" id="edge22_Node000013_Node000018" title=" " alt="" coords="462,129,579,92,610,84,611,89,580,97,464,134"/>
+<area shape="rect" id="Node000015" href="$classJeuDeLaVie.html#a0c9dbfff7118bd6fe99b3fa99889fe96" title="Vérifie si le jeu est terminé" alt="" coords="859,5,1023,32"/>
+<area shape="poly" id="edge19_Node000014_Node000015" title=" " alt="" coords="792,16,843,16,843,21,792,21"/>
+<area shape="poly" id="edge25_Node000019_Node000004" title=" " alt="" coords="784,450,808,463,835,490,867,530,925,614,920,617,863,533,831,493,805,467,781,455"/>
+<area shape="poly" id="edge24_Node000019_Node000008" title=" " alt="" coords="783,445,849,457,848,462,782,450"/>
+<area shape="poly" id="edge26_Node000019_Node000009" title=" " alt="" coords="782,414,860,400,861,405,783,419"/>
+<area shape="poly" id="edge29_Node000020_Node000004" title=" " alt="" coords="761,728,805,710,819,699,829,688,838,677,853,666,865,660,867,665,856,670,842,681,833,692,823,703,808,714,763,733"/>
+<area shape="poly" id="edge28_Node000020_Node000008" title=" " alt="" coords="719,728,761,701,805,666,840,627,871,585,919,509,923,512,876,588,844,631,809,670,764,706,722,732"/>
+<area shape="rect" id="Node000021" href="$classGrille.html#adfa396acb4a6ed658ce916b5dceaa690" title="Place un motif préprogrammé sur la grille (extension bonus)." alt="" coords="879,680,1002,707"/>
+<area shape="poly" id="edge30_Node000020_Node000021" title=" " alt="" coords="761,727,863,706,864,712,763,733"/>
+<area shape="poly" id="edge31_Node000021_Node000005" title=" " alt="" coords="1001,677,1083,658,1084,663,1002,682"/>
+<area shape="poly" id="edge32_Node000021_Node000006" title=" " alt="" coords="1003,687,1276,671,1276,676,1003,692"/>
+<area shape="poly" id="edge35_Node000022_Node000004" title=" " alt="" coords="786,779,805,767,816,756,823,744,828,719,834,692,841,679,853,666,858,662,862,666,856,670,846,682,839,694,834,720,828,746,820,759,808,771,789,783"/>
+<area shape="poly" id="edge36_Node000022_Node000005" title=" " alt="" coords="790,778,904,754,966,737,1026,716,1079,691,1124,663,1127,667,1081,695,1028,721,968,742,906,759,791,783"/>
+<area shape="poly" id="edge34_Node000022_Node000008" title=" " alt="" coords="788,779,805,767,820,750,830,734,837,699,840,661,852,616,882,559,914,509,918,512,887,561,857,618,845,662,842,700,835,735,825,753,808,771,791,783"/>
+<area shape="rect" id="Node000023" href="$classCellule.html#a4e34ac281afdba1d793fbd0239022a5e" title="Vérifie si la cellule est un obstacle." alt="" coords="871,781,1010,808"/>
+<area shape="poly" id="edge37_Node000022_Node000023" title=" " alt="" coords="796,792,856,792,856,797,796,797"/>
+<area shape="rect" id="Node000024" href="$classCellule.html#a70d2731234961e330fe0a31486d1dec7" title="Vérifie si la cellule est vivante." alt="" coords="875,832,1006,859"/>
+<area shape="poly" id="edge38_Node000022_Node000024" title=" " alt="" coords="763,806,860,826,859,832,761,811"/>
+<area shape="poly" id="edge41_Node000025_Node000004" title=" " alt="" coords="807,640,839,640,839,645,807,645"/>
+<area shape="poly" id="edge40_Node000025_Node000008" title=" " alt="" coords="713,627,894,504,897,508,716,631"/>
+<area shape="poly" id="edge44_Node000026_Node000004" title=" " alt="" coords="763,502,808,520,841,542,872,567,920,616,916,620,868,571,838,546,805,525,761,507"/>
+<area shape="poly" id="edge43_Node000026_Node000008" title=" " alt="" coords="789,482,847,479,848,484,789,488"/>
+<area shape="poly" id="edge47_Node000027_Node000004" title=" " alt="" coords="516,362,533,374,548,392,555,410,558,446,561,481,568,498,581,514,609,534,635,546,660,551,686,552,741,552,773,557,808,567,861,592,907,618,905,623,859,596,806,572,772,562,741,558,685,557,659,556,633,551,606,539,578,518,563,501,556,482,553,446,550,411,543,394,530,378,513,367"/>
+<area shape="poly" id="edge49_Node000027_Node000007" title=" " alt="" coords="532,357,578,361,577,366,531,362"/>
+<area shape="poly" id="edge46_Node000027_Node000008" title=" " alt="" coords="473,334,542,320,628,312,674,313,720,318,765,328,808,346,826,360,836,376,843,393,857,412,895,443,891,447,853,415,839,396,831,378,822,363,805,350,764,334,719,323,673,318,628,317,543,326,474,339"/>
+<area shape="poly" id="edge48_Node000027_Node000009" title=" " alt="" coords="460,334,526,314,613,295,661,290,710,288,760,292,807,301,838,313,867,329,914,362,911,367,864,333,836,318,806,307,759,297,710,293,661,295,614,300,527,319,461,339"/>
 </map>

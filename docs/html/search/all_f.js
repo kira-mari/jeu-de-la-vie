@@ -1,12 +1,11 @@
 var searchData=
 [
-  ['jeu_0',['Hiérarchie des Règles du Jeu',['../md_CONCEPTION.html#autotoc_md64',1,'']]],
-  ['jeu_1',['jeu',['../classInterfaceQt.html#ab086ecc82d6c5ac56c0f1adb4b3687ed',1,'InterfaceQt::jeu'],['../classInterfaceSFML.html#ac6277f3121df804864d0976905fa1755',1,'InterfaceSFML::jeu'],['../classModeConsole.html#ad2c7332f550d6533d0493442e4725f5b',1,'ModeConsole::jeu']]],
-  ['jeu_20de_20la_20vie_2',['Document de Conception - Jeu de la Vie',['../md_CONCEPTION.html',1,'']]],
-  ['jeu_20de_20la_20vie_20de_20conway_20projet_20poo_20c_3',['🎮 Jeu de la Vie de Conway - Projet POO C++',['../index.html',1,'']]],
-  ['jeudelavie_4',['JeuDeLaVie',['../classJeuDeLaVie.html',1,'JeuDeLaVie'],['../classJeuDeLaVie.html#aee75b0a492ab7e72a1ad59b6abd2f5eb',1,'JeuDeLaVie::JeuDeLaVie()']]],
-  ['jeudelavie_2ecpp_5',['JeuDeLaVie.cpp',['../JeuDeLaVie_8cpp.html',1,'']]],
-  ['jeudelavie_2ehpp_6',['JeuDeLaVie.hpp',['../JeuDeLaVie_8hpp.html',1,'']]],
-  ['jour_20de_20la_20grille_20avec_20parallélisation_7',['Mise à jour de la grille avec parallélisation',['../md_CONCEPTION.html#autotoc_md74',1,'']]],
-  ['justification_20des_20choix_20techniques_8',['5. Justification des Choix Techniques',['../md_CONCEPTION.html#autotoc_md82',1,'']]]
+  ['hauteur_5fmax_5ffenetre_0',['HAUTEUR_MAX_FENETRE',['../namespaceConfig.html#a41bffa324fbfad88d43d7bba1d5d3dc4',1,'Config']]],
+  ['hauteur_5fpanneau_5fqt_1',['HAUTEUR_PANNEAU_QT',['../namespaceConfig.html#aeca2a24d6d008143c0b9d74e15650fc7',1,'Config']]],
+  ['hiérarchie_20des_20états_20de_20cellules_2',['Hiérarchie des États de Cellules',['../md_CONCEPTION.html#autotoc_md64',1,'']]],
+  ['hiérarchie_20des_20classes_3',['Hiérarchie des classes',['../index.html#autotoc_md32',1,'']]],
+  ['hiérarchie_20des_20règles_20du_20jeu_4',['Hiérarchie des Règles du Jeu',['../md_CONCEPTION.html#autotoc_md65',1,'']]],
+  ['historique_5',['historique',['../classJeuDeLaVie.html#af00f247b3dde88acbc51da0038f8a191',1,'JeuDeLaVie']]],
+  ['historique_20retour_20en_20arrière_6',['Séquence : Historique (retour en arrière)',['../md_CONCEPTION.html#autotoc_md74',1,'']]],
+  ['horloge_7',['horloge',['../classInterfaceSFML.html#a39a2a641c46906e0ab896d0a9452fcbc',1,'InterfaceSFML']]]
 ];

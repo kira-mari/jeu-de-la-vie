@@ -101,7 +101,7 @@ $(function(){initNavTree('classGrilleWidget.html','','classGrilleWidget-members'
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGrilleWidget__inherit__graph.svg" width="114" height="219"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classGrilleWidget__inherit__graph.svg" width="150" height="262"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Graphe de collaboration de GrilleWidget:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -117,6 +117,8 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-pro-methods" class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Fonctions membres protégées</h2></td></tr>
 <tr class="memitem:afce97f46f26bce8687e52a4f40c81d5c" id="r_afce97f46f26bce8687e52a4f40c81d5c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afce97f46f26bce8687e52a4f40c81d5c">paintEvent</a> (QPaintEvent *event) override</td></tr>
+<tr class="memitem:a60420d46e58cb4705d0533d3364250c3" id="r_a60420d46e58cb4705d0533d3364250c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a60420d46e58cb4705d0533d3364250c3">mousePressEvent</a> (QMouseEvent *event) override</td></tr>
+<tr class="memitem:aa4683d81eb2289f0949b545b649ba45e" id="r_aa4683d81eb2289f0949b545b649ba45e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa4683d81eb2289f0949b545b649ba45e">mouseMoveEvent</a> (QMouseEvent *event) override</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Attributs privés</h2></td></tr>
@@ -129,7 +131,7 @@ Amis</h2></td></tr>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Description détaillée</h2>
 <div class="textblock"><p>Widget personnalisé pour dessiner la grille. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8hpp_source.html#l00180">180</a> du fichier <a class="el" href="InterfaceQt_8hpp_source.html">InterfaceQt.hpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8hpp_source.html#l00193">193</a> du fichier <a class="el" href="InterfaceQt_8hpp_source.html">InterfaceQt.hpp</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Documentation des constructeurs et destructeur</h2>
 <a id="abe0c260d6ef5096f85cf2b3653ab7048" name="abe0c260d6ef5096f85cf2b3653ab7048"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abe0c260d6ef5096f85cf2b3653ab7048">&#9670;&#160;</a></span>GrilleWidget()</h2>
@@ -158,9 +160,9 @@ Amis</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8cpp_source.html#l00641">641</a> du fichier <a class="el" href="InterfaceQt_8cpp_source.html">InterfaceQt.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8cpp_source.html#l00693">693</a> du fichier <a class="el" href="InterfaceQt_8cpp_source.html">InterfaceQt.cpp</a>.</p>
 
-<p class="reference">Références <a class="el" href="InterfaceQt_8hpp_source.html#l00190">InterfaceQt</a>, et <a class="el" href="InterfaceQt_8hpp_source.html#l00182">parent</a>.</p>
+<p class="reference">Références <a class="el" href="InterfaceQt_8hpp_source.html#l00205">InterfaceQt</a>, et <a class="el" href="InterfaceQt_8hpp_source.html#l00195">parent</a>.</p>
 <div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe d'appel pour cette fonction :</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
@@ -171,6 +173,64 @@ Amis</h2></td></tr>
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentation des fonctions membres</h2>
+<a id="aa4683d81eb2289f0949b545b649ba45e" name="aa4683d81eb2289f0949b545b649ba45e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4683d81eb2289f0949b545b649ba45e">&#9670;&#160;</a></span>mouseMoveEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GrilleWidget::mouseMoveEvent </td>
+          <td>(</td>
+          <td class="paramtype">QMouseEvent *</td>          <td class="paramname"><span class="paramname"><em>event</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8cpp_source.html#l00709">709</a> du fichier <a class="el" href="InterfaceQt_8cpp_source.html">InterfaceQt.cpp</a>.</p>
+
+<p class="reference">Références <a class="el" href="InterfaceQt_8hpp_source.html#l00195">parent</a>.</p>
+
+</div>
+</div>
+<a id="a60420d46e58cb4705d0533d3364250c3" name="a60420d46e58cb4705d0533d3364250c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60420d46e58cb4705d0533d3364250c3">&#9670;&#160;</a></span>mousePressEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GrilleWidget::mousePressEvent </td>
+          <td>(</td>
+          <td class="paramtype">QMouseEvent *</td>          <td class="paramname"><span class="paramname"><em>event</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8cpp_source.html#l00703">703</a> du fichier <a class="el" href="InterfaceQt_8cpp_source.html">InterfaceQt.cpp</a>.</p>
+
+<p class="reference">Références <a class="el" href="InterfaceQt_8hpp_source.html#l00195">parent</a>.</p>
+
+</div>
+</div>
 <a id="afce97f46f26bce8687e52a4f40c81d5c" name="afce97f46f26bce8687e52a4f40c81d5c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afce97f46f26bce8687e52a4f40c81d5c">&#9670;&#160;</a></span>paintEvent()</h2>
 
@@ -194,9 +254,9 @@ Amis</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8cpp_source.html#l00645">645</a> du fichier <a class="el" href="InterfaceQt_8cpp_source.html">InterfaceQt.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8cpp_source.html#l00697">697</a> du fichier <a class="el" href="InterfaceQt_8cpp_source.html">InterfaceQt.cpp</a>.</p>
 
-<p class="reference">Références <a class="el" href="InterfaceQt_8hpp_source.html#l00182">parent</a>.</p>
+<p class="reference">Références <a class="el" href="InterfaceQt_8hpp_source.html#l00195">parent</a>.</p>
 
 </div>
 </div>
@@ -221,11 +281,11 @@ Amis</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8hpp_source.html#l00190">190</a> du fichier <a class="el" href="InterfaceQt_8hpp_source.html">InterfaceQt.hpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8hpp_source.html#l00205">205</a> du fichier <a class="el" href="InterfaceQt_8hpp_source.html">InterfaceQt.hpp</a>.</p>
 
-<p class="reference">Références <a class="el" href="InterfaceQt_8hpp_source.html#l00190">InterfaceQt</a>.</p>
+<p class="reference">Références <a class="el" href="InterfaceQt_8hpp_source.html#l00205">InterfaceQt</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00641">GrilleWidget()</a>, et <a class="el" href="InterfaceQt_8hpp_source.html#l00190">InterfaceQt</a>.</p>
+<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00693">GrilleWidget()</a>, et <a class="el" href="InterfaceQt_8hpp_source.html#l00205">InterfaceQt</a>.</p>
 
 </div>
 </div>
@@ -250,9 +310,9 @@ Amis</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8hpp_source.html#l00182">182</a> du fichier <a class="el" href="InterfaceQt_8hpp_source.html">InterfaceQt.hpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8hpp_source.html#l00195">195</a> du fichier <a class="el" href="InterfaceQt_8hpp_source.html">InterfaceQt.hpp</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00641">GrilleWidget()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00645">paintEvent()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00693">GrilleWidget()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00709">mouseMoveEvent()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00703">mousePressEvent()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00697">paintEvent()</a>.</p>
 
 </div>
 </div>

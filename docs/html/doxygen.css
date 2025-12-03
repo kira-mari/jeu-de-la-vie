@@ -2474,7 +2474,7 @@ details[open]>summary::before {
 
 
 html {
---timestamp: 'Mercredi 5 Novembre 2025 10:20:18';
+--timestamp: 'Mercredi 3 Décembre 2025 19:49:11';
 }
 span.timestamp { content: ' '; }
 span.timestamp:before { content: var(--timestamp); }

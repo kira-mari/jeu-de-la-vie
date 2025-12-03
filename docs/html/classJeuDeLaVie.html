@@ -101,7 +101,7 @@ $(function(){initNavTree('classJeuDeLaVie.html','','classJeuDeLaVie-members'); }
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classJeuDeLaVie__coll__graph.svg" width="160" height="486"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classJeuDeLaVie__coll__graph.svg" width="160" height="507"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -132,6 +132,8 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="memdesc:ac699c345951d0e8e022f859339e68fda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Active ou désactive le mode torique.  <br /></td></tr>
 <tr class="memitem:a63f27d62e27687c8c0879ae52eabadd6" id="r_a63f27d62e27687c8c0879ae52eabadd6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a63f27d62e27687c8c0879ae52eabadd6">definirModeParallele</a> (bool actif)</td></tr>
 <tr class="memdesc:a63f27d62e27687c8c0879ae52eabadd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Active ou désactive le mode parallèle.  <br /></td></tr>
+<tr class="memitem:a87e0b20d13a6adfc6d86c3ed4429b605" id="r_a87e0b20d13a6adfc6d86c3ed4429b605"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87e0b20d13a6adfc6d86c3ed4429b605">definirEtatCellule</a> (int ligne, int colonne, std::unique_ptr&lt; <a class="el" href="classEtatCellule.html">EtatCellule</a> &gt; etat)</td></tr>
+<tr class="memdesc:a87e0b20d13a6adfc6d86c3ed4429b605"><td class="mdescLeft">&#160;</td><td class="mdescRight">Définit l'état d'une cellule (utilisé par les interfaces pour le dessin).  <br /></td></tr>
 <tr class="memitem:a8bf2b5c24e44c400922032a0f697850b" id="r_a8bf2b5c24e44c400922032a0f697850b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8bf2b5c24e44c400922032a0f697850b">placerMotif</a> (const std::string &amp;motif, int ligne, int colonne)</td></tr>
 <tr class="memdesc:a8bf2b5c24e44c400922032a0f697850b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Place un motif sur la grille.  <br /></td></tr>
 </table><table class="memberdecls">
@@ -204,6 +206,54 @@ Attributs privés</h2></td></tr>
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentation des fonctions membres</h2>
+<a id="a87e0b20d13a6adfc6d86c3ed4429b605" name="a87e0b20d13a6adfc6d86c3ed4429b605"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87e0b20d13a6adfc6d86c3ed4429b605">&#9670;&#160;</a></span>definirEtatCellule()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void JeuDeLaVie::definirEtatCellule </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>ligne</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>colonne</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classEtatCellule.html">EtatCellule</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>etat</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définit l'état d'une cellule (utilisé par les interfaces pour le dessin). </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ligne</td><td>La ligne de la cellule </td></tr>
+    <tr><td class="paramname">colonne</td><td>La colonne de la cellule </td></tr>
+    <tr><td class="paramname">etat</td><td>Le nouvel état (ownership transféré) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="JeuDeLaVie_8cpp_source.html#l00127">127</a> du fichier <a class="el" href="JeuDeLaVie_8cpp_source.html">JeuDeLaVie.cpp</a>.</p>
+
+<p class="reference">Références <a class="el" href="JeuDeLaVie_8hpp_source.html#l00017">grille</a>, <a class="el" href="JeuDeLaVie_8hpp_source.html#l00022">historique</a>, et <a class="el" href="JeuDeLaVie_8hpp_source.html#l00018">iteration</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="InterfaceSFML_8cpp_source.html#l00112">appliquerEtatDepuisPixel()</a>.</p>
+<div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classJeuDeLaVie_a87e0b20d13a6adfc6d86c3ed4429b605_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
 <a id="a1888b97a0febcf98ac6d57bee34847a6" name="a1888b97a0febcf98ac6d57bee34847a6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1888b97a0febcf98ac6d57bee34847a6">&#9670;&#160;</a></span>definirIterationMax()</h2>
 
@@ -386,11 +436,11 @@ Attributs privés</h2></td></tr>
 <p class="reference">Références <a class="el" href="JeuDeLaVie_8hpp_source.html#l00017">grille</a>, <a class="el" href="JeuDeLaVie_8hpp_source.html#l00018">iteration</a>, et <a class="el" href="JeuDeLaVie_8hpp_source.html#l00019">iterationMax</a>.</p>
 
 <p class="reference">Référencé par <a class="el" href="JeuDeLaVie_8cpp_source.html#l00036">executerIteration()</a>.</p>
-<div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classJeuDeLaVie_a0c9dbfff7118bd6fe99b3fa99889fe96_icgraph.svg" width="420" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classJeuDeLaVie_a0c9dbfff7118bd6fe99b3fa99889fe96_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -416,11 +466,19 @@ Attributs privés</h2></td></tr>
 <p class="definition">Définition à la ligne <a class="el" href="JeuDeLaVie_8cpp_source.html#l00036">36</a> du fichier <a class="el" href="JeuDeLaVie_8cpp_source.html">JeuDeLaVie.cpp</a>.</p>
 
 <p class="reference">Références <a class="el" href="JeuDeLaVie_8cpp_source.html#l00078">estTermine()</a>, <a class="el" href="JeuDeLaVie_8hpp_source.html#l00023">grandeGrille</a>, <a class="el" href="JeuDeLaVie_8hpp_source.html#l00017">grille</a>, <a class="el" href="JeuDeLaVie_8hpp_source.html#l00022">historique</a>, <a class="el" href="JeuDeLaVie_8hpp_source.html#l00018">iteration</a>, <a class="el" href="JeuDeLaVie_8hpp_source.html#l00021">modeParallele</a>, et <a class="el" href="Constantes_8hpp_source.html#l00036">Config::TAILLE_MAX_HISTORIQUE_GRANDE</a>.</p>
-<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe d'appel pour cette fonction :</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+
+<p class="reference">Référencé par <a class="el" href="TestsUnitaires_8cpp_source.html#l00440">TestsUnitaires::testerHistorique()</a>.</p>
+<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe d'appel pour cette fonction :</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classJeuDeLaVie_af3e2bbbe85d122db859c6049adad142a_cgraph.svg" width="420" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classJeuDeLaVie_af3e2bbbe85d122db859c6049adad142a_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -455,6 +513,14 @@ Attributs privés</h2></td></tr>
 
 <p class="reference">Références <a class="el" href="JeuDeLaVie_8hpp_source.html#l00017">grille</a>.</p>
 
+<p class="reference">Référencé par <a class="el" href="InterfaceSFML_8cpp_source.html#l00112">appliquerEtatDepuisPixel()</a>, et <a class="el" href="TestsUnitaires_8cpp_source.html#l00440">TestsUnitaires::testerHistorique()</a>.</p>
+<div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classJeuDeLaVie_a3f6dc54b2b1ebef7111e7aa5a2622be3_icgraph.svg" width="100%" height="378"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
 </div>
 </div>
 <a id="a64c17035b0448747418084db872c72c8" name="a64c17035b0448747418084db872c72c8"></a>
@@ -486,6 +552,14 @@ Attributs privés</h2></td></tr>
 <p class="definition">Définition à la ligne <a class="el" href="JeuDeLaVie_8hpp_source.html#l00063">63</a> du fichier <a class="el" href="JeuDeLaVie_8hpp_source.html">JeuDeLaVie.hpp</a>.</p>
 
 <p class="reference">Références <a class="el" href="JeuDeLaVie_8hpp_source.html#l00018">iteration</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="TestsUnitaires_8cpp_source.html#l00440">TestsUnitaires::testerHistorique()</a>.</p>
+<div id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classJeuDeLaVie_a64c17035b0448747418084db872c72c8_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
 
 </div>
 </div>
@@ -619,6 +693,14 @@ Attributs privés</h2></td></tr>
 
 <p class="reference">Références <a class="el" href="JeuDeLaVie_8hpp_source.html#l00017">grille</a>, <a class="el" href="JeuDeLaVie_8hpp_source.html#l00022">historique</a>, et <a class="el" href="JeuDeLaVie_8hpp_source.html#l00018">iteration</a>.</p>
 
+<p class="reference">Référencé par <a class="el" href="TestsUnitaires_8cpp_source.html#l00440">TestsUnitaires::testerHistorique()</a>.</p>
+<div id="dynsection-7" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classJeuDeLaVie_a444c078a494f06290049293c37b8eeb2_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
 </div>
 </div>
 <a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Documentation des données membres</h2>
@@ -670,7 +752,7 @@ Attributs privés</h2></td></tr>
 
 <p class="definition">Définition à la ligne <a class="el" href="JeuDeLaVie_8hpp_source.html#l00017">17</a> du fichier <a class="el" href="JeuDeLaVie_8hpp_source.html">JeuDeLaVie.hpp</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="JeuDeLaVie_8cpp_source.html#l00109">definirModeTorique()</a>, <a class="el" href="JeuDeLaVie_8cpp_source.html#l00078">estTermine()</a>, <a class="el" href="JeuDeLaVie_8cpp_source.html#l00036">executerIteration()</a>, <a class="el" href="JeuDeLaVie_8cpp_source.html#l00005">JeuDeLaVie()</a>, <a class="el" href="JeuDeLaVie_8hpp_source.html#l00057">obtenirGrille()</a>, <a class="el" href="JeuDeLaVie_8cpp_source.html#l00123">placerMotif()</a>, <a class="el" href="JeuDeLaVie_8cpp_source.html#l00085">reinitialiser()</a>, et <a class="el" href="JeuDeLaVie_8cpp_source.html#l00059">revenirEnArriere()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="JeuDeLaVie_8cpp_source.html#l00127">definirEtatCellule()</a>, <a class="el" href="JeuDeLaVie_8cpp_source.html#l00109">definirModeTorique()</a>, <a class="el" href="JeuDeLaVie_8cpp_source.html#l00078">estTermine()</a>, <a class="el" href="JeuDeLaVie_8cpp_source.html#l00036">executerIteration()</a>, <a class="el" href="JeuDeLaVie_8cpp_source.html#l00005">JeuDeLaVie()</a>, <a class="el" href="JeuDeLaVie_8hpp_source.html#l00057">obtenirGrille()</a>, <a class="el" href="JeuDeLaVie_8cpp_source.html#l00123">placerMotif()</a>, <a class="el" href="JeuDeLaVie_8cpp_source.html#l00085">reinitialiser()</a>, et <a class="el" href="JeuDeLaVie_8cpp_source.html#l00059">revenirEnArriere()</a>.</p>
 
 </div>
 </div>
@@ -696,7 +778,7 @@ Attributs privés</h2></td></tr>
 
 <p class="definition">Définition à la ligne <a class="el" href="JeuDeLaVie_8hpp_source.html#l00022">22</a> du fichier <a class="el" href="JeuDeLaVie_8hpp_source.html">JeuDeLaVie.hpp</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="JeuDeLaVie_8cpp_source.html#l00036">executerIteration()</a>, <a class="el" href="JeuDeLaVie_8cpp_source.html#l00005">JeuDeLaVie()</a>, <a class="el" href="JeuDeLaVie_8cpp_source.html#l00085">reinitialiser()</a>, et <a class="el" href="JeuDeLaVie_8cpp_source.html#l00059">revenirEnArriere()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="JeuDeLaVie_8cpp_source.html#l00127">definirEtatCellule()</a>, <a class="el" href="JeuDeLaVie_8cpp_source.html#l00036">executerIteration()</a>, <a class="el" href="JeuDeLaVie_8cpp_source.html#l00005">JeuDeLaVie()</a>, <a class="el" href="JeuDeLaVie_8cpp_source.html#l00085">reinitialiser()</a>, et <a class="el" href="JeuDeLaVie_8cpp_source.html#l00059">revenirEnArriere()</a>.</p>
 
 </div>
 </div>
@@ -722,7 +804,7 @@ Attributs privés</h2></td></tr>
 
 <p class="definition">Définition à la ligne <a class="el" href="JeuDeLaVie_8hpp_source.html#l00018">18</a> du fichier <a class="el" href="JeuDeLaVie_8hpp_source.html">JeuDeLaVie.hpp</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="JeuDeLaVie_8cpp_source.html#l00078">estTermine()</a>, <a class="el" href="JeuDeLaVie_8cpp_source.html#l00036">executerIteration()</a>, <a class="el" href="JeuDeLaVie_8cpp_source.html#l00005">JeuDeLaVie()</a>, <a class="el" href="JeuDeLaVie_8hpp_source.html#l00063">obtenirIteration()</a>, <a class="el" href="JeuDeLaVie_8cpp_source.html#l00085">reinitialiser()</a>, et <a class="el" href="JeuDeLaVie_8cpp_source.html#l00059">revenirEnArriere()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="JeuDeLaVie_8cpp_source.html#l00127">definirEtatCellule()</a>, <a class="el" href="JeuDeLaVie_8cpp_source.html#l00078">estTermine()</a>, <a class="el" href="JeuDeLaVie_8cpp_source.html#l00036">executerIteration()</a>, <a class="el" href="JeuDeLaVie_8cpp_source.html#l00005">JeuDeLaVie()</a>, <a class="el" href="JeuDeLaVie_8hpp_source.html#l00063">obtenirIteration()</a>, <a class="el" href="JeuDeLaVie_8cpp_source.html#l00085">reinitialiser()</a>, et <a class="el" href="JeuDeLaVie_8cpp_source.html#l00059">revenirEnArriere()</a>.</p>
 
 </div>
 </div>

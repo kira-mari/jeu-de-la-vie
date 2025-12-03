@@ -104,6 +104,14 @@ $(function(){initNavTree('classInterfaceSFML.html','','classInterfaceSFML-member
 <div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classInterfaceSFML__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
+Types publics</h2></td></tr>
+<tr class="memitem:abaa8fc086dace2cde5f8bad0fbef0c7c" id="r_abaa8fc086dace2cde5f8bad0fbef0c7c"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abaa8fc086dace2cde5f8bad0fbef0c7c">ModeDessin</a> { <a class="el" href="#abaa8fc086dace2cde5f8bad0fbef0c7ca758541adeb0d17c3fbc10a89fa2763a2">Vivante</a> = 0
+, <a class="el" href="#abaa8fc086dace2cde5f8bad0fbef0c7cae4a04e3db1758bf0b260938227232512">Morte</a> = 1
+, <a class="el" href="#abaa8fc086dace2cde5f8bad0fbef0c7ca9a50aa0b2e242a8b850985d01fe8ff93">ObstacleMorte</a> = 2
+, <a class="el" href="#abaa8fc086dace2cde5f8bad0fbef0c7ca29fd9a94dcf67df8420037ff4e14d1e7">ObstacleVivante</a> = 3
+ }</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
 <tr class="memitem:aeacec8b2d51f4c6bb1ae7d45aa90aaf7" id="r_aeacec8b2d51f4c6bb1ae7d45aa90aaf7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeacec8b2d51f4c6bb1ae7d45aa90aaf7">InterfaceSFML</a> (<a class="el" href="classJeuDeLaVie.html">JeuDeLaVie</a> &amp;jeuRef, int largeur=800, int hauteur=600, const std::string &amp;titre=&quot;Jeu de la Vie - SFML&quot;)</td></tr>
@@ -131,6 +139,10 @@ Fonctions membres privées</h2></td></tr>
 <tr class="memdesc:a0d632238c209cf64ab1a27685fe77384"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcule la taille optimale des cellules.  <br /></td></tr>
 <tr class="memitem:af660192fb32e44dfbf073a9d4ec927be" id="r_af660192fb32e44dfbf073a9d4ec927be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af660192fb32e44dfbf073a9d4ec927be">gererPlacementMotif</a> (<a class="el" href="namespacesf.html#ae33fd4412d86fb8e95ed1debb24bbf9a">sf::KeyCode</a> touche)</td></tr>
 <tr class="memdesc:af660192fb32e44dfbf073a9d4ec927be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gère les entrées clavier pour placer des motifs.  <br /></td></tr>
+<tr class="memitem:ae14bea1479191a62abf18f42f7387bcc" id="r_ae14bea1479191a62abf18f42f7387bcc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae14bea1479191a62abf18f42f7387bcc">mettreAJourVue</a> ()</td></tr>
+<tr class="memdesc:ae14bea1479191a62abf18f42f7387bcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Met à jour la vue pour préserver l'aspect carré des cellules.  <br /></td></tr>
+<tr class="memitem:a19018415b9d7b2a517f3d7075015eaee" id="r_a19018415b9d7b2a517f3d7075015eaee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a19018415b9d7b2a517f3d7075015eaee">zoomerSurPixel</a> (const sf::Vector2i &amp;pixel, float factor)</td></tr>
+<tr class="memdesc:a19018415b9d7b2a517f3d7075015eaee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applique un zoom centré sur un pixel de la fenêtre.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Attributs privés</h2></td></tr>
@@ -144,13 +156,52 @@ Attributs privés</h2></td></tr>
 <tr class="memitem:a359cca6fbca1ee4a0b1dedbc06bb600e" id="r_a359cca6fbca1ee4a0b1dedbc06bb600e"><td class="memItemLeft" align="right" valign="top">sf::Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a359cca6fbca1ee4a0b1dedbc06bb600e">couleurMorte</a></td></tr>
 <tr class="memitem:a25bd4726025835756cec871d29bd9f11" id="r_a25bd4726025835756cec871d29bd9f11"><td class="memItemLeft" align="right" valign="top">sf::Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25bd4726025835756cec871d29bd9f11">couleurObstacle</a></td></tr>
 <tr class="memitem:af906405bd5f28fcfdb533fd826444bc6" id="r_af906405bd5f28fcfdb533fd826444bc6"><td class="memItemLeft" align="right" valign="top">sf::Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af906405bd5f28fcfdb533fd826444bc6">couleurGrille</a></td></tr>
+<tr class="memitem:a81575798ea005f88d7c0d7b01b89c4ad" id="r_a81575798ea005f88d7c0d7b01b89c4ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#abaa8fc086dace2cde5f8bad0fbef0c7c">ModeDessin</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81575798ea005f88d7c0d7b01b89c4ad">modeDessin</a></td></tr>
+<tr class="memitem:a86ec1512679022eb563628f3c9c2c23c" id="r_a86ec1512679022eb563628f3c9c2c23c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86ec1512679022eb563628f3c9c2c23c">sourisEnfoncee</a></td></tr>
+<tr class="memitem:aae0d174b26088a334ad6d0ba4d03e499" id="r_aae0d174b26088a334ad6d0ba4d03e499"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae0d174b26088a334ad6d0ba4d03e499">boutonSouris</a></td></tr>
+<tr class="memitem:aeb8d960effce4f9b1ab570358aca5855" id="r_aeb8d960effce4f9b1ab570358aca5855"><td class="memItemLeft" align="right" valign="top">sf::View&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb8d960effce4f9b1ab570358aca5855">vue</a></td></tr>
+<tr class="memitem:a58658bd4f8c0d6bd56cbaaf9da0c61bb" id="r_a58658bd4f8c0d6bd56cbaaf9da0c61bb"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58658bd4f8c0d6bd56cbaaf9da0c61bb">zoomNiveau</a> = 1.0f</td></tr>
+<tr class="memitem:a09015571fead334407d2fa97ead017ae" id="r_a09015571fead334407d2fa97ead017ae"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09015571fead334407d2fa97ead017ae">zoomPas</a> = 1.15f</td></tr>
+<tr class="memitem:ab69365adb4dffcf849efae33678138b2" id="r_ab69365adb4dffcf849efae33678138b2"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab69365adb4dffcf849efae33678138b2">zoomMin</a> = 0.05f</td></tr>
+<tr class="memitem:afb689ca73f687b0f1ed1fbd4fe5037e7" id="r_afb689ca73f687b0f1ed1fbd4fe5037e7"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afb689ca73f687b0f1ed1fbd4fe5037e7">zoomMax</a> = 10.0f</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Description détaillée</h2>
 <div class="textblock"><p>Interface graphique avec SFML pour le jeu de la vie. </p>
 <p>Affichage rapide et léger avec support des motifs et contrôles clavier. </p>
 
 <p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8hpp_source.html#l00024">24</a> du fichier <a class="el" href="InterfaceSFML_8hpp_source.html">InterfaceSFML.hpp</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Documentation des constructeurs et destructeur</h2>
+</div><a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Documentation des énumérations membres</h2>
+<a id="abaa8fc086dace2cde5f8bad0fbef0c7c" name="abaa8fc086dace2cde5f8bad0fbef0c7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abaa8fc086dace2cde5f8bad0fbef0c7c">&#9670;&#160;</a></span>ModeDessin</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#abaa8fc086dace2cde5f8bad0fbef0c7c">InterfaceSFML::ModeDessin</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel strong">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><a id="abaa8fc086dace2cde5f8bad0fbef0c7ca758541adeb0d17c3fbc10a89fa2763a2" name="abaa8fc086dace2cde5f8bad0fbef0c7ca758541adeb0d17c3fbc10a89fa2763a2"></a>Vivante&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abaa8fc086dace2cde5f8bad0fbef0c7cae4a04e3db1758bf0b260938227232512" name="abaa8fc086dace2cde5f8bad0fbef0c7cae4a04e3db1758bf0b260938227232512"></a>Morte&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abaa8fc086dace2cde5f8bad0fbef0c7ca9a50aa0b2e242a8b850985d01fe8ff93" name="abaa8fc086dace2cde5f8bad0fbef0c7ca9a50aa0b2e242a8b850985d01fe8ff93"></a>ObstacleMorte&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abaa8fc086dace2cde5f8bad0fbef0c7ca29fd9a94dcf67df8420037ff4e14d1e7" name="abaa8fc086dace2cde5f8bad0fbef0c7ca29fd9a94dcf67df8420037ff4e14d1e7"></a>ObstacleVivante&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8hpp_source.html#l00027">27</a> du fichier <a class="el" href="InterfaceSFML_8hpp_source.html">InterfaceSFML.hpp</a>.</p>
+
+</div>
+</div>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Documentation des constructeurs et destructeur</h2>
 <a id="aeacec8b2d51f4c6bb1ae7d45aa90aaf7" name="aeacec8b2d51f4c6bb1ae7d45aa90aaf7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeacec8b2d51f4c6bb1ae7d45aa90aaf7">&#9670;&#160;</a></span>InterfaceSFML()</h2>
 
@@ -191,14 +242,14 @@ Attributs privés</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8cpp_source.html#l00013">13</a> du fichier <a class="el" href="InterfaceSFML_8cpp_source.html">InterfaceSFML.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8cpp_source.html#l00014">14</a> du fichier <a class="el" href="InterfaceSFML_8cpp_source.html">InterfaceSFML.cpp</a>.</p>
 
-<p class="reference">Références <a class="el" href="InterfaceSFML_8cpp_source.html#l00062">calculerTailleCellule()</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00037">couleurGrille</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00035">couleurMorte</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00036">couleurObstacle</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00034">couleurVivante</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00030">delaiIteration</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00029">enPause</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00026">fenetre</a>, <a class="el" href="Constantes_8hpp_source.html#l00031">Config::FPS_LIMITE</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00027">jeu</a>, <a class="el" href="Grille_8hpp_source.html#l00063">Grille::obtenirNbColonnes()</a>, <a class="el" href="Grille_8hpp_source.html#l00057">Grille::obtenirNbLignes()</a>, <a class="el" href="Constantes_8hpp_source.html#l00013">Config::TAILLE_CELLULE_DEFAUT_SFML</a>, et <a class="el" href="Constantes_8hpp_source.html#l00019">Config::TAILLE_CELLULE_MIN</a>.</p>
+<p class="reference">Références <a class="el" href="InterfaceSFML_8cpp_source.html#l00129">calculerTailleCellule()</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00041">couleurGrille</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00039">couleurMorte</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00040">couleurObstacle</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00038">couleurVivante</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00034">delaiIteration</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00033">enPause</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00030">fenetre</a>, <a class="el" href="Constantes_8hpp_source.html#l00031">Config::FPS_LIMITE</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00031">jeu</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00068">mettreAJourVue()</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00043">modeDessin</a>, <a class="el" href="Grille_8hpp_source.html#l00063">Grille::obtenirNbColonnes()</a>, <a class="el" href="Grille_8hpp_source.html#l00057">Grille::obtenirNbLignes()</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00044">sourisEnfoncee</a>, <a class="el" href="Constantes_8hpp_source.html#l00013">Config::TAILLE_CELLULE_DEFAUT_SFML</a>, <a class="el" href="Constantes_8hpp_source.html#l00019">Config::TAILLE_CELLULE_MIN</a>, et <a class="el" href="InterfaceSFML_8hpp_source.html#l00046">vue</a>.</p>
 <div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe d'appel pour cette fonction :</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classInterfaceSFML_aeacec8b2d51f4c6bb1ae7d45aa90aaf7_cgraph.svg" width="100%" height="369"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classInterfaceSFML_aeacec8b2d51f4c6bb1ae7d45aa90aaf7_cgraph.svg" width="100%" height="412"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -229,11 +280,11 @@ Attributs privés</h2></td></tr>
 
 <p>Met à jour l'affichage. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8cpp_source.html#l00308">308</a> du fichier <a class="el" href="InterfaceSFML_8cpp_source.html">InterfaceSFML.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8cpp_source.html#l00502">502</a> du fichier <a class="el" href="InterfaceSFML_8cpp_source.html">InterfaceSFML.cpp</a>.</p>
 
-<p class="reference">Références <a class="el" href="InterfaceSFML_8cpp_source.html#l00315">dessinerGrille()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00347">dessinerInformations()</a>, et <a class="el" href="InterfaceSFML_8hpp_source.html#l00026">fenetre</a>.</p>
+<p class="reference">Références <a class="el" href="InterfaceSFML_8cpp_source.html#l00509">dessinerGrille()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00551">dessinerInformations()</a>, et <a class="el" href="InterfaceSFML_8hpp_source.html#l00030">fenetre</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceSFML_8cpp_source.html#l00078">executer()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="InterfaceSFML_8cpp_source.html#l00145">executer()</a>.</p>
 <div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe d'appel pour cette fonction :</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
@@ -274,11 +325,11 @@ Attributs privés</h2></td></tr>
 
 <p>Calcule la taille optimale des cellules. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8cpp_source.html#l00062">62</a> du fichier <a class="el" href="InterfaceSFML_8cpp_source.html">InterfaceSFML.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8cpp_source.html#l00129">129</a> du fichier <a class="el" href="InterfaceSFML_8cpp_source.html">InterfaceSFML.cpp</a>.</p>
 
-<p class="reference">Références <a class="el" href="InterfaceSFML_8hpp_source.html#l00026">fenetre</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00027">jeu</a>, <a class="el" href="Grille_8hpp_source.html#l00063">Grille::obtenirNbColonnes()</a>, <a class="el" href="Grille_8hpp_source.html#l00057">Grille::obtenirNbLignes()</a>, <a class="el" href="Constantes_8hpp_source.html#l00019">Config::TAILLE_CELLULE_MIN</a>, et <a class="el" href="InterfaceSFML_8hpp_source.html#l00028">tailleCellule</a>.</p>
+<p class="reference">Références <a class="el" href="InterfaceSFML_8hpp_source.html#l00030">fenetre</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00031">jeu</a>, <a class="el" href="Grille_8hpp_source.html#l00063">Grille::obtenirNbColonnes()</a>, <a class="el" href="Grille_8hpp_source.html#l00057">Grille::obtenirNbLignes()</a>, <a class="el" href="Constantes_8hpp_source.html#l00019">Config::TAILLE_CELLULE_MIN</a>, et <a class="el" href="InterfaceSFML_8hpp_source.html#l00032">tailleCellule</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceSFML_8cpp_source.html#l00013">InterfaceSFML()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="InterfaceSFML_8cpp_source.html#l00168">gererEvenements()</a>, et <a class="el" href="InterfaceSFML_8cpp_source.html#l00014">InterfaceSFML()</a>.</p>
 <div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe d'appel pour cette fonction :</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
@@ -289,7 +340,7 @@ Attributs privés</h2></td></tr>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classInterfaceSFML_a0d632238c209cf64ab1a27685fe77384_icgraph.svg" width="451" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classInterfaceSFML_a0d632238c209cf64ab1a27685fe77384_icgraph.svg" width="100%" height="366"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -325,9 +376,9 @@ Attributs privés</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8hpp_source.html#l00075">75</a> du fichier <a class="el" href="InterfaceSFML_8hpp_source.html">InterfaceSFML.hpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8hpp_source.html#l00089">89</a> du fichier <a class="el" href="InterfaceSFML_8hpp_source.html">InterfaceSFML.hpp</a>.</p>
 
-<p class="reference">Références <a class="el" href="InterfaceSFML_8hpp_source.html#l00035">couleurMorte</a>.</p>
+<p class="reference">Références <a class="el" href="InterfaceSFML_8hpp_source.html#l00039">couleurMorte</a>.</p>
 
 </div>
 </div>
@@ -362,9 +413,9 @@ Attributs privés</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8hpp_source.html#l00069">69</a> du fichier <a class="el" href="InterfaceSFML_8hpp_source.html">InterfaceSFML.hpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8hpp_source.html#l00083">83</a> du fichier <a class="el" href="InterfaceSFML_8hpp_source.html">InterfaceSFML.hpp</a>.</p>
 
-<p class="reference">Références <a class="el" href="InterfaceSFML_8hpp_source.html#l00034">couleurVivante</a>.</p>
+<p class="reference">Références <a class="el" href="InterfaceSFML_8hpp_source.html#l00038">couleurVivante</a>.</p>
 
 </div>
 </div>
@@ -399,11 +450,11 @@ Attributs privés</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8hpp_source.html#l00063">63</a> du fichier <a class="el" href="InterfaceSFML_8hpp_source.html">InterfaceSFML.hpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8hpp_source.html#l00077">77</a> du fichier <a class="el" href="InterfaceSFML_8hpp_source.html">InterfaceSFML.hpp</a>.</p>
 
-<p class="reference">Références <a class="el" href="InterfaceSFML_8hpp_source.html#l00030">delaiIteration</a>.</p>
+<p class="reference">Références <a class="el" href="InterfaceSFML_8hpp_source.html#l00034">delaiIteration</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="main_8cpp_source.html#l00070">main()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="main_8cpp_source.html#l00071">main()</a>.</p>
 <div id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
@@ -438,11 +489,11 @@ Attributs privés</h2></td></tr>
 
 <p>Dessine la grille. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8cpp_source.html#l00315">315</a> du fichier <a class="el" href="InterfaceSFML_8cpp_source.html">InterfaceSFML.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8cpp_source.html#l00509">509</a> du fichier <a class="el" href="InterfaceSFML_8cpp_source.html">InterfaceSFML.cpp</a>.</p>
 
-<p class="reference">Références <a class="el" href="InterfaceSFML_8hpp_source.html#l00035">couleurMorte</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00036">couleurObstacle</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00034">couleurVivante</a>, <a class="el" href="Cellule_8hpp_source.html#l00059">Cellule::estObstacle()</a>, <a class="el" href="Cellule_8hpp_source.html#l00053">Cellule::estVivante()</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00026">fenetre</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00027">jeu</a>, <a class="el" href="Grille_8cpp_source.html#l00075">Grille::obtenirCellule()</a>, <a class="el" href="Grille_8hpp_source.html#l00063">Grille::obtenirNbColonnes()</a>, <a class="el" href="Grille_8hpp_source.html#l00057">Grille::obtenirNbLignes()</a>, et <a class="el" href="InterfaceSFML_8hpp_source.html#l00028">tailleCellule</a>.</p>
+<p class="reference">Références <a class="el" href="Constantes_8hpp_source.html#l00089">Config::CouleurObstacleVivantSFML::B</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00039">couleurMorte</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00040">couleurObstacle</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00038">couleurVivante</a>, <a class="el" href="Cellule_8hpp_source.html#l00059">Cellule::estObstacle()</a>, <a class="el" href="Cellule_8hpp_source.html#l00053">Cellule::estVivante()</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00030">fenetre</a>, <a class="el" href="Constantes_8hpp_source.html#l00088">Config::CouleurObstacleVivantSFML::G</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00031">jeu</a>, <a class="el" href="Grille_8cpp_source.html#l00075">Grille::obtenirCellule()</a>, <a class="el" href="Grille_8hpp_source.html#l00063">Grille::obtenirNbColonnes()</a>, <a class="el" href="Grille_8hpp_source.html#l00057">Grille::obtenirNbLignes()</a>, <a class="el" href="Constantes_8hpp_source.html#l00087">Config::CouleurObstacleVivantSFML::R</a>, et <a class="el" href="InterfaceSFML_8hpp_source.html#l00032">tailleCellule</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceSFML_8cpp_source.html#l00308">afficher()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="InterfaceSFML_8cpp_source.html#l00502">afficher()</a>.</p>
 <div id="dynsection-7" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe d'appel pour cette fonction :</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
@@ -483,11 +534,11 @@ Attributs privés</h2></td></tr>
 
 <p>Dessine les informations à l'écran. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8cpp_source.html#l00347">347</a> du fichier <a class="el" href="InterfaceSFML_8cpp_source.html">InterfaceSFML.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8cpp_source.html#l00551">551</a> du fichier <a class="el" href="InterfaceSFML_8cpp_source.html">InterfaceSFML.cpp</a>.</p>
 
-<p class="reference">Références <a class="el" href="InterfaceSFML_8hpp_source.html#l00030">delaiIteration</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00029">enPause</a>, <a class="el" href="Cellule_8hpp_source.html#l00053">Cellule::estVivante()</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00026">fenetre</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00027">jeu</a>, <a class="el" href="Grille_8cpp_source.html#l00075">Grille::obtenirCellule()</a>, <a class="el" href="Grille_8hpp_source.html#l00063">Grille::obtenirNbColonnes()</a>, et <a class="el" href="Grille_8hpp_source.html#l00057">Grille::obtenirNbLignes()</a>.</p>
+<p class="reference">Références <a class="el" href="InterfaceSFML_8hpp_source.html#l00034">delaiIteration</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00033">enPause</a>, <a class="el" href="Cellule_8hpp_source.html#l00053">Cellule::estVivante()</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00030">fenetre</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00031">jeu</a>, <a class="el" href="Grille_8cpp_source.html#l00075">Grille::obtenirCellule()</a>, <a class="el" href="Grille_8hpp_source.html#l00063">Grille::obtenirNbColonnes()</a>, et <a class="el" href="Grille_8hpp_source.html#l00057">Grille::obtenirNbLignes()</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceSFML_8cpp_source.html#l00308">afficher()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="InterfaceSFML_8cpp_source.html#l00502">afficher()</a>.</p>
 <div id="dynsection-9" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe d'appel pour cette fonction :</div>
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
@@ -520,16 +571,16 @@ Attributs privés</h2></td></tr>
 
 <p>Lance la boucle principale de l'interface graphique. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8cpp_source.html#l00078">78</a> du fichier <a class="el" href="InterfaceSFML_8cpp_source.html">InterfaceSFML.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8cpp_source.html#l00145">145</a> du fichier <a class="el" href="InterfaceSFML_8cpp_source.html">InterfaceSFML.cpp</a>.</p>
 
-<p class="reference">Références <a class="el" href="InterfaceSFML_8cpp_source.html#l00308">afficher()</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00030">delaiIteration</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00029">enPause</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00026">fenetre</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00101">gererEvenements()</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00031">horloge</a>, et <a class="el" href="InterfaceSFML_8hpp_source.html#l00027">jeu</a>.</p>
+<p class="reference">Références <a class="el" href="InterfaceSFML_8cpp_source.html#l00502">afficher()</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00034">delaiIteration</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00033">enPause</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00030">fenetre</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00168">gererEvenements()</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00035">horloge</a>, et <a class="el" href="InterfaceSFML_8hpp_source.html#l00031">jeu</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="main_8cpp_source.html#l00070">main()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="main_8cpp_source.html#l00071">main()</a>.</p>
 <div id="dynsection-11" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe d'appel pour cette fonction :</div>
 <div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-11-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classInterfaceSFML_a518c46fbb99e76a49149d03b900b6cdc_cgraph.svg" width="100%" height="486"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classInterfaceSFML_a518c46fbb99e76a49149d03b900b6cdc_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 <div id="dynsection-12" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
 <div id="dynsection-12-summary" class="dynsummary" style="display:block;">
@@ -565,16 +616,16 @@ Attributs privés</h2></td></tr>
 
 <p>Gère les événements (clavier, souris, fermeture). </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8cpp_source.html#l00101">101</a> du fichier <a class="el" href="InterfaceSFML_8cpp_source.html">InterfaceSFML.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8cpp_source.html#l00168">168</a> du fichier <a class="el" href="InterfaceSFML_8cpp_source.html">InterfaceSFML.cpp</a>.</p>
 
-<p class="reference">Références <a class="el" href="Constantes_8hpp_source.html#l00051">Config::DELAI_ITERATION_MAX</a>, <a class="el" href="Constantes_8hpp_source.html#l00048">Config::DELAI_ITERATION_MIN</a>, <a class="el" href="Constantes_8hpp_source.html#l00054">Config::DELAI_ITERATION_PAS</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00030">delaiIteration</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00029">enPause</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00026">fenetre</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00243">gererPlacementMotif()</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00031">horloge</a>, et <a class="el" href="InterfaceSFML_8hpp_source.html#l00027">jeu</a>.</p>
+<p class="reference">Références <a class="el" href="InterfaceSFML_8cpp_source.html#l00112">appliquerEtatDepuisPixel()</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00045">boutonSouris</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00129">calculerTailleCellule()</a>, <a class="el" href="Constantes_8hpp_source.html#l00051">Config::DELAI_ITERATION_MAX</a>, <a class="el" href="Constantes_8hpp_source.html#l00048">Config::DELAI_ITERATION_MIN</a>, <a class="el" href="Constantes_8hpp_source.html#l00054">Config::DELAI_ITERATION_PAS</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00034">delaiIteration</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00033">enPause</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00030">fenetre</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00426">gererPlacementMotif()</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00035">horloge</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00031">jeu</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00068">mettreAJourVue()</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00043">modeDessin</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00027">Morte</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00027">ObstacleMorte</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00027">ObstacleVivante</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00044">sourisEnfoncee</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00032">tailleCellule</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00027">Vivante</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00046">vue</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00483">zoomerSurPixel()</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00051">zoomMax</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00050">zoomMin</a>, et <a class="el" href="InterfaceSFML_8hpp_source.html#l00048">zoomNiveau</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceSFML_8cpp_source.html#l00078">executer()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="InterfaceSFML_8cpp_source.html#l00145">executer()</a>.</p>
 <div id="dynsection-13" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe d'appel pour cette fonction :</div>
 <div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-13-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classInterfaceSFML_a20bcd606ad56b9f175bba4a49a4f061a_cgraph.svg" width="100%" height="366"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classInterfaceSFML_a20bcd606ad56b9f175bba4a49a4f061a_cgraph.svg" width="100%" height="554"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 <div id="dynsection-14" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
 <div id="dynsection-14-summary" class="dynsummary" style="display:block;">
@@ -616,11 +667,11 @@ Attributs privés</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8cpp_source.html#l00243">243</a> du fichier <a class="el" href="InterfaceSFML_8cpp_source.html">InterfaceSFML.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8cpp_source.html#l00426">426</a> du fichier <a class="el" href="InterfaceSFML_8cpp_source.html">InterfaceSFML.cpp</a>.</p>
 
-<p class="reference">Références <a class="el" href="InterfaceSFML_8hpp_source.html#l00027">jeu</a>, <a class="el" href="Grille_8hpp_source.html#l00063">Grille::obtenirNbColonnes()</a>, et <a class="el" href="Grille_8hpp_source.html#l00057">Grille::obtenirNbLignes()</a>.</p>
+<p class="reference">Références <a class="el" href="InterfaceSFML_8hpp_source.html#l00031">jeu</a>, <a class="el" href="Grille_8hpp_source.html#l00063">Grille::obtenirNbColonnes()</a>, et <a class="el" href="Grille_8hpp_source.html#l00057">Grille::obtenirNbLignes()</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceSFML_8cpp_source.html#l00101">gererEvenements()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="InterfaceSFML_8cpp_source.html#l00168">gererEvenements()</a>.</p>
 <div id="dynsection-15" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe d'appel pour cette fonction :</div>
 <div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
@@ -636,7 +687,128 @@ Attributs privés</h2></td></tr>
 
 </div>
 </div>
+<a id="ae14bea1479191a62abf18f42f7387bcc" name="ae14bea1479191a62abf18f42f7387bcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae14bea1479191a62abf18f42f7387bcc">&#9670;&#160;</a></span>mettreAJourVue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void InterfaceSFML::mettreAJourVue </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Met à jour la vue pour préserver l'aspect carré des cellules. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8cpp_source.html#l00068">68</a> du fichier <a class="el" href="InterfaceSFML_8cpp_source.html">InterfaceSFML.cpp</a>.</p>
+
+<p class="reference">Références <a class="el" href="InterfaceSFML_8hpp_source.html#l00030">fenetre</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00031">jeu</a>, <a class="el" href="Grille_8hpp_source.html#l00063">Grille::obtenirNbColonnes()</a>, <a class="el" href="Grille_8hpp_source.html#l00057">Grille::obtenirNbLignes()</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00032">tailleCellule</a>, et <a class="el" href="InterfaceSFML_8hpp_source.html#l00046">vue</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="InterfaceSFML_8cpp_source.html#l00168">gererEvenements()</a>, et <a class="el" href="InterfaceSFML_8cpp_source.html#l00014">InterfaceSFML()</a>.</p>
+<div id="dynsection-17" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe d'appel pour cette fonction :</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classInterfaceSFML_ae14bea1479191a62abf18f42f7387bcc_cgraph.svg" width="438" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div id="dynsection-18" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classInterfaceSFML_ae14bea1479191a62abf18f42f7387bcc_icgraph.svg" width="100%" height="366"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a19018415b9d7b2a517f3d7075015eaee" name="a19018415b9d7b2a517f3d7075015eaee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19018415b9d7b2a517f3d7075015eaee">&#9670;&#160;</a></span>zoomerSurPixel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void InterfaceSFML::zoomerSurPixel </td>
+          <td>(</td>
+          <td class="paramtype">const sf::Vector2i &amp;</td>          <td class="paramname"><span class="paramname"><em>pixel</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>factor</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Applique un zoom centré sur un pixel de la fenêtre. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pixel</td><td>Position en pixels relative à la fenêtre </td></tr>
+    <tr><td class="paramname">factor</td><td>Facteur appliqué à la vue (vue.zoom(factor)) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8cpp_source.html#l00483">483</a> du fichier <a class="el" href="InterfaceSFML_8cpp_source.html">InterfaceSFML.cpp</a>.</p>
+
+<p class="reference">Références <a class="el" href="InterfaceSFML_8hpp_source.html#l00030">fenetre</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00046">vue</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00051">zoomMax</a>, <a class="el" href="InterfaceSFML_8hpp_source.html#l00050">zoomMin</a>, et <a class="el" href="InterfaceSFML_8hpp_source.html#l00048">zoomNiveau</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="InterfaceSFML_8cpp_source.html#l00168">gererEvenements()</a>.</p>
+<div id="dynsection-19" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classInterfaceSFML_a19018415b9d7b2a517f3d7075015eaee_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
 <a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Documentation des données membres</h2>
+<a id="aae0d174b26088a334ad6d0ba4d03e499" name="aae0d174b26088a334ad6d0ba4d03e499"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae0d174b26088a334ad6d0ba4d03e499">&#9670;&#160;</a></span>boutonSouris</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int InterfaceSFML::boutonSouris</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8hpp_source.html#l00045">45</a> du fichier <a class="el" href="InterfaceSFML_8hpp_source.html">InterfaceSFML.hpp</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="InterfaceSFML_8cpp_source.html#l00168">gererEvenements()</a>.</p>
+
+</div>
+</div>
 <a id="af906405bd5f28fcfdb533fd826444bc6" name="af906405bd5f28fcfdb533fd826444bc6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af906405bd5f28fcfdb533fd826444bc6">&#9670;&#160;</a></span>couleurGrille</h2>
 
@@ -657,9 +829,9 @@ Attributs privés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8hpp_source.html#l00037">37</a> du fichier <a class="el" href="InterfaceSFML_8hpp_source.html">InterfaceSFML.hpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8hpp_source.html#l00041">41</a> du fichier <a class="el" href="InterfaceSFML_8hpp_source.html">InterfaceSFML.hpp</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceSFML_8cpp_source.html#l00013">InterfaceSFML()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="InterfaceSFML_8cpp_source.html#l00014">InterfaceSFML()</a>.</p>
 
 </div>
 </div>
@@ -683,9 +855,9 @@ Attributs privés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8hpp_source.html#l00035">35</a> du fichier <a class="el" href="InterfaceSFML_8hpp_source.html">InterfaceSFML.hpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8hpp_source.html#l00039">39</a> du fichier <a class="el" href="InterfaceSFML_8hpp_source.html">InterfaceSFML.hpp</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceSFML_8hpp_source.html#l00075">definirCouleurMorte()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00315">dessinerGrille()</a>, et <a class="el" href="InterfaceSFML_8cpp_source.html#l00013">InterfaceSFML()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="InterfaceSFML_8hpp_source.html#l00089">definirCouleurMorte()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00509">dessinerGrille()</a>, et <a class="el" href="InterfaceSFML_8cpp_source.html#l00014">InterfaceSFML()</a>.</p>
 
 </div>
 </div>
@@ -709,9 +881,9 @@ Attributs privés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8hpp_source.html#l00036">36</a> du fichier <a class="el" href="InterfaceSFML_8hpp_source.html">InterfaceSFML.hpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8hpp_source.html#l00040">40</a> du fichier <a class="el" href="InterfaceSFML_8hpp_source.html">InterfaceSFML.hpp</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceSFML_8cpp_source.html#l00315">dessinerGrille()</a>, et <a class="el" href="InterfaceSFML_8cpp_source.html#l00013">InterfaceSFML()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="InterfaceSFML_8cpp_source.html#l00509">dessinerGrille()</a>, et <a class="el" href="InterfaceSFML_8cpp_source.html#l00014">InterfaceSFML()</a>.</p>
 
 </div>
 </div>
@@ -735,9 +907,9 @@ Attributs privés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8hpp_source.html#l00034">34</a> du fichier <a class="el" href="InterfaceSFML_8hpp_source.html">InterfaceSFML.hpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8hpp_source.html#l00038">38</a> du fichier <a class="el" href="InterfaceSFML_8hpp_source.html">InterfaceSFML.hpp</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceSFML_8hpp_source.html#l00069">definirCouleurVivante()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00315">dessinerGrille()</a>, et <a class="el" href="InterfaceSFML_8cpp_source.html#l00013">InterfaceSFML()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="InterfaceSFML_8hpp_source.html#l00083">definirCouleurVivante()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00509">dessinerGrille()</a>, et <a class="el" href="InterfaceSFML_8cpp_source.html#l00014">InterfaceSFML()</a>.</p>
 
 </div>
 </div>
@@ -761,9 +933,9 @@ Attributs privés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8hpp_source.html#l00030">30</a> du fichier <a class="el" href="InterfaceSFML_8hpp_source.html">InterfaceSFML.hpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8hpp_source.html#l00034">34</a> du fichier <a class="el" href="InterfaceSFML_8hpp_source.html">InterfaceSFML.hpp</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceSFML_8hpp_source.html#l00063">definirDelaiIteration()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00347">dessinerInformations()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00078">executer()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00101">gererEvenements()</a>, et <a class="el" href="InterfaceSFML_8cpp_source.html#l00013">InterfaceSFML()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="InterfaceSFML_8hpp_source.html#l00077">definirDelaiIteration()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00551">dessinerInformations()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00145">executer()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00168">gererEvenements()</a>, et <a class="el" href="InterfaceSFML_8cpp_source.html#l00014">InterfaceSFML()</a>.</p>
 
 </div>
 </div>
@@ -787,9 +959,9 @@ Attributs privés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8hpp_source.html#l00029">29</a> du fichier <a class="el" href="InterfaceSFML_8hpp_source.html">InterfaceSFML.hpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8hpp_source.html#l00033">33</a> du fichier <a class="el" href="InterfaceSFML_8hpp_source.html">InterfaceSFML.hpp</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceSFML_8cpp_source.html#l00347">dessinerInformations()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00078">executer()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00101">gererEvenements()</a>, et <a class="el" href="InterfaceSFML_8cpp_source.html#l00013">InterfaceSFML()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="InterfaceSFML_8cpp_source.html#l00551">dessinerInformations()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00145">executer()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00168">gererEvenements()</a>, et <a class="el" href="InterfaceSFML_8cpp_source.html#l00014">InterfaceSFML()</a>.</p>
 
 </div>
 </div>
@@ -813,9 +985,9 @@ Attributs privés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8hpp_source.html#l00026">26</a> du fichier <a class="el" href="InterfaceSFML_8hpp_source.html">InterfaceSFML.hpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8hpp_source.html#l00030">30</a> du fichier <a class="el" href="InterfaceSFML_8hpp_source.html">InterfaceSFML.hpp</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceSFML_8cpp_source.html#l00308">afficher()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00062">calculerTailleCellule()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00315">dessinerGrille()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00347">dessinerInformations()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00078">executer()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00101">gererEvenements()</a>, et <a class="el" href="InterfaceSFML_8cpp_source.html#l00013">InterfaceSFML()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="InterfaceSFML_8cpp_source.html#l00502">afficher()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00129">calculerTailleCellule()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00509">dessinerGrille()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00551">dessinerInformations()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00145">executer()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00168">gererEvenements()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00014">InterfaceSFML()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00068">mettreAJourVue()</a>, et <a class="el" href="InterfaceSFML_8cpp_source.html#l00483">zoomerSurPixel()</a>.</p>
 
 </div>
 </div>
@@ -839,9 +1011,9 @@ Attributs privés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8hpp_source.html#l00031">31</a> du fichier <a class="el" href="InterfaceSFML_8hpp_source.html">InterfaceSFML.hpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8hpp_source.html#l00035">35</a> du fichier <a class="el" href="InterfaceSFML_8hpp_source.html">InterfaceSFML.hpp</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceSFML_8cpp_source.html#l00078">executer()</a>, et <a class="el" href="InterfaceSFML_8cpp_source.html#l00101">gererEvenements()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="InterfaceSFML_8cpp_source.html#l00145">executer()</a>, et <a class="el" href="InterfaceSFML_8cpp_source.html#l00168">gererEvenements()</a>.</p>
 
 </div>
 </div>
@@ -865,9 +1037,61 @@ Attributs privés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8hpp_source.html#l00027">27</a> du fichier <a class="el" href="InterfaceSFML_8hpp_source.html">InterfaceSFML.hpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8hpp_source.html#l00031">31</a> du fichier <a class="el" href="InterfaceSFML_8hpp_source.html">InterfaceSFML.hpp</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceSFML_8cpp_source.html#l00062">calculerTailleCellule()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00315">dessinerGrille()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00347">dessinerInformations()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00078">executer()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00101">gererEvenements()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00243">gererPlacementMotif()</a>, et <a class="el" href="InterfaceSFML_8cpp_source.html#l00013">InterfaceSFML()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="InterfaceSFML_8cpp_source.html#l00129">calculerTailleCellule()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00509">dessinerGrille()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00551">dessinerInformations()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00145">executer()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00168">gererEvenements()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00426">gererPlacementMotif()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00014">InterfaceSFML()</a>, et <a class="el" href="InterfaceSFML_8cpp_source.html#l00068">mettreAJourVue()</a>.</p>
+
+</div>
+</div>
+<a id="a81575798ea005f88d7c0d7b01b89c4ad" name="a81575798ea005f88d7c0d7b01b89c4ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81575798ea005f88d7c0d7b01b89c4ad">&#9670;&#160;</a></span>modeDessin</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#abaa8fc086dace2cde5f8bad0fbef0c7c">ModeDessin</a> InterfaceSFML::modeDessin</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8hpp_source.html#l00043">43</a> du fichier <a class="el" href="InterfaceSFML_8hpp_source.html">InterfaceSFML.hpp</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="InterfaceSFML_8cpp_source.html#l00168">gererEvenements()</a>, et <a class="el" href="InterfaceSFML_8cpp_source.html#l00014">InterfaceSFML()</a>.</p>
+
+</div>
+</div>
+<a id="a86ec1512679022eb563628f3c9c2c23c" name="a86ec1512679022eb563628f3c9c2c23c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86ec1512679022eb563628f3c9c2c23c">&#9670;&#160;</a></span>sourisEnfoncee</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool InterfaceSFML::sourisEnfoncee</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8hpp_source.html#l00044">44</a> du fichier <a class="el" href="InterfaceSFML_8hpp_source.html">InterfaceSFML.hpp</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="InterfaceSFML_8cpp_source.html#l00168">gererEvenements()</a>, et <a class="el" href="InterfaceSFML_8cpp_source.html#l00014">InterfaceSFML()</a>.</p>
 
 </div>
 </div>
@@ -891,9 +1115,137 @@ Attributs privés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8hpp_source.html#l00028">28</a> du fichier <a class="el" href="InterfaceSFML_8hpp_source.html">InterfaceSFML.hpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8hpp_source.html#l00032">32</a> du fichier <a class="el" href="InterfaceSFML_8hpp_source.html">InterfaceSFML.hpp</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceSFML_8cpp_source.html#l00062">calculerTailleCellule()</a>, et <a class="el" href="InterfaceSFML_8cpp_source.html#l00315">dessinerGrille()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="InterfaceSFML_8cpp_source.html#l00129">calculerTailleCellule()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00509">dessinerGrille()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00168">gererEvenements()</a>, et <a class="el" href="InterfaceSFML_8cpp_source.html#l00068">mettreAJourVue()</a>.</p>
+
+</div>
+</div>
+<a id="aeb8d960effce4f9b1ab570358aca5855" name="aeb8d960effce4f9b1ab570358aca5855"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb8d960effce4f9b1ab570358aca5855">&#9670;&#160;</a></span>vue</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::View InterfaceSFML::vue</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8hpp_source.html#l00046">46</a> du fichier <a class="el" href="InterfaceSFML_8hpp_source.html">InterfaceSFML.hpp</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="InterfaceSFML_8cpp_source.html#l00168">gererEvenements()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00014">InterfaceSFML()</a>, <a class="el" href="InterfaceSFML_8cpp_source.html#l00068">mettreAJourVue()</a>, et <a class="el" href="InterfaceSFML_8cpp_source.html#l00483">zoomerSurPixel()</a>.</p>
+
+</div>
+</div>
+<a id="afb689ca73f687b0f1ed1fbd4fe5037e7" name="afb689ca73f687b0f1ed1fbd4fe5037e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb689ca73f687b0f1ed1fbd4fe5037e7">&#9670;&#160;</a></span>zoomMax</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float InterfaceSFML::zoomMax = 10.0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8hpp_source.html#l00051">51</a> du fichier <a class="el" href="InterfaceSFML_8hpp_source.html">InterfaceSFML.hpp</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="InterfaceSFML_8cpp_source.html#l00168">gererEvenements()</a>, et <a class="el" href="InterfaceSFML_8cpp_source.html#l00483">zoomerSurPixel()</a>.</p>
+
+</div>
+</div>
+<a id="ab69365adb4dffcf849efae33678138b2" name="ab69365adb4dffcf849efae33678138b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab69365adb4dffcf849efae33678138b2">&#9670;&#160;</a></span>zoomMin</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float InterfaceSFML::zoomMin = 0.05f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8hpp_source.html#l00050">50</a> du fichier <a class="el" href="InterfaceSFML_8hpp_source.html">InterfaceSFML.hpp</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="InterfaceSFML_8cpp_source.html#l00168">gererEvenements()</a>, et <a class="el" href="InterfaceSFML_8cpp_source.html#l00483">zoomerSurPixel()</a>.</p>
+
+</div>
+</div>
+<a id="a58658bd4f8c0d6bd56cbaaf9da0c61bb" name="a58658bd4f8c0d6bd56cbaaf9da0c61bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58658bd4f8c0d6bd56cbaaf9da0c61bb">&#9670;&#160;</a></span>zoomNiveau</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float InterfaceSFML::zoomNiveau = 1.0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8hpp_source.html#l00048">48</a> du fichier <a class="el" href="InterfaceSFML_8hpp_source.html">InterfaceSFML.hpp</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="InterfaceSFML_8cpp_source.html#l00168">gererEvenements()</a>, et <a class="el" href="InterfaceSFML_8cpp_source.html#l00483">zoomerSurPixel()</a>.</p>
+
+</div>
+</div>
+<a id="a09015571fead334407d2fa97ead017ae" name="a09015571fead334407d2fa97ead017ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09015571fead334407d2fa97ead017ae">&#9670;&#160;</a></span>zoomPas</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float InterfaceSFML::zoomPas = 1.15f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceSFML_8hpp_source.html#l00049">49</a> du fichier <a class="el" href="InterfaceSFML_8hpp_source.html">InterfaceSFML.hpp</a>.</p>
 
 </div>
 </div>

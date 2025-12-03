@@ -1,5 +1,11 @@
 <map id="JeuDeLaVie::estTermine" name="JeuDeLaVie::estTermine">
-<area shape="rect" id="Node000001" title="Vérifie si le jeu est terminé" alt="" coords="251,5,415,32"/>
-<area shape="rect" id="Node000002" href="$classJeuDeLaVie.html#af3e2bbbe85d122db859c6049adad142a" title="Exécute une itération du jeu." alt="" coords="5,5,203,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="235,21,203,21,203,16,235,16"/>
+<area shape="rect" id="Node000001" title="Vérifie si le jeu est terminé" alt="" coords="813,13,977,40"/>
+<area shape="rect" id="Node000002" href="$classJeuDeLaVie.html#af3e2bbbe85d122db859c6049adad142a" title="Exécute une itération du jeu." alt="" coords="567,13,765,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="797,29,765,29,765,24,797,24"/>
+<area shape="rect" id="Node000003" href="$classTestsUnitaires.html#ac15830bab996354ee1325bd615fedef1" title="Teste l&#39;historique (retour en arrière)." alt="" coords="314,13,519,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="552,29,520,29,520,24,552,24"/>
+<area shape="rect" id="Node000004" href="$classTestsUnitaires.html#a17aa4e9d0afbd2614193d2638f4b78c7" title="Exécute tous les tests." alt="" coords="103,5,266,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="298,29,267,29,267,24,298,24"/>
+<area shape="rect" id="Node000005" href="$test__main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Programme principal pour exécuter les tests unitaires." alt="" coords="5,13,55,40"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="87,29,55,29,55,24,87,24"/>
 </map>

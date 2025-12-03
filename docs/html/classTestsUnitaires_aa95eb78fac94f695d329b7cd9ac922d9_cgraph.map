@@ -1,0 +1,15 @@
+<map id="TestsUnitaires::testerMotifs" name="TestsUnitaires::testerMotifs">
+<area shape="rect" id="Node000001" title="Teste les motifs préprogrammés." alt="" coords="5,72,188,99"/>
+<area shape="rect" id="Node000002" href="$classTestsUnitaires.html#af1671fe34db212a79ee1f4b2869d576e" title="Affiche le résultat d&#39;un test." alt="" coords="244,5,400,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,69,228,48,230,53,151,74"/>
+<area shape="rect" id="Node000003" href="$classTestsUnitaires.html#a6430263d628fa3e1f55be64cf1aae756" title="Crée une grille de test." alt="" coords="236,72,408,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="188,83,220,83,220,88,188,88"/>
+<area shape="rect" id="Node000006" href="$classGrille.html#adfa396acb4a6ed658ce916b5dceaa690" title="Place un motif préprogrammé sur la grille (extension bonus)." alt="" coords="260,123,384,149"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="160,97,246,116,244,121,159,102"/>
+<area shape="rect" id="Node000004" href="$classGrille.html#ab4c852bc2327224eac9da60841f30baa" title="Définit l&#39;état d&#39;une cellule." alt="" coords="456,72,614,99"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="408,83,441,83,441,88,408,88"/>
+<area shape="rect" id="Node000005" href="$classGrille.html#aa4c9ce36bb4f2c59a83aeb39d73fc285" title="Vérifie si une position est valide dans la grille." alt="" coords="662,97,822,124"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="615,92,647,96,647,102,615,98"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="381,119,461,100,462,105,382,125"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="384,130,646,114,647,119,384,135"/>
+</map>

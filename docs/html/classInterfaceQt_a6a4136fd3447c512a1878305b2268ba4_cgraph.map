@@ -1,0 +1,18 @@
+<map id="InterfaceQt::canvasMouseEvent" name="InterfaceQt::canvasMouseEvent">
+<area shape="rect" id="Node000001" title="Méthode appelée par le widget de grille lors d&#39;événements souris." alt="" coords="5,20,181,63"/>
+<area shape="rect" id="Node000002" href="$classGrille.html#aa4c9ce36bb4f2c59a83aeb39d73fc285" title="Vérifie si une position est valide dans la grille." alt="" coords="897,28,1056,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,28,311,16,477,6,663,4,757,7,849,13,904,22,903,27,848,19,756,12,662,9,477,12,311,22,181,34"/>
+<area shape="rect" id="Node000003" href="$classInterfaceQt.html#a06b809d43dbf3814ab103a8d42de319a" title="Met à jour l&#39;affichage." alt="" coords="229,49,394,92"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="181,51,213,55,213,60,180,56"/>
+<area shape="rect" id="Node000004" href="$classInterfaceQt.html#abe5b2e247e50614efbf88402c774899c" title="Compte les cellules vivantes." alt="" coords="442,71,630,113"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="394,76,426,79,426,84,394,81"/>
+<area shape="rect" id="Node000005" href="$classCellule.html#a70d2731234961e330fe0a31486d1dec7" title="Vérifie si la cellule est vivante." alt="" coords="698,28,829,55"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="630,68,685,56,686,61,631,74"/>
+<area shape="rect" id="Node000006" href="$classGrille.html#aab75610fe73ae48bd035a048c55832f0" title="Obtient une cellule à une position donnée." alt="" coords="694,79,833,105"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="631,89,679,89,679,95,631,95"/>
+<area shape="rect" id="Node000007" href="$classGrille.html#a1ab5c8e0ea0d1dc21549c38d0f0f5cf9" title="Obtient le nombre de colonnes." alt="" coords="678,129,849,156"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="631,111,686,123,685,128,630,116"/>
+<area shape="rect" id="Node000008" href="$classGrille.html#a96b5f98d212a0ee9e2f71d73ebe5bb91" title="Obtient le nombre de lignes." alt="" coords="687,180,840,207"/>
+<area shape="poly" id="edge8_Node000004_Node000008" title=" " alt="" coords="574,112,623,139,679,166,697,172,695,177,677,171,621,144,572,116"/>
+<area shape="poly" id="edge6_Node000006_Node000002" title=" " alt="" coords="822,76,902,56,903,62,823,81"/>
+</map>

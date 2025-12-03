@@ -1,12 +1,10 @@
 var searchData=
 [
-  ['table_20des_20matières_0',['Table des matières',['../index.html#autotoc_md2',1,'']]],
-  ['technique_1',['Documentation technique',['../index.html#autotoc_md43',1,'']]],
-  ['techniques_2',['5. Justification des Choix Techniques',['../md_CONCEPTION.html#autotoc_md82',1,'']]],
-  ['template_20method_20pattern_3',['Template Method Pattern',['../md_CONCEPTION.html#autotoc_md78',1,'']]],
-  ['temporelle_4',['Complexité temporelle',['../md_CONCEPTION.html#autotoc_md89',1,'']]],
-  ['tests_5',['Tests',['../index.html#autotoc_md37',1,'']]],
-  ['tests_6',['Exécuter les tests',['../index.html#autotoc_md38',1,'']]],
-  ['tests_20couverts_2010_2010_20passing_7',['Tests couverts (10/10 passing)',['../index.html#autotoc_md39',1,'']]],
-  ['toutes_20implémentées_8',['Extensions bonus (toutes implémentées)',['../index.html#autotoc_md6',1,'']]]
+  ['règles_20du_20jeu_0',['Hiérarchie des Règles du Jeu',['../md_CONCEPTION.html#autotoc_md65',1,'']]],
+  ['raccourcis_20clavier_20sfml_20et_20qt_1',['Raccourcis clavier (SFML et Qt)',['../index.html#autotoc_md27',1,'']]],
+  ['rapide_2',['rapide',['../index.html#autotoc_md12',1,'2. Interface SFML (Légère et rapide)'],['../index.html#autotoc_md17',1,'Installation rapide']]],
+  ['rapide_20pour_20démo_3',['Démarrage rapide pour démo',['../index.html#autotoc_md57',1,'']]],
+  ['rapide_20windows_4',['Scripts de lancement rapide (Windows)',['../index.html#autotoc_md25',1,'']]],
+  ['recommandé_5',['1. Interface Qt (Moderne et professionnelle) - RECOMMANDÉ',['../index.html#autotoc_md10',1,'']]],
+  ['retour_20en_20arrière_6',['Séquence : Historique (retour en arrière)',['../md_CONCEPTION.html#autotoc_md74',1,'']]]
 ];

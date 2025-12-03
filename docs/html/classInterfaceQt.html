@@ -120,6 +120,8 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="memdesc:a6b0e2381d93a6ae2f4f7976b73107f61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lance l'interface.  <br /></td></tr>
 <tr class="memitem:a814719cf92c437e1ea4d6a433f4c817b" id="r_a814719cf92c437e1ea4d6a433f4c817b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a814719cf92c437e1ea4d6a433f4c817b">dessinerGrille</a> (QPainter &amp;painter)</td></tr>
 <tr class="memdesc:a814719cf92c437e1ea4d6a433f4c817b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dessine la grille (appelé par paintEvent de <a class="el" href="classGrilleWidget.html" title="Widget personnalisé pour dessiner la grille.">GrilleWidget</a>).  <br /></td></tr>
+<tr class="memitem:a6a4136fd3447c512a1878305b2268ba4" id="r_a6a4136fd3447c512a1878305b2268ba4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a4136fd3447c512a1878305b2268ba4">canvasMouseEvent</a> (int x, int y, Qt::MouseButtons buttons)</td></tr>
+<tr class="memdesc:a6a4136fd3447c512a1878305b2268ba4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Méthode appelée par le widget de grille lors d'événements souris.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-methods" class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Fonctions membres protégées</h2></td></tr>
@@ -186,9 +188,12 @@ Attributs privés</h2></td></tr>
 <tr class="memitem:a32c57c0f531f52c716aee1d636cffc06" id="r_a32c57c0f531f52c716aee1d636cffc06"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32c57c0f531f52c716aee1d636cffc06">delaiMs</a></td></tr>
 <tr class="memitem:a38dbbfaef731c9d45dee6513deb70f57" id="r_a38dbbfaef731c9d45dee6513deb70f57"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38dbbfaef731c9d45dee6513deb70f57">tailleCellule</a></td></tr>
 <tr class="memitem:a14c774fe3afeee72c7e2cf40fed24459" id="r_a14c774fe3afeee72c7e2cf40fed24459"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a14c774fe3afeee72c7e2cf40fed24459">iterationMax</a></td></tr>
+<tr class="memitem:ac0e21d9a7f9957baa3624346f0f7fde5" id="r_ac0e21d9a7f9957baa3624346f0f7fde5"><td class="memItemLeft" align="right" valign="top">QComboBox *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0e21d9a7f9957baa3624346f0f7fde5">cmbDrawType</a></td></tr>
+<tr class="memitem:a956563ac9a7c88e6ddd13745e9b724d7" id="r_a956563ac9a7c88e6ddd13745e9b724d7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a956563ac9a7c88e6ddd13745e9b724d7">drawMode</a></td></tr>
 <tr class="memitem:ab0f0951519b8704d15f01fe19b217d68" id="r_ab0f0951519b8704d15f01fe19b217d68"><td class="memItemLeft" align="right" valign="top">QColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0f0951519b8704d15f01fe19b217d68">couleurVivante</a></td></tr>
 <tr class="memitem:a65d82dcc664db8246c52983ff653c3ae" id="r_a65d82dcc664db8246c52983ff653c3ae"><td class="memItemLeft" align="right" valign="top">QColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65d82dcc664db8246c52983ff653c3ae">couleurMorte</a></td></tr>
-<tr class="memitem:ada6dc560ba81d312bdb84dca698ef8a5" id="r_ada6dc560ba81d312bdb84dca698ef8a5"><td class="memItemLeft" align="right" valign="top">QColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada6dc560ba81d312bdb84dca698ef8a5">couleurObstacle</a></td></tr>
+<tr class="memitem:aef732c795ac074539030d027f9a0b393" id="r_aef732c795ac074539030d027f9a0b393"><td class="memItemLeft" align="right" valign="top">QColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef732c795ac074539030d027f9a0b393">couleurObstacleMort</a></td></tr>
+<tr class="memitem:a48ebd5ca7496d3a1ec9e7cc624905866" id="r_a48ebd5ca7496d3a1ec9e7cc624905866"><td class="memItemLeft" align="right" valign="top">QColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48ebd5ca7496d3a1ec9e7cc624905866">couleurObstacleVivant</a></td></tr>
 <tr class="memitem:a326b76aa9f13385c5b02b89239d409d6" id="r_a326b76aa9f13385c5b02b89239d409d6"><td class="memItemLeft" align="right" valign="top">QColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a326b76aa9f13385c5b02b89239d409d6">couleurGrille</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Description détaillée</h2>
@@ -228,9 +233,9 @@ Attributs privés</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8cpp_source.html#l00016">16</a> du fichier <a class="el" href="InterfaceQt_8cpp_source.html">InterfaceQt.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8cpp_source.html#l00017">17</a> du fichier <a class="el" href="InterfaceQt_8cpp_source.html">InterfaceQt.cpp</a>.</p>
 
-<p class="reference">Références <a class="el" href="InterfaceQt_8cpp_source.html#l00541">calculerTailleCellule()</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00060">couleurGrille</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00058">couleurMorte</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00059">couleurObstacle</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00057">couleurVivante</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00052">delaiMs</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00051">enPause</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00229">initialiserLayout()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00065">initialiserWidgets()</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00054">iterationMax</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00027">jeu</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00535">mettreAJourAffichage()</a>, <a class="el" href="Grille_8hpp_source.html#l00063">Grille::obtenirNbColonnes()</a>, <a class="el" href="Grille_8hpp_source.html#l00057">Grille::obtenirNbLignes()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00521">onTimerTick()</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00053">tailleCellule</a>, et <a class="el" href="InterfaceQt_8hpp_source.html#l00050">timer</a>.</p>
+<p class="reference">Références <a class="el" href="InterfaceQt_8cpp_source.html#l00559">calculerTailleCellule()</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00065">couleurGrille</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00062">couleurMorte</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00063">couleurObstacleMort</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00064">couleurObstacleVivant</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00061">couleurVivante</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00052">delaiMs</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00051">enPause</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00244">initialiserLayout()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00067">initialiserWidgets()</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00054">iterationMax</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00027">jeu</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00553">mettreAJourAffichage()</a>, <a class="el" href="Grille_8hpp_source.html#l00063">Grille::obtenirNbColonnes()</a>, <a class="el" href="Grille_8hpp_source.html#l00057">Grille::obtenirNbLignes()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00539">onTimerTick()</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00053">tailleCellule</a>, et <a class="el" href="InterfaceQt_8hpp_source.html#l00050">timer</a>.</p>
 <div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe d'appel pour cette fonction :</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
@@ -265,7 +270,7 @@ Attributs privés</h2></td></tr>
 
 <p>Destructeur. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8cpp_source.html#l00059">59</a> du fichier <a class="el" href="InterfaceQt_8cpp_source.html">InterfaceQt.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8cpp_source.html#l00061">61</a> du fichier <a class="el" href="InterfaceQt_8cpp_source.html">InterfaceQt.cpp</a>.</p>
 
 <p class="reference">Références <a class="el" href="InterfaceQt_8hpp_source.html#l00050">timer</a>.</p>
 
@@ -297,11 +302,11 @@ Attributs privés</h2></td></tr>
 
 <p>Calcule la taille des cellules. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8cpp_source.html#l00541">541</a> du fichier <a class="el" href="InterfaceQt_8cpp_source.html">InterfaceQt.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8cpp_source.html#l00559">559</a> du fichier <a class="el" href="InterfaceQt_8cpp_source.html">InterfaceQt.cpp</a>.</p>
 
 <p class="reference">Références <a class="el" href="InterfaceQt_8hpp_source.html#l00027">jeu</a>, <a class="el" href="Grille_8hpp_source.html#l00063">Grille::obtenirNbColonnes()</a>, <a class="el" href="Grille_8hpp_source.html#l00057">Grille::obtenirNbLignes()</a>, et <a class="el" href="InterfaceQt_8hpp_source.html#l00053">tailleCellule</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00585">dessinerGrille()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00016">InterfaceQt()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00603">dessinerGrille()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00017">InterfaceQt()</a>.</p>
 <div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe d'appel pour cette fonction :</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
@@ -313,6 +318,52 @@ Attributs privés</h2></td></tr>
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classInterfaceQt_a21cb684077b7b7c71a3099520e43406f_icgraph.svg" width="402" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a6a4136fd3447c512a1878305b2268ba4" name="a6a4136fd3447c512a1878305b2268ba4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a4136fd3447c512a1878305b2268ba4">&#9670;&#160;</a></span>canvasMouseEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void InterfaceQt::canvasMouseEvent </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Qt::MouseButtons</td>          <td class="paramname"><span class="paramname"><em>buttons</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Méthode appelée par le widget de grille lors d'événements souris. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>position x en pixels </td></tr>
+    <tr><td class="paramname">y</td><td>position y en pixels </td></tr>
+    <tr><td class="paramname">buttons</td><td>masques des boutons souris </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8cpp_source.html#l00636">636</a> du fichier <a class="el" href="InterfaceQt_8cpp_source.html">InterfaceQt.cpp</a>.</p>
+
+<p class="reference">Références <a class="el" href="InterfaceQt_8hpp_source.html#l00058">drawMode</a>, <a class="el" href="Grille_8cpp_source.html#l00096">Grille::estPositionValide()</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00027">jeu</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00553">mettreAJourAffichage()</a>, et <a class="el" href="InterfaceQt_8hpp_source.html#l00053">tailleCellule</a>.</p>
+<div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe d'appel pour cette fonction :</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classInterfaceQt_a6a4136fd3447c512a1878305b2268ba4_cgraph.svg" width="100%" height="459"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -342,22 +393,22 @@ Attributs privés</h2></td></tr>
 
 <p>Compte les cellules vivantes. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8cpp_source.html#l00570">570</a> du fichier <a class="el" href="InterfaceQt_8cpp_source.html">InterfaceQt.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8cpp_source.html#l00588">588</a> du fichier <a class="el" href="InterfaceQt_8cpp_source.html">InterfaceQt.cpp</a>.</p>
 
 <p class="reference">Références <a class="el" href="Cellule_8hpp_source.html#l00053">Cellule::estVivante()</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00027">jeu</a>, <a class="el" href="Grille_8cpp_source.html#l00075">Grille::obtenirCellule()</a>, <a class="el" href="Grille_8hpp_source.html#l00063">Grille::obtenirNbColonnes()</a>, et <a class="el" href="Grille_8hpp_source.html#l00057">Grille::obtenirNbLignes()</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00535">mettreAJourAffichage()</a>.</p>
-<div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe d'appel pour cette fonction :</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classInterfaceQt_abe5b2e247e50614efbf88402c774899c_cgraph.svg" width="626" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-<div id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
+<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00553">mettreAJourAffichage()</a>.</p>
+<div id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe d'appel pour cette fonction :</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classInterfaceQt_abe5b2e247e50614efbf88402c774899c_icgraph.svg" width="100%" height="509"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classInterfaceQt_abe5b2e247e50614efbf88402c774899c_cgraph.svg" width="626" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div id="dynsection-7" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classInterfaceQt_abe5b2e247e50614efbf88402c774899c_icgraph.svg" width="100%" height="561"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -379,13 +430,13 @@ Attributs privés</h2></td></tr>
 
 <p>Dessine la grille (appelé par paintEvent de <a class="el" href="classGrilleWidget.html" title="Widget personnalisé pour dessiner la grille.">GrilleWidget</a>). </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8cpp_source.html#l00585">585</a> du fichier <a class="el" href="InterfaceQt_8cpp_source.html">InterfaceQt.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8cpp_source.html#l00603">603</a> du fichier <a class="el" href="InterfaceQt_8cpp_source.html">InterfaceQt.cpp</a>.</p>
 
-<p class="reference">Références <a class="el" href="InterfaceQt_8cpp_source.html#l00541">calculerTailleCellule()</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00058">couleurMorte</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00059">couleurObstacle</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00057">couleurVivante</a>, <a class="el" href="Cellule_8hpp_source.html#l00059">Cellule::estObstacle()</a>, <a class="el" href="Cellule_8hpp_source.html#l00053">Cellule::estVivante()</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00027">jeu</a>, <a class="el" href="Grille_8cpp_source.html#l00075">Grille::obtenirCellule()</a>, <a class="el" href="Grille_8hpp_source.html#l00063">Grille::obtenirNbColonnes()</a>, <a class="el" href="Grille_8hpp_source.html#l00057">Grille::obtenirNbLignes()</a>, et <a class="el" href="InterfaceQt_8hpp_source.html#l00053">tailleCellule</a>.</p>
-<div id="dynsection-7" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe d'appel pour cette fonction :</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<p class="reference">Références <a class="el" href="InterfaceQt_8cpp_source.html#l00559">calculerTailleCellule()</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00062">couleurMorte</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00063">couleurObstacleMort</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00064">couleurObstacleVivant</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00061">couleurVivante</a>, <a class="el" href="Cellule_8hpp_source.html#l00059">Cellule::estObstacle()</a>, <a class="el" href="Cellule_8hpp_source.html#l00053">Cellule::estVivante()</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00027">jeu</a>, <a class="el" href="Grille_8cpp_source.html#l00075">Grille::obtenirCellule()</a>, <a class="el" href="Grille_8hpp_source.html#l00063">Grille::obtenirNbColonnes()</a>, <a class="el" href="Grille_8hpp_source.html#l00057">Grille::obtenirNbLignes()</a>, et <a class="el" href="InterfaceQt_8hpp_source.html#l00053">tailleCellule</a>.</p>
+<div id="dynsection-8" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe d'appel pour cette fonction :</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classInterfaceQt_a814719cf92c437e1ea4d6a433f4c817b_cgraph.svg" width="620" height="288"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -408,13 +459,13 @@ Attributs privés</h2></td></tr>
 
 <p>Lance l'interface. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8cpp_source.html#l00636">636</a> du fichier <a class="el" href="InterfaceQt_8cpp_source.html">InterfaceQt.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8cpp_source.html#l00688">688</a> du fichier <a class="el" href="InterfaceQt_8cpp_source.html">InterfaceQt.cpp</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="main_8cpp_source.html#l00070">main()</a>.</p>
-<div id="dynsection-8" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<p class="reference">Référencé par <a class="el" href="main_8cpp_source.html#l00071">main()</a>.</p>
+<div id="dynsection-9" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classInterfaceQt_a6b0e2381d93a6ae2f4f7976b73107f61_icgraph.svg" width="252" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -445,21 +496,21 @@ Attributs privés</h2></td></tr>
 
 <p>Initialise la mise en page. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8cpp_source.html#l00229">229</a> du fichier <a class="el" href="InterfaceQt_8cpp_source.html">InterfaceQt.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8cpp_source.html#l00244">244</a> du fichier <a class="el" href="InterfaceQt_8cpp_source.html">InterfaceQt.cpp</a>.</p>
 
-<p class="reference">Références <a class="el" href="InterfaceQt_8hpp_source.html#l00045">btnPlacerMotif</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00034">btnPlayPause</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00037">btnReset</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00035">btnStep</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00036">btnStepBack</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00031">canvasWidget</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00030">centralWidget</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00043">chkParallele</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00042">chkTorique</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00044">cmbMotifs</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00027">jeu</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00041">lblCellulesVivantes</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00039">lblIteration</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00040">lblVitesse</a>, <a class="el" href="Grille_8hpp_source.html#l00063">Grille::obtenirNbColonnes()</a>, <a class="el" href="Grille_8hpp_source.html#l00057">Grille::obtenirNbLignes()</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00038">sliderVitesse</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00046">spinIterationMax</a>, et <a class="el" href="InterfaceQt_8hpp_source.html#l00053">tailleCellule</a>.</p>
+<p class="reference">Références <a class="el" href="InterfaceQt_8hpp_source.html#l00045">btnPlacerMotif</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00034">btnPlayPause</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00037">btnReset</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00035">btnStep</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00036">btnStepBack</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00031">canvasWidget</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00030">centralWidget</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00043">chkParallele</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00042">chkTorique</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00057">cmbDrawType</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00044">cmbMotifs</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00027">jeu</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00041">lblCellulesVivantes</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00039">lblIteration</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00040">lblVitesse</a>, <a class="el" href="Grille_8hpp_source.html#l00063">Grille::obtenirNbColonnes()</a>, <a class="el" href="Grille_8hpp_source.html#l00057">Grille::obtenirNbLignes()</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00038">sliderVitesse</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00046">spinIterationMax</a>, et <a class="el" href="InterfaceQt_8hpp_source.html#l00053">tailleCellule</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00016">InterfaceQt()</a>.</p>
-<div id="dynsection-9" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe d'appel pour cette fonction :</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classInterfaceQt_a47b4ef06b65286c8b1d34ce2687adbce_cgraph.svg" width="375" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-<div id="dynsection-10" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
+<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00017">InterfaceQt()</a>.</p>
+<div id="dynsection-10" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe d'appel pour cette fonction :</div>
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classInterfaceQt_a47b4ef06b65286c8b1d34ce2687adbce_cgraph.svg" width="375" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div id="dynsection-11" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classInterfaceQt_a47b4ef06b65286c8b1d34ce2687adbce_icgraph.svg" width="364" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -490,21 +541,21 @@ Attributs privés</h2></td></tr>
 
 <p>Initialise les widgets. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8cpp_source.html#l00065">65</a> du fichier <a class="el" href="InterfaceQt_8cpp_source.html">InterfaceQt.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8cpp_source.html#l00067">67</a> du fichier <a class="el" href="InterfaceQt_8cpp_source.html">InterfaceQt.cpp</a>.</p>
 
-<p class="reference">Références <a class="el" href="InterfaceQt_8hpp_source.html#l00045">btnPlacerMotif</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00034">btnPlayPause</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00037">btnReset</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00035">btnStep</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00036">btnStepBack</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00043">chkParallele</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00042">chkTorique</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00044">cmbMotifs</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00041">lblCellulesVivantes</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00039">lblIteration</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00047">lblIterationMax</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00040">lblVitesse</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00489">onIterationMaxChanged()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00473">onParalleleChanged()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00500">onPlacerMotif()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00371">onPlayPause()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00430">onReset()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00411">onStep()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00422">onStepBack()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00468">onToriqueChanged()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00450">onVitesseChanged()</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00038">sliderVitesse</a>, et <a class="el" href="InterfaceQt_8hpp_source.html#l00046">spinIterationMax</a>.</p>
+<p class="reference">Références <a class="el" href="InterfaceQt_8hpp_source.html#l00045">btnPlacerMotif</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00034">btnPlayPause</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00037">btnReset</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00035">btnStep</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00036">btnStepBack</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00043">chkParallele</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00042">chkTorique</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00057">cmbDrawType</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00044">cmbMotifs</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00058">drawMode</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00041">lblCellulesVivantes</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00039">lblIteration</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00047">lblIterationMax</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00040">lblVitesse</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00507">onIterationMaxChanged()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00491">onParalleleChanged()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00518">onPlacerMotif()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00389">onPlayPause()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00448">onReset()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00429">onStep()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00440">onStepBack()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00486">onToriqueChanged()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00468">onVitesseChanged()</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00038">sliderVitesse</a>, et <a class="el" href="InterfaceQt_8hpp_source.html#l00046">spinIterationMax</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00016">InterfaceQt()</a>.</p>
-<div id="dynsection-11" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe d'appel pour cette fonction :</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classInterfaceQt_a08632443206d676198dfd1f7492e7437_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-<div id="dynsection-12" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
+<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00017">InterfaceQt()</a>.</p>
+<div id="dynsection-12" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe d'appel pour cette fonction :</div>
 <div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classInterfaceQt_a08632443206d676198dfd1f7492e7437_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div id="dynsection-13" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classInterfaceQt_a08632443206d676198dfd1f7492e7437_icgraph.svg" width="364" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -535,13 +586,13 @@ Attributs privés</h2></td></tr>
 
 <p>Gestion des événements clavier. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8cpp_source.html#l00614">614</a> du fichier <a class="el" href="InterfaceQt_8cpp_source.html">InterfaceQt.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8cpp_source.html#l00666">666</a> du fichier <a class="el" href="InterfaceQt_8cpp_source.html">InterfaceQt.cpp</a>.</p>
 
-<p class="reference">Références <a class="el" href="InterfaceQt_8cpp_source.html#l00371">onPlayPause()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00411">onStep()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00422">onStepBack()</a>, et <a class="el" href="InterfaceQt_8hpp_source.html#l00038">sliderVitesse</a>.</p>
-<div id="dynsection-13" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe d'appel pour cette fonction :</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<p class="reference">Références <a class="el" href="InterfaceQt_8cpp_source.html#l00389">onPlayPause()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00429">onStep()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00440">onStepBack()</a>, et <a class="el" href="InterfaceQt_8hpp_source.html#l00038">sliderVitesse</a>.</p>
+<div id="dynsection-14" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe d'appel pour cette fonction :</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classInterfaceQt_a11edcee9206379725a8e97e68a100e80_cgraph.svg" width="100%" height="442"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
@@ -572,22 +623,22 @@ Attributs privés</h2></td></tr>
 
 <p>Met à jour l'affichage. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8cpp_source.html#l00535">535</a> du fichier <a class="el" href="InterfaceQt_8cpp_source.html">InterfaceQt.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8cpp_source.html#l00553">553</a> du fichier <a class="el" href="InterfaceQt_8cpp_source.html">InterfaceQt.cpp</a>.</p>
 
-<p class="reference">Références <a class="el" href="InterfaceQt_8hpp_source.html#l00031">canvasWidget</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00570">compterCellulesVivantes()</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00027">jeu</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00041">lblCellulesVivantes</a>, et <a class="el" href="InterfaceQt_8hpp_source.html#l00039">lblIteration</a>.</p>
+<p class="reference">Références <a class="el" href="InterfaceQt_8hpp_source.html#l00031">canvasWidget</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00588">compterCellulesVivantes()</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00027">jeu</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00041">lblCellulesVivantes</a>, et <a class="el" href="InterfaceQt_8hpp_source.html#l00039">lblIteration</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00016">InterfaceQt()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00500">onPlacerMotif()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00430">onReset()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00411">onStep()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00422">onStepBack()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00521">onTimerTick()</a>.</p>
-<div id="dynsection-14" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe d'appel pour cette fonction :</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classInterfaceQt_a06b809d43dbf3814ab103a8d42de319a_cgraph.svg" width="100%" height="442"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-<div id="dynsection-15" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
+<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00636">canvasMouseEvent()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00017">InterfaceQt()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00518">onPlacerMotif()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00448">onReset()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00429">onStep()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00440">onStepBack()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00539">onTimerTick()</a>.</p>
+<div id="dynsection-15" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe d'appel pour cette fonction :</div>
 <div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-15-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classInterfaceQt_a06b809d43dbf3814ab103a8d42de319a_icgraph.svg" width="100%" height="509"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classInterfaceQt_a06b809d43dbf3814ab103a8d42de319a_cgraph.svg" width="100%" height="442"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div id="dynsection-16" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classInterfaceQt_a06b809d43dbf3814ab103a8d42de319a_icgraph.svg" width="100%" height="561"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -617,15 +668,15 @@ Attributs privés</h2></td></tr>
 
 <p>Change le nombre d'itérations maximum. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8cpp_source.html#l00489">489</a> du fichier <a class="el" href="InterfaceQt_8cpp_source.html">InterfaceQt.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8cpp_source.html#l00507">507</a> du fichier <a class="el" href="InterfaceQt_8cpp_source.html">InterfaceQt.cpp</a>.</p>
 
 <p class="reference">Références <a class="el" href="InterfaceQt_8hpp_source.html#l00054">iterationMax</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00027">jeu</a>, et <a class="el" href="InterfaceQt_8hpp_source.html#l00047">lblIterationMax</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00065">initialiserWidgets()</a>.</p>
-<div id="dynsection-16" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
-<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00067">initialiserWidgets()</a>.</p>
+<div id="dynsection-17" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classInterfaceQt_a91750f9bfd30320a5b8e2d6a0fb7fa4d_icgraph.svg" width="567" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -656,15 +707,15 @@ Attributs privés</h2></td></tr>
 
 <p>Toggle parallélisation. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8cpp_source.html#l00473">473</a> du fichier <a class="el" href="InterfaceQt_8cpp_source.html">InterfaceQt.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8cpp_source.html#l00491">491</a> du fichier <a class="el" href="InterfaceQt_8cpp_source.html">InterfaceQt.cpp</a>.</p>
 
 <p class="reference">Références <a class="el" href="InterfaceQt_8hpp_source.html#l00027">jeu</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00065">initialiserWidgets()</a>.</p>
-<div id="dynsection-17" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
-<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00067">initialiserWidgets()</a>.</p>
+<div id="dynsection-18" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classInterfaceQt_a3c06b01e3faf996c40d9dc8916b7ad1f_icgraph.svg" width="570" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -695,21 +746,21 @@ Attributs privés</h2></td></tr>
 
 <p>Place un motif. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8cpp_source.html#l00500">500</a> du fichier <a class="el" href="InterfaceQt_8cpp_source.html">InterfaceQt.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8cpp_source.html#l00518">518</a> du fichier <a class="el" href="InterfaceQt_8cpp_source.html">InterfaceQt.cpp</a>.</p>
 
-<p class="reference">Références <a class="el" href="InterfaceQt_8hpp_source.html#l00044">cmbMotifs</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00027">jeu</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00535">mettreAJourAffichage()</a>, <a class="el" href="Grille_8hpp_source.html#l00063">Grille::obtenirNbColonnes()</a>, et <a class="el" href="Grille_8hpp_source.html#l00057">Grille::obtenirNbLignes()</a>.</p>
+<p class="reference">Références <a class="el" href="InterfaceQt_8hpp_source.html#l00044">cmbMotifs</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00027">jeu</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00553">mettreAJourAffichage()</a>, <a class="el" href="Grille_8hpp_source.html#l00063">Grille::obtenirNbColonnes()</a>, et <a class="el" href="Grille_8hpp_source.html#l00057">Grille::obtenirNbLignes()</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00065">initialiserWidgets()</a>.</p>
-<div id="dynsection-18" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe d'appel pour cette fonction :</div>
-<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-18-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classInterfaceQt_a280bb380e08e13ec39b8dca2ae917950_cgraph.svg" width="100%" height="443"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-<div id="dynsection-19" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
+<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00067">initialiserWidgets()</a>.</p>
+<div id="dynsection-19" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe d'appel pour cette fonction :</div>
 <div id="dynsection-19-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-19-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classInterfaceQt_a280bb380e08e13ec39b8dca2ae917950_cgraph.svg" width="100%" height="443"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div id="dynsection-20" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classInterfaceQt_a280bb380e08e13ec39b8dca2ae917950_icgraph.svg" width="586" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -740,15 +791,15 @@ Attributs privés</h2></td></tr>
 
 <p>Gestion du bouton Play/Pause. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8cpp_source.html#l00371">371</a> du fichier <a class="el" href="InterfaceQt_8cpp_source.html">InterfaceQt.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8cpp_source.html#l00389">389</a> du fichier <a class="el" href="InterfaceQt_8cpp_source.html">InterfaceQt.cpp</a>.</p>
 
 <p class="reference">Références <a class="el" href="InterfaceQt_8hpp_source.html#l00034">btnPlayPause</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00052">delaiMs</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00051">enPause</a>, et <a class="el" href="InterfaceQt_8hpp_source.html#l00050">timer</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00065">initialiserWidgets()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00614">keyPressEvent()</a>.</p>
-<div id="dynsection-20" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
-<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
+<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00067">initialiserWidgets()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00666">keyPressEvent()</a>.</p>
+<div id="dynsection-21" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
+<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-20-content" class="dyncontent" style="display:none;">
+<div id="dynsection-21-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classInterfaceQt_a7a4a2f568e5489965eee2dc49dc27161_icgraph.svg" width="622" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -779,21 +830,21 @@ Attributs privés</h2></td></tr>
 
 <p>Réinitialise la simulation. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8cpp_source.html#l00430">430</a> du fichier <a class="el" href="InterfaceQt_8cpp_source.html">InterfaceQt.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8cpp_source.html#l00448">448</a> du fichier <a class="el" href="InterfaceQt_8cpp_source.html">InterfaceQt.cpp</a>.</p>
 
-<p class="reference">Références <a class="el" href="InterfaceQt_8hpp_source.html#l00034">btnPlayPause</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00051">enPause</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00027">jeu</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00535">mettreAJourAffichage()</a>, et <a class="el" href="InterfaceQt_8hpp_source.html#l00050">timer</a>.</p>
+<p class="reference">Références <a class="el" href="InterfaceQt_8hpp_source.html#l00034">btnPlayPause</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00051">enPause</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00027">jeu</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00553">mettreAJourAffichage()</a>, et <a class="el" href="InterfaceQt_8hpp_source.html#l00050">timer</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00065">initialiserWidgets()</a>.</p>
-<div id="dynsection-21" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe d'appel pour cette fonction :</div>
-<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-21-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classInterfaceQt_af564176618a18f272b92be6bfd9d029d_cgraph.svg" width="100%" height="442"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-<div id="dynsection-22" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
+<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00067">initialiserWidgets()</a>.</p>
+<div id="dynsection-22" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe d'appel pour cette fonction :</div>
 <div id="dynsection-22-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-22-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classInterfaceQt_af564176618a18f272b92be6bfd9d029d_cgraph.svg" width="100%" height="442"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div id="dynsection-23" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
+<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-23-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classInterfaceQt_af564176618a18f272b92be6bfd9d029d_icgraph.svg" width="555" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -824,21 +875,21 @@ Attributs privés</h2></td></tr>
 
 <p>Avance d'une itération. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8cpp_source.html#l00411">411</a> du fichier <a class="el" href="InterfaceQt_8cpp_source.html">InterfaceQt.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8cpp_source.html#l00429">429</a> du fichier <a class="el" href="InterfaceQt_8cpp_source.html">InterfaceQt.cpp</a>.</p>
 
-<p class="reference">Références <a class="el" href="InterfaceQt_8hpp_source.html#l00034">btnPlayPause</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00051">enPause</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00027">jeu</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00535">mettreAJourAffichage()</a>, et <a class="el" href="InterfaceQt_8hpp_source.html#l00050">timer</a>.</p>
+<p class="reference">Références <a class="el" href="InterfaceQt_8hpp_source.html#l00034">btnPlayPause</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00051">enPause</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00027">jeu</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00553">mettreAJourAffichage()</a>, et <a class="el" href="InterfaceQt_8hpp_source.html#l00050">timer</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00065">initialiserWidgets()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00614">keyPressEvent()</a>.</p>
-<div id="dynsection-23" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe d'appel pour cette fonction :</div>
-<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-23-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classInterfaceQt_a1c1b614c51a456e7b5f407724df14f38_cgraph.svg" width="100%" height="442"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-<div id="dynsection-24" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
+<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00067">initialiserWidgets()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00666">keyPressEvent()</a>.</p>
+<div id="dynsection-24" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe d'appel pour cette fonction :</div>
 <div id="dynsection-24-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-24-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classInterfaceQt_a1c1b614c51a456e7b5f407724df14f38_cgraph.svg" width="100%" height="442"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div id="dynsection-25" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
+<div id="dynsection-25-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-25-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classInterfaceQt_a1c1b614c51a456e7b5f407724df14f38_icgraph.svg" width="586" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -869,21 +920,21 @@ Attributs privés</h2></td></tr>
 
 <p>Recule d'une itération. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8cpp_source.html#l00422">422</a> du fichier <a class="el" href="InterfaceQt_8cpp_source.html">InterfaceQt.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8cpp_source.html#l00440">440</a> du fichier <a class="el" href="InterfaceQt_8cpp_source.html">InterfaceQt.cpp</a>.</p>
 
-<p class="reference">Références <a class="el" href="InterfaceQt_8hpp_source.html#l00027">jeu</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00535">mettreAJourAffichage()</a>.</p>
+<p class="reference">Références <a class="el" href="InterfaceQt_8hpp_source.html#l00027">jeu</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00553">mettreAJourAffichage()</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00065">initialiserWidgets()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00614">keyPressEvent()</a>.</p>
-<div id="dynsection-25" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe d'appel pour cette fonction :</div>
-<div id="dynsection-25-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-25-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classInterfaceQt_abe7956e622104a15a5de0b3f8c84921d_cgraph.svg" width="100%" height="442"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-<div id="dynsection-26" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
+<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00067">initialiserWidgets()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00666">keyPressEvent()</a>.</p>
+<div id="dynsection-26" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe d'appel pour cette fonction :</div>
 <div id="dynsection-26-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-26-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classInterfaceQt_abe7956e622104a15a5de0b3f8c84921d_cgraph.svg" width="100%" height="442"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div id="dynsection-27" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
+<div id="dynsection-27-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-27-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classInterfaceQt_abe7956e622104a15a5de0b3f8c84921d_icgraph.svg" width="615" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -914,21 +965,21 @@ Attributs privés</h2></td></tr>
 
 <p>Mise à jour automatique (timer). </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8cpp_source.html#l00521">521</a> du fichier <a class="el" href="InterfaceQt_8cpp_source.html">InterfaceQt.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8cpp_source.html#l00539">539</a> du fichier <a class="el" href="InterfaceQt_8cpp_source.html">InterfaceQt.cpp</a>.</p>
 
-<p class="reference">Références <a class="el" href="InterfaceQt_8hpp_source.html#l00034">btnPlayPause</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00051">enPause</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00027">jeu</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00535">mettreAJourAffichage()</a>, et <a class="el" href="InterfaceQt_8hpp_source.html#l00050">timer</a>.</p>
+<p class="reference">Références <a class="el" href="InterfaceQt_8hpp_source.html#l00034">btnPlayPause</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00051">enPause</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00027">jeu</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00553">mettreAJourAffichage()</a>, et <a class="el" href="InterfaceQt_8hpp_source.html#l00050">timer</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00016">InterfaceQt()</a>.</p>
-<div id="dynsection-27" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe d'appel pour cette fonction :</div>
-<div id="dynsection-27-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-27-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classInterfaceQt_abe1c50d3e3b80f6adecb9bf0cb9fca4c_cgraph.svg" width="100%" height="442"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-<div id="dynsection-28" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
+<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00017">InterfaceQt()</a>.</p>
+<div id="dynsection-28" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe d'appel pour cette fonction :</div>
 <div id="dynsection-28-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-28-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classInterfaceQt_abe1c50d3e3b80f6adecb9bf0cb9fca4c_cgraph.svg" width="100%" height="442"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div id="dynsection-29" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
+<div id="dynsection-29-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-29-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classInterfaceQt_abe1c50d3e3b80f6adecb9bf0cb9fca4c_icgraph.svg" width="384" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -959,15 +1010,15 @@ Attributs privés</h2></td></tr>
 
 <p>Toggle mode torique. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8cpp_source.html#l00468">468</a> du fichier <a class="el" href="InterfaceQt_8cpp_source.html">InterfaceQt.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8cpp_source.html#l00486">486</a> du fichier <a class="el" href="InterfaceQt_8cpp_source.html">InterfaceQt.cpp</a>.</p>
 
 <p class="reference">Références <a class="el" href="InterfaceQt_8hpp_source.html#l00027">jeu</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00065">initialiserWidgets()</a>.</p>
-<div id="dynsection-29" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
-<div id="dynsection-29-summary" class="dynsummary" style="display:block;">
+<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00067">initialiserWidgets()</a>.</p>
+<div id="dynsection-30" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
+<div id="dynsection-30-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-29-content" class="dyncontent" style="display:none;">
+<div id="dynsection-30-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classInterfaceQt_ac5397f8a5866fe16768cf7b19578d6e6_icgraph.svg" width="614" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -998,15 +1049,15 @@ Attributs privés</h2></td></tr>
 
 <p>Change la vitesse. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8cpp_source.html#l00450">450</a> du fichier <a class="el" href="InterfaceQt_8cpp_source.html">InterfaceQt.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8cpp_source.html#l00468">468</a> du fichier <a class="el" href="InterfaceQt_8cpp_source.html">InterfaceQt.cpp</a>.</p>
 
 <p class="reference">Références <a class="el" href="InterfaceQt_8hpp_source.html#l00052">delaiMs</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00051">enPause</a>, <a class="el" href="InterfaceQt_8hpp_source.html#l00040">lblVitesse</a>, et <a class="el" href="InterfaceQt_8hpp_source.html#l00050">timer</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00065">initialiserWidgets()</a>.</p>
-<div id="dynsection-30" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
-<div id="dynsection-30-summary" class="dynsummary" style="display:block;">
+<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00067">initialiserWidgets()</a>.</p>
+<div id="dynsection-31" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Voici le graphe des appelants de cette fonction :</div>
+<div id="dynsection-31-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-30-content" class="dyncontent" style="display:none;">
+<div id="dynsection-31-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classInterfaceQt_aced0a3719ad775ff3d2297950c5352a6_icgraph.svg" width="616" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1035,7 +1086,7 @@ Attributs privés</h2></td></tr>
 
 <p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8hpp_source.html#l00045">45</a> du fichier <a class="el" href="InterfaceQt_8hpp_source.html">InterfaceQt.hpp</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00229">initialiserLayout()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00065">initialiserWidgets()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00244">initialiserLayout()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00067">initialiserWidgets()</a>.</p>
 
 </div>
 </div>
@@ -1061,7 +1112,7 @@ Attributs privés</h2></td></tr>
 
 <p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8hpp_source.html#l00034">34</a> du fichier <a class="el" href="InterfaceQt_8hpp_source.html">InterfaceQt.hpp</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00229">initialiserLayout()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00065">initialiserWidgets()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00371">onPlayPause()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00430">onReset()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00411">onStep()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00521">onTimerTick()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00244">initialiserLayout()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00067">initialiserWidgets()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00389">onPlayPause()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00448">onReset()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00429">onStep()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00539">onTimerTick()</a>.</p>
 
 </div>
 </div>
@@ -1087,7 +1138,7 @@ Attributs privés</h2></td></tr>
 
 <p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8hpp_source.html#l00037">37</a> du fichier <a class="el" href="InterfaceQt_8hpp_source.html">InterfaceQt.hpp</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00229">initialiserLayout()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00065">initialiserWidgets()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00244">initialiserLayout()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00067">initialiserWidgets()</a>.</p>
 
 </div>
 </div>
@@ -1113,7 +1164,7 @@ Attributs privés</h2></td></tr>
 
 <p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8hpp_source.html#l00035">35</a> du fichier <a class="el" href="InterfaceQt_8hpp_source.html">InterfaceQt.hpp</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00229">initialiserLayout()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00065">initialiserWidgets()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00244">initialiserLayout()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00067">initialiserWidgets()</a>.</p>
 
 </div>
 </div>
@@ -1139,7 +1190,7 @@ Attributs privés</h2></td></tr>
 
 <p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8hpp_source.html#l00036">36</a> du fichier <a class="el" href="InterfaceQt_8hpp_source.html">InterfaceQt.hpp</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00229">initialiserLayout()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00065">initialiserWidgets()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00244">initialiserLayout()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00067">initialiserWidgets()</a>.</p>
 
 </div>
 </div>
@@ -1165,7 +1216,7 @@ Attributs privés</h2></td></tr>
 
 <p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8hpp_source.html#l00031">31</a> du fichier <a class="el" href="InterfaceQt_8hpp_source.html">InterfaceQt.hpp</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00229">initialiserLayout()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00535">mettreAJourAffichage()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00244">initialiserLayout()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00553">mettreAJourAffichage()</a>.</p>
 
 </div>
 </div>
@@ -1191,7 +1242,7 @@ Attributs privés</h2></td></tr>
 
 <p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8hpp_source.html#l00030">30</a> du fichier <a class="el" href="InterfaceQt_8hpp_source.html">InterfaceQt.hpp</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00229">initialiserLayout()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00244">initialiserLayout()</a>.</p>
 
 </div>
 </div>
@@ -1217,7 +1268,7 @@ Attributs privés</h2></td></tr>
 
 <p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8hpp_source.html#l00043">43</a> du fichier <a class="el" href="InterfaceQt_8hpp_source.html">InterfaceQt.hpp</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00229">initialiserLayout()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00065">initialiserWidgets()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00244">initialiserLayout()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00067">initialiserWidgets()</a>.</p>
 
 </div>
 </div>
@@ -1243,7 +1294,33 @@ Attributs privés</h2></td></tr>
 
 <p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8hpp_source.html#l00042">42</a> du fichier <a class="el" href="InterfaceQt_8hpp_source.html">InterfaceQt.hpp</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00229">initialiserLayout()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00065">initialiserWidgets()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00244">initialiserLayout()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00067">initialiserWidgets()</a>.</p>
+
+</div>
+</div>
+<a id="ac0e21d9a7f9957baa3624346f0f7fde5" name="ac0e21d9a7f9957baa3624346f0f7fde5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0e21d9a7f9957baa3624346f0f7fde5">&#9670;&#160;</a></span>cmbDrawType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QComboBox* InterfaceQt::cmbDrawType</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8hpp_source.html#l00057">57</a> du fichier <a class="el" href="InterfaceQt_8hpp_source.html">InterfaceQt.hpp</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00244">initialiserLayout()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00067">initialiserWidgets()</a>.</p>
 
 </div>
 </div>
@@ -1269,7 +1346,7 @@ Attributs privés</h2></td></tr>
 
 <p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8hpp_source.html#l00044">44</a> du fichier <a class="el" href="InterfaceQt_8hpp_source.html">InterfaceQt.hpp</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00229">initialiserLayout()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00065">initialiserWidgets()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00500">onPlacerMotif()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00244">initialiserLayout()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00067">initialiserWidgets()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00518">onPlacerMotif()</a>.</p>
 
 </div>
 </div>
@@ -1293,9 +1370,9 @@ Attributs privés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8hpp_source.html#l00060">60</a> du fichier <a class="el" href="InterfaceQt_8hpp_source.html">InterfaceQt.hpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8hpp_source.html#l00065">65</a> du fichier <a class="el" href="InterfaceQt_8hpp_source.html">InterfaceQt.hpp</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00016">InterfaceQt()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00017">InterfaceQt()</a>.</p>
 
 </div>
 </div>
@@ -1319,14 +1396,14 @@ Attributs privés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8hpp_source.html#l00058">58</a> du fichier <a class="el" href="InterfaceQt_8hpp_source.html">InterfaceQt.hpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8hpp_source.html#l00062">62</a> du fichier <a class="el" href="InterfaceQt_8hpp_source.html">InterfaceQt.hpp</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00585">dessinerGrille()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00016">InterfaceQt()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00603">dessinerGrille()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00017">InterfaceQt()</a>.</p>
 
 </div>
 </div>
-<a id="ada6dc560ba81d312bdb84dca698ef8a5" name="ada6dc560ba81d312bdb84dca698ef8a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada6dc560ba81d312bdb84dca698ef8a5">&#9670;&#160;</a></span>couleurObstacle</h2>
+<a id="aef732c795ac074539030d027f9a0b393" name="aef732c795ac074539030d027f9a0b393"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef732c795ac074539030d027f9a0b393">&#9670;&#160;</a></span>couleurObstacleMort</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1335,7 +1412,7 @@ Attributs privés</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QColor InterfaceQt::couleurObstacle</td>
+          <td class="memname">QColor InterfaceQt::couleurObstacleMort</td>
         </tr>
       </table>
   </td>
@@ -1345,9 +1422,35 @@ Attributs privés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8hpp_source.html#l00059">59</a> du fichier <a class="el" href="InterfaceQt_8hpp_source.html">InterfaceQt.hpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8hpp_source.html#l00063">63</a> du fichier <a class="el" href="InterfaceQt_8hpp_source.html">InterfaceQt.hpp</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00585">dessinerGrille()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00016">InterfaceQt()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00603">dessinerGrille()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00017">InterfaceQt()</a>.</p>
+
+</div>
+</div>
+<a id="a48ebd5ca7496d3a1ec9e7cc624905866" name="a48ebd5ca7496d3a1ec9e7cc624905866"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48ebd5ca7496d3a1ec9e7cc624905866">&#9670;&#160;</a></span>couleurObstacleVivant</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QColor InterfaceQt::couleurObstacleVivant</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8hpp_source.html#l00064">64</a> du fichier <a class="el" href="InterfaceQt_8hpp_source.html">InterfaceQt.hpp</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00603">dessinerGrille()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00017">InterfaceQt()</a>.</p>
 
 </div>
 </div>
@@ -1371,9 +1474,9 @@ Attributs privés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8hpp_source.html#l00057">57</a> du fichier <a class="el" href="InterfaceQt_8hpp_source.html">InterfaceQt.hpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8hpp_source.html#l00061">61</a> du fichier <a class="el" href="InterfaceQt_8hpp_source.html">InterfaceQt.hpp</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00585">dessinerGrille()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00016">InterfaceQt()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00603">dessinerGrille()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00017">InterfaceQt()</a>.</p>
 
 </div>
 </div>
@@ -1399,7 +1502,33 @@ Attributs privés</h2></td></tr>
 
 <p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8hpp_source.html#l00052">52</a> du fichier <a class="el" href="InterfaceQt_8hpp_source.html">InterfaceQt.hpp</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00016">InterfaceQt()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00371">onPlayPause()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00450">onVitesseChanged()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00017">InterfaceQt()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00389">onPlayPause()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00468">onVitesseChanged()</a>.</p>
+
+</div>
+</div>
+<a id="a956563ac9a7c88e6ddd13745e9b724d7" name="a956563ac9a7c88e6ddd13745e9b724d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a956563ac9a7c88e6ddd13745e9b724d7">&#9670;&#160;</a></span>drawMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int InterfaceQt::drawMode</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8hpp_source.html#l00058">58</a> du fichier <a class="el" href="InterfaceQt_8hpp_source.html">InterfaceQt.hpp</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00636">canvasMouseEvent()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00067">initialiserWidgets()</a>.</p>
 
 </div>
 </div>
@@ -1425,7 +1554,7 @@ Attributs privés</h2></td></tr>
 
 <p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8hpp_source.html#l00051">51</a> du fichier <a class="el" href="InterfaceQt_8hpp_source.html">InterfaceQt.hpp</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00016">InterfaceQt()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00371">onPlayPause()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00430">onReset()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00411">onStep()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00521">onTimerTick()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00450">onVitesseChanged()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00017">InterfaceQt()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00389">onPlayPause()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00448">onReset()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00429">onStep()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00539">onTimerTick()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00468">onVitesseChanged()</a>.</p>
 
 </div>
 </div>
@@ -1451,7 +1580,7 @@ Attributs privés</h2></td></tr>
 
 <p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8hpp_source.html#l00054">54</a> du fichier <a class="el" href="InterfaceQt_8hpp_source.html">InterfaceQt.hpp</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00016">InterfaceQt()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00489">onIterationMaxChanged()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00017">InterfaceQt()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00507">onIterationMaxChanged()</a>.</p>
 
 </div>
 </div>
@@ -1477,7 +1606,7 @@ Attributs privés</h2></td></tr>
 
 <p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8hpp_source.html#l00027">27</a> du fichier <a class="el" href="InterfaceQt_8hpp_source.html">InterfaceQt.hpp</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00541">calculerTailleCellule()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00570">compterCellulesVivantes()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00585">dessinerGrille()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00229">initialiserLayout()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00016">InterfaceQt()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00535">mettreAJourAffichage()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00489">onIterationMaxChanged()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00473">onParalleleChanged()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00500">onPlacerMotif()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00430">onReset()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00411">onStep()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00422">onStepBack()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00521">onTimerTick()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00468">onToriqueChanged()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00559">calculerTailleCellule()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00636">canvasMouseEvent()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00588">compterCellulesVivantes()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00603">dessinerGrille()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00244">initialiserLayout()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00017">InterfaceQt()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00553">mettreAJourAffichage()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00507">onIterationMaxChanged()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00491">onParalleleChanged()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00518">onPlacerMotif()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00448">onReset()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00429">onStep()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00440">onStepBack()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00539">onTimerTick()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00486">onToriqueChanged()</a>.</p>
 
 </div>
 </div>
@@ -1503,7 +1632,7 @@ Attributs privés</h2></td></tr>
 
 <p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8hpp_source.html#l00041">41</a> du fichier <a class="el" href="InterfaceQt_8hpp_source.html">InterfaceQt.hpp</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00229">initialiserLayout()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00065">initialiserWidgets()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00535">mettreAJourAffichage()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00244">initialiserLayout()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00067">initialiserWidgets()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00553">mettreAJourAffichage()</a>.</p>
 
 </div>
 </div>
@@ -1529,7 +1658,7 @@ Attributs privés</h2></td></tr>
 
 <p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8hpp_source.html#l00039">39</a> du fichier <a class="el" href="InterfaceQt_8hpp_source.html">InterfaceQt.hpp</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00229">initialiserLayout()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00065">initialiserWidgets()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00535">mettreAJourAffichage()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00244">initialiserLayout()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00067">initialiserWidgets()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00553">mettreAJourAffichage()</a>.</p>
 
 </div>
 </div>
@@ -1555,7 +1684,7 @@ Attributs privés</h2></td></tr>
 
 <p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8hpp_source.html#l00047">47</a> du fichier <a class="el" href="InterfaceQt_8hpp_source.html">InterfaceQt.hpp</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00065">initialiserWidgets()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00489">onIterationMaxChanged()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00067">initialiserWidgets()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00507">onIterationMaxChanged()</a>.</p>
 
 </div>
 </div>
@@ -1581,7 +1710,7 @@ Attributs privés</h2></td></tr>
 
 <p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8hpp_source.html#l00040">40</a> du fichier <a class="el" href="InterfaceQt_8hpp_source.html">InterfaceQt.hpp</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00229">initialiserLayout()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00065">initialiserWidgets()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00450">onVitesseChanged()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00244">initialiserLayout()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00067">initialiserWidgets()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00468">onVitesseChanged()</a>.</p>
 
 </div>
 </div>
@@ -1607,7 +1736,7 @@ Attributs privés</h2></td></tr>
 
 <p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8hpp_source.html#l00038">38</a> du fichier <a class="el" href="InterfaceQt_8hpp_source.html">InterfaceQt.hpp</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00229">initialiserLayout()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00065">initialiserWidgets()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00614">keyPressEvent()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00244">initialiserLayout()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00067">initialiserWidgets()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00666">keyPressEvent()</a>.</p>
 
 </div>
 </div>
@@ -1633,7 +1762,7 @@ Attributs privés</h2></td></tr>
 
 <p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8hpp_source.html#l00046">46</a> du fichier <a class="el" href="InterfaceQt_8hpp_source.html">InterfaceQt.hpp</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00229">initialiserLayout()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00065">initialiserWidgets()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00244">initialiserLayout()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00067">initialiserWidgets()</a>.</p>
 
 </div>
 </div>
@@ -1659,7 +1788,7 @@ Attributs privés</h2></td></tr>
 
 <p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8hpp_source.html#l00053">53</a> du fichier <a class="el" href="InterfaceQt_8hpp_source.html">InterfaceQt.hpp</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00541">calculerTailleCellule()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00585">dessinerGrille()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00229">initialiserLayout()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00016">InterfaceQt()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00559">calculerTailleCellule()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00636">canvasMouseEvent()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00603">dessinerGrille()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00244">initialiserLayout()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00017">InterfaceQt()</a>.</p>
 
 </div>
 </div>
@@ -1685,7 +1814,7 @@ Attributs privés</h2></td></tr>
 
 <p class="definition">Définition à la ligne <a class="el" href="InterfaceQt_8hpp_source.html#l00050">50</a> du fichier <a class="el" href="InterfaceQt_8hpp_source.html">InterfaceQt.hpp</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00016">InterfaceQt()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00371">onPlayPause()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00430">onReset()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00411">onStep()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00521">onTimerTick()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00450">onVitesseChanged()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00059">~InterfaceQt()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="InterfaceQt_8cpp_source.html#l00017">InterfaceQt()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00389">onPlayPause()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00448">onReset()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00429">onStep()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00539">onTimerTick()</a>, <a class="el" href="InterfaceQt_8cpp_source.html#l00468">onVitesseChanged()</a>, et <a class="el" href="InterfaceQt_8cpp_source.html#l00061">~InterfaceQt()</a>.</p>
 
 </div>
 </div>

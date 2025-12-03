@@ -1,0 +1,17 @@
+<map id="JeuDeLaVie::obtenirGrille" name="JeuDeLaVie::obtenirGrille">
+<area shape="rect" id="Node000001" title="Obtient la grille actuelle." alt="" coords="835,35,1004,61"/>
+<area shape="rect" id="Node000002" href="$InterfaceSFML_8cpp.html#a1f6f08272591bae8f84b65fe8198a642" title=" " alt="" coords="600,8,768,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="819,39,768,33,768,28,819,34"/>
+<area shape="rect" id="Node000006" href="$classTestsUnitaires.html#ac15830bab996354ee1325bd615fedef1" title="Teste l&#39;historique (retour en arrière)." alt="" coords="581,60,787,87"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="819,61,787,65,787,60,819,56"/>
+<area shape="rect" id="Node000003" href="$classInterfaceSFML.html#a20bcd606ad56b9f175bba4a49a4f061a" title="Gère les événements (clavier, souris, fermeture)." alt="" coords="316,5,533,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="585,23,534,22,534,17,585,18"/>
+<area shape="rect" id="Node000004" href="$classInterfaceSFML.html#a518c46fbb99e76a49149d03b900b6cdc" title="Lance la boucle principale de l&#39;interface graphique." alt="" coords="103,5,268,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="300,21,269,21,269,16,300,16"/>
+<area shape="rect" id="Node000005" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Point d&#39;entrée du programme." alt="" coords="5,5,55,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+<area shape="rect" id="Node000007" href="$classTestsUnitaires.html#a17aa4e9d0afbd2614193d2638f4b78c7" title="Exécute tous les tests." alt="" coords="343,56,506,99"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="566,78,507,79,507,73,566,72"/>
+<area shape="rect" id="Node000008" href="$test__main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Programme principal pour exécuter les tests unitaires." alt="" coords="161,64,210,91"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="328,80,211,80,211,75,328,75"/>
+</map>

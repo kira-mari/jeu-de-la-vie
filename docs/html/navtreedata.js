@@ -27,42 +27,50 @@ var NAVTREE =
   [ "Jeu de la Vie de Conway", "index.html", [
     [ "🎮 Jeu de la Vie de Conway - Projet POO C++", "index.html", "index" ],
     [ "Document de Conception - Jeu de la Vie", "md_CONCEPTION.html", [
-      [ "1. Diagramme de Classes (Mermaid)", "md_CONCEPTION.html#autotoc_md62", [
-        [ "Hiérarchie des États de Cellules", "md_CONCEPTION.html#autotoc_md63", null ],
-        [ "Hiérarchie des Règles du Jeu", "md_CONCEPTION.html#autotoc_md64", null ],
-        [ "Architecture Principale", "md_CONCEPTION.html#autotoc_md65", null ],
-        [ "Interfaces et Utilitaires", "md_CONCEPTION.html#autotoc_md66", null ]
+      [ "1. Diagramme de Classes (Mermaid)", "md_CONCEPTION.html#autotoc_md63", [
+        [ "Hiérarchie des États de Cellules", "md_CONCEPTION.html#autotoc_md64", null ],
+        [ "Hiérarchie des Règles du Jeu", "md_CONCEPTION.html#autotoc_md65", null ],
+        [ "Architecture Principale", "md_CONCEPTION.html#autotoc_md66", null ],
+        [ "Interfaces et Utilitaires", "md_CONCEPTION.html#autotoc_md67", null ]
       ] ],
-      [ "2. Diagramme de Séquence (Mermaid)", "md_CONCEPTION.html#autotoc_md67", [
-        [ "Exécution d'une itération", "md_CONCEPTION.html#autotoc_md68", null ],
-        [ "Chargement d'un fichier", "md_CONCEPTION.html#autotoc_md69", null ],
-        [ "Placement de motif interactif", "md_CONCEPTION.html#autotoc_md70", null ],
-        [ "Interface Qt - Interaction utilisateur", "md_CONCEPTION.html#autotoc_md71", null ]
+      [ "2. Diagramme de Séquence (Mermaid)", "md_CONCEPTION.html#autotoc_md68", [
+        [ "Exécution d'une itération", "md_CONCEPTION.html#autotoc_md69", null ],
+        [ "Chargement d'un fichier", "md_CONCEPTION.html#autotoc_md70", null ],
+        [ "Placement de motif interactif", "md_CONCEPTION.html#autotoc_md71", null ],
+        [ "Séquence : Dessin souris (SFML)", "md_CONCEPTION.html#autotoc_md72", null ],
+        [ "Séquence : Zoom molette (SFML/Qt)", "md_CONCEPTION.html#autotoc_md73", null ],
+        [ "Séquence : Historique (retour en arrière)", "md_CONCEPTION.html#autotoc_md74", null ],
+        [ "Interface Qt - Interaction utilisateur", "md_CONCEPTION.html#autotoc_md75", null ]
       ] ],
-      [ "3. Diagramme d'Activité (Mermaid)", "md_CONCEPTION.html#autotoc_md72", [
-        [ "Activité principale du programme", "md_CONCEPTION.html#autotoc_md73", null ],
-        [ "Mise à jour de la grille avec parallélisation", "md_CONCEPTION.html#autotoc_md74", null ]
+      [ "3. Diagramme d'Activité (Mermaid)", "md_CONCEPTION.html#autotoc_md76", [
+        [ "Activité principale du programme", "md_CONCEPTION.html#autotoc_md77", null ],
+        [ "Mise à jour de la grille avec parallélisation", "md_CONCEPTION.html#autotoc_md78", null ]
       ] ],
-      [ "4. Patterns de Conception Utilisés", "md_CONCEPTION.html#autotoc_md75", [
-        [ "Strategy Pattern", "md_CONCEPTION.html#autotoc_md76", null ],
-        [ "State Pattern", "md_CONCEPTION.html#autotoc_md77", null ],
-        [ "Template Method Pattern", "md_CONCEPTION.html#autotoc_md78", null ],
-        [ "Dependency Injection", "md_CONCEPTION.html#autotoc_md79", null ],
-        [ "Observer Pattern (implicite via événements Qt)", "md_CONCEPTION.html#autotoc_md80", null ],
-        [ "MVC Pattern (Model-View-Controller)", "md_CONCEPTION.html#autotoc_md81", null ]
+      [ "4. Patterns de Conception Utilisés", "md_CONCEPTION.html#autotoc_md79", [
+        [ "Strategy Pattern", "md_CONCEPTION.html#autotoc_md80", null ],
+        [ "State Pattern", "md_CONCEPTION.html#autotoc_md81", null ],
+        [ "Template Method Pattern", "md_CONCEPTION.html#autotoc_md82", null ],
+        [ "Dependency Injection", "md_CONCEPTION.html#autotoc_md83", null ],
+        [ "Observer Pattern (implicite via événements Qt)", "md_CONCEPTION.html#autotoc_md84", null ],
+        [ "MVC Pattern (Model-View-Controller)", "md_CONCEPTION.html#autotoc_md85", null ]
       ] ],
-      [ "5. Justification des Choix Techniques", "md_CONCEPTION.html#autotoc_md82", [
-        [ "Utilisation de unique_ptr et shared_ptr", "md_CONCEPTION.html#autotoc_md83", null ],
-        [ "Polymorphisme", "md_CONCEPTION.html#autotoc_md84", null ],
-        [ "Séparation GUI/Logique", "md_CONCEPTION.html#autotoc_md85", null ],
-        [ "Multithreading optimisé", "md_CONCEPTION.html#autotoc_md86", null ],
-        [ "Choix de Qt vs SFML", "md_CONCEPTION.html#autotoc_md87", null ]
+      [ "5. Justification des Choix Techniques", "md_CONCEPTION.html#autotoc_md86", [
+        [ "Utilisation de unique_ptr et shared_ptr", "md_CONCEPTION.html#autotoc_md87", null ],
+        [ "Polymorphisme", "md_CONCEPTION.html#autotoc_md88", null ],
+        [ "Séparation GUI/Logique", "md_CONCEPTION.html#autotoc_md89", null ],
+        [ "Multithreading optimisé", "md_CONCEPTION.html#autotoc_md90", null ],
+        [ "Choix de Qt vs SFML", "md_CONCEPTION.html#autotoc_md91", null ]
       ] ],
-      [ "6. Complexité et Performance", "md_CONCEPTION.html#autotoc_md88", [
-        [ "Complexité temporelle", "md_CONCEPTION.html#autotoc_md89", null ],
-        [ "Complexité spatiale", "md_CONCEPTION.html#autotoc_md90", null ],
-        [ "Optimisations implémentées", "md_CONCEPTION.html#autotoc_md91", null ],
-        [ "Benchmark (grille 1000×1000, 100 itérations)", "md_CONCEPTION.html#autotoc_md92", null ]
+      [ "6. Complexité et Performance", "md_CONCEPTION.html#autotoc_md92", [
+        [ "Complexité temporelle", "md_CONCEPTION.html#autotoc_md93", null ],
+        [ "Complexité spatiale", "md_CONCEPTION.html#autotoc_md94", null ],
+        [ "Optimisations implémentées", "md_CONCEPTION.html#autotoc_md95", null ],
+        [ "Benchmark (grille 1000×1000, 100 itérations)", "md_CONCEPTION.html#autotoc_md96", null ]
+      ] ],
+      [ "7. Tests Unitaires", "md_CONCEPTION.html#autotoc_md97", [
+        [ "Couverture des tests", "md_CONCEPTION.html#autotoc_md98", null ],
+        [ "Exécution des tests", "md_CONCEPTION.html#autotoc_md99", null ],
+        [ "Sortie attendue", "md_CONCEPTION.html#autotoc_md100", null ]
       ] ]
     ] ],
     [ "Espaces de nommage", "namespaces.html", [
@@ -78,9 +86,10 @@ var NAVTREE =
       [ "Index des classes", "classes.html", null ],
       [ "Hiérarchie des classes", "hierarchy.html", "hierarchy" ],
       [ "Membres de classe", "functions.html", [
-        [ "Tout", "functions.html", null ],
+        [ "Tout", "functions.html", "functions_dup" ],
         [ "Fonctions", "functions_func.html", null ],
         [ "Variables", "functions_vars.html", null ],
+        [ "Énumérations", "functions_enum.html", null ],
         [ "Fonctions associées", "functions_rela.html", null ]
       ] ]
     ] ],
@@ -98,7 +107,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "Cellule_8cpp.html",
-"globals_func.html"
+"classRegleTorique.html#a5f15a29a47c045ccd89a64c72de030e1"
 ];
 
 var SYNCONMSG = 'cliquez pour désactiver la synchronisation du panel';
